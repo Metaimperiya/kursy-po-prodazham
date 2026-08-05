@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SALES BOOST — Курс по продажам</title>
-    <!-- Шрифт для солидности -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
     <style>
         * {
@@ -23,13 +22,15 @@
             margin: 0 auto;
             padding: 0 20px;
         }
-        /* ШАПКА */
+        /* ХЭДЕР */
         .header {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 20px 0;
             border-bottom: 1px solid #1f2a3f;
+            flex-wrap: wrap;
+            gap: 15px;
         }
         .logo {
             font-size: 24px;
@@ -37,6 +38,22 @@
             background: linear-gradient(45deg, #f7971e, #ffd200);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+        }
+        .header-stats {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+        .visitor-counter {
+            background: #1f2a3f;
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .visitor-counter span {
+            color: #f7971e;
+            font-size: 20px;
         }
         .header-btn {
             background: transparent;
@@ -53,7 +70,7 @@
             color: #000;
         }
 
-        /* ГЛАВНЫЙ ЭКРАН */
+        /* ГЛАВНЫЙ ЭКРАН С ВИДЕО */
         .hero {
             display: flex;
             flex-wrap: wrap;
@@ -63,7 +80,7 @@
             gap: 40px;
         }
         .hero-text {
-            flex: 1 1 500px;
+            flex: 1 1 450px;
         }
         .hero-badge {
             background: #ff3b3b;
@@ -76,7 +93,7 @@
             letter-spacing: 1px;
         }
         .hero h1 {
-            font-size: 48px;
+            font-size: 42px;
             font-weight: 900;
             line-height: 1.2;
             margin-bottom: 20px;
@@ -85,18 +102,21 @@
             color: #f7971e;
         }
         .hero p {
-            font-size: 20px;
+            font-size: 18px;
             color: #aab3c9;
             margin-bottom: 30px;
         }
-        .hero-image {
-            flex: 1 1 400px;
-            background: #1f2a3f;
+        .hero-video {
+            flex: 1 1 450px;
             border-radius: 20px;
-            padding: 40px;
-            text-align: center;
-            font-size: 80px;
-            border: 2px dashed #f7971e;
+            overflow: hidden;
+            background: #000;
+            border: 2px solid #f7971e;
+            box-shadow: 0 20px 60px rgba(247, 151, 30, 0.2);
+        }
+        .hero-video video {
+            width: 100%;
+            display: block;
         }
         .btn-primary {
             background: #f7971e;
@@ -144,7 +164,7 @@
             font-size: 18px;
         }
 
-        /* ЧТО ПОЛУЧИШЬ */
+        /* ОФЕР */
         .offer {
             background: #131a2b;
             border-radius: 30px;
@@ -167,11 +187,11 @@
             border-radius: 16px;
             border: 1px solid #2a3650;
         }
-        .offer-item emoji {
+        .offer-item .emoji {
             font-size: 30px;
         }
 
-        /* ТАЙМИНГ */
+        /* МОДУЛИ */
         .modules {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -184,6 +204,81 @@
             border-radius: 16px;
             text-align: center;
             border-bottom: 4px solid #f7971e;
+        }
+
+        /* ЧАТ */
+        .chat-section {
+            background: #131a2b;
+            border-radius: 30px;
+            padding: 40px;
+            margin: 50px 0;
+            border: 1px solid #2a3650;
+        }
+        .chat-section h2 {
+            margin-bottom: 20px;
+        }
+        .chat-window {
+            background: #0b0e1a;
+            border-radius: 16px;
+            padding: 20px;
+            height: 300px;
+            overflow-y: auto;
+            border: 1px solid #2a3650;
+            margin-bottom: 20px;
+        }
+        .chat-msg {
+            padding: 10px 15px;
+            margin-bottom: 10px;
+            border-radius: 12px;
+            background: #1f2a3f;
+            max-width: 80%;
+        }
+        .chat-msg.self {
+            background: #f7971e;
+            color: #000;
+            margin-left: auto;
+        }
+        .chat-msg .user {
+            font-weight: 700;
+            font-size: 12px;
+            opacity: 0.7;
+        }
+        .chat-msg .time {
+            font-size: 10px;
+            opacity: 0.5;
+            float: right;
+            margin-left: 15px;
+        }
+        .chat-input-row {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .chat-input-row input {
+            flex: 1;
+            padding: 14px 18px;
+            border-radius: 50px;
+            border: 1px solid #2a3650;
+            background: #0b0e1a;
+            color: #fff;
+            font-size: 14px;
+            min-width: 120px;
+        }
+        .chat-input-row input::placeholder {
+            color: #6b7a98;
+        }
+        .chat-input-row button {
+            padding: 14px 30px;
+            border-radius: 50px;
+            border: none;
+            background: #f7971e;
+            color: #000;
+            font-weight: 700;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .chat-input-row button:hover {
+            transform: scale(1.02);
         }
 
         /* ФОРМА */
@@ -219,7 +314,7 @@
             letter-spacing: 5px;
         }
 
-        /* ГАРАНТИЯ И ФУТЕР */
+        /* ГАРАНТИЯ */
         .guarantee {
             background: #0f1625;
             padding: 30px;
@@ -237,21 +332,26 @@
         }
 
         @media (max-width: 600px) {
-            .hero h1 { font-size: 32px; }
+            .hero h1 { font-size: 28px; }
             .form-section input, .form-section .btn-primary { width: 100%; }
+            .chat-input-row input { min-width: 100%; }
+            .header-stats { width: 100%; justify-content: space-between; }
         }
     </style>
 </head>
 <body>
     <div class="container">
 
-        <!-- ХЭДЕР -->
+        <!-- ХЭДЕР С СЧЁТЧИКОМ -->
         <div class="header">
             <div class="logo">⚡ SALES BOOST</div>
-            <button class="header-btn" onclick="document.getElementById('formblock').scrollIntoView({behavior:'smooth'})">Записаться</button>
+            <div class="header-stats">
+                <div class="visitor-counter">👁️ Онлайн: <span id="visitorCount">0</span></div>
+                <button class="header-btn" onclick="document.getElementById('formblock').scrollIntoView({behavior:'smooth'})">Записаться</button>
+            </div>
         </div>
 
-        <!-- ГЛАВНЫЙ ЭКРАН -->
+        <!-- ГЛАВНЫЙ ЭКРАН С ВИДЕО -->
         <div class="hero">
             <div class="hero-text">
                 <div class="hero-badge">🔥 Осталось 4 места на потоке</div>
@@ -264,8 +364,11 @@
                 <br>
                 <button class="btn-primary" onclick="document.getElementById('formblock').scrollIntoView({behavior:'smooth'})">🚀 ЗАБРАТЬ МЕСТО</button>
             </div>
-            <div class="hero-image">
-                📹 ТВОЁ ВИДЕО <br> <span style="font-size:18px; color:#aab3c9;">(3 мин. приветствие)</span>
+            <div class="hero-video">
+                <video controls autoplay muted playsinline>
+                    <source src="IMG_7832.MOV" type="video/mp4">
+                    Твой браузер не поддерживает видео
+                </video>
             </div>
         </div>
 
@@ -277,18 +380,18 @@
             <div class="pain-item">😩 Вы устали продавать с перебивкой цены?</div>
         </div>
 
-        <!-- ЧТО ПОЛУЧАЕШЬ (ОФЕР) -->
+        <!-- ОФЕР -->
         <div class="offer">
             <h2>🎯 ЧТО ТЫ ПОЛУЧИШЬ НА КУРСЕ</h2>
             <div class="offer-grid">
-                <div class="offer-item"><emoji>🧠</emoji> <strong>Скрипт "Анти-возражение"</strong> — 3 фразы, превращающие "Дорого" в "Ок, беру".</div>
-                <div class="offer-item"><emoji>🤫</emoji> <strong>Техника "Тишина"</strong> — клиент сам называет цену, которую готов платить.</div>
-                <div class="offer-item"><emoji>📋</emoji> <strong>Чек-лист из 10 вопросов</strong> для квалификации клиента за 5 минут.</div>
-                <div class="offer-item"><emoji>🎬</emoji> <strong>Запись реальных переговоров</strong> с разбором ошибок.</div>
+                <div class="offer-item"><span class="emoji">🧠</span> <strong>Скрипт "Анти-возражение"</strong> — 3 фразы, превращающие "Дорого" в "Ок, беру".</div>
+                <div class="offer-item"><span class="emoji">🤫</span> <strong>Техника "Тишина"</strong> — клиент сам называет цену.</div>
+                <div class="offer-item"><span class="emoji">📋</span> <strong>Чек-лист из 10 вопросов</strong> для квалификации за 5 минут.</div>
+                <div class="offer-item"><span class="emoji">🎬</span> <strong>Запись реальных переговоров</strong> с разбором.</div>
             </div>
         </div>
 
-        <!-- ТАЙМИНГ -->
+        <!-- МОДУЛИ -->
         <h2 style="font-size:32px; margin-top:40px;">📚 ПРОГРАММА (4 модуля)</h2>
         <div class="modules">
             <div class="module">🧠 Модуль 1<br>Психология сделки</div>
@@ -309,6 +412,19 @@
             <p style="font-size:20px;">Если через 3 дня ты поймешь, что это не твое — я верну деньги без вопросов и оставлю все материалы тебе.</p>
         </div>
 
+        <!-- ЧАТ -->
+        <div class="chat-section">
+            <h2>💬 Чат для вопросов</h2>
+            <div class="chat-window" id="chatWindow">
+                <div style="color:#6b7a98; text-align:center; padding:40px 0;">Загрузка сообщений...</div>
+            </div>
+            <div class="chat-input-row">
+                <input type="text" id="chatName" placeholder="Твой ник" value="Гость">
+                <input type="text" id="chatMsg" placeholder="Напиши сообщение..." onkeydown="if(event.key==='Enter') sendChat()">
+                <button onclick="sendChat()">Отправить</button>
+            </div>
+        </div>
+
         <!-- ФОРМА С ТАЙМЕРОМ -->
         <div id="formblock" class="form-section">
             <h2 style="font-size:36px;">⏳ Введи телефон, чтобы забрать курс со скидкой</h2>
@@ -324,19 +440,107 @@
 
         <!-- ФУТЕР -->
         <div class="footer">
-            <p>📧 sales@boost.ru  |  📞 +7 999 888-77-66</p>
+            <p>📧 sales@boost.ru | 📞 +7 999 888-77-66</p>
             <p style="font-size:14px;">© 2026 SALES BOOST. Все права защищены.</p>
         </div>
 
     </div>
 
-    <!-- СКРИПТ ТАЙМЕРА (работает) -->
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-database-compat.js"></script>
+
     <script>
-        let time = 7200; // 2 часа в секундах
+        // ========== FIREBASE ==========
+        const firebaseConfig = {
+            apiKey: "AIzaSyC5L2GQ-2CYj-GNYsHENASdvKVF68rsEb0",
+            authDomain: "metaimperiya-14d1b.firebaseapp.com",
+            databaseURL: "https://metaimperiya-14d1b-default-rtdb.europe-west1.firebasedatabase.app",
+            projectId: "metaimperiya-14d1b",
+            storageBucket: "metaimperiya-14d1b.firebasestorage.app",
+            messagingSenderId: "415206276902",
+            appId: "1:415206276902:web:1e38287b922191eac00be7"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.database();
+
+        // ========== СЧЁТЧИК ПОСЕТИТЕЛЕЙ ==========
+        let visitorId = localStorage.getItem('visitorId');
+        if (!visitorId) {
+            visitorId = Date.now() + '_' + Math.random().toString(36).substr(2, 6);
+            localStorage.setItem('visitorId', visitorId);
+        }
+
+        const visitorRef = db.ref('visitors/' + visitorId);
+        visitorRef.set({
+            firstSeen: new Date().toISOString(),
+            lastSeen: firebase.database.ServerValue.TIMESTAMP
+        });
+
+        visitorRef.onDisconnect().remove();
+
+        // Считаем уникальных посетителей за последние 5 минут
+        function updateVisitorCount() {
+            const now = Date.now();
+            const fiveMinAgo = now - 300000;
+            
+            db.ref('visitors').once('value', (snapshot) => {
+                let count = 0;
+                snapshot.forEach((child) => {
+                    const val = child.val();
+                    if (val.lastSeen && val.lastSeen > fiveMinAgo) {
+                        count++;
+                    }
+                });
+                document.getElementById('visitorCount').textContent = count;
+            });
+        }
+
+        updateVisitorCount();
+        setInterval(updateVisitorCount, 10000);
+
+        // ========== ЧАТ ==========
+        function sendChat() {
+            const name = document.getElementById('chatName').value || 'Гость';
+            const msg = document.getElementById('chatMsg').value.trim();
+            if (!msg) return;
+
+            db.ref('chat').push({
+                name: name,
+                text: msg,
+                time: new Date().toLocaleTimeString(),
+                timestamp: firebase.database.ServerValue.TIMESTAMP
+            });
+            document.getElementById('chatMsg').value = '';
+        }
+
+        db.ref('chat').orderByChild('timestamp').limitToLast(50).on('value', (snapshot) => {
+            const window = document.getElementById('chatWindow');
+            window.innerHTML = '';
+            const messages = [];
+            snapshot.forEach(child => {
+                messages.push(child.val());
+            });
+            messages.reverse().forEach(msg => {
+                const div = document.createElement('div');
+                div.className = 'chat-msg';
+                div.innerHTML = `
+                    <span class="user">${msg.name}</span>
+                    <span class="time">${msg.time || ''}</span>
+                    <div>${msg.text}</div>
+                `;
+                window.appendChild(div);
+            });
+            window.scrollTop = window.scrollHeight;
+        });
+
+        // ========== ТАЙМЕР ==========
+        let time = 7200;
         const timerEl = document.getElementById('timerDisplay');
         setInterval(() => {
             if (time <= 0) {
-                timerEl.textContent = "00:00:00";
+                timerEl.textContent = '00:00:00';
                 return;
             }
             time--;
@@ -345,6 +549,8 @@
             const secs = String(time % 60).padStart(2, '0');
             timerEl.textContent = `${hrs}:${mins}:${secs}`;
         }, 1000);
+
+        console.log('✅ Всё работает, бро!');
     </script>
 </body>
 </html>
