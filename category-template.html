@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Курсы по продажам | Категория</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #0b0b0b;
+      color: #e5e5e5;
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+    }
+    .container { max-width: 1300px; margin: 0 auto; padding: 0 25px; }
+
+    /* ШАПКА */
+    header {
+      padding: 25px 0;
+      border-bottom: 1px solid #2a2a2a;
+      background: #0b0b0b;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .logo {
+      font-size: 28px;
+      font-weight: 700;
+      color: #f5f5f5;
+    }
+    .logo span { color: #d4af37; }
+    .logo small {
+      font-size: 14px;
+      color: #999;
+      display: block;
+      letter-spacing: 2px;
+    }
+    nav a {
+      color: #ccc;
+      text-decoration: none;
+      margin-left: 30px;
+      font-weight: 500;
+      font-size: 15px;
+      transition: 0.2s;
+    }
+    nav a:hover { color: #d4af37; }
+    nav a i { margin-right: 6px; }
+
+    /* ХЛЕБНЫЕ КРОШКИ */
+    .breadcrumb {
+      padding: 25px 0 10px;
+      color: #888;
+      font-size: 14px;
+    }
+    .breadcrumb a {
+      color: #d4af37;
+      text-decoration: none;
+    }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .breadcrumb span { color: #555; }
+
+    /* ЗАГОЛОВОК КАТЕГОРИИ */
+    .category-header {
+      padding: 30px 0 40px;
+      border-bottom: 1px solid #1f1f1f;
+    }
+    .category-header h1 {
+      font-size: 44px;
+      font-weight: 800;
+      color: #f5f5f5;
+    }
+    .category-header h1 i {
+      color: #d4af37;
+      margin-right: 16px;
+    }
+    .category-header .subtitle {
+      font-size: 18px;
+      color: #aaa;
+      margin-top: 12px;
+    }
+    .category-header .count-badge {
+      display: inline-block;
+      background: #1a1a1a;
+      border: 1px solid #d4af37;
+      color: #d4af37;
+      padding: 4px 20px;
+      border-radius: 30px;
+      font-size: 14px;
+      margin-top: 16px;
+    }
+
+    /* СПИСОК КУРСОВ */
+    .course-list {
+      padding: 40px 0 60px;
+    }
+    .course-item {
+      background: #141414;
+      border: 1px solid #252525;
+      border-radius: 16px;
+      padding: 22px 28px;
+      margin-bottom: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: 0.3s;
+    }
+    .course-item:hover {
+      border-color: #d4af37;
+      transform: translateX(8px);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.6);
+    }
+    .course-item .info h3 {
+      color: #f0f0f0;
+      font-size: 20px;
+      margin-bottom: 4px;
+    }
+    .course-item .info p {
+      color: #999;
+      font-size: 14px;
+    }
+    .course-item .info .tags {
+      display: flex;
+      gap: 8px;
+      margin-top: 6px;
+      flex-wrap: wrap;
+    }
+    .course-item .info .tags span {
+      background: #1a1a1a;
+      border: 1px solid #2a2a2a;
+      color: #888;
+      padding: 2px 12px;
+      border-radius: 20px;
+      font-size: 11px;
+    }
+    .course-item .action a {
+      background: #d4af37;
+      color: #0b0b0b;
+      font-weight: 700;
+      padding: 10px 28px;
+      border-radius: 40px;
+      text-decoration: none;
+      font-size: 14px;
+      transition: 0.3s;
+      white-space: nowrap;
+    }
+    .course-item .action a:hover {
+      background: #f0c85a;
+      transform: scale(1.05);
+    }
+
+    /* ФУТЕР */
+    footer {
+      border-top: 1px solid #1f1f1f;
+      padding: 45px 0 35px;
+      text-align: center;
+      color: #666;
+      font-size: 14px;
+    }
+    footer span { color: #d4af37; }
+
+    @media (max-width: 768px) {
+      .course-item {
+        flex-direction: column;
+        align-items: start;
+        gap: 12px;
+      }
+      .category-header h1 { font-size: 30px; }
+      nav a { margin-left: 12px; font-size: 13px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ШАПКА -->
+<header>
+  <div class="container header-inner">
+    <div class="logo">
+      KURSY<span>PRO</span>
+      <small>золотой стандарт продаж</small>
+    </div>
+    <nav>
+      <a href="../index.html"><i class="fas fa-home"></i> Главная</a>
+      <a href="../index.html#categories"><i class="fas fa-th-list"></i> Все курсы</a>
+      <a href="#"><i class="fas fa-phone-alt"></i> Контакты</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ХЛЕБНЫЕ КРОШКИ -->
+<div class="container breadcrumb">
+  <a href="../index.html">Главная</a> / <span>НАЗВАНИЕ_КАТЕГОРИИ</span>
+</div>
+
+<!-- ЗАГОЛОВОК КАТЕГОРИИ -->
+<section class="category-header">
+  <div class="container">
+    <h1><i class="fas ICON_КАТЕГОРИИ"></i> НАЗВАНИЕ_КАТЕГОРИИ</h1>
+    <p class="subtitle">Все курсы по направлению «НАЗВАНИЕ_КАТЕГОРИИ» — от базовых до продвинутых техник</p>
+    <div class="count-badge"><i class="fas fa-graduation-cap"></i> КОЛИЧЕСТВО_КУРСОВ курсов</div>
+  </div>
+</section>
+
+<!-- СПИСОК КУРСОВ -->
+<section class="course-list">
+  <div class="container">
+
+    <!-- КАЖДЫЙ КУРС — ОДИН БЛОК -->
+    <!-- ДЛЯ КАЖДОГО КУРСА КОПИРУЕШЬ ЭТОТ БЛОК И МЕНЯЕШЬ ДАННЫЕ -->
+
+    <div class="course-item">
+      <div class="info">
+        <h3>НАЗВАНИЕ_КУРСА</h3>
+        <p>Короткое описание курса (1-2 предложения)</p>
+        <div class="tags">
+          <span>Для новичков</span>
+          <span>B2B</span>
+          <span>Телефонные продажи</span>
+        </div>
+      </div>
+      <div class="action">
+        <a href="../courses/XX-категория/файл-курса.html">Подробнее →</a>
+      </div>
+    </div>
+
+    <!-- КОНЕЦ БЛОКА КУРСА -->
+
+    <!-- ===== ВСТАВЛЯЕШЬ ТАК ВСЕ КУРСЫ ДЛЯ ЭТОЙ КАТЕГОРИИ ===== -->
+
+  </div>
+</section>
+
+<!-- ФУТЕР -->
+<footer>
+  <div class="container">
+    <p>© 2026 <span>KURSYPRO</span> — система обучения продажам. 110+ курсов.</p>
+  </div>
+</footer>
+
+</body>
+</html>
