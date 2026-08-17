@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-site-verification" content="yHcsl1QapmlY3f9N_pNmjunD6yZNlDvqFqyvGR2uDWA" />
+
+  <title>Менеджер по продажам | Полный курс обучения | KURSYPRO</title>
+  <meta name="description" content="Курс «Менеджер по продажам»: полное обучение профессии. Навыки, техники, управление клиентами, работа с возражениями. Стань профессионалом!" />
+  <meta name="keywords" content="менеджер по продажам, обучение продажам, профессия менеджер, навыки продаж, карьера в продажах" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://kursy-po-prodazham.com/courses/base/menedzher-po-prodazham.html" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #0b0b0b; color: #e5e5e5; font-family: 'Inter', sans-serif; line-height: 1.6; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 25px; }
+    header { padding: 25px 0; border-bottom: 1px solid #2a2a2a; background: #0b0b0b; position: sticky; top: 0; z-index: 999; }
+    .header-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+    .logo { font-size: 28px; font-weight: 700; color: #f5f5f5; }
+    .logo span { color: #d4af37; }
+    .logo small { font-size: 14px; color: #999; display: block; letter-spacing: 2px; }
+    nav a { color: #ccc; text-decoration: none; margin-left: 30px; font-weight: 500; font-size: 15px; transition: 0.2s; }
+    nav a:hover { color: #d4af37; }
+    nav a i { margin-right: 6px; }
+    .breadcrumb { padding: 25px 0 10px; color: #888; font-size: 14px; }
+    .breadcrumb a { color: #d4af37; text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .breadcrumb span { color: #555; }
+    .course-header { padding: 30px 0 40px; border-bottom: 1px solid #1f1f1f; }
+    .course-header .tags { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 15px; }
+    .course-header .tags span { background: #1a1a1a; border: 1px solid #d4af37; color: #d4af37; padding: 4px 16px; border-radius: 30px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .course-header h1 { font-size: 44px; font-weight: 800; color: #f5f5f5; }
+    .course-header .subtitle { font-size: 18px; color: #aaa; margin-top: 12px; max-width: 700px; }
+    .course-header .meta { display: flex; gap: 30px; margin-top: 20px; color: #888; font-size: 15px; }
+    .course-header .meta i { color: #d4af37; margin-right: 6px; }
+    .course-content { display: grid; grid-template-columns: 2fr 1fr; gap: 50px; padding: 40px 0 60px; }
+    .description h2 { font-size: 24px; color: #f0f0f0; margin: 30px 0 15px; border-left: 4px solid #d4af37; padding-left: 15px; }
+    .description h2:first-child { margin-top: 0; }
+    .description p { color: #c0c0c0; margin-bottom: 15px; font-size: 16px; }
+    .program-list { list-style: none; padding: 0; }
+    .program-list li { background: #141414; border: 1px solid #222; border-radius: 12px; padding: 14px 20px; margin-bottom: 10px; display: flex; align-items: center; gap: 14px; transition: 0.2s; }
+    .program-list li:hover { border-color: #d4af37; }
+    .program-list li .num { background: #d4af37; color: #0b0b0b; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px; flex-shrink: 0; }
+    .program-list li .text { color: #ddd; font-size: 15px; }
+    .program-list li .duration { margin-left: auto; color: #666; font-size: 13px; white-space: nowrap; }
+    .result-box { background: linear-gradient(135deg, #141414, #1a1a1a); border: 1px solid #2a2a2a; border-radius: 16px; padding: 25px 30px; margin: 25px 0; }
+    .result-box ul { list-style: none; padding: 0; }
+    .result-box ul li { padding: 6px 0; color: #c0c0c0; }
+    .result-box ul li i { color: #d4af37; margin-right: 12px; }
+    .sidebar { position: sticky; top: 100px; align-self: start; }
+    .price-card { background: #141414; border: 2px solid #d4af37; border-radius: 20px; padding: 30px 25px; text-align: center; }
+    .price-card .price { font-size: 42px; font-weight: 800; color: #d4af37; }
+    .price-card .price small { font-size: 18px; color: #888; font-weight: 400; }
+    .price-card .old-price { font-size: 20px; color: #666; text-decoration: line-through; margin-top: 4px; }
+    .btn-buy { display: block; width: 100%; background: #d4af37; color: #0b0b0b; font-weight: 700; padding: 16px; border: none; border-radius: 60px; font-size: 18px; cursor: pointer; margin: 20px 0 12px; transition: 0.3s; }
+    .btn-buy:hover { background: #f0c85a; transform: scale(1.02); }
+    .price-card .guarantee { color: #666; font-size: 13px; }
+    .price-card .guarantee i { color: #d4af37; }
+    .info-box { background: #141414; border: 1px solid #222; border-radius: 16px; padding: 20px 25px; margin-top: 20px; }
+    .info-box h4 { color: #f0f0f0; margin-bottom: 12px; }
+    .info-box p { color: #999; font-size: 14px; padding: 5px 0; border-bottom: 1px dashed #1a1a1a; }
+    .info-box p:last-child { border-bottom: none; }
+    .similar { padding: 40px 0 60px; border-top: 1px solid #1f1f1f; }
+    .similar h2 { font-size: 28px; color: #f0f0f0; margin-bottom: 25px; }
+    .similar-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px; }
+    .similar-card { background: #141414; border: 1px solid #222; border-radius: 14px; padding: 18px 20px; transition: 0.3s; text-decoration: none; color: #e5e5e5; }
+    .similar-card:hover { border-color: #d4af37; transform: translateY(-4px); }
+    .similar-card h4 { font-size: 16px; color: #f0f0f0; }
+    .similar-card p { font-size: 13px; color: #888; margin-top: 6px; }
+    footer { border-top: 1px solid #1f1f1f; padding: 45px 0 35px; text-align: center; color: #666; font-size: 14px; }
+    footer span { color: #d4af37; }
+    @media (max-width: 768px) { .course-content { grid-template-columns: 1fr; } .course-header h1 { font-size: 30px; } .sidebar { position: static; } .course-header .meta { flex-wrap: wrap; gap: 12px; } }
+  </style>
+</head>
+<body>
+<header>
+  <div class="container header-inner">
+    <div class="logo">KURSY<span>PRO</span><small>золотой стандарт продаж</small></div>
+    <nav>
+      <a href="../../index.html"><i class="fas fa-home"></i> Главная</a>
+      <a href="../../categories/base.html"><i class="fas fa-th-list"></i> Базовые курсы</a>
+      <a href="#"><i class="fas fa-phone-alt"></i> Контакты</a>
+    </nav>
+  </div>
+</header>
+
+<div class="container breadcrumb">
+  <a href="../../index.html">Главная</a> / <a href="../../categories/base.html">Базовые курсы</a> / <span>Менеджер по продажам</span>
+</div>
+
+<section class="course-header">
+  <div class="container">
+    <div class="tags">
+      <span><i class="fas fa-user-tie"></i> Профессия</span>
+      <span><i class="fas fa-graduation-cap"></i> Карьера</span>
+      <span><i class="fas fa-clock"></i> 14 дней</span>
+    </div>
+    <h1>Менеджер по продажам</h1>
+    <p class="subtitle">Полный курс по профессии: от стажера до наставника. Навыки, инструменты, карьерный рост.</p>
+    <div class="meta">
+      <span><i class="fas fa-clock"></i> 14 часов (7 модулей)</span>
+      <span><i class="fas fa-users"></i> 600+ учеников</span>
+      <span><i class="fas fa-star" style="color:#d4af37;"></i><i class="fas fa-star" style="color:#d4af37;"></i><i class="fas fa-star" style="color:#d4af37;"></i><i class="fas fa-star" style="color:#d4af37;"></i><i class="fas fa-star" style="color:#555;"></i> 4.9</span>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <div class="course-content">
+    <div class="description">
+      <h2>О чём курс</h2>
+      <p>Менеджер по продажам — одна из самых востребованных профессий. Этот курс создан для тех, кто хочет стать профессионалом, систематизировать знания и построить карьеру в продажах.</p>
+      <p>Мы разберем все аспекты работы менеджера: от поиска клиентов до управления воронкой продаж. Ты научишься работать с возражениями, управлять временем и увеличивать средний чек.</p>
+
+      <h2>Программа курса</h2>
+      <ul class="program-list">
+        <li><span class="num">1</span><span class="text">Кто такой менеджер по продажам: обязанности и KPI</span><span class="duration">1.5 ч</span></li>
+        <li><span class="num">2</span><span class="text">Поиск клиентов: базы, лиды, холодные контакты</span><span class="duration">2 ч</span></li>
+        <li><span class="num">3</span><span class="text">Структура продаж: воронка, этапы, конверсия</span><span class="duration">2 ч</span></li>
+        <li><span class="num">4</span><span class="text">Техника ведения переговоров и убеждения</span><span class="duration">2 ч</span></li>
+        <li><span class="num">5</span><span class="text">Работа с возражениями: 20+ готовых ответов</span><span class="duration">2 ч</span></li>
+        <li><span class="num">6</span><span class="text">Закрытие сделки: 10 техник доведения до оплаты</span><span class="duration">2 ч</span></li>
+        <li><span class="num">7</span><span class="text">Управление клиентской базой и повторные продажи</span><span class="duration">1.5 ч</span></li>
+        <li><span class="num">8</span><span class="text">Карьерный трек: от менеджера до руководителя</span><span class="duration">1 ч</span></li>
+      </ul>
+
+      <h2>Результат после курса</h2>
+      <div class="result-box">
+        <ul>
+          <li><i class="fas fa-check-circle"></i> Ты получишь полный набор навыков менеджера по продажам</li>
+          <li><i class="fas fa-check-circle"></i> Научишься вести переговоры с любыми клиентами</li>
+          <li><i class="fas fa-check-circle"></i> Отработаешь все виды возражений</li>
+          <li><i class="fas fa-check-circle"></i> Увеличишь конверсию продаж до 50%</li>
+          <li><i class="fas fa-check-circle"></i> Построишь карьерный план развития</li>
+        </ul>
+      </div>
+
+      <h2>Для кого курс</h2>
+      <p><strong>🔹 Новички</strong> — кто хочет стать менеджером по продажам</p>
+      <p><strong>🔹 Менеджеры</strong> — кто хочет повысить свой уровень</p>
+      <p><strong>🔹 Предприниматели</strong> — кто управляет отделом продаж</p>
+      <p><strong>🔹 Руководители</strong> — кто хочет обучить свою команду</p>
+    </div>
+
+    <div class="sidebar">
+      <div class="price-card">
+        <div class="price">14 900 ₽ <small>+ НДС</small></div>
+        <div class="old-price">24 900 ₽</div>
+        <button class="btn-buy"><i class="fas fa-cart-plus"></i> Записаться на курс</button>
+        <div class="guarantee"><i class="fas fa-shield-alt"></i> 100% гарантия возврата в течение 7 дней</div>
+      </div>
+      <div class="info-box">
+        <h4><i class="fas fa-info-circle" style="color:#d4af37;"></i> Важно</h4>
+        <p>📅 Старт потока: каждую неделю</p>
+        <p>⏳ Доступ к материалам — 6 месяцев</p>
+        <p>🎓 Сертификат после прохождения</p>
+        <p>💬 Закрытый Telegram-чат с учениками</p>
+      </div>
+      <div class="info-box" style="border-color:#2a2a2a;">
+        <h4><i class="fas fa-user-tie" style="color:#d4af37;"></i> Преподаватель</h4>
+        <p style="border-bottom:none; display:flex; align-items:center; gap:12px;">
+          <span style="width:48px; height:48px; border-radius:50%; background:#2a2a2a; border:2px solid #d4af37; display:flex; align-items:center; justify-content:center; font-size:24px;">👨‍🏫</span>
+          <span><strong style="color:#ddd;">Алексей Рожняков</strong><br><span style="color:#888; font-size:13px;">17 лет в продажах, 500+ обученных менеджеров</span></span>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="similar">
+  <div class="container">
+    <h2><i class="fas fa-arrow-right" style="color:#d4af37;"></i> Похожие курсы</h2>
+    <div class="similar-grid">
+      <a href="prodazhi-s-nulya.html" class="similar-card"><h4>Продажи с нуля</h4><p>Полный старт</p></a>
+      <a href="professiya-menedzher-po-prodazham.html" class="similar-card"><h4>Профессия менеджер</h4><p>Карьерный путь</p></a>
+      <a href="effektivnyy-prodavets.html" class="similar-card"><h4>Эффективный продавец</h4><p>Навыки топ-менеджеров</p></a>
+      <a href="osnovy-effektivnyh-prodazh.html" class="similar-card"><h4>Основы эффективных продаж</h4><p>Базовая система</p></a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>© 2026 <span>KURSYPRO</span> — система обучения продажам. 110+ курсов.</p>
+  </div>
+</footer>
+</body>
+</html>
