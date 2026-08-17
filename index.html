@@ -12,6 +12,7 @@
     ::-webkit-scrollbar-track { background: #1a1a1a; }
     ::-webkit-scrollbar-thumb { background: #d4af37; border-radius: 10px; }
     .container { max-width: 1300px; margin: 0 auto; padding: 0 25px; }
+    
     header { padding: 25px 0; border-bottom: 1px solid #2a2a2a; background: #0b0b0b; position: sticky; top: 0; z-index: 999; }
     .header-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
     .logo { font-size: 28px; font-weight: 700; letter-spacing: -0.5px; color: #f5f5f5; }
@@ -20,15 +21,25 @@
     nav a { color: #ccc; text-decoration: none; margin-left: 30px; font-weight: 500; font-size: 15px; transition: 0.2s; }
     nav a:hover { color: #d4af37; }
     nav a i { margin-right: 6px; }
+    
     .hero { padding: 80px 0 60px; text-align: center; border-bottom: 1px solid #1f1f1f; }
     .hero h1 { font-size: 56px; font-weight: 800; letter-spacing: -1.5px; background: linear-gradient(135deg, #f5f5f5 0%, #d4af37 80%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; line-height: 1.1; }
     .hero p { font-size: 20px; color: #b0b0b0; margin-top: 20px; max-width: 700px; margin-left: auto; margin-right: auto; }
     .hero .badge { display: inline-block; background: #1e1e1e; border: 1px solid #d4af37; color: #d4af37; padding: 6px 20px; border-radius: 40px; font-size: 14px; letter-spacing: 1px; margin-top: 20px; text-transform: uppercase; }
     .btn-primary { display: inline-block; margin-top: 35px; background: #d4af37; color: #0b0b0b; font-weight: 700; padding: 16px 48px; border-radius: 60px; text-decoration: none; font-size: 18px; transition: all 0.3s; border: 2px solid transparent; box-shadow: 0 0 25px rgba(212, 175, 55, 0.2); }
     .btn-primary:hover { background: transparent; color: #d4af37; border-color: #d4af37; box-shadow: 0 0 45px rgba(212, 175, 55, 0.15); transform: scale(1.02); }
+    
+    .video-block { padding: 60px 0; border-bottom: 1px solid #1f1f1f; background: #0f0f0f; }
+    .video-wrapper { display: grid; grid-template-columns: 1fr 2fr; gap: 40px; align-items: center; }
+    .video-text h2 { font-size: 32px; font-weight: 700; color: #f0f0f0; margin-bottom: 12px; }
+    .video-text p { color: #999; font-size: 18px; }
+    .video-container video { width: 100%; border-radius: 18px; border: 2px solid #d4af37; box-shadow: 0 0 40px rgba(212, 175, 55, 0.1); display: block; }
+    .video-container iframe { width: 100%; border-radius: 18px; border: 2px solid #d4af37; box-shadow: 0 0 40px rgba(212, 175, 55, 0.1); }
+    
     .section-title { font-size: 38px; font-weight: 700; margin: 70px 0 20px; color: #f0f0f0; border-left: 6px solid #d4af37; padding-left: 20px; }
     .section-sub { color: #888; margin-bottom: 40px; font-size: 18px; }
     .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 28px; margin-bottom: 60px; }
+    
     .card { background: #141414; border-radius: 18px; padding: 28px 24px; border: 1px solid #252525; transition: 0.3s ease; position: relative; overflow: hidden; }
     .card:hover { transform: translateY(-8px); border-color: #d4af37; box-shadow: 0 18px 40px rgba(0,0,0,0.8); }
     .card .icon { font-size: 32px; color: #d4af37; margin-bottom: 12px; display: block; }
@@ -39,9 +50,18 @@
     .card ul li i { color: #d4af37; font-size: 10px; opacity: 0.7; }
     .card .link-more { display: inline-block; margin-top: 15px; color: #d4af37; font-weight: 600; text-decoration: none; border-bottom: 2px solid transparent; transition: 0.2s; }
     .card .link-more:hover { border-bottom-color: #d4af37; }
+    
     footer { border-top: 1px solid #1f1f1f; padding: 45px 0 35px; margin-top: 30px; text-align: center; color: #666; font-size: 14px; }
     footer span { color: #d4af37; }
-    @media (max-width: 768px) { .hero h1 { font-size: 34px; } nav a { margin-left: 12px; font-size: 13px; } .grid { grid-template-columns: 1fr; } .section-title { font-size: 28px; } }
+    
+    @media (max-width: 768px) { 
+      .hero h1 { font-size: 34px; } 
+      nav a { margin-left: 12px; font-size: 13px; } 
+      .grid { grid-template-columns: 1fr; } 
+      .section-title { font-size: 28px; }
+      .video-wrapper { grid-template-columns: 1fr; gap: 25px; }
+      .video-text h2 { font-size: 24px; }
+    }
   </style>
 </head>
 <body>
@@ -63,6 +83,24 @@
       <h1>Система продаж, <br>которая приносит золото</h1>
       <p>110+ курсов от «Продажи с нуля» до управления отделом. Для новичков, профи и предпринимателей.</p>
       <a href="#categories" class="btn-primary"><i class="fas fa-arrow-right"></i> Смотреть все курсы</a>
+    </div>
+  </section>
+
+  <section class="video-block">
+    <div class="container">
+      <div class="video-wrapper">
+        <div class="video-text">
+          <h2><i class="fas fa-play-circle" style="color:#d4af37;"></i> Посмотри, как мы учим</h2>
+          <p>2 минуты — и ты поймёшь, почему наши курсы — это золотой стандарт</p>
+        </div>
+        <div class="video-container">
+          <video controls poster="assets/poster.jpg">
+            <source src="assets/video.mp4" type="video/mp4">
+            <source src="assets/video.webm" type="video/webm">
+            Твой браузер не поддерживает видео.
+          </video>
+        </div>
+      </div>
     </div>
   </section>
 
