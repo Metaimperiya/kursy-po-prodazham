@@ -1,190 +1,1094 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="google-site-verification" content="yHcsl1QapmlY3f9N_pNmjunD6yZNlDvqFqyvGR2uDWA" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-site-verification" content="yHcsl1QapmlY3f9N_pNmjunD6yZNlDvqFqyvGR2uDWA" />
+<title>Продажи от А до Я — полный курс | 8 остановок | Курсы по продажам</title>
+<meta name="description" content="Полный курс «Продажи от А до Я»: поиск, первый контакт, потребности, презентация, возражения, закрытие, пост-продажа, аналитика. 8 остановок маршрута с разбором.">
+<meta name="keywords" content="продажи от а до я, полный цикл продаж, обучение продажам, система продаж, воронка продаж, пост-продажное обслуживание">
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://kursy-po-prodazham.com/courses/base/prodazhi-ot-a-do-ya.html" />
+<meta property="og:title" content="Продажи от А до Я — полный курс">
+<meta property="og:description" content="8 остановок маршрута: от поиска клиента до аналитики.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://kursy-po-prodazham.com/courses/base/prodazhi-ot-a-do-ya.html">
+<meta property="og:site_name" content="Курсы по продажам">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Course","name":"Продажи от А до Я","description":"Полный курс по циклу продаж.","provider":{"@type":"Organization","name":"Курсы по продажам","url":"https://kursy-po-prodazham.com/"},"inLanguage":"ru","hasCourseInstance":{"@type":"CourseInstance","courseMode":"online","courseWorkload":"PT18H"},"offers":{"@type":"Offer","price":"15900","priceCurrency":"RUB","availability":"https://schema.org/InStock"}}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--gold:#d4af37;--gold-light:#f0c85a;--bg:#0b0b0b;--card:#141414;--text:#e5e5e5}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;line-height:1.75;font-size:17px}
+::-webkit-scrollbar{width:8px}
+::-webkit-scrollbar-track{background:#1a1a1a}
+::-webkit-scrollbar-thumb{background:var(--gold);border-radius:10px}
+a{color:var(--gold);text-decoration:none}
+a:hover{text-decoration:underline}
+.container{max-width:1400px;margin:0 auto;padding:0 25px}
+header{padding:18px 0;border-bottom:1px solid #2a2a2a;background:rgba(11,11,11,0.96);backdrop-filter:blur(10px);position:sticky;top:0;z-index:999}
+.header-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:15px}
+.logo{font-size:20px;font-weight:700;color:#f5f5f5;line-height:1.1}
+.logo span{color:var(--gold)}
+.logo small{font-size:10px;color:#999;display:block;letter-spacing:1px;font-weight:400;margin-top:2px}
+nav a{color:#ccc;text-decoration:none;margin-left:22px;font-weight:500;font-size:13px;transition:0.2s}
+nav a:hover{color:var(--gold);text-decoration:none}
+nav a i{margin-right:5px}
+#reading-progress{position:fixed;top:0;left:0;height:3px;background:var(--gold);width:0%;z-index:1000;transition:width 0.1s}
+.breadcrumb{padding:18px 0 6px;color:#888;font-size:13px}
+.breadcrumb a{color:var(--gold)}
+.breadcrumb span{color:#555}
 
-  <title>Продажи от А до Я | Полный цикл обучения | KURSYPRO</title>
-  <meta name="description" content="Курс «Продажи от А до Я»: полный цикл продаж. От поиска клиента до закрытия сделки. Системное обучение для менеджеров и предпринимателей." />
-  <meta name="keywords" content="продажи от а до я, полный цикл продаж, обучение продажам, система продаж, воронка продаж" />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://kursy-po-prodazham.com/courses/base/prodazhi-ot-a-do-ya.html" />
+/* HERO */
+.course-hero{padding:46px 0 50px;text-align:center;border-bottom:1px solid #1f1f1f}
+.course-hero .tags{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:18px;justify-content:center}
+.course-hero .tags span{background:#1a1a1a;border:1px solid var(--gold);color:var(--gold);padding:4px 16px;border-radius:30px;font-size:11px;text-transform:uppercase;letter-spacing:0.5px}
+.course-hero h1{font-size:50px;font-weight:800;background:linear-gradient(135deg,#f5f5f5 0%,var(--gold) 90%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1.05;max-width:900px;margin:0 auto}
+.course-hero .subtitle{font-size:18px;color:#aaa;margin-top:18px;max-width:720px;margin-left:auto;margin-right:auto}
+.course-hero .meta{display:flex;gap:26px;margin-top:22px;color:#888;font-size:14px;flex-wrap:wrap;justify-content:center}
+.course-hero .meta i{color:var(--gold);margin-right:5px}
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { background: #0b0b0b; color: #e5e5e5; font-family: 'Inter', sans-serif; line-height: 1.6; }
-    .container { max-width: 1100px; margin: 0 auto; padding: 0 25px; }
-    header { padding: 25px 0; border-bottom: 1px solid #2a2a2a; background: #0b0b0b; position: sticky; top: 0; z-index: 999; }
-    .header-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
-    .logo { font-size: 28px; font-weight: 700; color: #f5f5f5; }
-    .logo span { color: #d4af37; }
-    .logo small { font-size: 14px; color: #999; display: block; letter-spacing: 2px; }
-    nav a { color: #ccc; text-decoration: none; margin-left: 30px; font-weight: 500; font-size: 15px; transition: 0.2s; }
-    nav a:hover { color: #d4af37; }
-    nav a i { margin-right: 6px; }
-    .breadcrumb { padding: 25px 0 10px; color: #888; font-size: 14px; }
-    .breadcrumb a { color: #d4af37; text-decoration: none; }
-    .breadcrumb a:hover { text-decoration: underline; }
-    .breadcrumb span { color: #555; }
-    .course-header { padding: 30px 0 40px; border-bottom: 1px solid #1f1f1f; }
-    .course-header .tags { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 15px; }
-    .course-header .tags span { background: #1a1a1a; border: 1px solid #d4af37; color: #d4af37; padding: 4px 16px; border-radius: 30px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
-    .course-header h1 { font-size: 44px; font-weight: 800; color: #f5f5f5; }
-    .course-header .subtitle { font-size: 18px; color: #aaa; margin-top: 12px; max-width: 700px; }
-    .course-header .meta { display: flex; gap: 30px; margin-top: 20px; color: #888; font-size: 15px; }
-    .course-header .meta i { color: #d4af37; margin-right: 6px; }
-    .course-content { display: grid; grid-template-columns: 2fr 1fr; gap: 50px; padding: 40px 0 60px; }
-    .description h2 { font-size: 24px; color: #f0f0f0; margin: 30px 0 15px; border-left: 4px solid #d4af37; padding-left: 15px; }
-    .description h2:first-child { margin-top: 0; }
-    .description p { color: #c0c0c0; margin-bottom: 15px; font-size: 16px; }
-    .program-list { list-style: none; padding: 0; }
-    .program-list li { background: #141414; border: 1px solid #222; border-radius: 12px; padding: 14px 20px; margin-bottom: 10px; display: flex; align-items: center; gap: 14px; transition: 0.2s; }
-    .program-list li:hover { border-color: #d4af37; }
-    .program-list li .num { background: #d4af37; color: #0b0b0b; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px; flex-shrink: 0; }
-    .program-list li .text { color: #ddd; font-size: 15px; }
-    .program-list li .duration { margin-left: auto; color: #666; font-size: 13px; white-space: nowrap; }
-    .result-box { background: linear-gradient(135deg, #141414, #1a1a1a); border: 1px solid #2a2a2a; border-radius: 16px; padding: 25px 30px; margin: 25px 0; }
-    .result-box ul { list-style: none; padding: 0; }
-    .result-box ul li { padding: 6px 0; color: #c0c0c0; }
-    .result-box ul li i { color: #d4af37; margin-right: 12px; }
-    .sidebar { position: sticky; top: 100px; align-self: start; }
-    .price-card { background: #141414; border: 2px solid #d4af37; border-radius: 20px; padding: 30px 25px; text-align: center; }
-    .price-card .price { font-size: 42px; font-weight: 800; color: #d4af37; }
-    .price-card .price small { font-size: 18px; color: #888; font-weight: 400; }
-    .price-card .old-price { font-size: 20px; color: #666; text-decoration: line-through; margin-top: 4px; }
-    .btn-buy { display: block; width: 100%; background: #d4af37; color: #0b0b0b; font-weight: 700; padding: 16px; border: none; border-radius: 60px; font-size: 18px; cursor: pointer; margin: 20px 0 12px; transition: 0.3s; }
-    .btn-buy:hover { background: #f0c85a; transform: scale(1.02); }
-    .price-card .guarantee { color: #666; font-size: 13px; }
-    .price-card .guarantee i { color: #d4af37; }
-    .info-box { background: #141414; border: 1px solid #222; border-radius: 16px; padding: 20px 25px; margin-top: 20px; }
-    .info-box h4 { color: #f0f0f0; margin-bottom: 12px; }
-    .info-box p { color: #999; font-size: 14px; padding: 5px 0; border-bottom: 1px dashed #1a1a1a; }
-    .info-box p:last-child { border-bottom: none; }
-    .similar { padding: 40px 0 60px; border-top: 1px solid #1f1f1f; }
-    .similar h2 { font-size: 28px; color: #f0f0f0; margin-bottom: 25px; }
-    .similar-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px; }
-    .similar-card { background: #141414; border: 1px solid #222; border-radius: 14px; padding: 18px 20px; transition: 0.3s; text-decoration: none; color: #e5e5e5; }
-    .similar-card:hover { border-color: #d4af37; transform: translateY(-4px); }
-    .similar-card h4 { font-size: 16px; color: #f0f0f0; }
-    .similar-card p { font-size: 13px; color: #888; margin-top: 6px; }
-    footer { border-top: 1px solid #1f1f1f; padding: 45px 0 35px; text-align: center; color: #666; font-size: 14px; }
-    footer span { color: #d4af37; }
-    @media (max-width: 768px) { .course-content { grid-template-columns: 1fr; } .course-header h1 { font-size: 30px; } .sidebar { position: static; } .course-header .meta { flex-wrap: wrap; gap: 12px; } }
-  </style>
+/* ROUTE MAP */
+.route-section{padding:50px 0 30px;border-bottom:1px solid #1a1a1a;background:linear-gradient(180deg,#0d0d0d,#0b0b0b)}
+.route-map-wrap{max-width:1100px;margin:0 auto}
+.route-title{text-align:center;font-size:14px;color:var(--gold);text-transform:uppercase;letter-spacing:3px;font-weight:700;margin-bottom:8px}
+.route-subtitle{text-align:center;font-size:15px;color:#888;margin-bottom:44px}
+
+.route-map{position:relative;padding:20px 0}
+.route-map::before{content:'';position:absolute;top:50%;left:30px;right:30px;height:3px;background:linear-gradient(90deg,#222 0%,#222 100%);transform:translateY(-50%);border-radius:2px}
+.route-map-progress{position:absolute;top:50%;left:30px;height:3px;background:linear-gradient(90deg,var(--gold),var(--gold-light));transform:translateY(-50%);width:0%;transition:width 0.6s ease;border-radius:2px;box-shadow:0 0 12px rgba(212,175,55,0.4)}
+
+.route-stops{display:flex;justify-content:space-between;align-items:center;position:relative;z-index:2}
+.stop{display:flex;flex-direction:column;align-items:center;gap:10px;cursor:pointer;transition:0.3s;flex:1}
+.stop .stop-dot{width:52px;height:52px;border-radius:50%;background:#1a1a1a;border:3px solid #2a2a2a;display:flex;align-items:center;justify-content:center;font-size:22px;transition:0.3s;color:#888;font-weight:700;font-family:'Georgia',serif}
+.stop .stop-label{font-size:11px;color:#666;text-transform:uppercase;letter-spacing:1.2px;text-align:center;line-height:1.3;max-width:90px;font-weight:600}
+.stop:hover .stop-dot{border-color:var(--gold);color:var(--gold);transform:scale(1.1)}
+.stop.active .stop-dot{background:var(--gold);border-color:var(--gold);color:#0b0b0b;box-shadow:0 0 25px rgba(212,175,55,0.5);transform:scale(1.1)}
+.stop.active .stop-label{color:var(--gold)}
+.stop.done .stop-dot{background:rgba(76,175,80,0.15);border-color:#4caf50;color:#4caf50}
+.stop.done .stop-label{color:#4caf50}
+.stop.done .stop-dot::after{content:'✓';position:absolute;font-size:14px}
+
+/* ROUTE PROGRESS */
+.route-progress{display:flex;justify-content:center;align-items:center;gap:20px;margin-top:30px;flex-wrap:wrap}
+.route-progress .rp-label{font-size:13px;color:#888}
+.route-progress .rp-label b{color:var(--gold);font-size:16px}
+.route-progress .rp-bar{width:220px;height:8px;background:#1f1f1f;border-radius:8px;overflow:hidden}
+.route-progress .rp-fill{height:100%;background:linear-gradient(90deg,var(--gold),var(--gold-light));width:0%;transition:width 0.5s ease;border-radius:8px}
+
+/* MAIN LAYOUT */
+.layout{display:grid;grid-template-columns:280px 1fr;gap:40px;padding:40px 0 60px;align-items:start}
+
+/* ROUTE LIST (LEFT) */
+.route-list{position:sticky;top:90px;background:var(--card);border:1px solid #222;border-radius:18px;padding:22px 20px;max-height:calc(100vh - 120px);overflow-y:auto}
+.route-list h3{color:var(--gold);font-size:11px;text-transform:uppercase;letter-spacing:2px;margin-bottom:16px;font-weight:700;display:flex;align-items:center;gap:8px}
+.rl-item{display:flex;gap:12px;padding:12px 14px;border-radius:10px;cursor:pointer;transition:0.25s;margin-bottom:4px;border:1px solid transparent;align-items:flex-start}
+.rl-item:hover{background:#1a1a1a;border-color:#2a2a2a}
+.rl-item.active{background:rgba(212,175,55,0.08);border-color:var(--gold)}
+.rl-item.done{border-color:rgba(76,175,80,0.3)}
+.rl-num{background:#1a1a1a;color:var(--gold);font-size:11px;font-weight:700;padding:4px 10px;border-radius:8px;flex-shrink:0;min-width:32px;text-align:center;font-family:'Georgia',serif}
+.rl-item.active .rl-num{background:var(--gold);color:#0b0b0b}
+.rl-item.done .rl-num{background:rgba(76,175,80,0.15);color:#4caf50}
+.rl-content{flex:1;min-width:0}
+.rl-name{color:#c8c8c8;font-size:13.5px;font-weight:600;line-height:1.35;margin-bottom:2px}
+.rl-item.active .rl-name{color:var(--gold)}
+.rl-item.done .rl-name{color:#4caf50}
+.rl-meta{color:#666;font-size:11px;font-family:monospace}
+
+/* MODULE (CENTER) */
+.module-area{max-width:900px}
+.module-view{display:none;animation:fadeIn 0.4s ease}
+.module-view.active{display:block}
+@keyframes fadeIn{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:translateY(0)}}
+
+.module-header{margin-bottom:30px;padding-bottom:24px;border-bottom:1px solid #1f1f1f}
+.module-badge{display:inline-block;background:rgba(212,175,55,0.12);color:var(--gold);font-size:11px;font-weight:700;letter-spacing:2px;padding:5px 14px;border-radius:14px;text-transform:uppercase;margin-bottom:14px}
+.module-header h2{font-size:34px;color:#f5f5f5;font-weight:800;line-height:1.2;margin-bottom:12px}
+.module-lead{font-size:17px;color:#999;font-style:italic;padding-left:18px;border-left:3px solid var(--gold)}
+
+.module-view h3{font-size:21px;color:#f0f0f0;font-weight:700;margin:32px 0 14px;display:flex;align-items:center;gap:12px}
+.module-view h3::before{content:'';width:4px;height:22px;background:var(--gold);border-radius:2px}
+.module-view h4{font-size:14px;color:var(--gold);font-weight:700;text-transform:uppercase;letter-spacing:1.5px;margin:26px 0 10px}
+.module-view p{margin-bottom:16px;color:#c0c0c0;font-size:16.5px}
+.module-view p strong{color:#f0f0f0}
+.module-view ul,.module-view ol{margin:14px 0 22px 24px}
+.module-view li{margin-bottom:9px;color:#b8b8b8;font-size:16px}
+.module-view ul li::marker{color:var(--gold)}
+.module-view ol li::marker{color:var(--gold);font-weight:700}
+
+/* CALLOUTS */
+.callout{border-radius:14px;padding:20px 24px;margin:22px 0;border-left:4px solid var(--gold);background:linear-gradient(135deg,#181818,#151515)}
+.callout-title{font-weight:700;color:var(--gold);font-size:13px;margin-bottom:8px;display:flex;align-items:center;gap:8px;text-transform:uppercase;letter-spacing:1.2px}
+.callout p{margin-bottom:8px;color:#c0c0c0;font-size:15.5px}
+.callout p:last-child{margin-bottom:0}
+.callout.example{border-left-color:#4a90e2}
+.callout.example .callout-title{color:#4a90e2}
+.callout.warning{border-left-color:#e53935}
+.callout.warning .callout-title{color:#e53935}
+.callout.tip{border-left-color:#4caf50}
+.callout.tip .callout-title{color:#4caf50}
+.callout.script{border-left-color:var(--gold);background:linear-gradient(135deg,#1a1610,#151210)}
+.callout.script .callout-title{color:var(--gold)}
+
+/* TABLE */
+.table-wrap{overflow-x:auto;margin:22px 0;border-radius:12px;border:1px solid #222}
+table{width:100%;border-collapse:collapse;font-size:14.5px}
+th{background:#1a1a1a;color:var(--gold);text-align:left;padding:13px 16px;font-weight:700;border-bottom:1px solid #2a2a2a;text-transform:uppercase;font-size:11px;letter-spacing:1.5px}
+td{padding:12px 16px;border-bottom:1px solid #1a1a1a;color:#b8b8b8}
+tr:last-child td{border-bottom:none}
+
+/* CHECKLIST */
+.checklist{background:linear-gradient(135deg,#161616,#131313);border:1px solid #252525;border-radius:12px;padding:22px 26px;margin:26px 0}
+.checklist h4{color:var(--gold);margin-bottom:14px;font-size:12px;text-transform:uppercase;letter-spacing:2px;display:flex;align-items:center;gap:8px}
+.checklist ul{list-style:none;margin:0}
+.checklist ul li{padding:8px 0;color:#b8b8b8;font-size:15px;display:flex;align-items:flex-start;gap:12px;cursor:pointer;transition:0.2s}
+.checklist ul li:hover{color:#e5e5e5}
+.checklist ul li input[type="checkbox"]{appearance:none;width:19px;height:19px;border:2px solid #444;border-radius:4px;cursor:pointer;flex-shrink:0;margin-top:3px;position:relative;transition:0.2s}
+.checklist ul li input[type="checkbox"]:checked{background:var(--gold);border-color:var(--gold)}
+.checklist ul li input[type="checkbox"]:checked::after{content:'✓';position:absolute;top:-3px;left:2px;color:#0b0b0b;font-weight:700;font-size:13px}
+
+/* INTERACT */
+.interact-zone{background:linear-gradient(135deg,#131313,#171717);border:1px dashed #2a2a2a;border-radius:14px;padding:24px 28px;margin:30px 0 0;text-align:center}
+.interact-zone h4{color:#f0f0f0;font-size:15px;margin-bottom:6px}
+.interact-zone p{color:#888;font-size:13px;margin-bottom:12px}
+.interact-zone .iz-hint{color:#666;font-size:11px;font-style:italic;background:#1a1a1a;display:inline-block;padding:4px 14px;border-radius:20px;text-transform:uppercase;letter-spacing:1px}
+
+/* ACTIONS */
+.module-actions{display:flex;justify-content:space-between;align-items:center;margin-top:34px;padding-top:24px;border-top:1px solid #1f1f1f;flex-wrap:wrap;gap:15px}
+.module-actions .ma-left{display:flex;gap:12px;flex-wrap:wrap}
+.module-actions button{background:transparent;border:2px solid #333;color:#888;padding:10px 22px;border-radius:30px;cursor:pointer;font-family:inherit;font-size:13px;font-weight:600;transition:0.2s;display:flex;align-items:center;gap:8px}
+.module-actions button:hover{border-color:var(--gold);color:var(--gold)}
+.module-actions .ma-like.liked{background:rgba(212,175,55,0.1);border-color:var(--gold);color:var(--gold)}
+.module-actions .ma-done.done{background:rgba(76,175,80,0.1);border-color:#4caf50;color:#4caf50}
+.module-actions .ma-next{background:var(--gold);color:#0b0b0b;border-color:var(--gold);padding:11px 26px;font-size:14px}
+.module-actions .ma-next:hover{background:var(--gold-light);border-color:var(--gold-light);color:#0b0b0b}
+.module-actions .ma-next:disabled{opacity:0.4;cursor:not-allowed}
+
+/* STICKY CTA */
+.sticky-cta{position:fixed;bottom:0;left:0;right:0;background:rgba(20,20,20,0.97);backdrop-filter:blur(10px);border-top:1px solid var(--gold);padding:12px 20px;display:none;justify-content:space-between;align-items:center;gap:15px;z-index:998}
+.sticky-cta .sc-price{color:var(--gold);font-weight:800;font-size:18px}
+.sticky-cta .sc-price small{display:block;color:#888;font-size:11px;font-weight:400;text-decoration:line-through}
+.sticky-cta button{background:var(--gold);color:#0b0b0b;font-weight:700;padding:12px 26px;border:none;border-radius:60px;font-size:14px;cursor:pointer;font-family:inherit}
+
+/* SIMILAR */
+.similar{padding:50px 0 60px;border-top:1px solid #1f1f1f;margin-top:40px}
+.similar h2{font-size:24px;color:#f0f0f0;margin-bottom:22px}
+.similar-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:18px}
+.similar-card{background:var(--card);border:1px solid #222;border-radius:14px;padding:18px 20px;transition:0.3s;text-decoration:none;display:block}
+.similar-card:hover{border-color:var(--gold);transform:translateY(-5px)}
+.similar-card h4{font-size:16px;color:#f0f0f0}
+.similar-card p{font-size:13px;color:#888;margin-top:6px}
+
+footer{border-top:1px solid #1f1f1f;padding:45px 0 35px;text-align:center;color:#666;font-size:14px;margin-top:40px}
+footer span{color:var(--gold)}
+
+@media(max-width:1000px){
+.layout{grid-template-columns:1fr;gap:24px}
+.route-list{position:static;max-height:none}
+}
+@media(max-width:768px){
+.course-hero h1{font-size:32px}
+.route-stops{flex-wrap:wrap;justify-content:center;gap:12px}
+.route-map::before,.route-map-progress{display:none}
+.stop{flex:0 0 auto;min-width:70px}
+.stop .stop-dot{width:40px;height:40px;font-size:16px}
+.stop .stop-label{font-size:10px;max-width:70px}
+.module-header h2{font-size:24px}
+.module-view h3{font-size:17px}
+nav a{margin-left:10px;font-size:11px}
+.logo{font-size:16px}
+body{font-size:15px}
+.sticky-cta{display:flex}
+body{padding-bottom:70px}
+.module-actions{flex-direction:column}
+.module-actions button{width:100%;justify-content:center}
+}
+</style>
 </head>
 <body>
+<div id="reading-progress"></div>
+
 <header>
-  <div class="container header-inner">
-    <div class="logo">KURSY<span>PRO</span><small>золотой стандарт продаж</small></div>
-    <nav>
-      <a href="../../index.html"><i class="fas fa-home"></i> Главная</a>
-      <a href="../../categories/base.html"><i class="fas fa-th-list"></i> Базовые курсы</a>
-      <a href="#"><i class="fas fa-phone-alt"></i> Контакты</a>
-    </nav>
-  </div>
+<div class="container header-inner">
+<a href="../../index.html" style="text-decoration:none;"><div class="logo">КУРСЫ ПО <span>ПРОДАЖАМ</span><small>золотой стандарт продаж</small></div></a>
+<nav>
+<a href="../../index.html"><i class="fas fa-home"></i> Главная</a>
+<a href="../../categories/base.html"><i class="fas fa-th-list"></i> Базовые курсы</a>
+<a href="#route"><i class="fas fa-route"></i> Маршрут</a>
+</nav>
+</div>
 </header>
 
 <div class="container breadcrumb">
-  <a href="../../index.html">Главная</a> / <a href="../../categories/base.html">Базовые курсы</a> / <span>Продажи от А до Я</span>
+<a href="../../index.html">Главная</a> / <a href="../../categories/base.html">Базовые курсы</a> / <span>Продажи от А до Я</span>
 </div>
 
-<section class="course-header">
-  <div class="container">
-    <div class="tags">
-      <span><i class="fas fa-book-open"></i> Полный цикл</span>
-      <span><i class="fas fa-graduation-cap"></i> Система</span>
-      <span><i class="fas fa-clock"></i> 21 день</span>
-    </div>
-    <h1>Продажи от А до Я</h1>
-    <p class="subtitle">Полный цикл продаж: от поиска клиента до закрытия сделки и пост-продажного обслуживания.</p>
-    <div class="meta">
-      <span><i class="fas fa-clock"></i> 18 часов (8 модулей)</span>
-      <span><i class="fas fa-users"></i> 400+ учеников</span>
-      <span><i class="fas fa-star" style="color:#d4af37;"></i><i class="fas fa-star" style="color:#d4af37;"></i><i class="fas fa-star" style="color:#d4af37;"></i><i class="fas fa-star" style="color:#d4af37;"></i><i class="fas fa-star" style="color:#555;"></i> 4.8</span>
-    </div>
-  </div>
+<section class="course-hero">
+<div class="container">
+<div class="tags">
+<span><i class="fas fa-route"></i> Маршрут</span>
+<span><i class="fas fa-book-open"></i> 8 остановок</span>
+<span><i class="fas fa-graduation-cap"></i> Полный цикл</span>
+<span><i class="fas fa-fire" style="color:#ff6b35;"></i> Хит продаж</span>
+</div>
+<h1>Продажи от А до Я</h1>
+<p class="subtitle">Полный маршрут по циклу продаж. Восемь остановок от поиска клиента до аналитики. Каждая остановка — блок знаний и практики.</p>
+<div class="meta">
+<span><i class="fas fa-clock"></i> 18 часов</span>
+<span><i class="fas fa-users"></i> 400+ учеников</span>
+<span><i class="fas fa-star" style="color:#d4af37;"></i><i class="fas fa-star" style="color:#d4af37;"></i><i class="fas fa-star" style="color:#d4af37;"></i><i class="fas fa-star" style="color:#d4af37;"></i><i class="fas fa-star" style="color:#555;"></i> 4.8</span>
+<span><i class="fas fa-certificate"></i> Сертификат</span>
+</div>
+</div>
 </section>
 
+<!-- ROUTE MAP -->
+<section class="route-section" id="route">
 <div class="container">
-  <div class="course-content">
-    <div class="description">
-      <h2>О чём курс</h2>
-      <p>Этот курс — полная энциклопедия продаж. Мы пройдем весь путь: от поиска клиента до закрытия сделки и построения долгосрочных отношений. Ты получишь системное понимание того, как работают продажи в любой сфере.</p>
-      <p>Каждый модуль — это отдельный этап воронки продаж. Ты не просто узнаешь теорию — ты отработаешь каждый шаг на практике и получишь готовые инструменты для работы.</p>
+<div class="route-map-wrap">
+<div class="route-title">Маршрут по циклу продаж</div>
+<p class="route-subtitle">Кликни на остановку, чтобы открыть модуль</p>
 
-      <h2>Программа курса</h2>
-      <ul class="program-list">
-        <li><span class="num">1</span><span class="text">Поиск и привлечение клиентов: каналы и методы</span><span class="duration">2 ч</span></li>
-        <li><span class="num">2</span><span class="text">Первый контакт: как заинтересовать за 30 секунд</span><span class="duration">2 ч</span></li>
-        <li><span class="num">3</span><span class="text">Выявление потребностей: техника открытых вопросов</span><span class="duration">2 ч</span></li>
-        <li><span class="num">4</span><span class="text">Презентация продукта: структура и методы продажи</span><span class="duration">2 ч</span></li>
-        <li><span class="num">5</span><span class="text">Работа с возражениями: 50+ готовых ответов</span><span class="duration">3 ч</span></li>
-        <li><span class="num">6</span><span class="text">Закрытие сделки: 10 техник доведения до оплаты</span><span class="duration">2 ч</span></li>
-        <li><span class="num">7</span><span class="text">Пост-продажное обслуживание: возвраты и апсейлы</span><span class="duration">2 ч</span></li>
-        <li><span class="num">8</span><span class="text">Анализ воронки и повышение конверсии</span><span class="duration">3 ч</span></li>
-      </ul>
+<div class="route-map">
+<div class="route-map-progress" id="route-progress"></div>
+<div class="route-stops">
+<div class="stop active" data-stop="1"><div class="stop-dot">1</div><div class="stop-label">Поиск</div></div>
+<div class="stop" data-stop="2"><div class="stop-dot">2</div><div class="stop-label">Контакт</div></div>
+<div class="stop" data-stop="3"><div class="stop-dot">3</div><div class="stop-label">Потребности</div></div>
+<div class="stop" data-stop="4"><div class="stop-dot">4</div><div class="stop-label">Презентация</div></div>
+<div class="stop" data-stop="5"><div class="stop-dot">5</div><div class="stop-label">Возражения</div></div>
+<div class="stop" data-stop="6"><div class="stop-dot">6</div><div class="stop-label">Закрытие</div></div>
+<div class="stop" data-stop="7"><div class="stop-dot">7</div><div class="stop-label">После</div></div>
+<div class="stop" data-stop="8"><div class="stop-dot">8</div><div class="stop-label">Аналитика</div></div>
+</div>
+</div>
 
-      <h2>Результат после курса</h2>
-      <div class="result-box">
-        <ul>
-          <li><i class="fas fa-check-circle"></i> Ты будешь знать весь цикл продаж как свои пять пальцев</li>
-          <li><i class="fas fa-check-circle"></i> Научишься привлекать клиентов из разных каналов</li>
-          <li><i class="fas fa-check-circle"></i> Отработаешь любой тип возражений</li>
-          <li><i class="fas fa-check-circle"></i> Увеличишь конверсию на каждом этапе воронки</li>
-          <li><i class="fas fa-check-circle"></i> Построишь систему продаж в своей компании</li>
-        </ul>
-      </div>
+<div class="route-progress">
+<div class="rp-label">Пройдено: <b><span id="rp-count">0</span> из 8</b></div>
+<div class="rp-bar"><div class="rp-fill" id="rp-fill"></div></div>
+</div>
+</div>
+</div>
+</section>
 
-      <h2>Для кого курс</h2>
-      <p><strong>🔹 Менеджеры</strong> — кто хочет систематизировать знания</p>
-      <p><strong>🔹 Предприниматели</strong> — кто хочет построить систему продаж</p>
-      <p><strong>🔹 Руководители</strong> — кто управляет отделом продаж</p>
-      <p><strong>🔹 Наставники</strong> — кто обучает новых сотрудников</p>
-    </div>
+<div class="container layout">
 
-    <div class="sidebar">
-      <div class="price-card">
-        <div class="price">15 900 ₽ <small>+ НДС</small></div>
-        <div class="old-price">25 900 ₽</div>
-        <button class="btn-buy"><i class="fas fa-cart-plus"></i> Записаться на курс</button>
-        <div class="guarantee"><i class="fas fa-shield-alt"></i> 100% гарантия возврата в течение 7 дней</div>
-      </div>
-      <div class="info-box">
-        <h4><i class="fas fa-info-circle" style="color:#d4af37;"></i> Важно</h4>
-        <p>📅 Старт потока: каждую неделю</p>
-        <p>⏳ Доступ к материалам — 6 месяцев</p>
-        <p>🎓 Сертификат после прохождения</p>
-        <p>💬 Закрытый Telegram-чат с учениками</p>
-      </div>
-      <div class="info-box" style="border-color:#2a2a2a;">
-        <h4><i class="fas fa-user-tie" style="color:#d4af37;"></i> Преподаватель</h4>
-        <p style="border-bottom:none; display:flex; align-items:center; gap:12px;">
-          <span style="width:48px; height:48px; border-radius:50%; background:#2a2a2a; border:2px solid #d4af37; display:flex; align-items:center; justify-content:center; font-size:24px;">👨‍🏫</span>
-          <span><strong style="color:#ddd;">Алексей Рожняков</strong><br><span style="color:#888; font-size:13px;">17 лет в продажах, 500+ обученных менеджеров</span></span>
-        </p>
-      </div>
-    </div>
-  </div>
+<!-- ROUTE LIST (LEFT) -->
+<aside class="route-list">
+<h3><i class="fas fa-map-signs"></i> Остановки</h3>
+<div class="rl-item active" data-stop="1"><span class="rl-num">01</span><div class="rl-content"><div class="rl-name">Поиск и привлечение</div><div class="rl-meta">2 ч</div></div></div>
+<div class="rl-item" data-stop="2"><span class="rl-num">02</span><div class="rl-content"><div class="rl-name">Первый контакт</div><div class="rl-meta">2 ч</div></div></div>
+<div class="rl-item" data-stop="3"><span class="rl-num">03</span><div class="rl-content"><div class="rl-name">Выявление потребностей</div><div class="rl-meta">2 ч</div></div></div>
+<div class="rl-item" data-stop="4"><span class="rl-num">04</span><div class="rl-content"><div class="rl-name">Презентация продукта</div><div class="rl-meta">2 ч</div></div></div>
+<div class="rl-item" data-stop="5"><span class="rl-num">05</span><div class="rl-content"><div class="rl-name">Работа с возражениями</div><div class="rl-meta">3 ч</div></div></div>
+<div class="rl-item" data-stop="6"><span class="rl-num">06</span><div class="rl-content"><div class="rl-name">Закрытие сделки</div><div class="rl-meta">2 ч</div></div></div>
+<div class="rl-item" data-stop="7"><span class="rl-num">07</span><div class="rl-content"><div class="rl-name">Пост-продажное</div><div class="rl-meta">2 ч</div></div></div>
+<div class="rl-item" data-stop="8"><span class="rl-num">08</span><div class="rl-content"><div class="rl-name">Аналитика воронки</div><div class="rl-meta">3 ч</div></div></div>
+</aside>
+
+<!-- MODULES (CENTER) -->
+<div class="module-area">
+
+<!-- ============ ОСТАНОВКА 1 ============ -->
+<div class="module-view active" data-module="1">
+<div class="module-header">
+<span class="module-badge">Остановка 1 · 2 часа</span>
+<h2>Поиск и привлечение клиентов</h2>
+<p class="module-lead">Продажи начинаются с клиентов. Без базы нет сделок. Разберём источники и как построить систему поиска.</p>
+</div>
+
+<h3>1.1. Что такое поиск клиентов</h3>
+<p><strong>Поиск</strong> — это процесс создания потока потенциальных клиентов. Чем шире воронка на входе, тем больше сделок на выходе.</p>
+<p>Ошибка новичка — искать «идеального» клиента и звонить по одному. Правильно — создать поток из 50–100 контактов в неделю.</p>
+
+<h3>1.2. Источники клиентов</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Источник</th><th>Что даёт</th><th>Сложность</th></tr></thead>
+<tbody>
+<tr><td>2ГИС, Яндекс.Карты</td><td>Компании по отрасли и городу</td><td>Низкая</td></tr>
+<tr><td>Rusprofile, Спарк</td><td>Юрлица, обороты, руководители</td><td>Средняя (платно)</td></tr>
+<tr><td>LinkedIn</td><td>Контакты сотрудников</td><td>Средняя</td></tr>
+<tr><td>Отраслевые каталоги</td><td>Узкие ниши</td><td>Низкая</td></tr>
+<tr><td>Тендеры</td><td>Компании с бюджетом</td><td>Высокая</td></tr>
+<tr><td>Рекомендации</td><td>Тёплые контакты</td><td>Низкая, но долго</td></tr>
+<tr><td>Контент и соцсети</td><td>Входящие заявки</td><td>Средняя</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>1.3. ICP — идеальный профиль клиента</h3>
+<p>Прежде чем искать, опиши, кого искать. ICP — это 8 полей:</p>
+<ul>
+<li>Отрасль</li>
+<li>Размер компании</li>
+<li>География</li>
+<li>Структура (есть ли отдел, который купит)</li>
+<li>Технологии</li>
+<li>Триггер (событие, которое создаёт потребность)</li>
+<li>Боль (что болит у клиента)</li>
+<li>Бюджет</li>
+</ul>
+
+<div class="callout example">
+<div class="callout-title"><i class="fas fa-briefcase"></i> Пример ICP</div>
+<p><strong>Отрасль:</strong> логистика.<br>
+<strong>Размер:</strong> 50–300 сотрудников.<br>
+<strong>География:</strong> Москва, СПб.<br>
+<strong>Структура:</strong> отдел продаж 5–30 человек.<br>
+<strong>Триггер:</strong> рост штата, новый склад.<br>
+<strong>Боль:</strong> теряют заявки.<br>
+<strong>Бюджет:</strong> от 500 тыс. руб./год.</p>
+</div>
+
+<h3>1.4. Как построить базу</h3>
+<ol>
+<li><strong>Определи ICP.</strong> Кого ищешь.</li>
+<li><strong>Собери список.</strong> 100+ компаний из разных источников.</li>
+<li><strong>Отфильтруй.</strong> Оставь тех, кто подходит.</li>
+<li><strong>Найди контакты.</strong> Телефон, email, LinkedIn ЛПР.</li>
+<li><strong>Обогати.</strong> Добавь триггеры, боли, контекст.</li>
+<li><strong>Занеси в CRM.</strong> С тегами и скорингом.</li>
+</ol>
+
+<h3>1.5. Приоритизация базы</h3>
+<ul>
+<li><strong>Приоритет 1.</strong> Полное совпадение с ICP + триггер.</li>
+<li><strong>Приоритет 2.</strong> Совпадение с ICP, но нет триггера.</li>
+<li><strong>Приоритет 3.</strong> Частичное совпадение.</li>
+<li><strong>Отложенные.</strong> Не подходят сейчас.</li>
+</ul>
+
+<div class="callout tip">
+<div class="callout-title"><i class="fas fa-lightbulb"></i> Совет</div>
+<p>Сначала приоритет 1, потом 2, потом 3. Это даёт 3–5× разницу в конверсии по сравнению с «звоню по порядку».</p>
+</div>
+
+<div class="checklist">
+<h4><i class="fas fa-check"></i> Чек-лист остановки 1</h4>
+<ul>
+<li><input type="checkbox"> Я знаю источники клиентов</li>
+<li><input type="checkbox"> Я описал ICP</li>
+<li><input type="checkbox"> Я умею строить базу</li>
+<li><input type="checkbox"> Я приоритизирую лиды</li>
+</ul>
+</div>
+
+<div class="interact-zone">
+<h4><i class="fas fa-comments" style="color:#d4af37;"></i> Комментарии к остановке 1</h4>
+<p>Задай вопрос или оставь комментарий.</p>
+<span class="iz-hint"><i class="fas fa-code"></i> Firebase подключим позже</span>
+</div>
+
+<div class="module-actions">
+<div class="ma-left">
+<button class="ma-like"><i class="fas fa-thumbs-up"></i> Полезно</button>
+<button class="ma-done"><i class="fas fa-circle-check"></i> Прочитано</button>
+</div>
+<button class="ma-next" data-next="2">Остановка 2: Контакт <i class="fas fa-arrow-right"></i></button>
+</div>
+</div>
+
+<!-- ============ ОСТАНОВКА 2 ============ -->
+<div class="module-view" data-module="2">
+<div class="module-header">
+<span class="module-badge">Остановка 2 · 2 часа</span>
+<h2>Первый контакт</h2>
+<p class="module-lead">Первые 30 секунд решают, будет ли разговор. Разберём, как заинтересовать клиента и договориться о следующем шаге.</p>
+</div>
+
+<h3>2.1. Цель первого контакта</h3>
+<p>Цель — <strong>не продать</strong>. Цель — <strong>договориться о следующем шаге</strong> (звонке, встрече, демо). Продажа — это процесс, а не один момент.</p>
+
+<h3>2.2. Каналы первого контакта</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Канал</th><th>Плюсы</th><th>Минусы</th></tr></thead>
+<tbody>
+<tr><td>Телефон</td><td>Быстро, живой контакт</td><td>Отказы, секретарь</td></tr>
+<tr><td>Email</td><td>Можно подумать, переслать</td><td>Игнор, спам</td></tr>
+<tr><td>LinkedIn</td><td>Прямой контакт с ЛПР</td><td>Ограничения</td></tr>
+<tr><td>Мессенджеры</td><td>Личный канал</td><td>Нужен контакт</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>2.3. Структура первого звонка</h3>
+<ol>
+<li><strong>Приветствие.</strong> «Добрый день, Иван Петрович!»</li>
+<li><strong>Представление.</strong> «Меня зовут Алексей, компания X».</li>
+<li><strong>Повод звонка.</strong> «Звоню, потому что...» — триггер.</li>
+<li><strong>Ценность.</strong> «Мы помогаем...» — одна фраза.</li>
+<li><strong>Вопрос.</strong> «Удобно 2 минуты?» или «Скажите, у вас есть такая задача?»</li>
+<li><strong>Следующий шаг.</strong> «Могу показать за 15 минут. Когда удобно?»</li>
+</ol>
+
+<h3>2.4. Что работает в первые 10 секунд</h3>
+<ul>
+<li><strong>Уверенный тон.</strong> Без «извините за беспокойство».</li>
+<li><strong>Имя клиента.</strong> Показывает, что звонок адресный.</li>
+<li><strong>Конкретика.</strong> Не «важный вопрос», а «автоматизация продаж».</li>
+<li><strong>Быстрый вопрос.</strong> Не монолог.</li>
+</ul>
+
+<div class="callout script">
+<div class="callout-title"><i class="fas fa-comment"></i> Пример первого звонка</div>
+<p>— Иван Петрович? Добрый день. Меня зовут Алексей, компания X.<br>
+— Да, слушаю.<br>
+— Я звоню, потому что вы открыли склад в Казани. Обычно при росте компании начинают терять заявки. Мы помогаем это исправить. Удобно 2 минуты?<br>
+— Да.<br>
+— Отлично. Скажите, у вас сейчас заявки обрабатываются в CRM или вручную?</p>
+</div>
+
+<h3>2.5. Что убивает контакт</h3>
+<ul>
+<li>«Меня зовут Алексей, компания X, мы предлагаем широкий спектр услуг...»</li>
+<li>«Удобно ли вам сейчас говорить?» — половина скажет «нет».</li>
+<li>«Я хотел бы рассказать о нашем продукте».</li>
+<li>«Извините за беспокойство».</li>
+</ul>
+
+<div class="checklist">
+<h4><i class="fas fa-check"></i> Чек-лист остановки 2</h4>
+<ul>
+<li><input type="checkbox"> Я знаю цель первого контакта</li>
+<li><input type="checkbox"> Я знаю каналы</li>
+<li><input type="checkbox"> Я умею использовать структуру звонка</li>
+<li><input type="checkbox"> Я не использую убивающие фразы</li>
+</ul>
+</div>
+
+<div class="interact-zone">
+<h4><i class="fas fa-comments" style="color:#d4af37;"></i> Комментарии к остановке 2</h4>
+<p>Задай вопрос или оставь комментарий.</p>
+<span class="iz-hint"><i class="fas fa-code"></i> Firebase подключим позже</span>
+</div>
+
+<div class="module-actions">
+<div class="ma-left">
+<button class="ma-like"><i class="fas fa-thumbs-up"></i> Полезно</button>
+<button class="ma-done"><i class="fas fa-circle-check"></i> Прочитано</button>
+</div>
+<button class="ma-next" data-next="3">Остановка 3: Потребности <i class="fas fa-arrow-right"></i></button>
+</div>
+</div>
+
+<!-- ============ ОСТАНОВКА 3 ============ -->
+<div class="module-view" data-module="3">
+<div class="module-header">
+<span class="module-badge">Остановка 3 · 2 часа</span>
+<h2>Выявление потребностей</h2>
+<p class="module-lead">Клиент покупает не продукт, а решение задачи. Разберём, как найти эту задачу за 5 вопросов.</p>
+</div>
+
+<h3>3.1. Почему это критично</h3>
+<p>Если ты не знаешь задачу клиента — ты продаёшь «вслепую». Попадёшь случайно или не попадёшь вообще. Хорошая квалификация экономит часы работы.</p>
+
+<h3>3.2. 4 типа вопросов</h3>
+<ol>
+<li><strong>Ситуационные.</strong> «Как у вас сейчас организовано?»</li>
+<li><strong>Проблемные.</strong> «Что не устраивает?»</li>
+<li><strong>Извлекающие.</strong> «Как это влияет на бизнес?»</li>
+<li><strong>Направляющие.</strong> «Если бы это можно было исправить — что бы это дало?»</li>
+</ol>
+
+<h3>3.3. Правило 70/30</h3>
+<p>70% времени говорит клиент, 30% — ты. Если наоборот — ты не квалифицируешь, а презентуешь.</p>
+
+<h3>3.4. Что выяснить</h3>
+<ul>
+<li><strong>Задача.</strong> Что клиент хочет решить?</li>
+<li><strong>Причина.</strong> Почему именно сейчас?</li>
+<li><strong>Бюджет.</strong> На что готов?</li>
+<li><strong>Сроки.</strong> Когда нужно?</li>
+<li><strong>ЛПР.</strong> Кто принимает решение?</li>
+<li><strong>Альтернативы.</strong> С кем ещё сравнивает?</li>
+</ul>
+
+<div class="callout example">
+<div class="callout-title"><i class="fas fa-comment"></i> Пример диалога</div>
+<p>— Как у вас сейчас обрабатываются заявки?<br>
+— Через Excel и почту.<br>
+— А что не устраивает?<br>
+— Теряем часть заявок.<br>
+— Как это влияет на бизнес?<br>
+— Менеджеры не выполняют план, я не понимаю, где узкое место.<br>
+— Если бы вы видели каждую заявку — что бы это изменило?<br>
+— Мы бы не теряли клиентов и прогнозировали выручку.</p>
+</div>
+
+<h3>3.5. Метод BANT</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Критерий</th><th>Вопрос</th></tr></thead>
+<tbody>
+<tr><td><strong>B</strong> — Budget</td><td>«Бюджет выделен?»</td></tr>
+<tr><td><strong>A</strong> — Authority</td><td>«Вы принимаете решение?»</td></tr>
+<tr><td><strong>N</strong> — Need</td><td>«Какая задача стоит?»</td></tr>
+<tr><td><strong>T</strong> — Timeline</td><td>«Когда планируете решить?»</td></tr>
+</tbody>
+</table>
+</div>
+<p>Если все 4 критерия «зелёные» — лид перспективный. Если хотя бы один «красный» — либо работаем над ним, либо откладываем.</p>
+
+<div class="callout tip">
+<div class="callout-title"><i class="fas fa-lightbulb"></i> Совет</div>
+<p>Не давай презентацию продукта, пока не выяснил задачу. Иначе ты покажешь «то, что есть», вместо «того, что нужно».</p>
+</div>
+
+<div class="checklist">
+<h4><i class="fas fa-check"></i> Чек-лист остановки 3</h4>
+<ul>
+<li><input type="checkbox"> Я знаю 4 типа вопросов</li>
+<li><input type="checkbox"> Я соблюдаю правило 70/30</li>
+<li><input type="checkbox"> Я выясняю задачу, бюджет, сроки</li>
+<li><input type="checkbox"> Я использую BANT</li>
+</ul>
+</div>
+
+<div class="interact-zone">
+<h4><i class="fas fa-comments" style="color:#d4af37;"></i> Комментарии к остановке 3</h4>
+<p>Задай вопрос или оставь комментарий.</p>
+<span class="iz-hint"><i class="fas fa-code"></i> Firebase подключим позже</span>
+</div>
+
+<div class="module-actions">
+<div class="ma-left">
+<button class="ma-like"><i class="fas fa-thumbs-up"></i> Полезно</button>
+<button class="ma-done"><i class="fas fa-circle-check"></i> Прочитано</button>
+</div>
+<button class="ma-next" data-next="4">Остановка 4: Презентация <i class="fas fa-arrow-right"></i></button>
+</div>
+</div>
+
+<!-- ============ ОСТАНОВКА 4 ============ -->
+<div class="module-view" data-module="4">
+<div class="module-header">
+<span class="module-badge">Остановка 4 · 2 часа</span>
+<h2>Презентация продукта</h2>
+<p class="module-lead">Презентация — это не «рассказать о продукте». Это показать, как продукт решает задачу клиента.</p>
+</div>
+
+<h3>4.1. Структура презентации</h3>
+<ol>
+<li><strong>Резюме задачи.</strong> «Вы сказали, что теряете заявки».</li>
+<li><strong>Решение.</strong> «Наша CRM фиксирует каждую заявку».</li>
+<li><strong>Доказательство.</strong> «Вот кейс: компания X сократила потери на 30%».</li>
+<li><strong>Выгода.</strong> «Для вас это значит: выполнение плана и прогноз выручки».</li>
+<li><strong>Вопрос.</strong> «Как вам такой вариант?»</li>
+</ol>
+
+<h3>4.2. Правило трёх выгод</h3>
+<p>Не перечисляй 20 характеристик. Выбери <strong>3 ключевые выгоды</strong> под задачу клиента. Больше 3 — мозг не запоминает.</p>
+
+<div class="callout example">
+<div class="callout-title"><i class="fas fa-comment"></i> Пример</div>
+<p>«Эта CRM решает три ваши задачи: <strong>не теряет заявки</strong> — фиксирует каждую; <strong>показывает воронку</strong> — вы видите каждую сделку; <strong>даёт аналитику</strong> — вы понимаете, где узкое место».</p>
+</div>
+
+<h3>4.3. Как переводить характеристику в выгоду</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Характеристика</th><th>Выгода</th></tr></thead>
+<tbody>
+<tr><td>Аккумулятор 5000 мАч</td><td>Работает весь день без зарядки</td></tr>
+<tr><td>Интеграция с 1С</td><td>Данные не нужно вводить вручную</td></tr>
+<tr><td>Облачное решение</td><td>Работает из любой точки, не нужен сервер</td></tr>
+<tr><td>Поддержка 24/7</td><td>Проблемы решаются в любое время</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>4.4. Что не делать</h3>
+<ul>
+<li>Перечислять все функции.</li>
+<li>Говорить «у нас есть...» вместо «это решает вашу задачу».</li>
+<li>Критиковать конкурентов по имени.</li>
+<li>Показывать 20 слайдов вместо 5.</li>
+<li>Говорить о продукте больше, чем о клиенте.</li>
+</ul>
+
+<div class="callout tip">
+<div class="callout-title"><i class="fas fa-lightbulb"></i> Совет</div>
+<p>Используй язык клиента. Если он говорит «лиды» — говори «лиды», не «потенциальные клиенты». Подстраивайся под его терминологию.</p>
+</div>
+
+<div class="checklist">
+<h4><i class="fas fa-check"></i> Чек-лист остановки 4</h4>
+<ul>
+<li><input type="checkbox"> Я знаю структуру презентации</li>
+<li><input type="checkbox"> Я использую правило трёх выгод</li>
+<li><input type="checkbox"> Я перевожу характеристики в выгоды</li>
+<li><input type="checkbox"> Я не перегружаю презентацию</li>
+</ul>
+</div>
+
+<div class="interact-zone">
+<h4><i class="fas fa-comments" style="color:#d4af37;"></i> Комментарии к остановке 4</h4>
+<p>Задай вопрос или оставь комментарий.</p>
+<span class="iz-hint"><i class="fas fa-code"></i> Firebase подключим позже</span>
+</div>
+
+<div class="module-actions">
+<div class="ma-left">
+<button class="ma-like"><i class="fas fa-thumbs-up"></i> Полезно</button>
+<button class="ma-done"><i class="fas fa-circle-check"></i> Прочитано</button>
+</div>
+<button class="ma-next" data-next="5">Остановка 5: Возражения <i class="fas fa-arrow-right"></i></button>
+</div>
+</div>
+
+<!-- ============ ОСТАНОВКА 5 ============ -->
+<div class="module-view" data-module="5">
+<div class="module-header">
+<span class="module-badge">Остановка 5 · 3 часа</span>
+<h2>Работа с возражениями</h2>
+<p class="module-lead">Возражение — не отказ. Это запрос на информацию. Разберём формулу и 50+ готовых ответов на разные ситуации.</p>
+</div>
+
+<h3>5.1. Что такое возражение</h3>
+<p><strong>Возражение</strong> — это сомнение клиента, которое нужно снять. «Дорого» = «не вижу ценности». «Подумаю» = «есть скрытое сомнение». «Есть поставщик» = «не вижу смысла менять».</p>
+
+<h3>5.2. Формула ответа</h3>
+<ol>
+<li><strong>Присоединение.</strong> «Понимаю...»</li>
+<li><strong>Уточнение.</strong> «А что именно смущает?»</li>
+<li><strong>Перевод.</strong> «Зато [выгода] — это [результат]».</li>
+<li><strong>Закрытие.</strong> «Как вам такой вариант?»</li>
+</ol>
+
+<h3>5.3. Топ-12 возражений и ответы</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Возражение</th><th>Ответ</th></tr></thead>
+<tbody>
+<tr><td>«Дорого»</td><td>«Давайте посчитаем окупаемость»</td></tr>
+<tr><td>«Подумаю»</td><td>«Что именно смущает?»</td></tr>
+<tr><td>«У конкурентов дешевле»</td><td>«Сравнивали по результату?»</td></tr>
+<tr><td>«Нет времени»</td><td>«2 минуты — и я скажу, стоит ли продолжать»</td></tr>
+<tr><td>«Есть поставщик»</td><td>«Что бы вас заставило рассмотреть альтернативу?»</td></tr>
+<tr><td>«Не интересно»</td><td>«А что у вас в приоритете сейчас?»</td></tr>
+<tr><td>«Я не ЛПР»</td><td>«С кем мне лучше обсудить?»</td></tr>
+<tr><td>«Нет бюджета»</td><td>«Когда бюджет будет?»</td></tr>
+<tr><td>«Сложно внедрять»</td><td>«Мы всё делаем сами»</td></tr>
+<tr><td>«Работает и так»</td><td>«Что бы вы улучшили, если бы могли?»</td></tr>
+<tr><td>«Мне надо с женой/мужем»</td><td>«А что для неё/него важно?»</td></tr>
+<tr><td>«Давайте попозже»</td><td>«Когда именно? Я напомню»</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>5.4. Что нельзя делать</h3>
+<ul>
+<li>Спорить: «Нет, это не дорого!»</li>
+<li>Давить: «Берите, потом не будет».</li>
+<li>Обманывать: «У других плохое качество».</li>
+<li>Соглашаться на «позже» без даты.</li>
+<li>Давать скидку первой.</li>
+</ul>
+
+<div class="callout example">
+<div class="callout-title"><i class="fas fa-briefcase"></i> Пример работы с «дорого»</div>
+<p>— Это дорого.<br>
+— Понимаю. А с чем сравниваете — с другой CRM или вообще?<br>
+— Просто дорого.<br>
+— Согласен, есть дешевле. Но у них внедрение 6 месяцев, у нас — 3 недели. За 5 месяцев разницы вы получите 500 000 выручки. Согласны, что это важно?</p>
+</div>
+
+<h3>5.5. Как предупреждать возражения</h3>
+<p>Лучший способ — <strong>назвать возражение самому</strong>, до того как клиент его озвучит:</p>
+<ul>
+<li>«Вы наверное думаете, что это дорого. Давайте посчитаем окупаемость».</li>
+<li>«Может показаться, что сложно внедрить. Но мы всё делаем сами».</li>
+<li>«Возможно, вы уже работаете с поставщиком. Что бы вас заставило рассмотреть альтернативу?»</li>
+</ul>
+
+<div class="checklist">
+<h4><i class="fas fa-check"></i> Чек-лист остановки 5</h4>
+<ul>
+<li><input type="checkbox"> Я знаю формулу ответа</li>
+<li><input type="checkbox"> Я знаю топ-12 возражений</li>
+<li><input type="checkbox"> Я умею предупреждать возражения</li>
+<li><input type="checkbox"> Я не спорю и не давлю</li>
+</ul>
+</div>
+
+<div class="interact-zone">
+<h4><i class="fas fa-comments" style="color:#d4af37;"></i> Комментарии к остановке 5</h4>
+<p>Задай вопрос или оставь комментарий.</p>
+<span class="iz-hint"><i class="fas fa-code"></i> Firebase подключим позже</span>
+</div>
+
+<div class="module-actions">
+<div class="ma-left">
+<button class="ma-like"><i class="fas fa-thumbs-up"></i> Полезно</button>
+<button class="ma-done"><i class="fas fa-circle-check"></i> Прочитано</button>
+</div>
+<button class="ma-next" data-next="6">Остановка 6: Закрытие <i class="fas fa-arrow-right"></i></button>
+</div>
+</div>
+
+<!-- ============ ОСТАНОВКА 6 ============ -->
+<div class="module-view" data-module="6">
+<div class="module-header">
+<span class="module-badge">Остановка 6 · 2 часа</span>
+<h2>Закрытие сделки</h2>
+<p class="module-lead">Финальный шаг. Здесь важно не «продать», а помочь клиенту решиться. И не потерять его на финише.</p>
+</div>
+
+<h3>6.1. Когда клиент готов</h3>
+<ul>
+<li>Задаёт конкретные вопросы по условиям.</li>
+<li>Спрашивает про сроки и внедрение.</li>
+<li>Подключает юристов и финансистов.</li>
+<li>Возвращается к одной модели.</li>
+<li>Уточняет про гарантии.</li>
+</ul>
+
+<h3>6.2. 10 техник закрытия</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>№</th><th>Техника</th><th>Пример</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>Прямое</td><td>«Оформляем?»</td></tr>
+<tr><td>2</td><td>Альтернативное</td><td>«Сегодня или завтра?»</td></tr>
+<tr><td>3</td><td>Резюме</td><td>«Мы договорились о...»</td></tr>
+<tr><td>4</td><td>Через гарантию</td><td>«Возврат 14 дней»</td></tr>
+<tr><td>5</td><td>С бонусом</td><td>«Сегодня со скидкой 5%»</td></tr>
+<tr><td>6</td><td>По шагам</td><td>«Сначала пилот, потом контракт»</td></tr>
+<tr><td>7</td><td>С дедлайном</td><td>«До конца месяца — скидка»</td></tr>
+<tr><td>8</td><td>Через отзыв</td><td>«Вот кейс похожего клиента»</td></tr>
+<tr><td>9</td><td>Через доставку</td><td>«Доставка завтра или сегодня?»</td></tr>
+<tr><td>10</td><td>Пробное</td><td>«Возьмите на тест»</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>6.3. Что делать с «подумаю»</h3>
+<ol>
+<li>«Понимаю. А что именно смущает?»</li>
+<li>«Может, есть вопрос, который я не раскрыл?»</li>
+<li>«Хотите, покажу похожий кейс?»</li>
+<li>«Давайте зафиксируем время, когда вам перезвонить».</li>
+</ol>
+
+<h3>6.4. Что делать после «да»</h3>
+<ul>
+<li><strong>Сразу.</strong> Письмо-резюме с договорённостями.</li>
+<li><strong>В течение дня.</strong> Отправить документы.</li>
+<li><strong>Через день.</strong> Проверка «всё ли в порядке».</li>
+<li><strong>Через неделю.</strong> Уточнить, нужна ли помощь.</li>
+</ul>
+
+<div class="callout tip">
+<div class="callout-title"><i class="fas fa-flag-checkered"></i> Правило финала</div>
+<p>Никогда не заканчивай разговор «давайте на связи». Всегда конкретный шаг с датой: «Отправлю договор в среду, обсудим в пятницу в 15:00».</p>
+</div>
+
+<div class="checklist">
+<h4><i class="fas fa-check"></i> Чек-лист остановки 6</h4>
+<ul>
+<li><input type="checkbox"> Я знаю признаки готовности клиента</li>
+<li><input type="checkbox"> Я знаю 10 техник закрытия</li>
+<li><input type="checkbox"> Я умею работать с «подумаю»</li>
+<li><input type="checkbox"> Я всегда закрываю конкретным шагом</li>
+</ul>
+</div>
+
+<div class="interact-zone">
+<h4><i class="fas fa-comments" style="color:#d4af37;"></i> Комментарии к остановке 6</h4>
+<p>Задай вопрос или оставь комментарий.</p>
+<span class="iz-hint"><i class="fas fa-code"></i> Firebase подключим позже</span>
+</div>
+
+<div class="module-actions">
+<div class="ma-left">
+<button class="ma-like"><i class="fas fa-thumbs-up"></i> Полезно</button>
+<button class="ma-done"><i class="fas fa-circle-check"></i> Прочитано</button>
+</div>
+<button class="ma-next" data-next="7">Остановка 7: Пост-продажа <i class="fas fa-arrow-right"></i></button>
+</div>
+</div>
+
+<!-- ============ ОСТАНОВКА 7 ============ -->
+<div class="module-view" data-module="7">
+<div class="module-header">
+<span class="module-badge">Остановка 7 · 2 часа</span>
+<h2>Пост-продажное обслуживание</h2>
+<p class="module-lead">Продажа — не финал, а начало отношений. Разберём, как удерживать клиентов, делать допродажи и получать рекомендации.</p>
+</div>
+
+<h3>7.1. Почему это важно</h3>
+<p>Привлечь нового клиента в 5–7 раз дороже, чем удержать существующего. Клиент, который остался на годы, приносит в 10 раз больше, чем разовый покупатель.</p>
+
+<h3>7.2. Работа после продажи</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Когда</th><th>Что делать</th></tr></thead>
+<tbody>
+<tr><td>Сразу</td><td>Письмо-подтверждение и инструкция</td></tr>
+<tr><td>Через 3 дня</td><td>Проверка: «Всё ли хорошо?»</td></tr>
+<tr><td>Через 2 недели</td><td>Помощь в использовании</td></tr>
+<tr><td>Через месяц</td><td>Допродажа, запрос отзыва</td></tr>
+<tr><td>Через 3 месяца</td><td>Встреча, обсуждение результата</td></tr>
+<tr><td>Через год</td><td>Обзор сотрудничества</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>7.3. Как делать допродажи</h3>
+<ul>
+<li><strong>Связано с покупкой.</strong> «К этому — чехол и стекло».</li>
+<li><strong>Через результат.</strong> «Чтобы получить больше эффекта — добавьте модуль аналитики».</li>
+<li><strong>Без давления.</strong> «Если интересно — расскажу».</li>
+<li><strong>Через цифры.</strong> «Это сэкономит 20% времени».</li>
+</ul>
+
+<h3>7.4. Как собирать рекомендации</h3>
+<ol>
+<li>Дождись, когда клиент доволен.</li>
+<li>Спроси прямо: «Есть кто-то, кому это тоже актуально?»</li>
+<li>Дай удобный способ: ссылку, визитку, промокод.</li>
+<li>Поблагодари за рекомендацию.</li>
+</ol>
+
+<div class="callout example">
+<div class="callout-title"><i class="fas fa-briefcase"></i> Кейс</div>
+<p>Один клиент купил за 300 000. Через год — допродажа на 200 000. Через два — рекомендация коллеге ещё на 500 000. Один клиент принёс 1 млн без новых затрат на привлечение.</p>
+</div>
+
+<h3>7.5. Работа с недовольным клиентом</h3>
+<ol>
+<li><strong>Выслушай.</strong> Не перебивай.</li>
+<li><strong>Признай проблему.</strong> «Да, это неприятно».</li>
+<li><strong>Предложи решение.</strong> Конкретное и в срок.</li>
+<li><strong>Выполни обещанное.</strong> Если не выполнишь — потеряешь клиента навсегда.</li>
+<li><strong>Проверь через неделю.</strong> Убедись, что всё решено.</li>
+</ol>
+
+<div class="checklist">
+<h4><i class="fas fa-check"></i> Чек-лист остановки 7</h4>
+<ul>
+<li><input type="checkbox"> Я знаю, что делать после продажи</li>
+<li><input type="checkbox"> Я умею делать допродажи</li>
+<li><input type="checkbox"> Я собираю рекомендации</li>
+<li><input type="checkbox"> Я умею работать с недовольным клиентом</li>
+</ul>
+</div>
+
+<div class="interact-zone">
+<h4><i class="fas fa-comments" style="color:#d4af37;"></i> Комментарии к остановке 7</h4>
+<p>Задай вопрос или оставь комментарий.</p>
+<span class="iz-hint"><i class="fas fa-code"></i> Firebase подключим позже</span>
+</div>
+
+<div class="module-actions">
+<div class="ma-left">
+<button class="ma-like"><i class="fas fa-thumbs-up"></i> Полезно</button>
+<button class="ma-done"><i class="fas fa-circle-check"></i> Прочитано</button>
+</div>
+<button class="ma-next" data-next="8">Остановка 8: Аналитика <i class="fas fa-arrow-right"></i></button>
+</div>
+</div>
+
+<!-- ============ ОСТАНОВКА 8 ============ -->
+<div class="module-view" data-module="8">
+<div class="module-header">
+<span class="module-badge">Остановка 8 · 3 часа</span>
+<h2>Анализ воронки и повышение конверсии</h2>
+<p class="module-lead">Финальная остановка — аналитика. Без цифр ты не знаешь, где теряешь клиентов и что улучшать.</p>
+</div>
+
+<h3>8.1. Зачем считать воронку</h3>
+<p>Воронка показывает, где ты теряешь деньги. Без неё ты можешь годами работать «в полную силу» и не понимать, почему результат не растёт.</p>
+
+<h3>8.2. Ключевые метрики</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Метрика</th><th>Что показывает</th></tr></thead>
+<tbody>
+<tr><td>Активность</td><td>Звонки, письма, встречи</td></tr>
+<tr><td>Конверсия между этапами</td><td>Где теряешь больше всего</td></tr>
+<tr><td>Средний цикл сделки</td><td>Сколько дней от контакта до оплаты</td></tr>
+<tr><td>Средний чек</td><td>Сколько приносит одна сделка</td></tr>
+<tr><td>Повторные продажи</td><td>% вернувшихся клиентов</td></tr>
+<tr><td>LTV клиента</td><td>Сколько денег приносит клиент за всё время</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>8.3. Как считать конверсию</h3>
+<p>Формула: <strong>Конверсия = (следующий этап) ÷ (текущий этап) × 100%</strong>.</p>
+<div class="callout example">
+<div class="callout-title"><i class="fas fa-briefcase"></i> Пример</div>
+<p>100 звонков → 20 разговоров → 10 квалификаций → 8 презентаций → 2 сделки.<br>
+Конверсия: 20% → 50% → 80% → 25%.<br>
+Узкое горлышко — переход «звонок → разговор» (20%). Значит, нужно работать над первой фразой.</p>
+</div>
+
+<h3>8.4. Как улучшать конверсию</h3>
+<ol>
+<li><strong>Найди узкое горлышко.</strong> Этап с минимальной конверсией.</li>
+<li><strong>Сформулируй гипотезу.</strong> Что именно улучшит этот этап.</li>
+<li><strong>Внедри изменение.</strong> Одно, не десять.</li>
+<li><strong>Измерь результат.</strong> Через 2–4 недели — конверсия выросла?</li>
+<li><strong>Оставь или откати.</strong> Если сработало — фиксируй в системе. Если нет — пробуй другое.</li>
+</ol>
+
+<h3>8.5. Что считать каждую неделю</h3>
+<ul>
+<li><strong>Активность.</strong> Сколько звонков/писем/встреч.</li>
+<li><strong>Конверсия.</strong> Каждый этап.</li>
+<li><strong>Средний чек.</strong> Растёт или падает?</li>
+<li><strong>Цикл сделки.</strong> Уменьшается или растёт?</li>
+<li><strong>Узкое горлышко.</strong> Где основная потеря?</li>
+</ul>
+
+<div class="callout tip">
+<div class="callout-title"><i class="fas fa-flag-checkered"></i> Главный вывод курса</div>
+<p>Продажи — это система из 8 этапов. Каждый этап важен. Улучшай по одному, измеряй результат, не сдавайся. Через 6 месяцев системной работы ты выйдешь на другой уровень дохода.</p>
+</div>
+
+<div class="checklist">
+<h4><i class="fas fa-check"></i> Финальный чек-лист курса</h4>
+<ul>
+<li><input type="checkbox"> Я знаю все 8 этапов цикла продаж</li>
+<li><input type="checkbox"> Я умею искать клиентов</li>
+<li><input type="checkbox"> Я умею проводить первый контакт</li>
+<li><input type="checkbox"> Я выявляю потребности</li>
+<li><input type="checkbox"> Я презентую продукт под задачу</li>
+<li><input type="checkbox"> Я работаю с возражениями</li>
+<li><input type="checkbox"> Я умею закрывать сделки</li>
+<li><input type="checkbox"> Я работаю с базой после продажи</li>
+<li><input type="checkbox"> Я считаю воронку и конверсию</li>
+</ul>
+</div>
+
+<div class="interact-zone">
+<h4><i class="fas fa-comments" style="color:#d4af37;"></i> Комментарии к остановке 8</h4>
+<p>Задай вопрос или оставь комментарий.</p>
+<span class="iz-hint"><i class="fas fa-code"></i> Firebase подключим позже</span>
+</div>
+
+<div class="module-actions">
+<div class="ma-left">
+<button class="ma-like"><i class="fas fa-thumbs-up"></i> Полезно</button>
+<button class="ma-done"><i class="fas fa-circle-check"></i> Прочитано</button>
+</div>
+<button class="ma-next" disabled>Курс завершён <i class="fas fa-flag-checkered"></i></button>
+</div>
+</div>
+
+</div>
 </div>
 
 <section class="similar">
-  <div class="container">
-    <h2><i class="fas fa-arrow-right" style="color:#d4af37;"></i> Похожие курсы</h2>
-    <div class="similar-grid">
-      <a href="prodazhi-s-nulya.html" class="similar-card"><h4>Продажи с нуля</h4><p>Полный старт</p></a>
-      <a href="osnovy-effektivnyh-prodazh.html" class="similar-card"><h4>Основы эффективных продаж</h4><p>Базовая система</p></a>
-      <a href="effektivnyy-prodavets.html" class="similar-card"><h4>Эффективный продавец</h4><p>Навыки топ-менеджеров</p></a>
-      <a href="menedzher-po-prodazham.html" class="similar-card"><h4>Менеджер по продажам</h4><p>Профессия</p></a>
-    </div>
-  </div>
+<div class="container">
+<h2><i class="fas fa-arrow-right" style="color:#d4af37;"></i> Похожие курсы</h2>
+<div class="similar-grid">
+<a href="prodazhi-s-nulya.html" class="similar-card"><h4>Продажи с нуля</h4><p>Полный старт</p></a>
+<a href="osnovy-effektivnyh-prodazh.html" class="similar-card"><h4>Основы эффективных продаж</h4><p>Базовая система</p></a>
+<a href="effektivnyy-prodavets.html" class="similar-card"><h4>Эффективный продавец</h4><p>Навыки топ-менеджеров</p></a>
+<a href="menedzher-po-prodazham.html" class="similar-card"><h4>Менеджер по продажам</h4><p>Профессия</p></a>
+</div>
+</div>
 </section>
 
+<div class="sticky-cta">
+<div><div class="sc-price">15 900 ₽ <small>25 900 ₽</small></div></div>
+<button><i class="fas fa-cart-plus"></i> Записаться</button>
+</div>
+
 <footer>
-  <div class="container">
-    <p>© 2026 <span>KURSYPRO</span> — система обучения продажам. 110+ курсов.</p>
-  </div>
+<div class="container">
+<p>© 2026 <span>Курсы по продажам</span> — золотой стандарт обучения продажам. 110+ программ.</p>
+<p style="margin-top:8px;font-size:13px;color:#444;"><i class="fas fa-crown" style="color:#d4af37;"></i> kursy-po-prodazham.com</p>
+</div>
 </footer>
+
+<script>
+// Прогресс чтения
+window.addEventListener('scroll',()=>{
+const h=document.documentElement;
+const s=(h.scrollTop/(h.scrollHeight-h.clientHeight))*100;
+document.getElementById('reading-progress').style.width=s+'%';
+});
+
+// Маршрут
+const stops=document.querySelectorAll('.stop');
+const rlItems=document.querySelectorAll('.rl-item');
+const modules=document.querySelectorAll('.module-view');
+let currentStop=1;
+const totalStops=8;
+
+function goToStop(num){
+modules.forEach(m=>m.classList.remove('active'));
+document.querySelector('.module-view[data-module="'+num+'"]').classList.add('active');
+stops.forEach(s=>s.classList.remove('active'));
+document.querySelector('.stop[data-stop="'+num+'"]').classList.add('active');
+rlItems.forEach(r=>r.classList.remove('active'));
+document.querySelector('.rl-item[data-stop="'+num+'"]').classList.add('active');
+currentStop=num;
+window.scrollTo({top:document.getElementById('route').offsetTop-40,behavior:'smooth'});
+}
+
+stops.forEach(s=>{
+s.addEventListener('click',()=>goToStop(+s.dataset.stop));
+});
+rlItems.forEach(r=>{
+r.addEventListener('click',()=>goToStop(+r.dataset.stop));
+});
+document.querySelectorAll('.ma-next[data-next]').forEach(btn=>{
+btn.addEventListener('click',()=>goToStop(+btn.dataset.next));
+});
+
+// Лайки и прочитано
+modules.forEach(mod=>{
+const num=mod.dataset.module;
+const likeBtn=mod.querySelector('.ma-like');
+const doneBtn=mod.querySelector('.ma-done');
+const likeKey='atoz_sales_like_'+num;
+const doneKey='atoz_sales_done_'+num;
+if(localStorage.getItem(likeKey)==='1')likeBtn.classList.add('liked');
+if(localStorage.getItem(doneKey)==='1'){
+doneBtn.classList.add('done');
+document.querySelector('.stop[data-stop="'+num+'"]').classList.add('done');
+document.querySelector('.rl-item[data-stop="'+num+'"]').classList.add('done');
+}
+likeBtn.addEventListener('click',()=>{
+const liked=likeBtn.classList.toggle('liked');
+localStorage.setItem(likeKey,liked?'1':'0');
+});
+doneBtn.addEventListener('click',()=>{
+doneBtn.classList.toggle('done');
+const isDone=doneBtn.classList.contains('done');
+localStorage.setItem(doneKey,isDone?'1':'0');
+document.querySelector('.stop[data-stop="'+num+'"]').classList.toggle('done',isDone);
+document.querySelector('.rl-item[data-stop="'+num+'"]').classList.toggle('done',isDone);
+updateProgress();
+});
+});
+
+// Прогресс маршрута
+function updateProgress(){
+const done=document.querySelectorAll('.module-view .ma-done.done').length;
+document.getElementById('rp-count').textContent=done;
+const percent=Math.round(done/totalStops*100);
+document.getElementById('rp-fill').style.width=percent+'%';
+document.getElementById('route-progress').style.width=percent+'%';
+}
+updateProgress();
+
+// Чек-листы
+document.querySelectorAll('.checklist input[type="checkbox"]').forEach((cb,i)=>{
+const key='atoz_sales_check_'+i;
+if(localStorage.getItem(key)==='1')cb.checked=true;
+cb.addEventListener('change',()=>{localStorage.setItem(key,cb.checked?'1':'0');});
+});
+</script>
+
 </body>
 </html>
