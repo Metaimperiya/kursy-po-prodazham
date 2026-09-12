@@ -1,87 +1,124 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="google-site-verification" content="yHcsl1QapmlY3f9N_pNmjunD6yZNlDvqFqyvGR2uDWA" />
-
-  <title>Активные B2B продажи | Поиск корпоративных клиентов | KURSYPRO</title>
-  <meta name="description" content="Курс «Активные B2B продажи»: как искать и привлекать корпоративных клиентов. Технологии активного поиска в B2B, холодные контакты." />
-  <meta name="keywords" content="активные b2b продажи, поиск корпоративных клиентов, холодные контакты b2b, привлечение клиентов b2b" />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://kursy-po-prodazham.com/courses/b2b/aktivnye-b2b-prodazhi.html" />
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { background: #0b0b0b; color: #e5e5e5; font-family: 'Inter', sans-serif; line-height: 1.6; }
-    .container { max-width: 1100px; margin: 0 auto; padding: 0 25px; }
-    header { padding: 25px 0; border-bottom: 1px solid #2a2a2a; background: #0b0b0b; position: sticky; top: 0; z-index: 999; }
-    .header-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
-    .logo { font-size: 28px; font-weight: 700; color: #f5f5f5; }
-    .logo span { color: #d4af37; }
-    .logo small { font-size: 14px; color: #999; display: block; letter-spacing: 2px; }
-    nav a { color: #ccc; text-decoration: none; margin-left: 30px; font-weight: 500; font-size: 15px; transition: 0.2s; }
-    nav a:hover { color: #d4af37; }
-    nav a i { margin-right: 6px; }
-    .breadcrumb { padding: 25px 0 10px; color: #888; font-size: 14px; }
-    .breadcrumb a { color: #d4af37; text-decoration: none; }
-    .breadcrumb a:hover { text-decoration: underline; }
-    .breadcrumb span { color: #555; }
-    .course-header { padding: 30px 0 40px; border-bottom: 1px solid #1f1f1f; }
-    .course-header .tags { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 15px; }
-    .course-header .tags span { background: #1a1a1a; border: 1px solid #d4af37; color: #d4af37; padding: 4px 16px; border-radius: 30px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
-    .course-header h1 { font-size: 44px; font-weight: 800; color: #f5f5f5; }
-    .course-header .subtitle { font-size: 18px; color: #aaa; margin-top: 12px; max-width: 700px; }
-    .course-header .meta { display: flex; gap: 30px; margin-top: 20px; color: #888; font-size: 15px; }
-    .course-header .meta i { color: #d4af37; margin-right: 6px; }
-    .course-content { display: grid; grid-template-columns: 2fr 1fr; gap: 50px; padding: 40px 0 60px; }
-    .description h2 { font-size: 24px; color: #f0f0f0; margin: 30px 0 15px; border-left: 4px solid #d4af37; padding-left: 15px; }
-    .description h2:first-child { margin-top: 0; }
-    .description p { color: #c0c0c0; margin-bottom: 15px; font-size: 16px; }
-    .program-list { list-style: none; padding: 0; }
-    .program-list li { background: #141414; border: 1px solid #222; border-radius: 12px; padding: 14px 20px; margin-bottom: 10px; display: flex; align-items: center; gap: 14px; transition: 0.2s; }
-    .program-list li:hover { border-color: #d4af37; }
-    .program-list li .num { background: #d4af37; color: #0b0b0b; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px; flex-shrink: 0; }
-    .program-list li .text { color: #ddd; font-size: 15px; }
-    .program-list li .duration { margin-left: auto; color: #666; font-size: 13px; white-space: nowrap; }
-    .result-box { background: linear-gradient(135deg, #141414, #1a1a1a); border: 1px solid #2a2a2a; border-radius: 16px; padding: 25px 30px; margin: 25px 0; }
-    .result-box ul { list-style: none; padding: 0; }
-    .result-box ul li { padding: 6px 0; color: #c0c0c0; }
-    .result-box ul li i { color: #d4af37; margin-right: 12px; }
-    .sidebar { position: sticky; top: 100px; align-self: start; }
-    .price-card { background: #141414; border: 2px solid #d4af37; border-radius: 20px; padding: 30px 25px; text-align: center; }
-    .price-card .price { font-size: 42px; font-weight: 800; color: #d4af37; }
-    .price-card .price small { font-size: 18px; color: #888; font-weight: 400; }
-    .price-card .old-price { font-size: 20px; color: #666; text-decoration: line-through; margin-top: 4px; }
-    .btn-buy { display: block; width: 100%; background: #d4af37; color: #0b0b0b; font-weight: 700; padding: 16px; border: none; border-radius: 60px; font-size: 18px; cursor: pointer; margin: 20px 0 12px; transition: 0.3s; }
-    .btn-buy:hover { background: #f0c85a; transform: scale(1.02); }
-    .price-card .guarantee { color: #666; font-size: 13px; }
-    .price-card .guarantee i { color: #d4af37; }
-    .info-box { background: #141414; border: 1px solid #222; border-radius: 16px; padding: 20px 25px; margin-top: 20px; }
-    .info-box h4 { color: #f0f0f0; margin-bottom: 12px; }
-    .info-box p { color: #999; font-size: 14px; padding: 5px 0; border-bottom: 1px dashed #1a1a1a; }
-    .info-box p:last-child { border-bottom: none; }
-    .similar { padding: 40px 0 60px; border-top: 1px solid #1f1f1f; }
-    .similar h2 { font-size: 28px; color: #f0f0f0; margin-bottom: 25px; }
-    .similar-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px; }
-    .similar-card { background: #141414; border: 1px solid #222; border-radius: 14px; padding: 18px 20px; transition: 0.3s; text-decoration: none; color: #e5e5e5; }
-    .similar-card:hover { border-color: #d4af37; transform: translateY(-4px); }
-    .similar-card h4 { font-size: 16px; color: #f0f0f0; }
-    .similar-card p { font-size: 13px; color: #888; margin-top: 6px; }
-    footer { border-top: 1px solid #1f1f1f; padding: 45px 0 35px; text-align: center; color: #666; font-size: 14px; }
-    footer span { color: #d4af37; }
-    @media (max-width: 768px) { .course-content { grid-template-columns: 1fr; } .course-header h1 { font-size: 30px; } .sidebar { position: static; } .course-header .meta { flex-wrap: wrap; gap: 12px; } }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-site-verification" content="yHcsl1QapmlY3f9N_pNmjunD6yZNlDvqFqyvGR2uDWA" />
+<title>Активные B2B продажи — полный курс | 10 глав | Курсы по продажам</title>
+<meta name="description" content="Полный курс «Активные B2B продажи»: ICP, поиск клиентов, выход на ЛПР, холодные звонки, письма, квалификация BANT/MEDDIC, CRM, система продаж, масштабирование. 10 глав, шаблоны, чек-листы, кейсы.">
+<meta name="keywords" content="активные b2b продажи, поиск корпоративных клиентов, выход на лпр, холодные звонки b2b, скрипты b2b, квалификация лидов, bant, meddic, crm b2b, система продаж, масштабирование отдела продаж">
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://kursy-po-prodazham.com/courses/b2b/aktivnye-b2b-prodazhi.html" />
+<meta property="og:title" content="Активные B2B продажи — полный курс">
+<meta property="og:description" content="10 глав: от ICP и поиска клиентов до системы и масштабирования.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://kursy-po-prodazham.com/courses/b2b/aktivnye-b2b-prodazhi.html">
+<meta property="og:site_name" content="Курсы по продажам">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Course","name":"Активные B2B продажи","description":"Полный курс по активным B2B продажам: поиск клиентов, выход на ЛПР, холодные звонки, квалификация, система продаж.","provider":{"@type":"Organization","name":"Курсы по продажам","url":"https://kursy-po-prodazham.com/"},"inLanguage":"ru","hasCourseInstance":{"@type":"CourseInstance","courseMode":"online","courseWorkload":"PT10H"},"offers":{"@type":"Offer","price":"13900","priceCurrency":"RUB","availability":"https://schema.org/InStock"}}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--gold:#d4af37;--gold-light:#f0c85a;--bg:#0b0b0b;--card:#141414;--text:#e5e5e5;--muted:#999}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;line-height:1.75;font-size:17px}
+::-webkit-scrollbar{width:8px}
+::-webkit-scrollbar-track{background:#1a1a1a}
+::-webkit-scrollbar-thumb{background:var(--gold);border-radius:10px}
+a{color:var(--gold);text-decoration:none}
+a:hover{text-decoration:underline}
+.container{max-width:1400px;margin:0 auto;padding:0 25px}
+header{padding:20px 0;border-bottom:1px solid #2a2a2a;background:rgba(11,11,11,0.96);backdrop-filter:blur(10px);position:sticky;top:0;z-index:999}
+.header-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:15px}
+.logo{font-size:22px;font-weight:700;color:#f5f5f5;line-height:1.1}
+.logo span{color:var(--gold)}
+.logo small{font-size:11px;color:#999;display:block;letter-spacing:1px;font-weight:400;margin-top:2px}
+nav a{color:#ccc;text-decoration:none;margin-left:24px;font-weight:500;font-size:14px;transition:0.2s}
+nav a:hover{color:var(--gold);text-decoration:none}
+nav a i{margin-right:5px}
+#reading-progress{position:fixed;top:0;left:0;height:3px;background:var(--gold);width:0%;z-index:1000;transition:width 0.1s}
+.breadcrumb{padding:20px 0 6px;color:#888;font-size:13px}
+.breadcrumb a{color:var(--gold)}
+.breadcrumb span{color:#555}
+.course-hero{padding:35px 0 45px;border-bottom:1px solid #1f1f1f;position:relative}
+.course-hero::after{content:'';position:absolute;top:0;right:-5%;width:450px;height:450px;background:radial-gradient(circle,rgba(212,175,55,0.06) 0%,transparent 70%);pointer-events:none}
+.course-hero .tags{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px}
+.course-hero .tags span{background:#1a1a1a;border:1px solid var(--gold);color:var(--gold);padding:4px 16px;border-radius:30px;font-size:11px;text-transform:uppercase;letter-spacing:0.5px}
+.course-hero h1{font-size:48px;font-weight:800;background:linear-gradient(135deg,#f5f5f5 0%,var(--gold) 90%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1.1;max-width:900px}
+.course-hero .subtitle{font-size:18px;color:#aaa;margin-top:16px;max-width:780px}
+.course-hero .meta{display:flex;gap:26px;margin-top:22px;color:#888;font-size:14px;flex-wrap:wrap}
+.course-hero .meta i{color:var(--gold);margin-right:5px}
+.layout{display:grid;grid-template-columns:280px 1fr;gap:50px;padding:45px 0 60px;align-items:start}
+.toc{position:sticky;top:90px;background:var(--card);border:1px solid #222;border-radius:16px;padding:24px 22px;max-height:calc(100vh - 120px);overflow-y:auto}
+.toc h3{color:var(--gold);font-size:13px;text-transform:uppercase;letter-spacing:1px;margin-bottom:16px;font-weight:700}
+.toc ol{list-style:none;counter-reset:toc}
+.toc ol li{counter-increment:toc;margin-bottom:4px}
+.toc ol li a{display:flex;gap:10px;padding:8px 10px;border-radius:8px;color:#b0b0b0;font-size:14px;line-height:1.4;transition:0.2s;text-decoration:none}
+.toc ol li a::before{content:counter(toc);color:var(--gold);font-weight:700;flex-shrink:0;min-width:18px}
+.toc ol li a:hover{background:#1e1e1e;color:#f0f0f0}
+.toc ol li a.active{background:rgba(212,175,55,0.1);color:var(--gold);border-left:2px solid var(--gold)}
+.toc .toc-meta{margin-top:20px;padding-top:16px;border-top:1px solid #222;font-size:12px;color:#777}
+.toc .toc-meta p{margin-bottom:5px}
+.article{max-width:780px}
+.article>p{margin-bottom:18px;color:#c8c8c8}
+.article>p strong{color:#f0f0f0}
+.chapter{margin-bottom:60px;scroll-margin-top:100px}
+.chapter-num{display:inline-block;background:rgba(212,175,55,0.12);color:var(--gold);font-size:12px;font-weight:700;letter-spacing:1px;padding:4px 14px;border-radius:20px;text-transform:uppercase;margin-bottom:12px}
+.chapter h2{font-size:32px;color:#f5f5f5;margin-bottom:8px;line-height:1.2;font-weight:800}
+.chapter .chapter-lead{font-size:17px;color:#999;font-style:italic;margin-bottom:24px;padding-left:18px;border-left:3px solid var(--gold)}
+.chapter h3{font-size:22px;color:#f0f0f0;margin:32px 0 14px;font-weight:700}
+.chapter h4{font-size:18px;color:var(--gold);margin:24px 0 10px;font-weight:600}
+.chapter p{margin-bottom:16px;color:#c0c0c0}
+.chapter ul,.chapter ol{margin:14px 0 20px 24px}
+.chapter ul li,.chapter ol li{margin-bottom:8px;color:#b8b8b8}
+.chapter ul li::marker{color:var(--gold)}
+.chapter ol li::marker{color:var(--gold);font-weight:700}
+.chapter strong{color:#f0f0f0}
+.callout{border-radius:14px;padding:20px 24px;margin:24px 0;border-left:4px solid var(--gold);background:linear-gradient(135deg,#141414,#181818)}
+.callout-title{font-weight:700;color:var(--gold);font-size:15px;margin-bottom:8px;display:flex;align-items:center;gap:10px}
+.callout p{margin-bottom:8px;color:#c0c0c0;font-size:16px}
+.callout p:last-child{margin-bottom:0}
+.callout.example{border-left-color:#4a90e2}
+.callout.example .callout-title{color:#4a90e2}
+.callout.warning{border-left-color:#e53935}
+.callout.warning .callout-title{color:#e53935}
+.callout.tip{border-left-color:#4caf50}
+.callout.tip .callout-title{color:#4caf50}
+.table-wrap{overflow-x:auto;margin:24px 0;border-radius:12px;border:1px solid #222}
+table{width:100%;border-collapse:collapse;font-size:15px}
+th{background:#1a1a1a;color:var(--gold);text-align:left;padding:14px 18px;font-weight:700;border-bottom:1px solid #2a2a2a}
+td{padding:12px 18px;border-bottom:1px solid #1a1a1a;color:#b8b8b8}
+tr:last-child td{border-bottom:none}
+tr:hover td{background:#161616}
+.checklist{background:var(--card);border:1px solid #222;border-radius:14px;padding:22px 26px;margin:26px 0}
+.checklist h4{color:var(--gold);margin-bottom:14px;font-size:16px;display:flex;align-items:center;gap:10px}
+.checklist ul{list-style:none;margin:0}
+.checklist ul li{padding:8px 0;color:#b8b8b8;font-size:15px;display:flex;align-items:flex-start;gap:12px;cursor:pointer;transition:0.2s}
+.checklist ul li:hover{color:#e5e5e5}
+.checklist ul li input[type="checkbox"]{appearance:none;width:20px;height:20px;border:2px solid #444;border-radius:5px;cursor:pointer;flex-shrink:0;margin-top:3px;position:relative;transition:0.2s}
+.checklist ul li input[type="checkbox"]:checked{background:var(--gold);border-color:var(--gold)}
+.checklist ul li input[type="checkbox"]:checked::after{content:'✓';position:absolute;top:-3px;left:3px;color:#0b0b0b;font-weight:700;font-size:14px}
+.term{display:inline-block;background:rgba(212,175,55,0.12);color:var(--gold);padding:1px 8px;border-radius:5px;font-weight:600;font-size:15px}
+.next-part{background:linear-gradient(135deg,#141414,#1a1a1a);border:1px solid var(--gold);border-radius:16px;padding:30px 34px;margin:50px 0;text-align:center}
+.next-part h3{color:var(--gold);font-size:20px;margin-bottom:10px}
+.next-part p{color:#999;font-size:15px;margin-bottom:6px}
+footer{border-top:1px solid #1f1f1f;padding:45px 0 35px;text-align:center;color:#666;font-size:14px;margin-top:40px}
+footer span{color:var(--gold)}
+@media(max-width:1000px){.layout{grid-template-columns:1fr;gap:30px}.toc{position:static;max-height:none}.course-hero h1{font-size:34px}.chapter h2{font-size:26px}.chapter h3{font-size:19px}nav a{margin-left:12px;font-size:12px}.logo{font-size:17px}body{font-size:16px}}
+</style>
 </head>
 <body>
+
+<div id="reading-progress"></div>
+
 <header>
   <div class="container header-inner">
-    <div class="logo">KURSY<span>PRO</span><small>золотой стандарт продаж</small></div>
+    <a href="../../index.html" style="text-decoration:none;"><div class="logo">КУРСЫ ПО <span>ПРОДАЖАМ</span><small>золотой стандарт продаж</small></div></a>
     <nav>
       <a href="../../index.html"><i class="fas fa-home"></i> Главная</a>
       <a href="../../categories/b2b.html"><i class="fas fa-th-list"></i> B2B продажи</a>
-      <a href="#"><i class="fas fa-phone-alt"></i> Контакты</a>
+      <a href="#toc"><i class="fas fa-book"></i> Содержание</a>
     </nav>
   </div>
 </header>
@@ -90,98 +127,1153 @@
   <a href="../../index.html">Главная</a> / <a href="../../categories/b2b.html">B2B продажи</a> / <span>Активные B2B продажи</span>
 </div>
 
-<section class="course-header">
+<section class="course-hero">
   <div class="container">
     <div class="tags">
       <span><i class="fas fa-bullhorn"></i> Активные</span>
       <span><i class="fas fa-building"></i> B2B</span>
-      <span><i class="fas fa-clock"></i> 10 дней</span>
+      <span><i class="fas fa-book-open"></i> 10 глав</span>
+      <span><i class="fas fa-fire" style="color:#ff6b35;"></i> Хит продаж</span>
     </div>
     <h1>Активные B2B продажи</h1>
-    <p class="subtitle">Как искать и привлекать корпоративных клиентов. Технологии активного поиска в B2B, холодные контакты.</p>
+    <p class="subtitle">Полный практический курс: от профиля идеального клиента и поиска компаний до выхода на ЛПР, холодных звонков, квалификации и построения системы активных продаж. С шаблонами, чек-листами и разбором кейсов.</p>
     <div class="meta">
-      <span><i class="fas fa-clock"></i> 10 часов (5 модулей)</span>
+      <span><i class="fas fa-clock"></i> 10 часов чтения</span>
       <span><i class="fas fa-users"></i> 280+ учеников</span>
       <span><i class="fas fa-star" style="color:#d4af37;"></i><i class="fas fa-star" style="color:#d4af37;"></i><i class="fas fa-star" style="color:#d4af37;"></i><i class="fas fa-star" style="color:#d4af37;"></i><i class="fas fa-star" style="color:#555;"></i> 4.7</span>
+      <span><i class="fas fa-certificate"></i> Сертификат</span>
     </div>
   </div>
 </section>
 
 <div class="container">
-  <div class="course-content">
-    <div class="description">
-      <h2>О чём курс</h2>
-      <p>Активные продажи в B2B — это когда ты не ждешь клиентов, а сам их ищешь. Этот курс научит тебя использовать все каналы привлечения корпоративных клиентов.</p>
-      <p>Ты узнаешь, как находить корпоративных клиентов через холодные контакты, как работать с базами данных и как превращать контакты в сделки.</p>
+  <div class="layout">
 
-      <h2>Программа курса</h2>
-      <ul class="program-list">
-        <li><span class="num">1</span><span class="text">Стратегия активных B2B продаж</span><span class="duration">2 ч</span></li>
-        <li><span class="num">2</span><span class="text">Поиск корпоративных клиентов</span><span class="duration">2 ч</span></li>
-        <li><span class="num">3</span><span class="text">Холодные контакты в B2B</span><span class="duration">2 ч</span></li>
-        <li><span class="num">4</span><span class="text">Работа с лидами в B2B</span><span class="duration">2 ч</span></li>
-        <li><span class="num">5</span><span class="text">Система активных B2B продаж</span><span class="duration">2 ч</span></li>
-      </ul>
+    <aside class="toc" id="toc">
+      <h3><i class="fas fa-list-ol"></i> Содержание курса</h3>
+      <ol>
+        <li><a href="#ch1">Что такое активные B2B продажи</a></li>
+        <li><a href="#ch2">ICP и сегментация клиентов</a></li>
+        <li><a href="#ch3">Поиск корпоративных клиентов</a></li>
+        <li><a href="#ch4">Выход на ЛПР</a></li>
+        <li><a href="#ch5">Холодные звонки</a></li>
+        <li><a href="#ch6">Письма и сообщения</a></li>
+        <li><a href="#ch7">Квалификация лидов</a></li>
+        <li><a href="#ch8">CRM и ведение сделки</a></li>
+        <li><a href="#ch9">Система и метрики</a></li>
+        <li><a href="#ch10">Масштабирование</a></li>
+      </ol>
+      <div class="toc-meta">
+        <p><i class="fas fa-layer-group"></i> 10 глав</p>
+        <p><i class="fas fa-clock"></i> ~10 часов чтения</p>
+      </div>
+    </aside>
 
-      <h2>Результат после курса</h2>
-      <div class="result-box">
+    <article class="article">
+
+      <p><strong>Активные B2B продажи</strong> — это модель, в которой компания не ждёт, пока клиент придёт сам, а сама находит его, устанавливает контакт и ведёт сделку до подписания. В корпоративном сегменте это единственный способ расти предсказуемо: пассивный поток заявок в B2B слишком мал, а конкуренция за внимание ЛПР слишком высока.</p>
+      <p>Этот курс — не набор мотивационных лозунгов. Это <strong>пошаговая система</strong>: от построения профиля идеального клиента и поиска компаний до выхода на принимающего решение, холодного звонка, квалификации лида и построения повторяемого процесса продаж.</p>
+
+      <!-- ============ ГЛАВА 1 ============ -->
+      <section class="chapter" id="ch1">
+        <span class="chapter-num">Глава 1</span>
+        <h2>Что такое активные B2B продажи</h2>
+        <p class="chapter-lead">Прежде чем звонить и писать, нужно понять, как устроен корпоративный рынок и почему он работает не так, как B2C.</p>
+
+        <h3>1.1. B2B и B2C: ключевые различия</h3>
+        <p>В B2C ты продаёшь человеку. Он сам решает, сам платит, сам пользуется. В B2B ты продаёшь <strong>компании</strong>, а внутри компании — <strong>группе людей</strong>, у каждого из которых свои интересы, страхи и KPI.</p>
+        <p>Вот главные отличия, которые меняют всё:</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Параметр</th><th>B2C</th><th>B2B</th></tr></thead>
+            <tbody>
+              <tr><td>Кто решает</td><td>Один человек</td><td>Группа людей (3–7 и больше)</td></tr>
+              <tr><td>Цикл сделки</td><td>Минуты — дни</td><td>Недели — месяцы</td></tr>
+              <tr><td>Средний чек</td><td>Низкий</td><td>Высокий</td></tr>
+              <tr><td>Мотивация</td><td>Эмоции, желание</td><td>Выгода, KPI, риск</td></tr>
+              <tr><td>Роль продавца</td><td>Консультант</td><td>Эксперт + координатор</td></tr>
+              <tr><td>Возражения</td><td>«Дорого», «подумаю»</td><td>«Не в бюджете», «нет потребности», «есть поставщик»</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Из этой таблицы вытекает главное правило: <strong>в B2B ты продаёшь не продукт, а решение проблемы компании и снижение риска для конкретного человека</strong>. Если ЛПР не увидит личной выгоды и безопасности — сделки не будет, даже если продукт объективно лучший.</p>
+
+        <h3>1.2. Активные и пассивные продажи</h3>
+        <p>Пассивные продажи — это когда клиент приходит сам: по рекламе, по рекомендации, через сайт. Активные — когда ты <strong>сам инициируешь контакт</strong>: звонишь, пишешь, приходишь.</p>
+        <p>В B2B пассивный поток редко закрывает план. Причины:</p>
         <ul>
-          <li><i class="fas fa-check-circle"></i> Ты научишься искать корпоративных клиентов</li>
-          <li><i class="fas fa-check-circle"></i> Увеличишь клиентскую базу B2B</li>
-          <li><i class="fas fa-check-circle"></i> Научишься работать с холодными контактами</li>
-          <li><i class="fas fa-check-circle"></i> Построишь систему активных продаж</li>
-          <li><i class="fas fa-check-circle"></i> Закроешь больше B2B сделок</li>
+          <li>Корпоративных клиентов на рынке ограниченное число.</li>
+          <li>Многие компании не ищут поставщика прямо сейчас — потребность ещё не осознана.</li>
+          <li>ЛПР занят и не читает холодную рекламу.</li>
+          <li>Цикл сделки длинный, и «тёплый» лид может «остыть» за месяц.</li>
         </ul>
+        <p>Активные продажи решают это: ты сам находишь компании, у которых есть <strong>потенциальная потребность</strong>, и создаёшь её осознание.</p>
+
+        <div class="callout">
+          <div class="callout-title"><i class="fas fa-quote-left"></i> Определение</div>
+          <p><strong>Активные B2B продажи</strong> — это системный процесс поиска, квалификации и привлечения корпоративных клиентов через исходящие контакты (звонки, письма, встречи, соцсети) с целью заключения сделки.</p>
+        </div>
+
+        <h3>1.3. Участники сделки в B2B</h3>
+        <p>В корпоративной сделке почти никогда не бывает одного человека. Есть несколько ролей, и каждая влияет на результат. Если ты работаешь только с одной — сделка «зависает».</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Роль</th><th>Что делает</th><th>Что важно для него</th></tr></thead>
+            <tbody>
+              <tr><td><span class="term">ЛПР</span> — лицо, принимающее решение</td><td>Подписывает договор, выделяет бюджет</td><td>Выгода компании, личный KPI, репутация</td></tr>
+              <tr><td><span class="term">ЛВР</span> — лицо, влияющее на решение</td><td>Даёт рекомендации, оценивает продукт</td><td>Техническое соответствие, удобство</td></tr>
+              <tr><td><span class="term">Инициатор</span></td><td>Первым озвучивает потребность</td><td>Решение своей боли</td></tr>
+              <tr><td><span class="term">Бюджетодержатель</span></td><td>Контролирует расходы</td><td>Цена, обоснование, ROI</td></tr>
+              <tr><td><span class="term">Блокер</span></td><td>Сопротивляется сделке</td><td>Сохранение статус-кво, личная безопасность</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="callout example">
+          <div class="callout-title"><i class="fas fa-briefcase"></i> Пример из практики</div>
+          <p>Менеджер продаёт CRM крупной логистической компании. Он нашёл контакт IT-директора, показал демо, всё понравилось. Но сделка «зависла» на 3 месяца. Почему? IT-директор был <strong>ЛВР</strong>, а не ЛПР. Настоящий ЛПР — финансовый директор, который не видел в CRM выгоды для своих KPI. Менеджер потерял время, не построив карту ролей.</p>
+        </div>
+
+        <h3>1.4. Цикл сделки в B2B</h3>
+        <p>Активная B2B сделка проходит 6 этапов. Понимание этих этапов — основа системы.</p>
+        <ol>
+          <li><strong>Поиск.</strong> Ты находишь компании, подходящие под ICP.</li>
+          <li><strong>Контакт.</strong> Первый выход: звонок, письмо, LinkedIn.</li>
+          <li><strong>Квалификация.</strong> Понять, есть ли потребность, бюджет, сроки, ЛПР.</li>
+          <li><strong>Презентация.</strong> Показать решение под задачу клиента.</li>
+          <li><strong>Согласование.</strong> Работа с возражениями, торг, юристы.</li>
+          <li><strong>Сделка.</strong> Подписание, оплата, передача в работу.</li>
+        </ol>
+        <p>Каждый этап имеет свою <strong>конверсию</strong>. Если из 100 контактов до сделки доходит 2 — это нормально для B2B. Задача — не «продавать всем», а <strong>увеличивать конверсию на каждом шаге</strong>.</p>
+
+        <div class="callout warning">
+          <div class="callout-title"><i class="fas fa-exclamation-triangle"></i> Частая ошибка</div>
+          <p>Новички пытаются продать на первом же звонке. В B2B это почти всегда провал. Цель первого контакта — <strong>не продажа, а квалификация и договорённость о следующем шаге</strong>.</p>
+        </div>
+
+        <h3>1.5. Метрики активных B2B продаж</h3>
+        <p>Без цифр активные продажи превращаются в хаос. Вот базовый набор метрик, который нужно вести с первого дня:</p>
+        <ul>
+          <li><strong>Количество контактов в день</strong> — сколько звонков/писем ты делаешь.</li>
+          <li><strong>Конверсия в разговор</strong> — сколько из них дошли до ЛПР.</li>
+          <li><strong>Конверсия в квалификацию</strong> — сколько лидов признаны перспективными.</li>
+          <li><strong>Конверсия в сделку</strong> — сколько дошло до подписания.</li>
+          <li><strong>Средний цикл сделки</strong> — сколько дней от первого контакта до оплаты.</li>
+          <li><strong>Средний чек</strong> — сколько приносит одна сделка.</li>
+        </ul>
+        <p>Эти метрики позволяют понять, где «узкое горлышко»: может, ты мало звонишь, или плохо квалифицируешь, или долго согласовываешь.</p>
+
+        <div class="checklist">
+          <h4><i class="fas fa-check-square"></i> Чек-лист после главы 1</h4>
+          <ul>
+            <li><input type="checkbox"> Понимаю разницу между B2B и B2C</li>
+            <li><input type="checkbox"> Знаю, чем активные продажи отличаются от пассивных</li>
+            <li><input type="checkbox"> Различаю роли: ЛПР, ЛВР, инициатор, бюджетодержатель, блокер</li>
+            <li><input type="checkbox"> Понимаю 6 этапов цикла B2B-сделки</li>
+            <li><input type="checkbox"> Записал базовые метрики, которые буду вести</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ============ ГЛАВА 2 ============ -->
+      <section class="chapter" id="ch2">
+        <span class="chapter-num">Глава 2</span>
+        <h2>ICP и сегментация клиентов</h2>
+        <p class="chapter-lead">Прежде чем искать клиентов, нужно точно понять, кого искать. ICP — это не «все компании», а конкретный профиль, под который ты строишь всю систему.</p>
+
+        <h3>2.1. Что такое ICP</h3>
+        <p><span class="term">ICP</span> (Ideal Customer Profile) — идеальный профиль клиента. Это описание компании, которая:</p>
+        <ul>
+          <li>имеет потребность в твоём продукте,</li>
+          <li>может его купить (бюджет, полномочия),</li>
+          <li>получит измеримую выгоду,</li>
+          <li>будет долго оставаться клиентом.</li>
+        </ul>
+        <p>ICP — не «портрет покупателя» в маркетинговом смысле. Это <strong>рабочий инструмент для отбора базы</strong>. Чем точнее ICP, тем выше конверсия и меньше слитых звонков.</p>
+
+        <div class="callout warning">
+          <div class="callout-title"><i class="fas fa-exclamation-triangle"></i> Почему без ICP плохо</div>
+          <p>Без ICP менеджер звонит «всем подряд». Из 100 звонков 90 — мимо: не тот размер компании, не та отрасль, нет бюджета. Время сгорает, конверсия падает, мотивация падает.</p>
+        </div>
+
+        <h3>2.2. Как построить ICP: 8 полей</h3>
+        <p>Хороший ICP описывается конкретными параметрами, а не общими словами. Вот минимальный набор:</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Поле</th><th>Что описывает</th><th>Пример</th></tr></thead>
+            <tbody>
+              <tr><td>Отрасль</td><td>В каких сферах работает клиент</td><td>Логистика, ритейл, производство</td></tr>
+              <tr><td>Размер компании</td><td>Число сотрудников, оборот</td><td>50–500 человек, оборот 100 млн–1 млрд</td></tr>
+              <tr><td>География</td><td>Регион присутствия</td><td>Москва, СПб, города-миллионники</td></tr>
+              <tr><td>Структура</td><td>Есть ли отдел, который купит</td><td>Свой отдел продаж от 5 человек</td></tr>
+              <tr><td>Технологии</td><td>Что уже используют</td><td>CRM есть, но не автоматизирована</td></tr>
+              <tr><td>Триггер</td><td>Событие, создающее потребность</td><td>Рост штата, новый рынок, смена руководителя</td></tr>
+              <tr><td>Боль</td><td>Проблема, которую решает продукт</td><td>Теряют лиды, нет аналитики</td></tr>
+              <tr><td>Бюджет</td><td>Сколько готовы платить</td><td>От 500 тыс. руб. в год</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h4>Пример готового ICP</h4>
+        <div class="callout example">
+          <div class="callout-title"><i class="fas fa-briefcase"></i> ICP для продажи CRM</div>
+          <p><strong>Отрасль:</strong> B2B-услуги (логистика, IT, консалтинг).<br>
+          <strong>Размер:</strong> 30–300 сотрудников, оборот 100 млн–1 млрд руб.<br>
+          <strong>География:</strong> Москва, СПб.<br>
+          <strong>Структура:</strong> отдел продаж 5–30 человек.<br>
+          <strong>Технологии:</strong> Excel или устаревшая CRM.<br>
+          <strong>Триггер:</strong> рост отдела, смена РОПа, падение конверсии.<br>
+          <strong>Боль:</strong> теряют заявки, нет прозрачной воронки.<br>
+          <strong>Бюджет:</strong> от 500 тыс. руб./год.</p>
+        </div>
+
+        <h3>2.3. Сегментация: A, B, C</h3>
+        <p>Не все клиенты одинаково ценны. После построения ICP база делится на сегменты:</p>
+        <ul>
+          <li><strong>Сегмент A</strong> — идеальное совпадение с ICP. Сюда — 70% усилий.</li>
+          <li><strong>Сегмент B</strong> — частичное совпадение. Сюда — 25% усилий.</li>
+          <li><strong>Сегмент C</strong> — слабое совпадение. Сюда — 5% усилий или отказ.</li>
+        </ul>
+        <p>Это позволяет не распыляться и работать там, где максимальная отдача.</p>
+
+        <h3>2.4. Скоринг лидов</h3>
+        <p><span class="term">Скоринг</span> — это оценка каждого лида по баллам. Чем больше баллов, тем выше приоритет. Простой пример скоринга:</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Критерий</th><th>Баллы</th></tr></thead>
+            <tbody>
+              <tr><td>Отрасль совпадает с ICP</td><td>+20</td></tr>
+              <tr><td>Размер компании в диапазоне</td><td>+15</td></tr>
+              <tr><td>Есть отдел продаж</td><td>+15</td></tr>
+              <tr><td>Есть триггер (рост, смена РОПа)</td><td>+20</td></tr>
+              <tr><td>Контакт ЛПР найден</td><td>+20</td></tr>
+              <tr><td>Бюджет подтверждён</td><td>+10</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Лид с суммой 70+ — приоритет 1. 40–69 — приоритет 2. Меньше 40 — в отложенные.</p>
+
+        <h3>2.5. Где брать данные для ICP</h3>
+        <p>ICP строится не из головы, а из данных:</p>
+        <ul>
+          <li><strong>Анализ текущих клиентов.</strong> Кто уже купил? Какие у них общие черты?</li>
+          <li><strong>Анализ отказов.</strong> Кто ушёл и почему? Это тоже сигнал.</li>
+          <li><strong>Интервью с отделом продаж.</strong> Что говорят менеджеры о «хороших» клиентах?</li>
+          <li><strong>Конкуренты.</strong> С кем работают они? Какие отрасли?</li>
+          <li><strong>Отраслевые отчёты.</strong> Где рынок растёт?</li>
+        </ul>
+
+        <div class="callout tip">
+          <div class="callout-title"><i class="fas fa-lightbulb"></i> Совет</div>
+          <p>Пересматривайте ICP раз в квартал. Рынок меняется, и то, что работало полгода назад, может перестать работать.</p>
+        </div>
+
+        <div class="checklist">
+          <h4><i class="fas fa-check-square"></i> Чек-лист после главы 2</h4>
+          <ul>
+            <li><input type="checkbox"> Понимаю, что такое ICP и зачем он нужен</li>
+            <li><input type="checkbox"> Описал ICP по 8 полям</li>
+            <li><input type="checkbox"> Разделил базу на сегменты A, B, C</li>
+            <li><input type="checkbox"> Ввёл скоринг лидов</li>
+            <li><input type="checkbox"> Знаю, где брать данные для уточнения ICP</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ============ ГЛАВА 3 ============ -->
+      <section class="chapter" id="ch3">
+        <span class="chapter-num">Глава 3</span>
+        <h2>Поиск корпоративных клиентов</h2>
+        <p class="chapter-lead">ICP описан. Теперь нужно найти компании, которые ему соответствуют. Это самая рутинная, но самая важная часть активных продаж.</p>
+
+        <h3>3.1. Источники данных</h3>
+        <p>В B2B есть несколько проверенных источников, откуда берутся компании и контакты:</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Источник</th><th>Что даёт</th><th>Плюсы</th><th>Минусы</th></tr></thead>
+            <tbody>
+              <tr><td>2ГИС / Яндекс.Карты</td><td>Компании по отрасли и городу</td><td>Бесплатно, много данных</td><td>Мало контактов ЛПР</td></tr>
+              <tr><td>Rusprofile / Спарк</td><td>Юрлица, обороты, руководители</td><td>Официальные данные</td><td>Платная подписка</td></tr>
+              <tr><td>LinkedIn</td><td>Контакты сотрудников, должности</td><td>Точные ЛПР</td><td>Ограничения в РФ</td></tr>
+              <tr><td>Отраслевые каталоги</td><td>Компании по нишам</td><td>Узкая выборка</td><td>Устаревшие данные</td></tr>
+              <tr><td>Сайты компаний</td><td>Контакты, структура</td><td>Актуально</td><td>Долго вручную</td></tr>
+              <tr><td>Парсинг</td><td>Массовый сбор данных</td><td>Быстро, много</td><td>Нужны навыки</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>3.2. Как искать компании поэтапно</h3>
+        <p>Поиск — это не «сесть и найти всех». Это последовательность:</p>
+        <ol>
+          <li><strong>Определи критерии поиска.</strong> Отрасль, город, размер, наличие отдела.</li>
+          <li><strong>Собери первичный список.</strong> Через 2ГИС, каталоги, Rusprofile.</li>
+          <li><strong>Отфильтруй по ICP.</strong> Убери тех, кто не подходит.</li>
+          <li><strong>Найди контакты.</strong> Телефон, email, LinkedIn ЛПР.</li>
+          <li><strong>Обогати данные.</strong> Добавь триггеры, боли, контекст.</li>
+          <li><strong>Занеси в CRM.</strong> С тегами и скорингом.</li>
+        </ol>
+
+        <div class="callout example">
+          <div class="callout-title"><i class="fas fa-briefcase"></i> Пример: поиск клиентов для CRM</div>
+          <p><strong>Шаг 1.</strong> Критерии: B2B-услуги, Москва, 30–300 человек, есть отдел продаж.<br>
+          <strong>Шаг 2.</strong> В 2ГИС выбираем рубрики «Логистические компании», «IT-компании», «Консалтинг». Выгружаем 200 компаний.<br>
+          <strong>Шаг 3.</strong> Через Rusprofile проверяем оборот. Оставляем 120.<br>
+          <strong>Шаг 4.</strong> На сайтах ищем контакты РОПа или коммерческого директора. Находим 80.<br>
+          <strong>Шаг 5.</strong> Добавляем триггеры: у 20 компаний в новостях — рост штата. Это приоритет.<br>
+          <strong>Шаг 6.</strong> Заносим в CRM, ставим скоринг.</p>
+        </div>
+
+        <h3>3.3. Триггеры: когда клиент готов покупать</h3>
+        <p><span class="term">Триггер</span> — это событие в компании, которое создаёт или усиливает потребность в твоём продукте. Работа с триггерами повышает конверсию в разы.</p>
+        <p>Основные триггеры в B2B:</p>
+        <ul>
+          <li><strong>Рост компании.</strong> Открытие нового офиса, рост штата, выход на новый рынок.</li>
+          <li><strong>Смена руководителя.</strong> Новый РОП или коммерческий директор часто меняет поставщиков.</li>
+          <li><strong>Привлечение инвестиций.</strong> Есть бюджет на развитие.</li>
+          <li><strong>Публичные проблемы.</strong> Утечка данных, срыв поставок, скандал.</li>
+          <li><strong>Изменение законодательства.</strong> Новые требования, которые нужно выполнить.</li>
+          <li><strong>Сезонность.</strong> Подготовка к пиковому сезону.</li>
+        </ul>
+
+        <div class="callout tip">
+          <div class="callout-title"><i class="fas fa-lightbulb"></i> Как отслеживать триггеры</div>
+          <p>Подпишись на новости отрасли, мониторь LinkedIn и Telegram-каналы компаний, используй сервисы вроде «Контур.Компас» или «Спарк.Мониторинг». Это даёт повод для первого контакта.</p>
+        </div>
+
+        <h3>3.4. Обогащение базы</h3>
+        <p>Сырая база — это просто список компаний. Чтобы она работала, её нужно <strong>обогатить</strong>:</p>
+        <ul>
+          <li>ФИО и должность ЛПР</li>
+          <li>Прямой телефон и email</li>
+          <li>Ссылка на LinkedIn</li>
+          <li>Триггер (что происходит в компании)</li>
+          <li>Предполагаемая боль</li>
+          <li>Источник контакта</li>
+        </ul>
+        <p>Обогащённая база позволяет делать персонализированные контакты, а не шаблонные рассылки.</p>
+
+        <h3>3.5. Приоритизация базы</h3>
+        <p>После обогащения база сортируется по приоритету:</p>
+        <ol>
+          <li><strong>Приоритет 1.</strong> Полное совпадение с ICP + триггер + контакт ЛПР. Звоним первыми.</li>
+          <li><strong>Приоритет 2.</strong> Совпадение с ICP, но нет триггера. Звоним во вторую очередь.</li>
+          <li><strong>Приоритет 3.</strong> Частичное совпадение. Оставляем на потом.</li>
+          <li><strong>Отложенные.</strong> Не подходят сейчас, но могут подойти позже.</li>
+        </ol>
+
+        <div class="callout warning">
+          <div class="callout-title"><i class="fas fa-exclamation-triangle"></i> Ошибка новичка</div>
+          <p>Звонить по базе «как есть», без приоритизации. В итоге 80% времени уходит на бесперспективных, а перспективные остаются без внимания.</p>
+        </div>
+
+        <h3>3.6. Сколько контактов нужно</h3>
+        <p>В B2B работает правило: <strong>чем шире воронка, тем больше сделок</strong>. Ориентиры для одного менеджера:</p>
+        <ul>
+          <li>50–100 новых контактов в неделю</li>
+          <li>10–20 квалифицированных лидов в неделю</li>
+          <li>3–5 встреч в неделю</li>
+          <li>1–2 сделки в месяц (зависит от цикла)</li>
+        </ul>
+        <p>Это не догма, а ориентир. Всё зависит от отрасли, среднего чека и цикла сделки.</p>
+
+        <div class="checklist">
+          <h4><i class="fas fa-check-square"></i> Чек-лист после главы 3</h4>
+          <ul>
+            <li><input type="checkbox"> Знаю основные источники данных для поиска</li>
+            <li><input type="checkbox"> Умею искать компании поэтапно</li>
+            <li><input type="checkbox"> Понимаю, что такое триггеры и как их отслеживать</li>
+            <li><input type="checkbox"> Умею обогащать базу контактами и контекстом</li>
+            <li><input type="checkbox"> Ввёл приоритизацию базы</li>
+            <li><input type="checkbox"> Знаю ориентиры по количеству контактов</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ============ ГЛАВА 4 ============ -->
+      <section class="chapter" id="ch4">
+        <span class="chapter-num">Глава 4</span>
+        <h2>Выход на ЛПР</h2>
+        <p class="chapter-lead">Ты нашёл компанию, у тебя есть контакт. Но между тобой и решением стоит секретарь, ассистент, «не тот» отдел. Как пройти через них — об этом глава.</p>
+
+        <h3>4.1. Кто такой ЛПР и почему до него сложно дойти</h3>
+        <p><span class="term">ЛПР</span> — лицо, принимающее решение. Это человек, который подписывает договор или даёт финальное «да». В B2B это обычно:</p>
+        <ul>
+          <li>Генеральный директор — в малом бизнесе (до 50 человек).</li>
+          <li>Коммерческий директор — в среднем (50–300).</li>
+          <li>Директор по закупкам, финансовый директор, IT-директор — в крупном.</li>
+          <li>Руководитель отдела — если продукт узкий и недорогой.</li>
+        </ul>
+        <p>Сложность в том, что ЛПР <strong>защищён барьерами</strong>: секретарь, ассистент, «личный помощник», автоответчик, отдел закупок. Его задача — не тратить время на всех подряд. Твоя задача — показать, что ты не «все подряд».</p>
+
+        <div class="callout warning">
+          <div class="callout-title"><i class="fas fa-exclamation-triangle"></i> Главная ошибка</div>
+          <p>Новичок звонит в компанию, попадает на секретаря, говорит «Здравствуйте, я хочу предложить вашей компании...» — и получает «Отправьте на почту». Всё. Конец. Секретарь отсеивает таких за 5 секунд.</p>
+        </div>
+
+        <h3>4.2. Карта выхода: кто стоит между тобой и ЛПР</h3>
+        <p>Прежде чем звонить, построй карту. В типичной компании путь к ЛПР выглядит так:</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Уровень</th><th>Кто это</th><th>Задача</th><th>Как проходить</th></tr></thead>
+            <tbody>
+              <tr><td>1</td><td>Секретарь / reception</td><td>Отсеивать всех</td><td>Уверенность, конкретика, имя ЛПР</td></tr>
+              <tr><td>2</td><td>Ассистент / помощник</td><td>Фильтровать звонки ЛПР</td><td>Показать ценность, попросить 2 минуты</td></tr>
+              <tr><td>3</td><td>Профильный отдел</td><td>Оценивать продукт</td><td>Говорить на языке отдела</td></tr>
+              <tr><td>4</td><td>ЛПР</td><td>Принимать решение</td><td>Выгода, KPI, безопасность</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Если ты звонишь и не знаешь, кто перед тобой — ты теряешь контроль. Поэтому <strong>первый вопрос всегда: «С кем я говорю?»</strong> — но задать его нужно правильно.</p>
+
+        <h3>4.3. Как пройти секретаря</h3>
+        <p>Секретарь — не враг. Это человек, который делает свою работу. Он отсеивает тех, кто говорит неуверенно, расплывчато или «продаёт». Твоя задача — <strong>не звучать как продавец</strong>.</p>
+        <h4>Что работает</h4>
+        <ul>
+          <li><strong>Уверенный тон.</strong> Не «Здравствуйте, меня зовут..., я хотел бы...», а «Добрый день. Соедините с Иваном Петровым».</li>
+          <li><strong>Конкретика.</strong> Знать имя и должность ЛПР. Секретарь понимает: если ты знаешь имя — ты не случайный.</li>
+          <li><strong>Легенда, а не продажа.</strong> Не «я предлагаю CRM», а «я по вопросу, который он запрашивал».</li>
+          <li><strong>Уточняющий вопрос.</strong> «Он сейчас на месте?» — вместо «Соедините меня с ним».</li>
+        </ul>
+        <h4>Фразы, которые работают</h4>
+        <div class="callout example">
+          <div class="callout-title"><i class="fas fa-comment"></i> Примеры</div>
+          <p>«Добрый день. Иван Петров на месте?»<br>
+          «Здравствуйте. Соедините с коммерческим директором, пожалуйста.»<br>
+          «Добрый день. Я по вопросу, который мы обсуждали с Иваном Петровым. Он на месте?»<br>
+          «Здравствуйте. Мне нужно уточнить один вопрос у Ивана Петрова. Когда он будет?»</p>
+        </div>
+        <h4>Фразы, которые убивают</h4>
+        <div class="callout warning">
+          <div class="callout-title"><i class="fas fa-times-circle"></i> Не говори так</div>
+          <p>«Здравствуйте, меня зовут Алексей, я представляю компанию..., мы предлагаем...»<br>
+          «Можно с вашим руководителем?»<br>
+          «Я хотел бы рассказать о нашем продукте.»<br>
+          «С кем я могу поговорить по поводу...?»</p>
+        </div>
+
+        <h3>4.4. Что делать, если секретарь говорит «Отправьте на почту»</h3>
+        <p>Это стандартный ответ. Твоя задача — не согласиться сразу и не спорить. Есть 4 рабочих варианта:</p>
+        <ol>
+          <li><strong>Уточнить адрес.</strong> «Хорошо, подскажите, на какую почту? И на чьё имя?» — так ты получаешь контакт ЛПР и повод для следующего звонка.</li>
+          <li><strong>Уточнить, кто принимает решение.</strong> «Подскажите, кто у вас отвечает за это направление? Чтобы я отправил напрямую.»</li>
+          <li><strong>Сослаться на срочность.</strong> «У меня вопрос, который нужно решить сегодня. Он займёт 2 минуты. Иван Петров на месте?»</li>
+          <li><strong>Перезвонить в другое время.</strong> Секретари часто меняются. Попробуй утром, в обед, вечером.</li>
+        </ol>
+
+        <div class="callout tip">
+          <div class="callout-title"><i class="fas fa-lightbulb"></i> Совет</div>
+          <p>Если секретарь отказывается соединять — не борись. Запиши имя секретаря, спроси, когда ЛПР обычно на месте, и перезвони позже. Работает в 80% случаев.</p>
+        </div>
+
+        <h3>4.5. Как пройти ассистента</h3>
+        <p>Ассистент — это человек, который лично знает ЛПР и защищает его время. Он умнее секретаря и сразу чувствует «продажника». Здесь нельзя давить — нужно <strong>заинтересовать</strong>.</p>
+        <h4>Структура разговора с ассистентом</h4>
+        <ol>
+          <li><strong>Представься по имени и компании.</strong> Без легенд — ассистент их раскусывает.</li>
+          <li><strong>Скажи, по какому вопросу.</strong> Конкретно, одной фразой.</li>
+          <li><strong>Покажи ценность.</strong> Почему это важно для ЛПР именно сейчас.</li>
+          <li><strong>Попроси 2 минуты.</strong> Не «встречу», не «презентацию» — 2 минуты.</li>
+          <li><strong>Договорись о следующем шаге.</strong> Если сейчас нельзя — когда можно.</li>
+        </ol>
+
+        <div class="callout example">
+          <div class="callout-title"><i class="fas fa-comment"></i> Пример разговора</div>
+          <p>— Добрый день. Меня зовут Алексей, компания «X». Я по вопросу автоматизации отдела продаж.<br>
+          — Иван Петров сейчас занят. Что вы хотели?<br>
+          — Понимаю. У нас есть решение, которое за 2 месяца сокращает потери лидов на 30%. Я хочу показать это Ивану Петрову — буквально 2 минуты. Когда ему удобно?<br>
+          — Отправьте на почту.<br>
+          — Хорошо, отправлю. Подскажите, на какую почту и на чьё имя? И через сколько ему обычно удобно перезвонить, чтобы уточнить, дошло ли?</p>
+        </div>
+
+        <h3>4.6. Что делать, если ЛПР «не на месте»</h3>
+        <p>Это не отказ. Это возможность получить информацию:</p>
+        <ul>
+          <li>«Когда он обычно бывает?» — получишь время для следующего звонка.</li>
+          <li>«Кто его замещает?» — возможно, заместитель тоже ЛВР.</li>
+          <li>«Можно его мобильный или email?» — иногда дают.</li>
+          <li>«Подскажите, он принимает решения по этому направлению?» — уточнишь карту.</li>
+        </ul>
+
+        <h3>4.7. Как говорить с ЛПР напрямую</h3>
+        <p>Ты дошёл. Теперь главное — не слить. ЛПР слушает первые 10–15 секунд и решает, продолжать или нет. Структура первого контакта:</p>
+        <ol>
+          <li><strong>Кто ты и откуда.</strong> Одна фраза, без «мы динамично развивающаяся компания».</li>
+          <li><strong>Почему звонишь именно ему.</strong> Связь с его компанией или отраслью.</li>
+          <li><strong>Что ты предлагаешь.</strong> Конкретная выгода, а не описание продукта.</li>
+          <li><strong>Что ты хочешь.</strong> Не «продать», а «договориться о следующем шаге».</li>
+        </ol>
+
+        <div class="callout example">
+          <div class="callout-title"><i class="fas fa-comment"></i> Первый контакт с ЛПР</div>
+          <p>— Иван Петров? Добрый день. Меня зовут Алексей, компания «X». Я звоню, потому что вы недавно открыли новый офис в Казани — и, скорее всего, у вас вырос поток лидов, которые нужно обрабатывать.<br>
+          — Ну, есть такое.<br>
+          — Мы помогаем таким компаниям, как ваша, не терять заявки при росте. У нас есть кейс: логистическая компания за 2 месяца сократила потери лидов на 30%. Я хочу показать вам, как это работает — 15 минут онлайн. Когда удобно?</p>
+        </div>
+
+        <h3>4.8. Каналы выхода на ЛПР</h3>
+        <p>Звонок — не единственный способ. В B2B работают несколько каналов, и лучший результат — когда ты используешь их вместе:</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Канал</th><th>Плюсы</th><th>Минусы</th><th>Когда использовать</th></tr></thead>
+            <tbody>
+              <tr><td>Телефон</td><td>Быстро, живой контакт</td><td>Секретарь, отказы</td><td>Первый выход</td></tr>
+              <tr><td>Email</td><td>Можно подумать, переслать</td><td>Игнор, спам</td><td>После звонка</td></tr>
+              <tr><td>LinkedIn</td><td>Прямой контакт с ЛПР</td><td>Ограничения, не все активны</td><td>Параллельно</td></tr>
+              <tr><td>Telegram</td><td>Личный канал, читают</td><td>Нужен контакт</td><td>После первого касания</td></tr>
+              <tr><td>Рекомендация</td><td>Высокое доверие</td><td>Сложно получить</td><td>Когда есть общий знакомый</td></tr>
+              <tr><td>Конференции</td><td>Живой контакт</td><td>Долго, дорого</td><td>Для крупных сделок</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>4.9. Мультиканальная атака</h3>
+        <p>Лучший результат даёт <strong>комбинация каналов</strong>. Пример последовательности:</p>
+        <ol>
+          <li><strong>День 1.</strong> Письмо на email с персонализированным предложением.</li>
+          <li><strong>День 2.</strong> Звонок: «Я вам вчера писал, хочу уточнить, дошло ли».</li>
+          <li><strong>День 4.</strong> Сообщение в LinkedIn: «Отправил вам письмо, буду рад обсудить».</li>
+          <li><strong>День 7.</strong> Повторный звонок с новым поводом.</li>
+          <li><strong>День 14.</strong> Финальное письмо с кейсом.</li>
+        </ol>
+        <p>Такая последовательность повышает шанс контакта в 2–3 раза по сравнению с одним звонком.</p>
+
+        <h3>4.10. Разбор кейса</h3>
+        <div class="callout example">
+          <div class="callout-title"><i class="fas fa-briefcase"></i> Кейс: как менеджер пробился к директору логистической компании</div>
+          <p><strong>Ситуация.</strong> Менеджер продаёт WMS-систему. Цель — директор логистической компании. Три месяца звонков — секретарь говорит «отправьте на почту». Письма игнорируются.</p>
+          <p><strong>Что сделал.</strong> Менеджер нашёл в LinkedIn, что директор выступал на отраслевой конференции. Написал ему в LinkedIn: «Иван Петрович, видел ваше выступление на конференции. Вы говорили о проблеме сортировки на складе — как раз то, что мы решаем. Можно 15 минут?» Директор ответил через 2 часа.</p>
+          <p><strong>Результат.</strong> Встреча через 3 дня, сделка через 6 недель. Сумма — 2,4 млн рублей.</p>
+          <p><strong>Вывод.</strong> Секретарь — не стена, а фильтр. Если не проходит один канал — используй другой. Персонализация на основе публичной активности ЛПР работает лучше любого скрипта.</p>
+        </div>
+
+        <h3>4.11. Ошибки при выходе на ЛПР</h3>
+        <ul>
+          <li><strong>Продавать секретарю.</strong> Он не ЛПР и не ЛВР. Его задача — соединить или нет.</li>
+          <li><strong>Говорить «мы предлагаем».</strong> Это флаг «сейчас начнётся продажа», и тебя отсекут.</li>
+          <li><strong>Не знать имени ЛПР.</strong> Секретарь сразу понимает, что ты «холодный».</li>
+          <li><strong>Соглашаться на «отправьте на почту» без уточнений.</strong> Так ты теряешь повод для следующего звонка.</li>
+          <li><strong>Давить и спорить.</strong> Секретарь — человек. Если ты хамишь, он запомнит и больше не соединит.</li>
+          <li><strong>Звонить один раз.</strong> В B2B 80% контактов происходят после 3–5 касаний.</li>
+          <li><strong>Не фиксировать данные.</strong> Каждый звонок должен оставлять след: имя, время, что сказали.</li>
+        </ul>
+
+        <div class="checklist">
+          <h4><i class="fas fa-check-square"></i> Чек-лист после главы 4</h4>
+          <ul>
+            <li><input type="checkbox"> Понимаю, кто такой ЛПР и почему до него сложно дойти</li>
+            <li><input type="checkbox"> Умею строить карту выхода</li>
+            <li><input type="checkbox"> Знаю, как проходить секретаря</li>
+            <li><input type="checkbox"> Знаю, как проходить ассистента</li>
+            <li><input type="checkbox"> Умею работать с «отправьте на почту»</li>
+            <li><input type="checkbox"> Умею говорить с ЛПР напрямую</li>
+            <li><input type="checkbox"> Понимаю, какие каналы использовать</li>
+            <li><input type="checkbox"> Знаю, как строить мультиканальную атаку</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ============ ГЛАВА 5 ============ -->
+      <section class="chapter" id="ch5">
+        <span class="chapter-num">Глава 5</span>
+        <h2>Холодные звонки</h2>
+        <p class="chapter-lead">Холодный звонок — это не «продажа по телефону». Это первый шаг, цель которого — квалифицировать лид и договориться о следующем контакте.</p>
+
+        <h3>5.1. Что такое холодный звонок в B2B</h3>
+        <p><span class="term">Холодный звонок</span> — это исходящий звонок компании или человеку, который не ждёт твоего звонка и не знаком с тобой. В B2B холодный звонок отличается от B2C:</p>
+        <ul>
+          <li>Звонят не «клиенту», а сотруднику компании.</li>
+          <li>Цель — не продажа, а квалификация и следующий шаг.</li>
+          <li>Разговор длится 2–5 минут, не больше.</li>
+          <li>Результат — не «купил», а «договорились о встрече/демо/прислать КП».</li>
+        </ul>
+
+        <div class="callout warning">
+          <div class="callout-title"><i class="fas fa-exclamation-triangle"></i> Главное заблуждение</div>
+          <p>«Холодный звонок = продать по телефону». Нет. Продать по телефону в B2B почти невозможно. Цель — <strong>получить согласие на следующий шаг</strong>.</p>
+        </div>
+
+        <h3>5.2. Подготовка к звонку</h3>
+        <p>Холодный звонок на 80% состоит из подготовки. Если ты не готовишься — ты сливаешь звонок. Что нужно перед звонком:</p>
+        <ul>
+          <li><strong>Информация о компании.</strong> Чем занимается, размер, рынок.</li>
+          <li><strong>Информация о ЛПР.</strong> Имя, должность, что важно для него.</li>
+          <li><strong>Триггер.</strong> Событие, которое даёт повод для звонка.</li>
+          <li><strong>Гипотеза боли.</strong> Что у них может болеть.</li>
+          <li><strong>Ценность.</strong> Одна фраза: что ты решаешь.</li>
+          <li><strong>Цель звонка.</strong> Что ты хочешь получить: встречу, демо, email.</li>
+        </ul>
+
+        <div class="callout example">
+          <div class="callout-title"><i class="fas fa-briefcase"></i> Пример подготовки</div>
+          <p><strong>Компания:</strong> логистическая, 120 сотрудников, Москва.<br>
+          <strong>ЛПР:</strong> Иван Петров, коммерческий директор.<br>
+          <strong>Триггер:</strong> открыли новый склад в Казани.<br>
+          <strong>Гипотеза боли:</strong> рост объёма → рост потерь лидов и заявок.<br>
+          <strong>Ценность:</strong> сокращаем потери заявок на 30% за 2 месяца.<br>
+          <strong>Цель:</strong> 15-минутное демо онлайн.</p>
+        </div>
+
+        <h3>5.3. Структура холодного звонка</h3>
+        <p>Хороший холодный звонок состоит из 6 этапов. Каждый занимает 20–40 секунд.</p>
+        <ol>
+          <li><strong>Приветствие.</strong> Короткое, уверенное, без лишних слов.</li>
+          <li><strong>Представление.</strong> Кто ты, из какой компании.</li>
+          <li><strong>Повод звонка.</strong> Почему ты звонишь именно ему и именно сейчас.</li>
+          <li><strong>Ценность.</strong> Что ты предлагаешь, одной фразой.</li>
+          <li><strong>Вопрос.</strong> Вовлечь собеседника, получить ответ.</li>
+          <li><strong>Следующий шаг.</strong> Договориться о встрече/демо/письме.</li>
+        </ol>
+
+        <div class="callout example">
+          <div class="callout-title"><i class="fas fa-comment"></i> Пример звонка</div>
+          <p>— Иван Петрович, добрый день. Меня зовут Алексей, компания «X».<br>
+          — Да, слушаю.<br>
+          — Я звоню, потому что вы недавно открыли склад в Казани. Обычно при таком росте компании начинают терять часть заявок — не успевают обрабатывать. Мы помогаем это исправить.<br>
+          — Интересно.<br>
+          — У нас есть кейс: логистическая компания за 2 месяца сократила потери лидов на 30%. Могу показать, как это работает, за 15 минут онлайн. Когда удобно?</p>
+        </div>
+
+        <h3>5.4. Первые 15 секунд</h3>
+        <p>Первые 15 секунд решают всё. ЛПР решает: слушать или положить трубку. Что работает:</p>
+        <ul>
+          <li><strong>Уверенный тон.</strong> Без «извините за беспокойство».</li>
+          <li><strong>Имя ЛПР.</strong> Показывает, что ты знаешь, кому звонишь.</li>
+          <li><strong>Конкретика.</strong> Не «мы предлагаем широкий спектр услуг», а «мы сокращаем потери лидов на 30%».</li>
+          <li><strong>Быстрый переход к вопросу.</strong> Не монолог, а диалог.</li>
+        </ul>
+
+        <h3>5.5. Работа с возражениями</h3>
+        <p>В холодных звонках возражения — норма. Вот топ-6 и как с ними работать:</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Возражение</th><th>Что стоит за ним</th><th>Ответ</th></tr></thead>
+            <tbody>
+              <tr><td>«Нам не интересно»</td><td>Не понял ценность</td><td>«Понимаю. А что именно у вас сейчас в приоритете?»</td></tr>
+              <tr><td>«У нас есть поставщик»</td><td>Нет смысла менять</td><td>«Отлично. А что бы вас заставило рассмотреть альтернативу?»</td></tr>
+              <tr><td>«Нет времени»</td><td>Не видит ценности</td><td>«Понимаю. 2 минуты — и я скажу, стоит ли продолжать.»</td></tr>
+              <tr><td>«Дорого»</td><td>Не видит ROI</td><td>«Давайте посчитаем. Если решение экономит X, оно окупается за Y.»</td></tr>
+              <tr><td>«Отправьте на почту»</td><td>Не хочет тратить время</td><td>«Хорошо. На какую почту? И на чьё имя?»</td></tr>
+              <tr><td>«Я не принимаю решения»</td><td>Не ЛПР</td><td>«Подскажите, кто у вас отвечает за это?»</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>5.6. Скрипт холодного звонка</h3>
+        <p>Скрипт — не догма, а каркас. Вот базовый скрипт для B2B:</p>
+        <div class="callout">
+          <div class="callout-title"><i class="fas fa-file-alt"></i> Скрипт</div>
+          <p><strong>1. Приветствие:</strong> «Иван Петрович, добрый день.»<br>
+          <strong>2. Представление:</strong> «Меня зовут Алексей, компания «X».»<br>
+          <strong>3. Повод:</strong> «Я звоню, потому что вы недавно [событие].»<br>
+          <strong>4. Ценность:</strong> «Обычно в таких случаях [проблема]. Мы помогаем [решение].»<br>
+          <strong>5. Доказательство:</strong> «У нас есть кейс: [результат].»<br>
+          <strong>6. Вопрос:</strong> «Скажите, у вас сейчас есть такая задача?»<br>
+          <strong>7. Следующий шаг:</strong> «Могу показать за 15 минут онлайн. Когда удобно?»</p>
+        </div>
+
+        <h3>5.7. Ошибки в холодных звонках</h3>
+        <ul>
+          <li><strong>Монолог.</strong> Если ты говоришь больше 30 секунд без вопроса — ты теряешь контакт.</li>
+          <li><strong>Продажа на первом звонке.</strong> Цель — не продать, а договориться.</li>
+          <li><strong>Скрипт по бумажке.</strong> Слышно за версту. Скрипт — это каркас, не текст.</li>
+          <li><strong>Извинения.</strong> «Извините за беспокойство» — сразу слив.</li>
+          <li><strong>Нет следующего шага.</strong> Если звонок закончился без договорённости — он провален.</li>
+          <li><strong>Нет фиксации.</strong> Каждый звонок должен оставлять запись в CRM.</li>
+        </ul>
+
+        <div class="checklist">
+          <h4><i class="fas fa-check-square"></i> Чек-лист после главы 5</h4>
+          <ul>
+            <li><input type="checkbox"> Понимаю, что такое холодный звонок в B2B</li>
+            <li><input type="checkbox"> Готовлюсь к каждому звонку</li>
+            <li><input type="checkbox"> Знаю структуру звонка из 6 этапов</li>
+            <li><input type="checkbox"> Умею проходить первые 15 секунд</li>
+            <li><input type="checkbox"> Знаю топ-6 возражений и ответы</li>
+            <li><input type="checkbox"> Использую скрипт как каркас, а не текст</li>
+            <li><input type="checkbox"> Фиксирую каждый звонок в CRM</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ============ ГЛАВА 6 ============ -->
+      <section class="chapter" id="ch6">
+        <span class="chapter-num">Глава 6</span>
+        <h2>Письма и сообщения</h2>
+        <p class="chapter-lead">Email и мессенджеры — второй по важности канал после звонка. Но 90% писем удаляются за 2 секунды. Как попасть в 10% — об этом глава.</p>
+
+        <h3>6.1. Роль письма в активных B2B продажах</h3>
+        <p>Письмо не заменяет звонок, а <strong>дополняет</strong> его. Оно решает три задачи:</p>
+        <ul>
+          <li>Подготовить почву перед звонком.</li>
+          <li>Закрепить договорённости после звонка.</li>
+          <li>Догнать ЛПР, если звонок не прошёл.</li>
+        </ul>
+        <p>Письмо — это не «продажа», а способ <strong>получить следующий шаг</strong>: ответ, звонок, встречу.</p>
+
+        <h3>6.2. Структура холодного письма</h3>
+        <p>Хорошее холодное письмо в B2B — короткое. 5–7 предложений. Структура:</p>
+        <ol>
+          <li><strong>Тема.</strong> Конкретная, цепляющая, без «Предложение о сотрудничестве».</li>
+          <li><strong>Персонализация.</strong> Одна фраза о компании или ЛПР.</li>
+          <li><strong>Проблема.</strong> Что у них может болеть.</li>
+          <li><strong>Решение.</strong> Что ты предлагаешь.</li>
+          <li><strong>Доказательство.</strong> Кейс или цифра.</li>
+          <li><strong>Призыв.</strong> Что ты хочешь: ответ, звонок, встреча.</li>
+        </ol>
+
+        <div class="callout example">
+          <div class="callout-title"><i class="fas fa-envelope"></i> Пример письма</div>
+          <p><strong>Тема:</strong> Потери лидов при росте склада<br>
+          Иван Петрович, добрый день.<br>
+          Видел, что вы открыли склад в Казани — поздравляю.<br>
+          Обычно при таком росте компании начинают терять часть заявок: не успевают обрабатывать.<br>
+          Мы помогаем это исправить. У нас есть кейс: логистическая компания за 2 месяца сократила потери лидов на 30%.<br>
+          Могу показать, как это работает, за 15 минут онлайн. Удобно в четверг в 14:00?<br>
+          Алексей, компания «X».</p>
+        </div>
+
+        <h3>6.3. Темы письма: что открывают, что удаляют</h3>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Работает</th><th>Не работает</th></tr></thead>
+            <tbody>
+              <tr><td>«Потери лидов при росте склада»</td><td>«Предложение о сотрудничестве»</td></tr>
+              <tr><td>«Вопрос по автоматизации отдела»</td><td>«Коммерческое предложение»</td></tr>
+              <tr><td>«Кейс: сократили потери на 30%»</td><td>«Мы динамично развивающаяся компания»</td></tr>
+              <tr><td>«Идея для вашего отдела продаж»</td><td>«Сотрудничество с вашей компанией»</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Правило: тема должна быть <strong>конкретной</strong> и обещать <strong>выгоду или решение</strong>, а не описывать тебя или твою компанию.</p>
+
+        <h3>6.4. Персонализация</h3>
+        <p>Персонализация — это не «Здравствуйте, Иван». Это <strong>знание контекста</strong>:</p>
+        <ul>
+          <li>Ссылка на новость компании.</li>
+          <li>Упоминание выступления ЛПР.</li>
+          <li>Ссылка на их рынок или конкурента.</li>
+          <li>Упоминание продукта, которым они пользуются.</li>
+        </ul>
+        <p>Одна фраза персонализации повышает шанс ответа в 2–3 раза.</p>
+
+        <h3>6.5. Что писать в мессенджерах</h3>
+        <p>Telegram, WhatsApp, LinkedIn — это <strong>личные каналы</strong>. Здесь нельзя копировать email. Правила:</p>
+        <ul>
+          <li>Коротко: 2–3 предложения.</li>
+          <li>Без вложений и ссылок в первом сообщении.</li>
+          <li>Сначала контекст: «Иван, видел ваше выступление...»</li>
+          <li>Потом предложение: «Есть идея, которая может сэкономить X. Можно 5 минут?»</li>
+          <li>Без «здравствуйте, меня зовут...» — это выглядит как спам.</li>
+        </ul>
+
+        <h3>6.6. Follow-up: как догонять</h3>
+        <p>80% ответов приходят не после первого письма, а после 3–5. Follow-up — это не «напоминание», а <strong>новый повод</strong>:</p>
+        <ol>
+          <li><strong>Через 3 дня.</strong> Короткое: «Иван, посмотрели письмо?»</li>
+          <li><strong>Через 7 дней.</strong> Новый контент: кейс, статья, видео.</li>
+          <li><strong>Через 14 дней.</strong> Новый повод: «Увидел новость, что вы...»</li>
+          <li><strong>Через 30 дней.</strong> Финальное: «Если тема не актуальна — скажите, я не буду беспокоить.»</li>
+        </ol>
+
+        <div class="callout tip">
+          <div class="callout-title"><i class="fas fa-lightbulb"></i> Совет</div>
+          <p>Не пишите «напоминаю о себе». Это пустое. Каждый follow-up должен нести <strong>новую ценность</strong>: кейс, цифру, идею, повод.</p>
+        </div>
+
+        <h3>6.7. Ошибки в письмах</h3>
+        <ul>
+          <li><strong>Длинно.</strong> Если письмо не читается за 20 секунд — его не читают.</li>
+          <li><strong>О тебе, а не о клиенте.</strong> «Мы предлагаем...» — сразу в корзину.</li>
+          <li><strong>Без призыва.</strong> Если нет вопроса или просьбы — не ответят.</li>
+          <li><strong>Вложения в первом письме.</strong> Спам-фильтры и недоверие.</li>
+          <li><strong>Шаблонность.</strong> Если письмо можно отправить 100 компаниям — его удалят.</li>
+          <li><strong>Нет follow-up.</strong> Одно письмо — это не попытка.</li>
+        </ul>
+
+        <div class="checklist">
+          <h4><i class="fas fa-check-square"></i> Чек-лист после главы 6</h4>
+          <ul>
+            <li><input type="checkbox"> Понимаю роль письма в активных продажах</li>
+            <li><input type="checkbox"> Умею писать письма по структуре</li>
+            <li><input type="checkbox"> Знаю, какие темы работают</li>
+            <li><input type="checkbox"> Умею персонализировать письма</li>
+            <li><input type="checkbox"> Знаю правила общения в мессенджерах</li>
+            <li><input type="checkbox"> Умею делать follow-up с новым поводом</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ============ ГЛАВА 7 ============ -->
+      <section class="chapter" id="ch7">
+        <span class="chapter-num">Глава 7</span>
+        <h2>Квалификация лидов</h2>
+        <p class="chapter-lead">Не каждый контакт — это клиент. Квалификация позволяет не тратить время на тех, кто не купит, и сосредоточиться на перспективных.</p>
+
+        <h3>7.1. Что такое квалификация</h3>
+        <p><span class="term">Квалификация</span> — это оценка лида по критериям, которые показывают, может ли он стать клиентом. Цель — <strong>отсеять бесперспективных как можно раньше</strong>.</p>
+
+        <h3>7.2. Метод BANT</h3>
+        <p><span class="term">BANT</span> — классический метод квалификации. 4 критерия:</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Критерий</th><th>Что проверяем</th><th>Вопрос</th></tr></thead>
+            <tbody>
+              <tr><td><strong>B</strong> — Budget</td><td>Есть ли бюджет</td><td>«Бюджет на это уже выделен?»</td></tr>
+              <tr><td><strong>A</strong> — Authority</td><td>Есть ли полномочия</td><td>«Вы принимаете решение по этому вопросу?»</td></tr>
+              <tr><td><strong>N</strong> — Need</td><td>Есть ли потребность</td><td>«Какая задача стоит сейчас?»</td></tr>
+              <tr><td><strong>T</strong> — Timeline</td><td>Есть ли сроки</td><td>«Когда планируете решить?»</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Если все 4 критерия «зелёные» — лид перспективный. Если хотя бы один «красный» — либо откладываем, либо работаем над ним.</p>
+
+        <h3>7.3. Метод MEDDIC</h3>
+        <p><span class="term">MEDDIC</span> — более глубокий метод для крупных B2B-сделок:</p>
+        <ul>
+          <li><strong>M</strong> — Metrics. Какие метрики клиент хочет улучшить?</li>
+          <li><strong>E</strong> — Economic buyer. Кто экономический покупатель?</li>
+          <li><strong>D</strong> — Decision criteria. По каким критериям выбирают?</li>
+          <li><strong>D</strong> — Decision process. Как принимается решение?</li>
+          <li><strong>I</strong> — Identify pain. В чём боль?</li>
+          <li><strong>C</strong> — Champion. Кто внутри компании за тебя?</li>
+        </ul>
+
+        <h3>7.4. Скоринг лидов</h3>
+        <p>Скоринг — это балльная оценка. Простой пример для B2B:</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Критерий</th><th>Баллы</th></tr></thead>
+            <tbody>
+              <tr><td>Компания подходит под ICP</td><td>+20</td></tr>
+              <tr><td>Контакт с ЛПР установлен</td><td>+20</td></tr>
+              <tr><td>Потребность подтверждена</td><td>+20</td></tr>
+              <tr><td>Бюджет подтверждён</td><td>+15</td></tr>
+              <tr><td>Сроки определены</td><td>+15</td></tr>
+              <tr><td>Есть чемпион внутри</td><td>+10</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>70+ — горячий лид. 40–69 — тёплый. Меньше 40 — холодный.</p>
+
+        <h3>7.5. Когда отказываться от лида</h3>
+        <p>Не каждый лид стоит усилий. Отказывайся, если:</p>
+        <ul>
+          <li>Нет бюджета и не будет в ближайшие 6 месяцев.</li>
+          <li>Нет потребности, а создавать её слишком дорого.</li>
+          <li>ЛПР недоступен и не даёт выйти на других.</li>
+          <li>Компания не подходит под ICP и вряд ли подойдёт.</li>
+          <li>Сделка нерентабельна: затраты больше прибыли.</li>
+        </ul>
+
+        <div class="callout warning">
+          <div class="callout-title"><i class="fas fa-exclamation-triangle"></i> Ловушка</div>
+          <p>«Жалко бросать» — самая дорогая ошибка. Время, потраченное на бесперспективный лид, — это время, не потраченное на перспективный.</p>
+        </div>
+
+        <div class="checklist">
+          <h4><i class="fas fa-check-square"></i> Чек-лист после главы 7</h4>
+          <ul>
+            <li><input type="checkbox"> Понимаю, зачем нужна квалификация</li>
+            <li><input type="checkbox"> Знаю метод BANT</li>
+            <li><input type="checkbox"> Знаю метод MEDDIC</li>
+            <li><input type="checkbox"> Умею ставить скоринг лиду</li>
+            <li><input type="checkbox"> Знаю, когда отказываться от лида</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ============ ГЛАВА 8 ============ -->
+      <section class="chapter" id="ch8">
+        <span class="chapter-num">Глава 8</span>
+        <h2>CRM и ведение сделки</h2>
+        <p class="chapter-lead">Без CRM активные продажи превращаются в хаос. CRM — это не «база контактов», а система управления сделками.</p>
+
+        <h3>8.1. Зачем нужна CRM</h3>
+        <p><span class="term">CRM</span> (Customer Relationship Management) — система учёта и управления взаимоотношениями с клиентами. В B2B она решает 5 задач:</p>
+        <ul>
+          <li>Хранит всю информацию о лидах и сделках.</li>
+          <li>Показывает, на каком этапе каждая сделка.</li>
+          <li>Напоминает о задачах и follow-up.</li>
+          <li>Считает метрики: конверсии, циклы, средний чек.</li>
+          <li>Позволяет масштабировать: новые менеджеры работают по системе.</li>
+        </ul>
+
+        <h3>8.2. Этапы сделки в CRM</h3>
+        <p>Сделка в CRM проходит по воронке. Типовая воронка в B2B:</p>
+        <ol>
+          <li><strong>Новый лид.</strong> Только занесён, не обработан.</li>
+          <li><strong>Контакт установлен.</strong> Первый разговор/письмо прошло.</li>
+          <li><strong>Квалифицирован.</strong> Подтверждены BANT/MEDDIC.</li>
+          <li><strong>Презентация.</strong> Показали решение.</li>
+          <li><strong>Согласование.</strong> Обсуждаем условия, юристы, торг.</li>
+          <li><strong>Сделка.</strong> Подписано, оплачено.</li>
+          <li><strong>Отказ.</strong> Сделка не состоялась (с причиной).</li>
+        </ol>
+
+        <h3>8.3. Что фиксировать в CRM</h3>
+        <p>Минимальный набор данных по каждому лиду:</p>
+        <ul>
+          <li>Компания, отрасль, размер.</li>
+          <li>Контакт: ФИО, должность, телефон, email.</li>
+          <li>Роль: ЛПР, ЛВР, инициатор.</li>
+          <li>Источник: откуда узнал.</li>
+          <li>Триггер: что дало повод для контакта.</li>
+          <li>История касаний: звонки, письма, встречи.</li>
+          <li>Следующий шаг и дата.</li>
+          <li>Сумма сделки, вероятность.</li>
+        </ul>
+
+        <h3>8.4. Задачи и напоминания</h3>
+        <p>CRM работает, если в ней есть <strong>задачи</strong>. Правило: после каждого касания — следующая задача с датой. Без этого сделка «зависает».</p>
+        <div class="callout tip">
+          <div class="callout-title"><i class="fas fa-lightbulb"></i> Правило</div>
+          <p>Ни один лид не должен оставаться без задачи. Если у лида нет следующего шага — он мёртв.</p>
+        </div>
+
+        <h3>8.5. Реанимация «зависших» лидов</h3>
+        <p>Лиды «зависают» по трём причинам: нет потребности, нет бюджета, нет времени. Что делать:</p>
+        <ol>
+          <li><strong>Вернуться с новым поводом.</strong> Новость, кейс, изменение рынка.</li>
+          <li><strong>Сменить контакт.</strong> Если ЛПР недоступен — иди к другому.</li>
+          <li><strong>Предложить пилот.</strong> Маленький шаг вместо большой сделки.</li>
+          <li><strong>Отложить на 3–6 месяцев.</strong> Поставить задачу и вернуться.</li>
+          <li><strong>Закрыть с причиной.</strong> Иногда лучше закрыть, чем тянуть.</li>
+        </ol>
+
+        <h3>8.6. Аналитика в CRM</h3>
+        <p>CRM должна отвечать на вопросы:</p>
+        <ul>
+          <li>Сколько лидов на каждом этапе?</li>
+          <li>Какая конверсия между этапами?</li>
+          <li>Какой средний цикл сделки?</li>
+          <li>Какие источники дают лучших лидов?</li>
+          <li>Какие менеджеры работают эффективнее?</li>
+        </ul>
+        <p>Без этих цифр ты не понимаешь, где «узкое горлышко».</p>
+
+        <div class="checklist">
+          <h4><i class="fas fa-check-square"></i> Чек-лист после главы 8</h4>
+          <ul>
+            <li><input type="checkbox"> Понимаю, зачем нужна CRM</li>
+            <li><input type="checkbox"> Знаю этапы сделки в воронке</li>
+            <li><input type="checkbox"> Фиксирую все данные по лиду</li>
+            <li><input type="checkbox"> Ставлю задачу после каждого касания</li>
+            <li><input type="checkbox"> Умею реанимировать «зависшие» лиды</li>
+            <li><input type="checkbox"> Смотрю аналитику в CRM</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ============ ГЛАВА 9 ============ -->
+      <section class="chapter" id="ch9">
+        <span class="chapter-num">Глава 9</span>
+        <h2>Система и метрики</h2>
+        <p class="chapter-lead">Активные продажи работают, когда они системны. Не «настроение», а план, метрики и регулярность.</p>
+
+        <h3>9.1. Что такое система активных продаж</h3>
+        <p>Система — это набор повторяемых действий, которые дают предсказуемый результат. В активных B2B продажах система состоит из:</p>
+        <ul>
+          <li>ICP и базы.</li>
+          <li>Каналов контакта (звонок, письмо, LinkedIn).</li>
+          <li>Скриптов и шаблонов.</li>
+          <li>CRM и воронки.</li>
+          <li>Метрик и плана.</li>
+          <li>Регулярного анализа и корректировки.</li>
+        </ul>
+
+        <h3>9.2. План на день, неделю, месяц</h3>
+        <p>Без плана активные продажи превращаются в «делаю, что успею». План должен быть конкретным:</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Период</th><th>Что планировать</th></tr></thead>
+            <tbody>
+              <tr><td>День</td><td>50 звонков, 20 писем, 5 follow-up, 2 встречи</td></tr>
+              <tr><td>Неделя</td><td>250 звонков, 100 писем, 10 квалифицированных лидов</td></tr>
+              <tr><td>Месяц</td><td>1000 контактов, 40 лидов, 5–10 сделок</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Цифры зависят от отрасли, но принцип один: <strong>план по действиям, а не по результату</strong>. Ты не можешь «запланировать 3 сделки», но можешь запланировать 250 звонков.</p>
+
+        <h3>9.3. Ключевые метрики</h3>
+        <p>Что нужно измерять каждую неделю:</p>
+        <ul>
+          <li><strong>Активность:</strong> сколько звонков, писем, встреч.</li>
+          <li><strong>Конверсия в разговор:</strong> сколько звонков дошли до ЛПР.</li>
+          <li><strong>Конверсия в квалификацию:</strong> сколько лидов признаны перспективными.</li>
+          <li><strong>Конверсия в сделку:</strong> сколько дошло до подписания.</li>
+          <li><strong>Цикл сделки:</strong> сколько дней от первого контакта до оплаты.</li>
+          <li><strong>Средний чек.</strong></li>
+        </ul>
+
+        <h3>9.4. Анализ воронки</h3>
+        <p>Если план не выполняется — смотри, где «узкое горлышко»:</p>
+        <ul>
+          <li>Мало контактов → проблема в активности.</li>
+          <li>Мало разговоров → проблема в скрипте или времени звонков.</li>
+          <li>Мало квалификаций → проблема в ICP или квалификации.</li>
+          <li>Мало сделок → проблема в презентации или работе с возражениями.</li>
+          <li>Долгий цикл → проблема в согласовании.</li>
+        </ul>
+
+        <h3>9.5. Регулярность важнее интенсивности</h3>
+        <p>100 звонков в понедельник и ноль в остальные дни — это не система. Система — это <strong>50 звонков каждый день</strong>. Регулярность даёт предсказуемость.</p>
+
+        <div class="callout tip">
+          <div class="callout-title"><i class="fas fa-lightbulb"></i> Правило</div>
+          <p>Лучше 20 звонков каждый день, чем 100 раз в неделю. Продажи — это марафон, а не спринт.</p>
+        </div>
+
+        <h3>9.6. Автоматизация рутины</h3>
+        <p>Что можно и нужно автоматизировать:</p>
+        <ul>
+          <li>Сбор базы (парсинг, обогащение).</li>
+          <li>Email-рассылки (персонализированные).</li>
+          <li>Напоминания в CRM.</li>
+          <li>Отчёты и дашборды.</li>
+          <li>Запись звонков и разбор.</li>
+        </ul>
+        <p>Автоматизация освобождает время на то, что нельзя автоматизировать: живые разговоры и работу с ЛПР.</p>
+
+        <div class="checklist">
+          <h4><i class="fas fa-check-square"></i> Чек-лист после главы 9</h4>
+          <ul>
+            <li><input type="checkbox"> Понимаю, что такое система активных продаж</li>
+            <li><input type="checkbox"> Составил план на день, неделю, месяц</li>
+            <li><input type="checkbox"> Веду ключевые метрики</li>
+            <li><input type="checkbox"> Умею анализировать воронку</li>
+            <li><input type="checkbox"> Соблюдаю регулярность</li>
+            <li><input type="checkbox"> Автоматизирую рутину</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ============ ГЛАВА 10 ============ -->
+      <section class="chapter" id="ch10">
+        <span class="chapter-num">Глава 10</span>
+        <h2>Масштабирование</h2>
+        <p class="chapter-lead">Когда система работает у одного менеджера — её можно масштабировать на отдел. Это следующий уровень активных B2B продаж.</p>
+
+        <h3>10.1. Когда пора масштабировать</h3>
+        <p>Масштабирование имеет смысл, когда:</p>
+        <ul>
+          <li>Один менеджер стабильно выполняет план.</li>
+          <li>Система описана: скрипты, шаблоны, CRM, метрики.</li>
+          <li>Есть поток лидов, который один человек не успевает обрабатывать.</li>
+          <li>Есть финансовая возможность нанять и обучить.</li>
+        </ul>
+        <p>Если система не работает у одного — она не заработает у десяти. Сначала — система, потом — масштаб.</p>
+
+        <h3>10.2. Найм менеджеров</h3>
+        <p>Что важно при найме в активные B2B продажи:</p>
+        <ul>
+          <li><strong>Опыт в B2B.</strong> B2C-опыт не всегда переносится.</li>
+          <li><strong>Умение говорить.</strong> Проверяй на реальном звонке, не на тестах.</li>
+          <li><strong>Стрессоустойчивость.</strong> Отказы — норма. Кто не выдерживает — уйдёт.</li>
+          <li><strong>Обучаемость.</strong> Важнее, чем опыт в конкретной отрасли.</li>
+          <li><strong>Мотивация.</strong> Деньги, рост, амбиции — что движет человеком.</li>
+        </ul>
+
+        <h3>10.3. Обучение и адаптация</h3>
+        <p>Новый менеджер должен пройти:</p>
+        <ol>
+          <li><strong>Онбординг.</strong> Продукт, ICP, рынок, конкуренты.</li>
+          <li><strong>Обучение скриптам.</strong> Разбор звонков, ролевые игры.</li>
+          <li><strong>CRM.</strong> Как вести сделку, ставить задачи, смотреть аналитику.</li>
+          <li><strong>Парное слушание.</strong> Слушает опытного менеджера.</li>
+          <li><strong>Первые звонки под контролем.</strong> С разбором.</li>
+          <li><strong>Самостоятельная работа.</strong> С регулярной обратной связью.</li>
+        </ol>
+
+        <h3>10.4. Регламенты и стандарты</h3>
+        <p>Чтобы отдел работал одинаково, нужны регламенты:</p>
+        <ul>
+          <li>Скрипты звонков и письма.</li>
+          <li>Стандарты ведения CRM.</li>
+          <li>Правила квалификации лидов.</li>
+          <li>Метрики и отчётность.</li>
+          <li>Правила эскалации и передачи сделок.</li>
+        </ul>
+
+        <h3>10.5. Контроль и обратная связь</h3>
+        <p>Контроль — не «надзор», а <strong>помощь</strong>. Что делать регулярно:</p>
+        <ul>
+          <li>Слушать звонки и разбирать.</li>
+          <li>Смотреть CRM и воронку.</li>
+          <li>Проводить планёрки: что работает, что нет.</li>
+          <li>Давать обратную связь по конкретным сделкам.</li>
+          <li>Обновлять скрипты на основе практики.</li>
+        </ul>
+
+        <h3>10.6. Мотивация</h3>
+        <p>В активных продажах мотивация — критична. Что работает:</p>
+        <ul>
+          <li><strong>Прозрачная схема оплаты.</strong> Чем понятнее — тем лучше.</li>
+          <li><strong>Быстрые бонусы.</strong> За активность, а не только за сделки.</li>
+          <li><strong>Признание.</strong> Публичное — за результаты.</li>
+          <li><strong>Рост.</strong> Возможность стать старшим, наставником, РОПом.</li>
+          <li><strong>Обучение.</strong> Возможность расти в профессии.</li>
+        </ul>
+
+        <h3>10.7. Итог курса</h3>
+        <p>Активные B2B продажи — это система. Она состоит из:</p>
+        <ol>
+          <li>Понимания рынка и ролей.</li>
+          <li>ICP и сегментации.</li>
+          <li>Поиска и обогащения базы.</li>
+          <li>Выхода на ЛПР.</li>
+          <li>Холодных звонков и писем.</li>
+          <li>Квалификации лидов.</li>
+          <li>CRM и ведения сделки.</li>
+          <li>Метрик и регулярности.</li>
+          <li>Масштабирования.</li>
+        </ol>
+        <p>Каждый элемент усиливает остальные. Если убрать один — система просядет. Если внедрить все — получишь предсказуемый поток корпоративных клиентов.</p>
+
+        <div class="callout tip">
+          <div class="callout-title"><i class="fas fa-flag-checkered"></i> Финал</div>
+          <p>Ты прошёл курс. Теперь главное — <strong>внедрять</strong>. Начни с одного: опиши ICP и сделай 50 звонков на этой неделе. Дальше — по главам. Через месяц у тебя будет система, а не хаос.</p>
+        </div>
+
+        <div class="checklist">
+          <h4><i class="fas fa-check-square"></i> Финальный чек-лист курса</h4>
+          <ul>
+            <li><input type="checkbox"> Описал ICP и сегменты</li>
+            <li><input type="checkbox"> Собрал и обогатил базу</li>
+            <li><input type="checkbox"> Освоил выход на ЛПР</li>
+            <li><input type="checkbox"> Провожу холодные звонки по структуре</li>
+            <li><input type="checkbox"> Пишу письма и follow-up</li>
+            <li><input type="checkbox"> Квалифицирую лиды по BANT/MEDDIC</li>
+            <li><input type="checkbox"> Веду CRM и ставлю задачи</li>
+            <li><input type="checkbox"> Считаю метрики</li>
+            <li><input type="checkbox"> Готов масштабировать</li>
+          </ul>
+        </div>
+      </section>
+
+      <div class="next-part">
+        <h3><i class="fas fa-flag-checkered"></i> Курс завершён</h3>
+        <p>Ты прошёл 10 глав курса «Активные B2B продажи».</p>
+        <p>Дальше — практика. Начни с ICP и 50 звонков на этой неделе.</p>
       </div>
 
-      <h2>Для кого курс</h2>
-      <p><strong>🔹 Менеджеры</strong> — кто ищет корпоративных клиентов</p>
-      <p><strong>🔹 Предприниматели</strong> — кто продает бизнесу</p>
-      <p><strong>🔹 Наставники</strong> — кто учит активным B2B продажам</p>
-      <p><strong>🔹 Руководители</strong> — кто управляет B2B командой</p>
-    </div>
-
-    <div class="sidebar">
-      <div class="price-card">
-        <div class="price">13 900 ₽ <small>+ НДС</small></div>
-        <div class="old-price">19 900 ₽</div>
-        <button class="btn-buy"><i class="fas fa-cart-plus"></i> Записаться на курс</button>
-        <div class="guarantee"><i class="fas fa-shield-alt"></i> 100% гарантия возврата в течение 7 дней</div>
-      </div>
-      <div class="info-box">
-        <h4><i class="fas fa-info-circle" style="color:#d4af37;"></i> Важно</h4>
-        <p>📅 Старт потока: каждую неделю</p>
-        <p>⏳ Доступ к материалам — 6 месяцев</p>
-        <p>🎓 Сертификат после прохождения</p>
-        <p>💬 Закрытый Telegram-чат с учениками</p>
-      </div>
-      <div class="info-box" style="border-color:#2a2a2a;">
-        <h4><i class="fas fa-user-tie" style="color:#d4af37;"></i> Преподаватель</h4>
-        <p style="border-bottom:none; display:flex; align-items:center; gap:12px;">
-          <span style="width:48px; height:48px; border-radius:50%; background:#2a2a2a; border:2px solid #d4af37; display:flex; align-items:center; justify-content:center; font-size:24px;">👨‍🏫</span>
-          <span><strong style="color:#ddd;">Алексей Рожняков</strong><br><span style="color:#888; font-size:13px;">17 лет в продажах, 500+ обученных менеджеров</span></span>
-        </p>
-      </div>
-    </div>
+    </article>
   </div>
 </div>
 
-<section class="similar">
-  <div class="container">
-    <h2><i class="fas fa-arrow-right" style="color:#d4af37;"></i> Похожие курсы</h2>
-    <div class="similar-grid">
-      <a href="../b2b/b2b-prodazhi.html" class="similar-card"><h4>B2B продажи</h4><p>База</p></a>
-      <a href="../b2b/b2b-prodazhi-s-nulya.html" class="similar-card"><h4>B2B продажи с нуля</h4><p>Старт</p></a>
-      <a href="../b2b/holodnye-b2b-prodazhi.html" class="similar-card"><h4>Холодные B2B продажи</h4><p>Холод</p></a>
-      <a href="../b2b/prodazhi-korporativnym-klientam.html" class="similar-card"><h4>Продажи корпоративным</h4><p>Крупные компании</p></a>
-    </div>
-  </div>
-</section>
-
 <footer>
   <div class="container">
-    <p>© 2026 <span>KURSYPRO</span> — система обучения продажам. 110+ курсов.</p>
+    <p>© 2026 <span>Курсы по продажам</span> — золотой стандарт обучения продажам. 110+ программ.</p>
+    <p style="margin-top:8px;font-size:13px;color:#444;"><i class="fas fa-crown" style="color:#d4af37;"></i> kursy-po-prodazham.com</p>
   </div>
 </footer>
+
+<script>
+window.addEventListener('scroll',()=>{const h=document.documentElement;const s=(h.scrollTop/(h.scrollHeight-h.clientHeight))*100;document.getElementById('reading-progress').style.width=s+'%'});
+const chapters=document.querySelectorAll('.chapter');const tocLinks=document.querySelectorAll('.toc ol li a');
+window.addEventListener('scroll',()=>{let current='';chapters.forEach(ch=>{const top=ch.offsetTop-120;if(window.scrollY>=top)current=ch.id});tocLinks.forEach(link=>{link.classList.remove('active');if(link.getAttribute('href')==='#'+current)link.classList.add('active')})});
+document.querySelectorAll('.checklist input[type="checkbox"]').forEach((cb,i)=>{const key='b2b_check_'+i;if(localStorage.getItem(key)==='1')cb.checked=true;cb.addEventListener('change',()=>{localStorage.setItem(key,cb.checked?'1':'0')})});
+</script>
+
 </body>
 </html>
