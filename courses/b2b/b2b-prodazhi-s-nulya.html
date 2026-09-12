@@ -1,188 +1,917 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="google-site-verification" content="yHcsl1QapmlY3f9N_pNmjunD6yZNlDvqFqyvGR2uDWA" />
-
-  <title>B2B продажи с нуля | Старт в корпоративных продажах | KURSYPRO</title>
-  <meta name="description" content="Курс «B2B продажи с нуля»: полный старт в корпоративных продажах. Как войти в B2B, найти первых клиентов и закрыть первую сделку." />
-  <meta name="keywords" content="b2b продажи с нуля, старт в b2b, корпоративные продажи, первые клиенты b2b, выход на рынок b2b" />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://kursy-po-prodazham.com/courses/b2b/b2b-prodazhi-s-nulya.html" />
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { background: #0b0b0b; color: #e5e5e5; font-family: 'Inter', sans-serif; line-height: 1.6; }
-    .container { max-width: 1100px; margin: 0 auto; padding: 0 25px; }
-    header { padding: 25px 0; border-bottom: 1px solid #2a2a2a; background: #0b0b0b; position: sticky; top: 0; z-index: 999; }
-    .header-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
-    .logo { font-size: 28px; font-weight: 700; color: #f5f5f5; }
-    .logo span { color: #d4af37; }
-    .logo small { font-size: 14px; color: #999; display: block; letter-spacing: 2px; }
-    nav a { color: #ccc; text-decoration: none; margin-left: 30px; font-weight: 500; font-size: 15px; transition: 0.2s; }
-    nav a:hover { color: #d4af37; }
-    nav a i { margin-right: 6px; }
-    .breadcrumb { padding: 25px 0 10px; color: #888; font-size: 14px; }
-    .breadcrumb a { color: #d4af37; text-decoration: none; }
-    .breadcrumb a:hover { text-decoration: underline; }
-    .breadcrumb span { color: #555; }
-    .course-header { padding: 30px 0 40px; border-bottom: 1px solid #1f1f1f; }
-    .course-header .tags { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 15px; }
-    .course-header .tags span { background: #1a1a1a; border: 1px solid #d4af37; color: #d4af37; padding: 4px 16px; border-radius: 30px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
-    .course-header h1 { font-size: 44px; font-weight: 800; color: #f5f5f5; }
-    .course-header .subtitle { font-size: 18px; color: #aaa; margin-top: 12px; max-width: 700px; }
-    .course-header .meta { display: flex; gap: 30px; margin-top: 20px; color: #888; font-size: 15px; }
-    .course-header .meta i { color: #d4af37; margin-right: 6px; }
-    .course-content { display: grid; grid-template-columns: 2fr 1fr; gap: 50px; padding: 40px 0 60px; }
-    .description h2 { font-size: 24px; color: #f0f0f0; margin: 30px 0 15px; border-left: 4px solid #d4af37; padding-left: 15px; }
-    .description h2:first-child { margin-top: 0; }
-    .description p { color: #c0c0c0; margin-bottom: 15px; font-size: 16px; }
-    .program-list { list-style: none; padding: 0; }
-    .program-list li { background: #141414; border: 1px solid #222; border-radius: 12px; padding: 14px 20px; margin-bottom: 10px; display: flex; align-items: center; gap: 14px; transition: 0.2s; }
-    .program-list li:hover { border-color: #d4af37; }
-    .program-list li .num { background: #d4af37; color: #0b0b0b; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px; flex-shrink: 0; }
-    .program-list li .text { color: #ddd; font-size: 15px; }
-    .program-list li .duration { margin-left: auto; color: #666; font-size: 13px; white-space: nowrap; }
-    .result-box { background: linear-gradient(135deg, #141414, #1a1a1a); border: 1px solid #2a2a2a; border-radius: 16px; padding: 25px 30px; margin: 25px 0; }
-    .result-box ul { list-style: none; padding: 0; }
-    .result-box ul li { padding: 6px 0; color: #c0c0c0; }
-    .result-box ul li i { color: #d4af37; margin-right: 12px; }
-    .sidebar { position: sticky; top: 100px; align-self: start; }
-    .price-card { background: #141414; border: 2px solid #d4af37; border-radius: 20px; padding: 30px 25px; text-align: center; }
-    .price-card .price { font-size: 42px; font-weight: 800; color: #d4af37; }
-    .price-card .price small { font-size: 18px; color: #888; font-weight: 400; }
-    .price-card .old-price { font-size: 20px; color: #666; text-decoration: line-through; margin-top: 4px; }
-    .btn-buy { display: block; width: 100%; background: #d4af37; color: #0b0b0b; font-weight: 700; padding: 16px; border: none; border-radius: 60px; font-size: 18px; cursor: pointer; margin: 20px 0 12px; transition: 0.3s; }
-    .btn-buy:hover { background: #f0c85a; transform: scale(1.02); }
-    .price-card .guarantee { color: #666; font-size: 13px; }
-    .price-card .guarantee i { color: #d4af37; }
-    .info-box { background: #141414; border: 1px solid #222; border-radius: 16px; padding: 20px 25px; margin-top: 20px; }
-    .info-box h4 { color: #f0f0f0; margin-bottom: 12px; }
-    .info-box p { color: #999; font-size: 14px; padding: 5px 0; border-bottom: 1px dashed #1a1a1a; }
-    .info-box p:last-child { border-bottom: none; }
-    .similar { padding: 40px 0 60px; border-top: 1px solid #1f1f1f; }
-    .similar h2 { font-size: 28px; color: #f0f0f0; margin-bottom: 25px; }
-    .similar-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px; }
-    .similar-card { background: #141414; border: 1px solid #222; border-radius: 14px; padding: 18px 20px; transition: 0.3s; text-decoration: none; color: #e5e5e5; }
-    .similar-card:hover { border-color: #d4af37; transform: translateY(-4px); }
-    .similar-card h4 { font-size: 16px; color: #f0f0f0; }
-    .similar-card p { font-size: 13px; color: #888; margin-top: 6px; }
-    footer { border-top: 1px solid #1f1f1f; padding: 45px 0 35px; text-align: center; color: #666; font-size: 14px; }
-    footer span { color: #d4af37; }
-    @media (max-width: 768px) { .course-content { grid-template-columns: 1fr; } .course-header h1 { font-size: 30px; } .sidebar { position: static; } .course-header .meta { flex-wrap: wrap; gap: 12px; } }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-site-verification" content="yHcsl1QapmlY3f9N_pNmjunD6yZNlDvqFqyvGR2uDWA" />
+<title>B2B продажи с нуля — полный курс | 6 модулей | Курсы по продажам</title>
+<meta name="description" content="Полный курс «B2B продажи с нуля»: как войти в B2B, найти первых клиентов, провести первый контакт, договориться и закрыть первую сделку. 6 модулей, 18 уроков, кейсы, чек-листы.">
+<meta name="keywords" content="b2b продажи с нуля, старт в b2b, корпоративные продажи, первые клиенты b2b, выход на рынок b2b, первый контакт b2b, переговоры с бизнесом, первая b2b сделка">
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://kursy-po-prodazham.com/courses/b2b/b2b-prodazhi-s-nulya.html" />
+<meta property="og:title" content="B2B продажи с нуля — полный курс">
+<meta property="og:description" content="6 модулей: от входа в B2B до первой закрытой сделки.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://kursy-po-prodazham.com/courses/b2b/b2b-prodazhi-s-nulya.html">
+<meta property="og:site_name" content="Курсы по продажам">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Course","name":"B2B продажи с нуля","description":"Полный курс по старту в корпоративных продажах.","provider":{"@type":"Organization","name":"Курсы по продажам","url":"https://kursy-po-prodazham.com/"},"inLanguage":"ru","hasCourseInstance":{"@type":"CourseInstance","courseMode":"online","courseWorkload":"PT12H"},"offers":{"@type":"Offer","price":"12900","priceCurrency":"RUB","availability":"https://schema.org/InStock"}}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--gold:#d4af37;--gold-light:#f0c85a;--bg:#0b0b0b;--card:#141414;--text:#e5e5e5}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;line-height:1.75;font-size:17px}
+::-webkit-scrollbar{width:8px}
+::-webkit-scrollbar-track{background:#1a1a1a}
+::-webkit-scrollbar-thumb{background:var(--gold);border-radius:10px}
+a{color:var(--gold);text-decoration:none}
+a:hover{text-decoration:underline}
+.container{max-width:1150px;margin:0 auto;padding:0 25px}
+header{padding:20px 0;border-bottom:1px solid #2a2a2a;background:rgba(11,11,11,0.96);backdrop-filter:blur(10px);position:sticky;top:0;z-index:999}
+.header-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:15px}
+.logo{font-size:22px;font-weight:700;color:#f5f5f5;line-height:1.1}
+.logo span{color:var(--gold)}
+.logo small{font-size:11px;color:#999;display:block;letter-spacing:1px;font-weight:400;margin-top:2px}
+nav a{color:#ccc;text-decoration:none;margin-left:24px;font-weight:500;font-size:14px;transition:0.2s}
+nav a:hover{color:var(--gold);text-decoration:none}
+nav a i{margin-right:5px}
+#reading-progress{position:fixed;top:0;left:0;height:3px;background:var(--gold);width:0%;z-index:1000;transition:width 0.1s}
+.breadcrumb{padding:20px 0 6px;color:#888;font-size:13px}
+.breadcrumb a{color:var(--gold)}
+.breadcrumb span{color:#555}
+.course-hero{padding:35px 0 45px;border-bottom:1px solid #1f1f1f}
+.course-hero .tags{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px}
+.course-hero .tags span{background:#1a1a1a;border:1px solid var(--gold);color:var(--gold);padding:4px 16px;border-radius:30px;font-size:11px;text-transform:uppercase;letter-spacing:0.5px}
+.course-hero h1{font-size:48px;font-weight:800;background:linear-gradient(135deg,#f5f5f5 0%,var(--gold) 90%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1.1;max-width:900px}
+.course-hero .subtitle{font-size:18px;color:#aaa;margin-top:16px;max-width:780px}
+.course-hero .meta{display:flex;gap:26px;margin-top:22px;color:#888;font-size:14px;flex-wrap:wrap}
+.course-hero .meta i{color:var(--gold);margin-right:5px}
+.study-progress{background:var(--card);border:1px solid #222;border-radius:16px;padding:22px 28px;margin:30px 0;display:flex;align-items:center;gap:25px;flex-wrap:wrap}
+.study-progress .sp-info{flex:1;min-width:220px}
+.study-progress .sp-label{font-size:13px;color:#888;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px}
+.study-progress .sp-count{font-size:22px;color:#f0f0f0;font-weight:700}
+.study-progress .sp-count span{color:var(--gold)}
+.study-progress .sp-bar{flex:2;min-width:200px;height:10px;background:#1f1f1f;border-radius:10px;overflow:hidden}
+.study-progress .sp-bar-fill{height:100%;background:linear-gradient(90deg,var(--gold),var(--gold-light));width:0%;transition:width 0.5s ease;border-radius:10px}
+.module-tabs{display:flex;gap:8px;overflow-x:auto;padding-bottom:8px;margin:30px 0 0;border-bottom:1px solid #222}
+.module-tab{background:transparent;border:none;color:#888;font-family:inherit;font-size:14px;font-weight:600;padding:14px 20px;cursor:pointer;border-bottom:3px solid transparent;transition:0.2s;white-space:nowrap;display:flex;align-items:center;gap:8px}
+.module-tab:hover{color:#ccc}
+.module-tab.active{color:var(--gold);border-bottom-color:var(--gold)}
+.module-tab .mt-num{background:#222;color:#888;width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700}
+.module-tab.active .mt-num{background:var(--gold);color:#0b0b0b}
+.module-tab .mt-check{color:#4caf50;font-size:13px;display:none}
+.module-tab.done .mt-check{display:inline}
+.module-panel{display:none;animation:fadeIn 0.4s ease;padding:40px 0 20px}
+.module-panel.active{display:block}
+@keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.module-header{margin-bottom:35px}
+.module-header .mh-num{display:inline-block;background:rgba(212,175,55,0.12);color:var(--gold);font-size:12px;font-weight:700;letter-spacing:1px;padding:4px 14px;border-radius:20px;text-transform:uppercase;margin-bottom:12px}
+.module-header h2{font-size:34px;color:#f5f5f5;line-height:1.2;font-weight:800;margin-bottom:10px}
+.module-header .mh-desc{font-size:17px;color:#999;font-style:italic;padding-left:18px;border-left:3px solid var(--gold)}
+.module-header .mh-meta{display:flex;gap:20px;margin-top:16px;color:#777;font-size:13px;flex-wrap:wrap}
+.module-header .mh-meta i{color:var(--gold);margin-right:5px}
+.lesson{background:var(--card);border:1px solid #222;border-radius:16px;padding:28px 32px;margin-bottom:20px;transition:0.3s}
+.lesson:hover{border-color:#333}
+.lesson.done{border-color:rgba(76,175,80,0.3)}
+.lesson-head{display:flex;align-items:flex-start;gap:16px;margin-bottom:16px;flex-wrap:wrap}
+.lesson-head .l-num{background:#1a1a1a;color:var(--gold);border:1px solid #2a2a2a;width:38px;height:38px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px;flex-shrink:0}
+.lesson.done .lesson-head .l-num{background:rgba(76,175,80,0.15);color:#4caf50;border-color:rgba(76,175,80,0.3)}
+.lesson-head .l-title{flex:1;min-width:200px}
+.lesson-head h3{font-size:21px;color:#f0f0f0;font-weight:700;line-height:1.3}
+.lesson-head .l-dur{color:#666;font-size:13px;margin-top:4px}
+.lesson-body p{margin-bottom:14px;color:#c0c0c0;font-size:16px}
+.lesson-body p strong{color:#f0f0f0}
+.lesson-body ul,.lesson-body ol{margin:14px 0 18px 24px}
+.lesson-body li{margin-bottom:7px;color:#b8b8b8}
+.lesson-body li::marker{color:var(--gold)}
+.lesson-body h4{font-size:17px;color:var(--gold);margin:20px 0 10px;font-weight:600}
+.lesson-actions{display:flex;justify-content:space-between;align-items:center;margin-top:22px;padding-top:18px;border-top:1px solid #1f1f1f;flex-wrap:wrap;gap:12px}
+.lesson-actions .la-left{display:flex;gap:12px;align-items:center}
+.lesson-done-btn{background:transparent;border:2px solid #333;color:#888;padding:8px 18px;border-radius:30px;cursor:pointer;font-family:inherit;font-size:14px;font-weight:600;transition:0.2s;display:flex;align-items:center;gap:8px}
+.lesson-done-btn:hover{border-color:var(--gold);color:var(--gold)}
+.lesson.done .lesson-done-btn{background:rgba(76,175,80,0.12);border-color:#4caf50;color:#4caf50}
+.lesson-like{background:transparent;border:2px solid #333;color:#888;padding:8px 18px;border-radius:30px;cursor:pointer;font-family:inherit;font-size:14px;font-weight:600;transition:0.2s;display:flex;align-items:center;gap:8px}
+.lesson-like:hover{border-color:var(--gold);color:var(--gold)}
+.lesson-like.liked{background:rgba(212,175,55,0.12);border-color:var(--gold);color:var(--gold)}
+.lesson-like .like-count{background:#222;color:#888;padding:1px 8px;border-radius:10px;font-size:12px}
+.lesson-like.liked .like-count{background:var(--gold);color:#0b0b0b}
+.callout{border-radius:14px;padding:18px 22px;margin:20px 0;border-left:4px solid var(--gold);background:linear-gradient(135deg,#141414,#181818)}
+.callout-title{font-weight:700;color:var(--gold);font-size:15px;margin-bottom:8px;display:flex;align-items:center;gap:10px}
+.callout p{margin-bottom:8px;color:#c0c0c0;font-size:15px}
+.callout p:last-child{margin-bottom:0}
+.callout.example{border-left-color:#4a90e2}
+.callout.example .callout-title{color:#4a90e2}
+.callout.warning{border-left-color:#e53935}
+.callout.warning .callout-title{color:#e53935}
+.callout.tip{border-left-color:#4caf50}
+.callout.tip .callout-title{color:#4caf50}
+.table-wrap{overflow-x:auto;margin:20px 0;border-radius:12px;border:1px solid #222}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th{background:#1a1a1a;color:var(--gold);text-align:left;padding:12px 16px;font-weight:700;border-bottom:1px solid #2a2a2a}
+td{padding:11px 16px;border-bottom:1px solid #1a1a1a;color:#b8b8b8}
+tr:last-child td{border-bottom:none}
+tr:hover td{background:#161616}
+.checklist{background:linear-gradient(135deg,#141414,#171717);border:1px solid #2a2a2a;border-radius:14px;padding:20px 24px;margin:22px 0}
+.checklist h4{color:var(--gold);margin-bottom:12px;font-size:15px;display:flex;align-items:center;gap:10px}
+.checklist ul{list-style:none;margin:0}
+.checklist ul li{padding:7px 0;color:#b8b8b8;font-size:15px;display:flex;align-items:flex-start;gap:12px;cursor:pointer;transition:0.2s}
+.checklist ul li:hover{color:#e5e5e5}
+.checklist ul li input[type="checkbox"]{appearance:none;width:19px;height:19px;border:2px solid #444;border-radius:5px;cursor:pointer;flex-shrink:0;margin-top:3px;position:relative;transition:0.2s}
+.checklist ul li input[type="checkbox"]:checked{background:var(--gold);border-color:var(--gold)}
+.checklist ul li input[type="checkbox"]:checked::after{content:'✓';position:absolute;top:-3px;left:2px;color:#0b0b0b;font-weight:700;font-size:13px}
+.interact-zone{background:linear-gradient(135deg,#131313,#171717);border:1px dashed #2a2a2a;border-radius:16px;padding:28px 30px;margin:30px 0;text-align:center}
+.interact-zone h4{color:#f0f0f0;font-size:18px;margin-bottom:8px}
+.interact-zone p{color:#888;font-size:14px;margin-bottom:16px}
+.interact-zone .iz-hint{color:#666;font-size:13px;font-style:italic;background:#1a1a1a;display:inline-block;padding:6px 16px;border-radius:20px}
+.module-nav{display:flex;justify-content:space-between;align-items:center;margin:40px 0;padding:24px 0;border-top:1px solid #1f1f1f;flex-wrap:wrap;gap:15px}
+.module-nav button{background:var(--card);border:1px solid #333;color:#ccc;padding:12px 24px;border-radius:60px;cursor:pointer;font-family:inherit;font-size:14px;font-weight:600;transition:0.2s;display:flex;align-items:center;gap:10px}
+.module-nav button:hover{border-color:var(--gold);color:var(--gold)}
+.module-nav button:disabled{opacity:0.3;cursor:not-allowed}
+.sticky-cta{position:fixed;bottom:0;left:0;right:0;background:rgba(20,20,20,0.97);backdrop-filter:blur(10px);border-top:1px solid var(--gold);padding:12px 20px;display:none;justify-content:space-between;align-items:center;gap:15px;z-index:998}
+.sticky-cta .sc-price{color:var(--gold);font-weight:800;font-size:20px}
+.sticky-cta .sc-price small{display:block;color:#888;font-size:12px;font-weight:400;text-decoration:line-through}
+.sticky-cta button{background:var(--gold);color:#0b0b0b;font-weight:700;padding:12px 28px;border:none;border-radius:60px;font-size:15px;cursor:pointer;font-family:inherit}
+.similar{padding:50px 0 60px;border-top:1px solid #1f1f1f;margin-top:40px}
+.similar h2{font-size:26px;color:#f0f0f0;margin-bottom:22px}
+.similar-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:18px}
+.similar-card{background:var(--card);border:1px solid #222;border-radius:14px;padding:18px 20px;transition:0.3s;text-decoration:none;display:block}
+.similar-card:hover{border-color:var(--gold);transform:translateY(-5px)}
+.similar-card h4{font-size:16px;color:#f0f0f0}
+.similar-card p{font-size:13px;color:#888;margin-top:6px}
+footer{border-top:1px solid #1f1f1f;padding:45px 0 35px;text-align:center;color:#666;font-size:14px;margin-top:40px}
+footer span{color:var(--gold)}
+@media(max-width:768px){.course-hero h1{font-size:32px}.module-header h2{font-size:25px}.lesson{padding:22px 20px}.lesson-head h3{font-size:18px}.sticky-cta{display:flex}body{padding-bottom:70px}nav a{margin-left:12px;font-size:12px}.logo{font-size:17px}}
+</style>
 </head>
 <body>
+<div id="reading-progress"></div>
+
 <header>
-  <div class="container header-inner">
-    <div class="logo">KURSY<span>PRO</span><small>золотой стандарт продаж</small></div>
-    <nav>
-      <a href="../../index.html"><i class="fas fa-home"></i> Главная</a>
-      <a href="../../categories/b2b.html"><i class="fas fa-th-list"></i> B2B продажи</a>
-      <a href="#"><i class="fas fa-phone-alt"></i> Контакты</a>
-    </nav>
-  </div>
+<div class="container header-inner">
+<a href="../../index.html" style="text-decoration:none;"><div class="logo">КУРСЫ ПО <span>ПРОДАЖАМ</span><small>золотой стандарт продаж</small></div></a>
+<nav>
+<a href="../../index.html"><i class="fas fa-home"></i> Главная</a>
+<a href="../../categories/b2b.html"><i class="fas fa-th-list"></i> B2B продажи</a>
+<a href="#modules"><i class="fas fa-book"></i> Модули</a>
+</nav>
+</div>
 </header>
 
 <div class="container breadcrumb">
-  <a href="../../index.html">Главная</a> / <a href="../../categories/b2b.html">B2B продажи</a> / <span>B2B продажи с нуля</span>
+<a href="../../index.html">Главная</a> / <a href="../../categories/b2b.html">B2B продажи</a> / <span>B2B продажи с нуля</span>
 </div>
 
-<section class="course-header">
-  <div class="container">
-    <div class="tags">
-      <span><i class="fas fa-rocket"></i> Старт</span>
-      <span><i class="fas fa-building"></i> B2B</span>
-      <span><i class="fas fa-clock"></i> 12 дней</span>
-    </div>
-    <h1>B2B продажи с нуля</h1>
-    <p class="subtitle">Полный старт в корпоративных продажах. Как войти в B2B, найти первых клиентов и закрыть первую сделку.</p>
-    <div class="meta">
-      <span><i class="fas fa-clock"></i> 12 часов (6 модулей)</span>
-      <span><i class="fas fa-users"></i> 320+ учеников</span>
-      <span><i class="fas fa-star" style="color:#d4af37;"></i><i class="fas fa-star" style="color:#d4af37;"></i><i class="fas fa-star" style="color:#d4af37;"></i><i class="fas fa-star" style="color:#d4af37;"></i><i class="fas fa-star" style="color:#555;"></i> 4.7</span>
-    </div>
-  </div>
+<section class="course-hero">
+<div class="container">
+<div class="tags">
+<span><i class="fas fa-rocket"></i> Старт</span>
+<span><i class="fas fa-building"></i> B2B</span>
+<span><i class="fas fa-book-open"></i> 6 модулей</span>
+<span><i class="fas fa-fire" style="color:#ff6b35;"></i> Хит продаж</span>
+</div>
+<h1>B2B продажи с нуля</h1>
+<p class="subtitle">Полный старт в корпоративных продажах. Как войти в B2B, найти первых клиентов, провести первый контакт, договориться и закрыть первую сделку. С уроками, кейсами и практикой.</p>
+<div class="meta">
+<span><i class="fas fa-clock"></i> 12 часов чтения</span>
+<span><i class="fas fa-users"></i> 320+ учеников</span>
+<span><i class="fas fa-star" style="color:#d4af37;"></i><i class="fas fa-star" style="color:#d4af37;"></i><i class="fas fa-star" style="color:#d4af37;"></i><i class="fas fa-star" style="color:#d4af37;"></i><i class="fas fa-star" style="color:#555;"></i> 4.7</span>
+<span><i class="fas fa-certificate"></i> Сертификат</span>
+</div>
+</div>
 </section>
 
 <div class="container">
-  <div class="course-content">
-    <div class="description">
-      <h2>О чём курс</h2>
-      <p>Хочешь начать карьеру в B2B, но не знаешь с чего начать? Этот курс создан для тебя. Мы проведем тебя через все этапы: от поиска первых клиентов до закрытия первой сделки.</p>
-      <p>Ты узнаешь, как подготовиться к выходу на B2B рынок, как найти первых клиентов, как вести переговоры с корпоративными клиентами.</p>
+<div class="study-progress">
+<div class="sp-info">
+<div class="sp-label">Ваш прогресс</div>
+<div class="sp-count"><span id="prog-done">0</span> из <span id="prog-total">18</span> уроков</div>
+</div>
+<div class="sp-bar"><div class="sp-bar-fill" id="prog-fill"></div></div>
+</div>
 
-      <h2>Программа курса</h2>
-      <ul class="program-list">
-        <li><span class="num">1</span><span class="text">Вход в B2B: как подготовиться</span><span class="duration">2 ч</span></li>
-        <li><span class="num">2</span><span class="text">Поиск первых B2B клиентов</span><span class="duration">2 ч</span></li>
-        <li><span class="num">3</span><span class="text">Первый контакт с корпоративным клиентом</span><span class="duration">2 ч</span></li>
-        <li><span class="num">4</span><span class="text">Как вести переговоры с бизнесом</span><span class="duration">2 ч</span></li>
-        <li><span class="num">5</span><span class="text">Закрытие первой B2B сделки</span><span class="duration">2 ч</span></li>
-        <li><span class="num">6</span><span class="text">Разбор первых B2B кейсов</span><span class="duration">2 ч</span></li>
-      </ul>
+<div class="module-tabs" id="modules">
+<button class="module-tab active" data-module="m1"><span class="mt-num">1</span> Вход в B2B <i class="fas fa-check mt-check"></i></button>
+<button class="module-tab" data-module="m2"><span class="mt-num">2</span> Поиск клиентов <i class="fas fa-check mt-check"></i></button>
+<button class="module-tab" data-module="m3"><span class="mt-num">3</span> Первый контакт <i class="fas fa-check mt-check"></i></button>
+<button class="module-tab" data-module="m4"><span class="mt-num">4</span> Переговоры <i class="fas fa-check mt-check"></i></button>
+<button class="module-tab" data-module="m5"><span class="mt-num">5</span> Закрытие сделки <i class="fas fa-check mt-check"></i></button>
+<button class="module-tab" data-module="m6"><span class="mt-num">6</span> Разбор кейсов <i class="fas fa-check mt-check"></i></button>
+</div>
 
-      <h2>Результат после курса</h2>
-      <div class="result-box">
-        <ul>
-          <li><i class="fas fa-check-circle"></i> Ты начнешь карьеру в B2B продажах</li>
-          <li><i class="fas fa-check-circle"></i> Найдешь первых корпоративных клиентов</li>
-          <li><i class="fas fa-check-circle"></i> Закроешь первую B2B сделку</li>
-          <li><i class="fas fa-check-circle"></i> Поймешь структуру B2B продаж</li>
-          <li><i class="fas fa-check-circle"></i> Получишь готовый план действий</li>
-        </ul>
-      </div>
+<!-- МОДУЛЬ 1 -->
+<div class="module-panel active" id="m1">
+<div class="module-header">
+<span class="mh-num">Модуль 1</span>
+<h2>Вход в B2B: как подготовиться</h2>
+<p class="mh-desc">Прежде чем искать клиентов, нужно понять, что такое B2B, чем он отличается от B2C и что нужно подготовить, чтобы не провалить первый контакт.</p>
+<div class="mh-meta"><span><i class="fas fa-book"></i> 3 урока</span><span><i class="fas fa-clock"></i> ~2 часа</span><span><i class="fas fa-layer-group"></i> Базовый уровень</span></div>
+</div>
 
-      <h2>Для кого курс</h2>
-      <p><strong>🔹 Новички</strong> — кто начинает карьеру в B2B</p>
-      <p><strong>🔹 Предприниматели</strong> — кто выходит на корпоративный рынок</p>
-      <p><strong>🔹 Наставники</strong> — кто учит B2B с нуля</p>
-      <p><strong>🔹 Руководители</strong> — кто набирает B2B команду</p>
-    </div>
+<div class="lesson" data-lesson="l1-1">
+<div class="lesson-head"><span class="l-num">1.1</span><div class="l-title"><h3>Что такое B2B и почему это не B2C</h3><div class="l-dur"><i class="fas fa-clock"></i> ~40 мин</div></div></div>
+<div class="lesson-body">
+<p>Многие приходят в B2B из B2C и думают, что это «то же самое, только клиенты — компании». Это ошибка. <strong>B2B — другой мир</strong>: другие циклы, другие решения, другие люди.</p>
+<p>В B2C ты продаёшь человеку. Он сам решает, сам платит, сам пользуется. В B2B ты продаёшь <strong>компании</strong>, а внутри компании — <strong>группе людей</strong>, у каждого из которых свои интересы, страхи и KPI.</p>
+<h4>Ключевые отличия</h4>
+<div class="table-wrap"><table><thead><tr><th>Параметр</th><th>B2C</th><th>B2B</th></tr></thead><tbody>
+<tr><td>Кто решает</td><td>Один человек</td><td>Группа людей (3–7 и больше)</td></tr>
+<tr><td>Цикл сделки</td><td>Минуты — дни</td><td>Недели — месяцы</td></tr>
+<tr><td>Средний чек</td><td>Низкий</td><td>Высокий</td></tr>
+<tr><td>Мотивация</td><td>Эмоции, желание</td><td>Выгода, KPI, снижение риска</td></tr>
+<tr><td>Роль продавца</td><td>Консультант</td><td>Эксперт + координатор</td></tr>
+<tr><td>Возражения</td><td>«Дорого», «подумаю»</td><td>«Не в бюджете», «есть поставщик»</td></tr>
+</tbody></table></div>
+<p>Из этой таблицы вытекает главное правило: <strong>в B2B ты продаёшь не продукт, а решение проблемы компании и снижение риска для конкретного человека</strong>.</p>
+<div class="callout"><div class="callout-title"><i class="fas fa-quote-left"></i> Определение</div><p><strong>B2B (business-to-business)</strong> — модель продаж, в которой одна компания продаёт другой компании. Решение принимает не один человек, а группа, а сделка имеет длинный цикл и высокий чек.</p></div>
+<h4>Почему B2B — это возможность</h4>
+<ul><li>Высокий средний чек — одна сделка может закрыть месячный план.</li><li>Долгие отношения — клиент остаётся на годы.</li><li>Меньше конкурентов, чем в B2C — порог входа выше.</li><li>Меньше зависит от сезонности и импульса.</li></ul>
+<h4>Почему B2B — это сложно</h4>
+<ul><li>Длинный цикл сделки — результат виден не сразу.</li><li>Много отказов — нужно терпение.</li><li>Требуется понимание бизнеса клиента.</li><li>Нужна система: без неё всё рассыпается.</li></ul>
+<div class="callout example"><div class="callout-title"><i class="fas fa-briefcase"></i> Пример</div><p><strong>B2C:</strong> человек заходит в магазин и покупает телефон за 15 минут.<br><strong>B2B:</strong> IT-компания выбирает CRM для отдела продаж. Решение принимают IT-директор, коммерческий директор и финансовый директор. Цикл — 2 месяца. Чек — 800 000 рублей.</p></div>
+<div class="checklist"><h4><i class="fas fa-check-square"></i> Проверь себя</h4><ul>
+<li><input type="checkbox"> Я понимаю, что B2B ≠ B2C</li>
+<li><input type="checkbox"> Я знаю, кто принимает решение в B2B</li>
+<li><input type="checkbox"> Я понимаю, почему в B2B длинный цикл сделки</li>
+<li><input type="checkbox"> Я готов к тому, что результат придёт не сразу</li>
+</ul></div>
+</div>
+<div class="lesson-actions"><div class="la-left"><button class="lesson-done-btn"><i class="fas fa-circle-check"></i> Прочитано</button><button class="lesson-like"><i class="fas fa-thumbs-up"></i> Полезно <span class="like-count">0</span></button></div></div>
+</div>
 
-    <div class="sidebar">
-      <div class="price-card">
-        <div class="price">12 900 ₽ <small>+ НДС</small></div>
-        <div class="old-price">18 900 ₽</div>
-        <button class="btn-buy"><i class="fas fa-cart-plus"></i> Записаться на курс</button>
-        <div class="guarantee"><i class="fas fa-shield-alt"></i> 100% гарантия возврата в течение 7 дней</div>
-      </div>
-      <div class="info-box">
-        <h4><i class="fas fa-info-circle" style="color:#d4af37;"></i> Важно</h4>
-        <p>📅 Старт потока: каждую неделю</p>
-        <p>⏳ Доступ к материалам — 6 месяцев</p>
-        <p>🎓 Сертификат после прохождения</p>
-        <p>💬 Закрытый Telegram-чат с учениками</p>
-      </div>
-      <div class="info-box" style="border-color:#2a2a2a;">
-        <h4><i class="fas fa-user-tie" style="color:#d4af37;"></i> Преподаватель</h4>
-        <p style="border-bottom:none; display:flex; align-items:center; gap:12px;">
-          <span style="width:48px; height:48px; border-radius:50%; background:#2a2a2a; border:2px solid #d4af37; display:flex; align-items:center; justify-content:center; font-size:24px;">👨‍🏫</span>
-          <span><strong style="color:#ddd;">Алексей Рожняков</strong><br><span style="color:#888; font-size:13px;">17 лет в продажах, 500+ обученных менеджеров</span></span>
-        </p>
-      </div>
-    </div>
-  </div>
+<div class="lesson" data-lesson="l1-2">
+<div class="lesson-head"><span class="l-num">1.2</span><div class="l-title"><h3>Роли в B2B-сделке: кто есть кто</h3><div class="l-dur"><i class="fas fa-clock"></i> ~40 мин</div></div></div>
+<div class="lesson-body">
+<p>В B2B-сделке почти никогда не бывает одного человека. Есть несколько ролей, и каждая влияет на результат. Если ты работаешь только с одной — сделка «зависает».</p>
+<div class="table-wrap"><table><thead><tr><th>Роль</th><th>Что делает</th><th>Что важно для него</th></tr></thead><tbody>
+<tr><td><strong>ЛПР</strong> — лицо, принимающее решение</td><td>Подписывает договор, выделяет бюджет</td><td>Выгода компании, личный KPI, репутация</td></tr>
+<tr><td><strong>ЛВР</strong> — лицо, влияющее на решение</td><td>Даёт рекомендации, оценивает продукт</td><td>Техническое соответствие, удобство</td></tr>
+<tr><td><strong>Инициатор</strong></td><td>Первым озвучивает потребность</td><td>Решение своей боли</td></tr>
+<tr><td><strong>Бюджетодержатель</strong></td><td>Контролирует расходы</td><td>Цена, обоснование, ROI</td></tr>
+<tr><td><strong>Блокер</strong></td><td>Сопротивляется сделке</td><td>Сохранение статус-кво, безопасность</td></tr>
+</tbody></table></div>
+<h4>Почему важно понимать роли</h4>
+<p>Каждая роль смотрит на сделку под своим углом. IT-директору важно, чтобы система работала. Финансовому директору — чтобы она окупалась. Коммерческому — чтобы отдел продаж выполнял план.</p>
+<p>Если ты говоришь только о технических характеристиках — финансист не поймёт выгоду. Если только о деньгах — IT-директор не поверит в реализуемость.</p>
+<div class="callout example"><div class="callout-title"><i class="fas fa-briefcase"></i> Пример из практики</div><p>Менеджер продаёт CRM. Нашёл контакт IT-директора, показал демо, всё понравилось. Но сделка «зависла» на 3 месяца. Почему? IT-директор был <strong>ЛВР</strong>, а не ЛПР. Настоящий ЛПР — финансовый директор, который не видел в CRM выгоды для своих KPI.</p></div>
+<h4>Как строить карту ролей</h4>
+<ol><li>Определи, кто в компании может быть инициатором.</li><li>Найди ЛВР — тех, кто будет оценивать продукт.</li><li>Найди ЛПР — того, кто подписывает.</li><li>Определи бюджетодержателя — кто контролирует деньги.</li><li>Выясни, есть ли блокеры — кто может тормозить.</li></ol>
+<div class="callout tip"><div class="callout-title"><i class="fas fa-lightbulb"></i> Совет</div><p>Веди карту ролей в CRM или в таблице. Для каждой сделки — свой набор. Это позволит не потерять ни одного участника.</p></div>
+<div class="checklist"><h4><i class="fas fa-check-square"></i> Проверь себя</h4><ul>
+<li><input type="checkbox"> Я знаю, кто такой ЛПР</li>
+<li><input type="checkbox"> Я знаю, кто такой ЛВР</li>
+<li><input type="checkbox"> Я понимаю разницу между инициатором и бюджетодержателем</li>
+<li><input type="checkbox"> Я умею строить карту ролей для сделки</li>
+</ul></div>
+</div>
+<div class="lesson-actions"><div class="la-left"><button class="lesson-done-btn"><i class="fas fa-circle-check"></i> Прочитано</button><button class="lesson-like"><i class="fas fa-thumbs-up"></i> Полезно <span class="like-count">0</span></button></div></div>
+</div>
+
+<div class="lesson" data-lesson="l1-3">
+<div class="lesson-head"><span class="l-num">1.3</span><div class="l-title"><h3>Что подготовить перед первым контактом</h3><div class="l-dur"><i class="fas fa-clock"></i> ~40 мин</div></div></div>
+<div class="lesson-body">
+<p>Первый контакт в B2B — это не «здравствуйте, я хочу предложить». Это результат подготовки. Если ты не готовился — ты сольёшь звонок или письмо за 10 секунд.</p>
+<h4>Что нужно подготовить</h4>
+<ol>
+<li><strong>Понимание продукта.</strong> Что ты продаёшь, какую проблему решаешь, чем отличаешься.</li>
+<li><strong>ICP — идеальный профиль клиента.</strong> Кому ты можешь помочь.</li>
+<li><strong>Список целевых компаний.</strong> Кому будешь звонить/писать.</li>
+<li><strong>Контакты ЛПР.</strong> Кто принимает решение.</li>
+<li><strong>Скрипт первого контакта.</strong> Что скажешь в первые 15 секунд.</li>
+<li><strong>Ответы на базовые возражения.</strong> «Дорого», «не интересно», «отправьте на почту».</li>
+<li><strong>CRM или таблица.</strong> Куда будешь записывать результаты.</li>
+</ol>
+<h4>Как описать свой продукт одной фразой</h4>
+<p>Формула: <strong>«Мы помогаем [кому] решить [какую проблему] с помощью [что]»</strong>.</p>
+<div class="callout example"><div class="callout-title"><i class="fas fa-comment"></i> Пример</div><p>Плохо: «Мы предлагаем инновационную CRM-систему с широким функционалом».<br>Хорошо: «Мы помогаем B2B-компаниям не терять заявки при росте отдела продаж — с помощью CRM с автоматическими напоминаниями».</p></div>
+<h4>Как выбрать первые 50 компаний</h4>
+<ul><li>Определи отрасль — где твой продукт реально нужен.</li><li>Определи размер — малый, средний или крупный бизнес.</li><li>Определи географию — город или регион.</li><li>Найди компании через 2ГИС, Rusprofile, отраслевые каталоги.</li><li>Отфильтруй по ICP — оставь тех, кто подходит.</li></ul>
+<h4>Что должно быть в CRM или таблице</h4>
+<div class="table-wrap"><table><thead><tr><th>Поле</th><th>Зачем</th></tr></thead><tbody>
+<tr><td>Компания</td><td>Кому продаёшь</td></tr>
+<tr><td>Отрасль, размер</td><td>Понимать контекст</td></tr>
+<tr><td>Контакт ЛПР</td><td>Кому звонить</td></tr>
+<tr><td>Телефон, email</td><td>Как связаться</td></tr>
+<tr><td>Источник</td><td>Откуда узнал</td></tr>
+<tr><td>Триггер</td><td>Повод для контакта</td></tr>
+<tr><td>Статус</td><td>На каком этапе</td></tr>
+<tr><td>Следующий шаг</td><td>Что делать дальше</td></tr>
+</tbody></table></div>
+<div class="callout warning"><div class="callout-title"><i class="fas fa-exclamation-triangle"></i> Частая ошибка</div><p>Начинать звонить без подготовки. «Как-нибудь разберусь по ходу». В B2B так не работает: первые 10 секунд решают, слушать тебя или нет.</p></div>
+<div class="checklist"><h4><i class="fas fa-check-square"></i> Проверь себя</h4><ul>
+<li><input type="checkbox"> Я умею описать продукт одной фразой</li>
+<li><input type="checkbox"> Я описал ICP</li>
+<li><input type="checkbox"> Я собрал первые 50 компаний</li>
+<li><input type="checkbox"> Я подготовил скрипт первого контакта</li>
+<li><input type="checkbox"> Я завёл CRM или таблицу</li>
+</ul></div>
+</div>
+<div class="lesson-actions"><div class="la-left"><button class="lesson-done-btn"><i class="fas fa-circle-check"></i> Прочитано</button><button class="lesson-like"><i class="fas fa-thumbs-up"></i> Полезно <span class="like-count">0</span></button></div></div>
+</div>
+
+<div class="interact-zone"><h4><i class="fas fa-comments" style="color:#d4af37;"></i> Вопросы и комментарии по модулю 1</h4><p>Здесь можно будет задавать вопросы и оставлять комментарии.</p><span class="iz-hint"><i class="fas fa-code"></i> Firebase подключим позже — место готово</span></div>
+
+<div class="module-nav"><button disabled><i class="fas fa-arrow-left"></i> Предыдущий модуль</button><button data-goto="m2">Модуль 2: Поиск клиентов <i class="fas fa-arrow-right"></i></button></div>
+</div>
+
+<!-- МОДУЛЬ 2 -->
+<div class="module-panel" id="m2">
+<div class="module-header">
+<span class="mh-num">Модуль 2</span>
+<h2>Поиск первых B2B клиентов</h2>
+<p class="mh-desc">Теперь, когда база готова, нужно понять, где искать клиентов и как отобрать тех, кто действительно может купить.</p>
+<div class="mh-meta"><span><i class="fas fa-book"></i> 3 урока</span><span><i class="fas fa-clock"></i> ~2 часа</span><span><i class="fas fa-layer-group"></i> Базовый уровень</span></div>
+</div>
+
+<div class="lesson" data-lesson="l2-1">
+<div class="lesson-head"><span class="l-num">2.1</span><div class="l-title"><h3>Где искать первых B2B клиентов</h3><div class="l-dur"><i class="fas fa-clock"></i> ~40 мин</div></div></div>
+<div class="lesson-body">
+<p>Первые клиенты не приходят сами. Их нужно найти. В B2B есть несколько проверенных источников, которые работают на старте.</p>
+<div class="table-wrap"><table><thead><tr><th>Источник</th><th>Что даёт</th><th>Плюсы</th><th>Минусы</th></tr></thead><tbody>
+<tr><td>2ГИС / Яндекс.Карты</td><td>Компании по отрасли и городу</td><td>Бесплатно, много данных</td><td>Мало контактов ЛПР</td></tr>
+<tr><td>Rusprofile / Спарк</td><td>Юрлица, обороты, руководители</td><td>Официальные данные</td><td>Платная подписка</td></tr>
+<tr><td>LinkedIn</td><td>Контакты сотрудников, должности</td><td>Точные ЛПР</td><td>Ограничения в РФ</td></tr>
+<tr><td>Отраслевые каталоги</td><td>Компании по нишам</td><td>Узкая выборка</td><td>Устаревшие данные</td></tr>
+<tr><td>Сайты компаний</td><td>Контакты, структура</td><td>Актуально</td><td>Долго вручную</td></tr>
+<tr><td>Тендеры и госзакупки</td><td>Компании с бюджетом</td><td>Есть потребность</td><td>Сложная процедура</td></tr>
+</tbody></table></div>
+<h4>Как искать поэтапно</h4>
+<ol>
+<li><strong>Определи критерии.</strong> Отрасль, город, размер, наличие отдела.</li>
+<li><strong>Собери первичный список.</strong> Через 2ГИС, каталоги, Rusprofile.</li>
+<li><strong>Отфильтруй по ICP.</strong> Убери тех, кто не подходит.</li>
+<li><strong>Найди контакты.</strong> Телефон, email, LinkedIn ЛПР.</li>
+<li><strong>Обогати данные.</strong> Добавь триггеры, боли, контекст.</li>
+<li><strong>Занеси в CRM.</strong> С тегами и скорингом.</li>
+</ol>
+<div class="callout example"><div class="callout-title"><i class="fas fa-briefcase"></i> Пример: поиск клиентов для CRM</div><p><strong>Шаг 1.</strong> Критерии: B2B-услуги, Москва, 30–300 человек.<br><strong>Шаг 2.</strong> В 2ГИС выбираем рубрики. Выгружаем 200 компаний.<br><strong>Шаг 3.</strong> Через Rusprofile проверяем оборот. Оставляем 120.<br><strong>Шаг 4.</strong> На сайтах ищем контакты РОПа. Находим 80.<br><strong>Шаг 5.</strong> Добавляем триггеры: у 20 компаний в новостях — рост штата.<br><strong>Шаг 6.</strong> Заносим в CRM.</p></div>
+<div class="checklist"><h4><i class="fas fa-check-square"></i> Проверь себя</h4><ul>
+<li><input type="checkbox"> Я знаю основные источники данных</li>
+<li><input type="checkbox"> Я умею искать компании поэтапно</li>
+<li><input type="checkbox"> Я собрал первую базу из 50+ компаний</li>
+</ul></div>
+</div>
+<div class="lesson-actions"><div class="la-left"><button class="lesson-done-btn"><i class="fas fa-circle-check"></i> Прочитано</button><button class="lesson-like"><i class="fas fa-thumbs-up"></i> Полезно <span class="like-count">0</span></button></div></div>
+</div>
+
+<div class="lesson" data-lesson="l2-2">
+<div class="lesson-head"><span class="l-num">2.2</span><div class="l-title"><h3>Триггеры: когда клиент готов покупать</h3><div class="l-dur"><i class="fas fa-clock"></i> ~40 мин</div></div></div>
+<div class="lesson-body">
+<p>Не все компании готовы покупать прямо сейчас. Но есть <strong>события</strong>, которые создают потребность. Это триггеры. Работа с ними повышает конверсию в разы.</p>
+<h4>Основные триггеры в B2B</h4>
+<ul>
+<li><strong>Рост компании.</strong> Открытие офиса, рост штата, выход на новый рынок.</li>
+<li><strong>Смена руководителя.</strong> Новый РОП или коммерческий директор часто меняет поставщиков.</li>
+<li><strong>Привлечение инвестиций.</strong> Есть бюджет на развитие.</li>
+<li><strong>Публичные проблемы.</strong> Утечка данных, срыв поставок, скандал.</li>
+<li><strong>Изменение законодательства.</strong> Новые требования, которые нужно выполнить.</li>
+<li><strong>Сезонность.</strong> Подготовка к пиковому сезону.</li>
+</ul>
+<h4>Как отслеживать триггеры</h4>
+<ul>
+<li>Подпишись на новости отрасли.</li>
+<li>Мониторь LinkedIn и Telegram-каналы компаний.</li>
+<li>Используй сервисы: «Контур.Компас», «Спарк.Мониторинг».</li>
+<li>Читай отраслевые СМИ и рассылки.</li>
+</ul>
+<div class="callout example"><div class="callout-title"><i class="fas fa-briefcase"></i> Пример</div><p>Компания X открыла новый склад в Казани. Это триггер: при росте объёмов растёт поток заявок, и старое ПО может не справляться. Менеджер звонит с конкретным поводом: «Видел, что вы открыли склад. Обычно при таком росте компании начинают терять заявки. Мы помогаем это исправить».</p></div>
+<div class="callout tip"><div class="callout-title"><i class="fas fa-lightbulb"></i> Совет</div><p>Всегда начинай контакт с триггера. Это показывает, что ты не «холодный», а подготовился. ЛПР это ценит.</p></div>
+<div class="checklist"><h4><i class="fas fa-check-square"></i> Проверь себя</h4><ul>
+<li><input type="checkbox"> Я знаю основные триггеры в B2B</li>
+<li><input type="checkbox"> Я умею отслеживать триггеры</li>
+<li><input type="checkbox"> Я умею использовать триггер в первом контакте</li>
+</ul></div>
+</div>
+<div class="lesson-actions"><div class="la-left"><button class="lesson-done-btn"><i class="fas fa-circle-check"></i> Прочитано</button><button class="lesson-like"><i class="fas fa-thumbs-up"></i> Полезно <span class="like-count">0</span></button></div></div>
+</div>
+
+<div class="lesson" data-lesson="l2-3">
+<div class="lesson-head"><span class="l-num">2.3</span><div class="l-title"><h3>Как отобрать перспективных клиентов</h3><div class="l-dur"><i class="fas fa-clock"></i> ~40 мин</div></div></div>
+<div class="lesson-body">
+<p>Не все компании из твоего списка одинаково ценны. Работать со всеми подряд — потеря времени. Нужна <strong>приоритизация</strong>.</p>
+<h4>Скоринг лидов</h4>
+<p><strong>Скоринг</strong> — оценка лида по баллам. Чем больше баллов, тем выше приоритет.</p>
+<div class="table-wrap"><table><thead><tr><th>Критерий</th><th>Баллы</th></tr></thead><tbody>
+<tr><td>Отрасль совпадает с ICP</td><td>+20</td></tr>
+<tr><td>Размер компании в диапазоне</td><td>+15</td></tr>
+<tr><td>Есть отдел, который купит</td><td>+15</td></tr>
+<tr><td>Есть триггер</td><td>+20</td></tr>
+<tr><td>Контакт ЛПР найден</td><td>+20</td></tr>
+<tr><td>Бюджет подтверждён</td><td>+10</td></tr>
+</tbody></table></div>
+<p>70+ — горячий лид. 40–69 — тёплый. Меньше 40 — отложить.</p>
+<h4>Сегментация: A, B, C</h4>
+<ul>
+<li><strong>Сегмент A</strong> — идеальное совпадение с ICP. Сюда 70% усилий.</li>
+<li><strong>Сегмент B</strong> — частичное совпадение. Сюда 25% усилий.</li>
+<li><strong>Сегмент C</strong> — слабое совпадение. Сюда 5% или отказ.</li>
+</ul>
+<div class="callout warning"><div class="callout-title"><i class="fas fa-exclamation-triangle"></i> Ошибка новичка</div><p>Звонить по базе «как есть», без приоритизации. В итоге 80% времени уходит на бесперспективных, а перспективные остаются без внимания.</p></div>
+<div class="checklist"><h4><i class="fas fa-check-square"></i> Проверь себя</h4><ul>
+<li><input type="checkbox"> Я знаю, что такое скоринг лидов</li>
+<li><input type="checkbox"> Я разделил базу на сегменты A, B, C</li>
+<li><input type="checkbox"> Я работаю в первую очередь с сегментом A</li>
+</ul></div>
+</div>
+<div class="lesson-actions"><div class="la-left"><button class="lesson-done-btn"><i class="fas fa-circle-check"></i> Прочитано</button><button class="lesson-like"><i class="fas fa-thumbs-up"></i> Полезно <span class="like-count">0</span></button></div></div>
+</div>
+
+<div class="interact-zone"><h4><i class="fas fa-comments" style="color:#d4af37;"></i> Вопросы и комментарии по модулю 2</h4><p>Здесь можно будет задавать вопросы и оставлять комментарии.</p><span class="iz-hint"><i class="fas fa-code"></i> Firebase подключим позже — место готово</span></div>
+
+<div class="module-nav"><button data-goto="m1"><i class="fas fa-arrow-left"></i> Модуль 1: Вход в B2B</button><button data-goto="m3">Модуль 3: Первый контакт <i class="fas fa-arrow-right"></i></button></div>
+</div>
+
+<!-- МОДУЛЬ 3 -->
+<div class="module-panel" id="m3">
+<div class="module-header">
+<span class="mh-num">Модуль 3</span>
+<h2>Первый контакт с корпоративным клиентом</h2>
+<p class="mh-desc">База собрана, клиенты отобраны. Теперь главное — правильно выйти на контакт. Разберём каналы, структуру разговора и как пройти секретаря.</p>
+<div class="mh-meta"><span><i class="fas fa-book"></i> 3 урока</span><span><i class="fas fa-clock"></i> ~2 часа</span><span><i class="fas fa-layer-group"></i> Базовый уровень</span></div>
+</div>
+
+<div class="lesson" data-lesson="l3-1">
+<div class="lesson-head"><span class="l-num">3.1</span><div class="l-title"><h3>Каналы первого контакта: звонок, письмо, LinkedIn</h3><div class="l-dur"><i class="fas fa-clock"></i> ~40 мин</div></div></div>
+<div class="lesson-body">
+<p>Первый контакт в B2B — это не «продажа». Это <strong>проверка, есть ли вообще интерес</strong>. Твоя задача — не продать, а получить согласие на следующий шаг: короткий разговор, встречу, демо.</p>
+<p>Есть три основных канала. Каждый работает по-своему, и лучший результат даёт <strong>комбинация</strong>.</p>
+<h4>1. Телефонный звонок</h4>
+<p>Самый быстрый и живой канал. Ты сразу слышишь реакцию, можешь подстроиться под ответ. В B2B телефон до сих пор остаётся главным каналом первого контакта.</p>
+<p><strong>Плюсы:</strong> мгновенная реакция, живой диалог.<br><strong>Минусы:</strong> секретарь, отказы, нужно говорить без подготовки.</p>
+<h4>2. Email</h4>
+<p>Спокойный канал. Ты можешь подумать, сформулировать, приложить кейс. ЛПР может переслать письмо коллегам, вернуться к нему позже.</p>
+<p><strong>Плюсы:</strong> можно подумать, переслать, приложить материалы.<br><strong>Минусы:</strong> игнор, спам-фильтры, легко удалить.</p>
+<h4>3. LinkedIn / Telegram</h4>
+<p>Личный канал. Здесь меньше формальностей, можно обратиться напрямую. В LinkedIn ты видишь профиль ЛПР, его опыт, публикации.</p>
+<p><strong>Плюсы:</strong> прямой контакт с ЛПР, меньше формальностей.<br><strong>Минусы:</strong> не все активны, ограничения в РФ.</p>
+<div class="table-wrap"><table><thead><tr><th>Канал</th><th>Плюсы</th><th>Минусы</th><th>Когда использовать</th></tr></thead><tbody>
+<tr><td>Телефон</td><td>Быстро, живой контакт</td><td>Секретарь, отказы</td><td>Первый выход</td></tr>
+<tr><td>Email</td><td>Можно подумать, переслать</td><td>Игнор, спам</td><td>После звонка</td></tr>
+<tr><td>LinkedIn</td><td>Прямой контакт с ЛПР</td><td>Ограничения</td><td>Параллельно</td></tr>
+<tr><td>Telegram</td><td>Личный канал, читают</td><td>Нужен контакт</td><td>После первого касания</td></tr>
+</tbody></table></div>
+<h4>Мультиканальная атака</h4>
+<p>Один звонок — это не попытка. В B2B работает последовательность:</p>
+<ol>
+<li><strong>День 1.</strong> Письмо на email.</li>
+<li><strong>День 2.</strong> Звонок: «Я вам вчера писал, хочу уточнить, дошло ли».</li>
+<li><strong>День 4.</strong> Сообщение в LinkedIn.</li>
+<li><strong>День 7.</strong> Повторный звонок с новым поводом.</li>
+<li><strong>День 14.</strong> Финальное письмо с кейсом.</li>
+</ol>
+<p>Такая последовательность повышает шанс контакта в 2–3 раза.</p>
+<div class="callout tip"><div class="callout-title"><i class="fas fa-lightbulb"></i> Совет</div><p>Не зацикливайся на одном канале. Если не проходит телефон — пробуй email. Если email игнорят — иди в LinkedIn.</p></div>
+<div class="checklist"><h4><i class="fas fa-check-square"></i> Проверь себя</h4><ul>
+<li><input type="checkbox"> Я знаю три основных канала</li>
+<li><input type="checkbox"> Я понимаю плюсы и минусы каждого</li>
+<li><input type="checkbox"> Я готов использовать мультиканальную атаку</li>
+</ul></div>
+</div>
+<div class="lesson-actions"><div class="la-left"><button class="lesson-done-btn"><i class="fas fa-circle-check"></i> Прочитано</button><button class="lesson-like"><i class="fas fa-thumbs-up"></i> Полезно <span class="like-count">0</span></button></div></div>
+</div>
+
+<div class="lesson" data-lesson="l3-2">
+<div class="lesson-head"><span class="l-num">3.2</span><div class="l-title"><h3>Как говорить с ЛПР: структура первого разговора</h3><div class="l-dur"><i class="fas fa-clock"></i> ~40 мин</div></div></div>
+<div class="lesson-body">
+<p>ЛПР слушает первые 10–15 секунд и решает: продолжать или положить трубку. Твоя задача — за эти секунды показать, что ты не «очередной продажник».</p>
+<h4>Структура первого контакта</h4>
+<ol>
+<li><strong>Кто ты и откуда.</strong> Одна фраза, без «мы динамично развивающаяся компания».</li>
+<li><strong>Почему звонишь именно ему.</strong> Связь с его компанией или отраслью — триггер.</li>
+<li><strong>Что ты предлагаешь.</strong> Конкретная выгода, а не описание продукта.</li>
+<li><strong>Что ты хочешь.</strong> Не «продать», а «договориться о следующем шаге».</li>
+</ol>
+<div class="callout example"><div class="callout-title"><i class="fas fa-comment"></i> Пример первого разговора</div><p>— Иван Петров? Добрый день. Меня зовут Алексей, компания «X».<br>— Да, слушаю.<br>— Я звоню, потому что вы недавно открыли склад в Казани. Обычно при таком росте компании начинают терять часть заявок. Мы помогаем это исправить.<br>— Интересно.<br>— У нас есть кейс: логистическая компания за 2 месяца сократила потери лидов на 30%. Могу показать за 15 минут онлайн. Когда удобно?</p></div>
+<h4>Что работает в первые 15 секунд</h4>
+<ul>
+<li><strong>Уверенный тон.</strong> Без «извините за беспокойство».</li>
+<li><strong>Имя ЛПР.</strong> Показывает, что ты знаешь, кому звонишь.</li>
+<li><strong>Конкретика.</strong> Не «широкий спектр услуг», а «сокращаем потери лидов на 30%».</li>
+<li><strong>Быстрый переход к вопросу.</strong> Не монолог, а диалог.</li>
+</ul>
+<h4>Чего не делать</h4>
+<ul>
+<li>Не начинать с «Меня зовут..., я представляю компанию...» — это шаблон.</li>
+<li>Не рассказывать о компании 2 минуты — ЛПР не слушает.</li>
+<li>Не продавать на первом звонке.</li>
+<li>Не извиняться за звонок.</li>
+<li>Не задавать вопрос «Удобно ли вам сейчас говорить?» — ответят «нет».</li>
+</ul>
+<div class="callout warning"><div class="callout-title"><i class="fas fa-exclamation-triangle"></i> Главная ошибка</div><p>Монолог. Новичок говорит 2 минуты без паузы, а ЛПР листает почту. Если ты не задал вопрос в первые 30 секунд — контакт потерян.</p></div>
+<div class="checklist"><h4><i class="fas fa-check-square"></i> Проверь себя</h4><ul>
+<li><input type="checkbox"> Я знаю структуру первого контакта</li>
+<li><input type="checkbox"> Я умею говорить с ЛПР в первые 15 секунд</li>
+<li><input type="checkbox"> Я не продаю на первом звонке</li>
+</ul></div>
+</div>
+<div class="lesson-actions"><div class="la-left"><button class="lesson-done-btn"><i class="fas fa-circle-check"></i> Прочитано</button><button class="lesson-like"><i class="fas fa-thumbs-up"></i> Полезно <span class="like-count">0</span></button></div></div>
+</div>
+
+<div class="lesson" data-lesson="l3-3">
+<div class="lesson-head"><span class="l-num">3.3</span><div class="l-title"><h3>Как пройти секретаря и ассистента</h3><div class="l-dur"><i class="fas fa-clock"></i> ~40 мин</div></div></div>
+<div class="lesson-body">
+<p>Секретарь — не враг. Это человек, который делает свою работу: отсеивает тех, кто говорит неуверенно, расплывчато или «продаёт». Твоя задача — <strong>не звучать как продавец</strong>.</p>
+<h4>Что работает с секретарём</h4>
+<ul>
+<li><strong>Уверенный тон.</strong> Не «Здравствуйте, меня зовут..., я хотел бы...», а «Добрый день. Соедините с Иваном Петровым».</li>
+<li><strong>Конкретика.</strong> Знать имя и должность ЛПР.</li>
+<li><strong>Легенда, а не продажа.</strong> Не «я предлагаю CRM», а «я по вопросу, который он запрашивал».</li>
+<li><strong>Уточняющий вопрос.</strong> «Он сейчас на месте?» — вместо «Соедините меня с ним».</li>
+</ul>
+<h4>Фразы, которые работают</h4>
+<div class="callout"><div class="callout-title"><i class="fas fa-comment"></i> Примеры</div><p>«Добрый день. Иван Петров на месте?»<br>«Здравствуйте. Соедините с коммерческим директором, пожалуйста.»<br>«Добрый день. Я по вопросу, который мы обсуждали с Иваном Петровым. Он на месте?»</p></div>
+<h4>Фразы, которые убивают</h4>
+<div class="callout warning"><div class="callout-title"><i class="fas fa-times-circle"></i> Не говори так</div><p>«Здравствуйте, меня зовут Алексей, я представляю компанию..., мы предлагаем...»<br>«Можно с вашим руководителем?»<br>«Я хотел бы рассказать о нашем продукте.»</p></div>
+<h4>Что делать, если секретарь говорит «Отправьте на почту»</h4>
+<ol>
+<li><strong>Уточнить адрес.</strong> «Хорошо, на какую почту? И на чьё имя?»</li>
+<li><strong>Уточнить, кто принимает решение.</strong> «Подскажите, кто у вас отвечает за это направление?»</li>
+<li><strong>Сослаться на срочность.</strong> «Вопрос на 2 минуты. Иван Петров на месте?»</li>
+<li><strong>Перезвонить позже.</strong> Утром, в обед, вечером.</li>
+</ol>
+<h4>Как пройти ассистента</h4>
+<p>Ассистент умнее секретаря и сразу чувствует «продажника». Здесь нельзя давить — нужно <strong>заинтересовать</strong>.</p>
+<ol>
+<li><strong>Представься по имени и компании.</strong></li>
+<li><strong>Скажи, по какому вопросу.</strong> Конкретно, одной фразой.</li>
+<li><strong>Покажи ценность.</strong> Почему это важно для ЛПР именно сейчас.</li>
+<li><strong>Попроси 2 минуты.</strong> Не «встречу», не «презентацию» — 2 минуты.</li>
+<li><strong>Договорись о следующем шаге.</strong></li>
+</ol>
+<div class="callout example"><div class="callout-title"><i class="fas fa-comment"></i> Пример разговора с ассистентом</div><p>— Добрый день. Меня зовут Алексей, компания «X». Я по вопросу автоматизации отдела продаж.<br>— Иван Петров сейчас занят. Что вы хотели?<br>— Понимаю. У нас есть решение, которое за 2 месяца сокращает потери лидов на 30%. Хочу показать Ивану Петрову — буквально 2 минуты. Когда ему удобно?<br>— Отправьте на почту.<br>— Хорошо. На какую почту и на чьё имя? И когда ему удобно перезвонить?</p></div>
+<div class="callout tip"><div class="callout-title"><i class="fas fa-lightbulb"></i> Совет</div><p>Если секретарь отказывается соединять — не борись. Запиши имя, спроси, когда ЛПР обычно на месте, перезвони позже. Работает в 80% случаев.</p></div>
+<div class="checklist"><h4><i class="fas fa-check-square"></i> Проверь себя</h4><ul>
+<li><input type="checkbox"> Я знаю, как говорить с секретарём</li>
+<li><input type="checkbox"> Я умею работать с «отправьте на почту»</li>
+<li><input type="checkbox"> Я знаю структуру разговора с ассистентом</li>
+</ul></div>
+</div>
+<div class="lesson-actions"><div class="la-left"><button class="lesson-done-btn"><i class="fas fa-circle-check"></i> Прочитано</button><button class="lesson-like"><i class="fas fa-thumbs-up"></i> Полезно <span class="like-count">0</span></button></div></div>
+</div>
+
+<div class="interact-zone"><h4><i class="fas fa-comments" style="color:#d4af37;"></i> Вопросы и комментарии по модулю 3</h4><p>Здесь можно будет задавать вопросы и оставлять комментарии.</p><span class="iz-hint"><i class="fas fa-code"></i> Firebase подключим позже — место готово</span></div>
+
+<div class="module-nav"><button data-goto="m2"><i class="fas fa-arrow-left"></i> Модуль 2: Поиск клиентов</button><button data-goto="m4">Модуль 4: Переговоры <i class="fas fa-arrow-right"></i></button></div>
+</div>
+
+<!-- МОДУЛЬ 4 -->
+<div class="module-panel" id="m4">
+<div class="module-header">
+<span class="mh-num">Модуль 4</span>
+<h2>Как вести переговоры с бизнесом</h2>
+<p class="mh-desc">Первый контакт прошёл, интерес есть. Теперь нужно провести переговоры так, чтобы клиент сам захотел купить. Это не «убеждение», а работа с потребностями.</p>
+<div class="mh-meta"><span><i class="fas fa-book"></i> 3 урока</span><span><i class="fas fa-clock"></i> ~2 часа</span><span><i class="fas fa-layer-group"></i> Базовый уровень</span></div>
+</div>
+
+<div class="lesson" data-lesson="l4-1">
+<div class="lesson-head"><span class="l-num">4.1</span><div class="l-title"><h3>Как выявлять потребность клиента</h3><div class="l-dur"><i class="fas fa-clock"></i> ~40 мин</div></div></div>
+<div class="lesson-body">
+<p>Главная ошибка новичка в переговорах — <strong>сразу рассказывать о продукте</strong>. Клиенту всё равно, что у тебя есть, пока он не понял, зачем это ему.</p>
+<p>Сначала — <strong>вопросы</strong>. Твоя задача — понять, что у клиента болит, и только потом показать, как ты это решаешь.</p>
+<h4>Типы вопросов</h4>
+<ol>
+<li><strong>Ситуационные.</strong> «Как у вас сейчас организован процесс?» — узнать контекст.</li>
+<li><strong>Проблемные.</strong> «Что не устраивает в текущем решении?» — найти боль.</li>
+<li><strong>Извлекающие.</strong> «Как это влияет на результаты отдела?» — усилить боль.</li>
+<li><strong>Направляющие.</strong> «Если бы это можно было исправить — что бы это дало?» — показать ценность.</li>
+</ol>
+<div class="callout example"><div class="callout-title"><i class="fas fa-comment"></i> Пример диалога</div><p>— Как у вас сейчас обрабатываются заявки?<br>— Через Excel и почту.<br>— А что не устраивает?<br>— Теряем часть заявок, никто не видит, что с ними происходит.<br>— Как это влияет на отдел продаж?<br>— Менеджеры не выполняют план, я не понимаю, где узкое место.<br>— Если бы вы видели каждую заявку — что бы это изменило?<br>— Мы бы не теряли клиентов и могли прогнозировать выручку.</p></div>
+<h4>Правило 70/30</h4>
+<p>В переговорах <strong>70% времени говорит клиент, 30% — ты</strong>. Если ты говоришь больше — ты не переговоры ведёшь, а презентацию читаешь.</p>
+<div class="callout warning"><div class="callout-title"><i class="fas fa-exclamation-triangle"></i> Ошибка</div><p>Задавать вопросы, на которые можно ответить «да» или «нет». Это тупик. Вопросы должны быть открытыми: «как», «что», «почему», «расскажите».</p></div>
+<div class="checklist"><h4><i class="fas fa-check-square"></i> Проверь себя</h4><ul>
+<li><input type="checkbox"> Я знаю 4 типа вопросов</li>
+<li><input type="checkbox"> Я соблюдаю правило 70/30</li>
+<li><input type="checkbox"> Я не рассказываю о продукте, пока не выявил потребность</li>
+</ul></div>
+</div>
+<div class="lesson-actions"><div class="la-left"><button class="lesson-done-btn"><i class="fas fa-circle-check"></i> Прочитано</button><button class="lesson-like"><i class="fas fa-thumbs-up"></i> Полезно <span class="like-count">0</span></button></div></div>
+</div>
+
+<div class="lesson" data-lesson="l4-2">
+<div class="lesson-head"><span class="l-num">4.2</span><div class="l-title"><h3>Как презентовать решение под задачу клиента</h3><div class="l-dur"><i class="fas fa-clock"></i> ~40 мин</div></div></div>
+<div class="lesson-body">
+<p>После того как ты выявил потребность, можно презентовать. Но не «продукт», а <strong>решение конкретной задачи</strong> клиента.</p>
+<h4>Структура презентации</h4>
+<ol>
+<li><strong>Напомни боль.</strong> «Вы сказали, что теряете заявки...»</li>
+<li><strong>Покажи решение.</strong> «Наша система фиксирует каждую заявку...»</li>
+<li><strong>Дай доказательство.</strong> «Вот кейс: компания X сократила потери на 30%...»</li>
+<li><strong>Свяжи с выгодой.</strong> «Для вас это значит: выполнение плана и прогнозируемая выручка».</li>
+</ol>
+<div class="callout example"><div class="callout-title"><i class="fas fa-briefcase"></i> Пример</div><p>«Вы говорили, что теряете заявки и не видите, где узкое место. Наша CRM фиксирует каждую заявку и показывает её статус. У нас есть кейс: логистическая компания за 2 месяца сократила потери лидов на 30%. Для вас это значит: менеджеры не теряют клиентов, а вы видите реальную картину по отделу.»</p></div>
+<h4>Чего не делать в презентации</h4>
+<ul>
+<li>Не перечислять функции без связи с задачей клиента.</li>
+<li>Не говорить «у нас есть...» — говори «это решает вашу задачу».</li>
+<li>Не сравнивать с конкурентами напрямую.</li>
+<li>Не перегружать цифрами — только ключевые.</li>
+</ul>
+<div class="callout tip"><div class="callout-title"><i class="fas fa-lightbulb"></i> Совет</div><p>Используй язык клиента. Если он говорит «лиды», не говори «потенциальные клиенты». Подстраивайся под терминологию.</p></div>
+<div class="checklist"><h4><i class="fas fa-check-square"></i> Проверь себя</h4><ul>
+<li><input type="checkbox"> Я знаю структуру презентации</li>
+<li><input type="checkbox"> Я презентую решение, а не продукт</li>
+<li><input type="checkbox"> Я использую язык клиента</li>
+</ul></div>
+</div>
+<div class="lesson-actions"><div class="la-left"><button class="lesson-done-btn"><i class="fas fa-circle-check"></i> Прочитано</button><button class="lesson-like"><i class="fas fa-thumbs-up"></i> Полезно <span class="like-count">0</span></button></div></div>
+</div>
+
+<div class="lesson" data-lesson="l4-3">
+<div class="lesson-head"><span class="l-num">4.3</span><div class="l-title"><h3>Работа с возражениями в B2B</h3><div class="l-dur"><i class="fas fa-clock"></i> ~40 мин</div></div></div>
+<div class="lesson-body">
+<p>Возражения — это не отказ. Это <strong>запрос на информацию</strong>. Клиент не говорит «нет», он говорит «я пока не вижу выгоды». Твоя задача — показать.</p>
+<h4>Топ-6 возражений и ответы</h4>
+<div class="table-wrap"><table><thead><tr><th>Возражение</th><th>Что стоит за ним</th><th>Ответ</th></tr></thead><tbody>
+<tr><td>«Нам не интересно»</td><td>Не понял ценность</td><td>«Понимаю. А что у вас сейчас в приоритете?»</td></tr>
+<tr><td>«У нас есть поставщик»</td><td>Нет смысла менять</td><td>«Отлично. А что бы вас заставило рассмотреть альтернативу?»</td></tr>
+<tr><td>«Нет времени»</td><td>Не видит ценности</td><td>«Понимаю. 2 минуты — и я скажу, стоит ли продолжать.»</td></tr>
+<tr><td>«Дорого»</td><td>Не видит ROI</td><td>«Давайте посчитаем. Если решение экономит X, оно окупается за Y.»</td></tr>
+<tr><td>«Отправьте на почту»</td><td>Не хочет тратить время</td><td>«Хорошо. На какую почту? И на чьё имя?»</td></tr>
+<tr><td>«Я не принимаю решения»</td><td>Не ЛПР</td><td>«Подскажите, кто у вас отвечает за это?»</td></tr>
+</tbody></table></div>
+<h4>Метод «Присоединение + вопрос»</h4>
+<p>Не спорь с возражением. Сначала <strong>присоединись</strong> к нему, потом задай вопрос:</p>
+<ul>
+<li>«Понимаю, что дорого. А с чем сравниваете?»</li>
+<li>«Согласен, времени мало. А если я покажу за 2 минуты — стоит?»</li>
+<li>«Понимаю, что есть поставщик. А что вас в нём не устраивает?»</li>
+</ul>
+<div class="callout example"><div class="callout-title"><i class="fas fa-briefcase"></i> Пример</div><p>— У нас есть поставщик, нам не нужно.<br>— Понимаю. А что вас в нём устраивает, а что нет?<br>— В целом работает, но поддержка долго отвечает.<br>— То есть если бы поддержка отвечала быстрее — вы бы рассмотрели альтернативу?<br>— Возможно.<br>— У нас среднее время ответа — 15 минут. Могу показать. Когда удобно?</p></div>
+<div class="callout warning"><div class="callout-title"><i class="fas fa-exclamation-triangle"></i> Главная ошибка</div><p>Спорить с возражением. «Нет, это не дорого!» — тупик. Клиент закроется. Сначала согласись, потом веди к решению.</p></div>
+<div class="checklist"><h4><i class="fas fa-check-square"></i> Проверь себя</h4><ul>
+<li><input type="checkbox"> Я знаю топ-6 возражений и ответы</li>
+<li><input type="checkbox"> Я использую метод «Присоединение + вопрос»</li>
+<li><input type="checkbox"> Я не спорю с возражениями</li>
+</ul></div>
+</div>
+<div class="lesson-actions"><div class="la-left"><button class="lesson-done-btn"><i class="fas fa-circle-check"></i> Прочитано</button><button class="lesson-like"><i class="fas fa-thumbs-up"></i> Полезно <span class="like-count">0</span></button></div></div>
+</div>
+
+<div class="interact-zone"><h4><i class="fas fa-comments" style="color:#d4af37;"></i> Вопросы и комментарии по модулю 4</h4><p>Здесь можно будет задавать вопросы и оставлять комментарии.</p><span class="iz-hint"><i class="fas fa-code"></i> Firebase подключим позже — место готово</span></div>
+
+<div class="module-nav"><button data-goto="m3"><i class="fas fa-arrow-left"></i> Модуль 3: Первый контакт</button><button data-goto="m5">Модуль 5: Закрытие сделки <i class="fas fa-arrow-right"></i></button></div>
+</div>
+
+<!-- МОДУЛЬ 5 -->
+<div class="module-panel" id="m5">
+<div class="module-header">
+<span class="mh-num">Модуль 5</span>
+<h2>Закрытие первой B2B сделки</h2>
+<p class="mh-desc">Переговоры прошли, клиент заинтересован. Теперь главное — довести до подписания. Разберём этапы закрытия, работу с финальными возражениями и типичные ошибки.</p>
+<div class="mh-meta"><span><i class="fas fa-book"></i> 3 урока</span><span><i class="fas fa-clock"></i> ~2 часа</span><span><i class="fas fa-layer-group"></i> Базовый уровень</span></div>
+</div>
+
+<div class="lesson" data-lesson="l5-1">
+<div class="lesson-head"><span class="l-num">5.1</span><div class="l-title"><h3>Этапы закрытия сделки</h3><div class="l-dur"><i class="fas fa-clock"></i> ~40 мин</div></div></div>
+<div class="lesson-body">
+<p>Закрытие сделки в B2B — это не один момент, а <strong>последовательность шагов</strong>. Пропустишь шаг — сделка «зависнет».</p>
+<h4>Этапы закрытия</h4>
+<ol>
+<li><strong>Согласование решения.</strong> Клиент подтвердил, что продукт подходит.</li>
+<li><strong>Обсуждение условий.</strong> Цена, сроки, объём, гарантии.</li>
+<li><strong>Согласование с юристами.</strong> Договор, правки, подписи.</li>
+<li><strong>Оплата.</strong> Счёт, оплата, закрывающие документы.</li>
+<li><strong>Передача в работу.</strong> Онбординг, внедрение, поддержка.</li>
+</ol>
+<p>На каждом этапе есть свой «стоп-фактор». Если клиент тормозит — значит, на каком-то шаге остался вопрос.</p>
+<h4>Что делать, если сделка «зависла»</h4>
+<ul>
+<li><strong>Вернуться с новым поводом.</strong> Новость, кейс, изменение рынка.</li>
+<li><strong>Сменить контакт.</strong> Если ЛПР недоступен — иди к другому.</li>
+<li><strong>Предложить пилот.</strong> Маленький шаг вместо большой сделки.</li>
+<li><strong>Отложить на 3–6 месяцев.</strong> Поставить задачу и вернуться.</li>
+<li><strong>Закрыть с причиной.</strong> Иногда лучше закрыть, чем тянуть.</li>
+</ul>
+<div class="callout tip"><div class="callout-title"><i class="fas fa-lightbulb"></i> Совет</div><p>Никогда не оставляй сделку без следующего шага. Если у сделки нет даты следующего контакта — она мёртвая.</p></div>
+<div class="checklist"><h4><i class="fas fa-check-square"></i> Проверь себя</h4><ul>
+<li><input type="checkbox"> Я знаю 5 этапов закрытия сделки</li>
+<li><input type="checkbox"> Я умею реанимировать «зависшие» сделки</li>
+<li><input type="checkbox"> Я всегда ставлю следующий шаг с датой</li>
+</ul></div>
+</div>
+<div class="lesson-actions"><div class="la-left"><button class="lesson-done-btn"><i class="fas fa-circle-check"></i> Прочитано</button><button class="lesson-like"><i class="fas fa-thumbs-up"></i> Полезно <span class="like-count">0</span></button></div></div>
+</div>
+
+<div class="lesson" data-lesson="l5-2">
+<div class="lesson-head"><span class="l-num">5.2</span><div class="l-title"><h3>Финальные возражения и как их снять</h3><div class="l-dur"><i class="fas fa-clock"></i> ~40 мин</div></div></div>
+<div class="lesson-body">
+<p>На этапе закрытия возражения другие. Не «интересно ли», а «почему именно вы», «почему сейчас», «почему дорого».</p>
+<h4>Топ-5 финальных возражений</h4>
+<div class="table-wrap"><table><thead><tr><th>Возражение</th><th>Что делать</th></tr></thead><tbody>
+<tr><td>«Дорого»</td><td>Посчитать ROI, показать окупаемость</td></tr>
+<tr><td>«Надо подумать»</td><td>Уточнить, что именно смущает</td></tr>
+<tr><td>«Надо согласовать с руководством»</td><td>Помочь подготовить обоснование для ЛПР</td></tr>
+<tr><td>«У конкурентов дешевле»</td><td>Показать ценность, а не цену</td></tr>
+<tr><td>«Давайте вернёмся позже»</td><td>Понять причину и договориться о дате</td></tr>
+</tbody></table></div>
+<div class="callout example"><div class="callout-title"><i class="fas fa-briefcase"></i> Пример: «Надо подумать»</div><p>— Понимаю. А что именно вызывает сомнения — цена, функционал или что-то ещё?<br>— Ну, в целом всё нравится, но надо посоветоваться с финдиром.<br>— Отлично. Давайте я подготовлю короткое обоснование для финдира — с расчётом окупаемости. Когда ему удобно получить?</p></div>
+<div class="callout warning"><div class="callout-title"><i class="fas fa-exclamation-triangle"></i> Ошибка</div><p>Соглашаться на «давайте вернёмся позже» без даты. Это значит, что сделка потеряна. Всегда договаривайся о конкретном следующем шаге.</p></div>
+<div class="checklist"><h4><i class="fas fa-check-square"></i> Проверь себя</h4><ul>
+<li><input type="checkbox"> Я знаю топ-5 финальных возражений</li>
+<li><input type="checkbox"> Я умею работать с «надо подумать»</li>
+<li><input type="checkbox"> Я всегда договариваюсь о конкретной дате</li>
+</ul></div>
+</div>
+<div class="lesson-actions"><div class="la-left"><button class="lesson-done-btn"><i class="fas fa-circle-check"></i> Прочитано</button><button class="lesson-like"><i class="fas fa-thumbs-up"></i> Полезно <span class="like-count">0</span></button></div></div>
+</div>
+
+<div class="lesson" data-lesson="l5-3">
+<div class="lesson-head"><span class="l-num">5.3</span><div class="l-title"><h3>Что делать после подписания</h3><div class="l-dur"><i class="fas fa-clock"></i> ~40 мин</div></div></div>
+<div class="lesson-body">
+<p>Подписание — это не конец, а <strong>начало отношений</strong>. В B2B клиент остаётся на годы, и первая сделка — только вход.</p>
+<h4>Что делать после подписания</h4>
+<ol>
+<li><strong>Онбординг.</strong> Помочь клиенту начать пользоваться продуктом.</li>
+<li><strong>Проверка результата.</strong> Через 1–2 месяца узнать, всё ли работает.</li>
+<li><strong>Допродажа.</strong> Предложить дополнительные услуги.</li>
+<li><strong>Рекомендация.</strong> Попросить контакт коллеги или партнёра.</li>
+<li><strong>Кейс.</strong> Оформить историю успеха для будущих клиентов.</li>
+</ol>
+<div class="callout tip"><div class="callout-title"><i class="fas fa-lightbulb"></i> Совет</div><p>Лучший источник новых B2B-клиентов — существующие. Довольный клиент даёт рекомендации, которые закрываются в 5 раз быстрее холодных.</p></div>
+<div class="checklist"><h4><i class="fas fa-check-square"></i> Проверь себя</h4><ul>
+<li><input type="checkbox"> Я знаю, что делать после подписания</li>
+<li><input type="checkbox"> Я планирую работать с клиентом долгосрочно</li>
+<li><input type="checkbox"> Я буду просить рекомендации</li>
+</ul></div>
+</div>
+<div class="lesson-actions"><div class="la-left"><button class="lesson-done-btn"><i class="fas fa-circle-check"></i> Прочитано</button><button class="lesson-like"><i class="fas fa-thumbs-up"></i> Полезно <span class="like-count">0</span></button></div></div>
+</div>
+
+<div class="interact-zone"><h4><i class="fas fa-comments" style="color:#d4af37;"></i> Вопросы и комментарии по модулю 5</h4><p>Здесь можно будет задавать вопросы и оставлять комментарии.</p><span class="iz-hint"><i class="fas fa-code"></i> Firebase подключим позже — место готово</span></div>
+
+<div class="module-nav"><button data-goto="m4"><i class="fas fa-arrow-left"></i> Модуль 4: Переговоры</button><button data-goto="m6">Модуль 6: Разбор кейсов <i class="fas fa-arrow-right"></i></button></div>
+</div>
+
+<!-- МОДУЛЬ 6 -->
+<div class="module-panel" id="m6">
+<div class="module-header">
+<span class="mh-num">Модуль 6</span>
+<h2>Разбор первых B2B кейсов</h2>
+<p class="mh-desc">Теория пройдена. Теперь — практика. Разберём три реальных кейса: старт с нуля, первая сделка и работа с крупным клиентом.</p>
+<div class="mh-meta"><span><i class="fas fa-book"></i> 3 урока</span><span><i class="fas fa-clock"></i> ~2 часа</span><span><i class="fas fa-layer-group"></i> Практика</span></div>
+</div>
+
+<div class="lesson" data-lesson="l6-1">
+<div class="lesson-head"><span class="l-num">6.1</span><div class="l-title"><h3>Кейс 1: Менеджер без опыта в B2B</h3><div class="l-dur"><i class="fas fa-clock"></i> ~40 мин</div></div></div>
+<div class="lesson-body">
+<p><strong>Ситуация.</strong> Алексей, 28 лет, пришёл из розничных продаж. Опыта в B2B нет. Компания продаёт CRM для логистических компаний. Первый месяц — ноль сделок.</p>
+<h4>Что он сделал</h4>
+<ol>
+<li><strong>Изучил ICP.</strong> Логистические компании, 50–300 человек, Москва и СПб.</li>
+<li><strong>Собрал базу.</strong> 150 компаний через 2ГИС и Rusprofile.</li>
+<li><strong>Нашёл контакты ЛПР.</strong> Коммерческие директора и РОПы.</li>
+<li><strong>Написал скрипт.</strong> С акцентом на триггеры: рост, новый склад, смена РОПа.</li>
+<li><strong>Начал звонить.</strong> 50 звонков в день, каждый фиксировал в CRM.</li>
+<li><strong>Разбирал отказы.</strong> Каждую неделю анализировал, что не работает.</li>
+</ol>
+<h4>Результат</h4>
+<p>Через 6 недель — первая встреча. Через 2 месяца — первая сделка на 400 000 рублей. Через полгода — 5 сделок и выполнение плана.</p>
+<div class="callout tip"><div class="callout-title"><i class="fas fa-lightbulb"></i> Вывод</div><p>B2B не требует «таланта». Требуется система: ICP, база, скрипт, регулярность, анализ. Если делать это каждый день — результат придёт.</p></div>
+<div class="checklist"><h4><i class="fas fa-check-square"></i> Проверь себя</h4><ul>
+<li><input type="checkbox"> Я понимаю, что B2B — это система, а не талант</li>
+<li><input type="checkbox"> Я готов делать 50 звонков в день</li>
+<li><input type="checkbox"> Я буду анализировать отказы</li>
+</ul></div>
+</div>
+<div class="lesson-actions"><div class="la-left"><button class="lesson-done-btn"><i class="fas fa-circle-check"></i> Прочитано</button><button class="lesson-like"><i class="fas fa-thumbs-up"></i> Полезно <span class="like-count">0</span></button></div></div>
+</div>
+
+<div class="lesson" data-lesson="l6-2">
+<div class="lesson-head"><span class="l-num">6.2</span><div class="l-title"><h3>Кейс 2: Первая сделка через LinkedIn</h3><div class="l-dur"><i class="fas fa-clock"></i> ~40 мин</div></div></div>
+<div class="lesson-body">
+<p><strong>Ситуация.</strong> Мария, продаёт консалтинговые услуги для производственных компаний. Холодные звонки не работают — секретари не соединяют. База есть, контакта нет.</p>
+<h4>Что она сделала</h4>
+<ol>
+<li><strong>Нашла ЛПР в LinkedIn.</strong> Генеральный директор производственной компании.</li>
+<li><strong>Изучила профиль.</strong> Увидела публикацию о проблемах с логистикой.</li>
+<li><strong>Написала в LinkedIn.</strong> Не «предлагаю услуги», а «видел вашу публикацию, у нас есть решение».</li>
+<li><strong>Получила ответ.</strong> Директор ответил через 2 часа.</li>
+<li><strong>Договорилась о встрече.</strong> Онлайн, 30 минут.</li>
+<li><strong>Закрыла сделку.</strong> Через 3 недели — договор на 1,2 млн рублей.</li>
+</ol>
+<div class="callout example"><div class="callout-title"><i class="fas fa-comment"></i> Сообщение в LinkedIn</div><p>«Иван Петрович, добрый день. Видел вашу публикацию про проблемы с логистикой на производстве. У нас есть кейс: похожая компания сократила издержки на 18% за 4 месяца. Могу поделиться — 15 минут онлайн. Когда удобно?»</p></div>
+<div class="callout tip"><div class="callout-title"><i class="fas fa-lightbulb"></i> Вывод</div><p>LinkedIn работает, когда ты обращаешься не «холодно», а с контекстом. Публикации ЛПР — это готовые поводы для контакта.</p></div>
+<div class="checklist"><h4><i class="fas fa-check-square"></i> Проверь себя</h4><ul>
+<li><input type="checkbox"> Я знаю, как искать ЛПР в LinkedIn</li>
+<li><input type="checkbox"> Я умею использовать публикации как повод</li>
+<li><input type="checkbox"> Я готов писать персонализированные сообщения</li>
+</ul></div>
+</div>
+<div class="lesson-actions"><div class="la-left"><button class="lesson-done-btn"><i class="fas fa-circle-check"></i> Прочитано</button><button class="lesson-like"><i class="fas fa-thumbs-up"></i> Полезно <span class="like-count">0</span></button></div></div>
+</div>
+
+<div class="lesson" data-lesson="l6-3">
+<div class="lesson-head"><span class="l-num">6.3</span><div class="l-title"><h3>Кейс 3: Работа с крупным клиентом</h3><div class="l-dur"><i class="fas fa-clock"></i> ~40 мин</div></div></div>
+<div class="lesson-body">
+<p><strong>Ситуация.</strong> Дмитрий продаёт IT-решения крупной розничной сети. Чек — 5 млн рублей. Цикл сделки — 6 месяцев. Участников — 7 человек.</p>
+<h4>Что он сделал</h4>
+<ol>
+<li><strong>Построил карту ролей.</strong> ЛПР — финансовый директор. ЛВР — IT-директор, коммерческий директор. Блокер — руководитель отдела закупок.</li>
+<li><strong>Нашёл чемпиона.</strong> IT-директор стал союзником — он видел выгоду для своих KPI.</li>
+<li><strong>Подготовил обоснование для каждого.</strong> Для финдира — ROI. Для IT — техническое соответствие. Для коммерческого — влияние на выручку.</li>
+<li><strong>Нейтрализовал блокера.</strong> Показал, что решение упростит работу отдела закупок, а не усложнит.</li>
+<li><strong>Договорился о пилоте.</strong> Не сразу большая сделка, а пилот на 1 отдел.</li>
+<li><strong>Закрыл сделку.</strong> После успешного пилота — договор на всю сеть.</li>
+</ol>
+<div class="callout example"><div class="callout-title"><i class="fas fa-briefcase"></i> Ключевой момент</div><p>Когда сделка «зависла» на этапе согласования, Дмитрий не давил на ЛПР, а попросил своего чемпиона — IT-директора — выступить на совещании с обоснованием. Это решило вопрос за 2 недели.</p></div>
+<div class="callout tip"><div class="callout-title"><i class="fas fa-lightbulb"></i> Вывод</div><p>В крупных сделках один ЛПР недостаточно. Нужна карта ролей, чемпион внутри компании и обоснование для каждого участника.</p></div>
+<div class="checklist"><h4><i class="fas fa-check-square"></i> Проверь себя</h4><ul>
+<li><input type="checkbox"> Я понимаю, зачем нужна карта ролей</li>
+<li><input type="checkbox"> Я знаю, кто такой чемпион</li>
+<li><input type="checkbox"> Я умею готовить обоснование для каждого участника</li>
+</ul></div>
+</div>
+<div class="lesson-actions"><div class="la-left"><button class="lesson-done-btn"><i class="fas fa-circle-check"></i> Прочитано</button><button class="lesson-like"><i class="fas fa-thumbs-up"></i> Полезно <span class="like-count">0</span></button></div></div>
+</div>
+
+<div class="interact-zone"><h4><i class="fas fa-comments" style="color:#d4af37;"></i> Вопросы и комментарии по модулю 6</h4><p>Здесь можно будет задавать вопросы и оставлять комментарии.</p><span class="iz-hint"><i class="fas fa-code"></i> Firebase подключим позже — место готово</span></div>
+
+<div class="module-nav"><button data-goto="m5"><i class="fas fa-arrow-left"></i> Модуль 5: Закрытие сделки</button><button disabled>Это последний модуль</button></div>
+</div>
+
 </div>
 
 <section class="similar">
-  <div class="container">
-    <h2><i class="fas fa-arrow-right" style="color:#d4af37;"></i> Похожие курсы</h2>
-    <div class="similar-grid">
-      <a href="../b2b/b2b-prodazhi.html" class="similar-card"><h4>B2B продажи</h4><p>База</p></a>
-      <a href="../b2b/aktivnye-b2b-prodazhi.html" class="similar-card"><h4>Активные B2B продажи</h4><p>Поиск</p></a>
-      <a href="../b2b/prodazhi-korporativnym-klientam.html" class="similar-card"><h4>Продажи корпоративным</h4><p>Крупные компании</p></a>
-      <a href="../b2b/rabota-s-lpr.html" class="similar-card"><h4>Работа с ЛПР</h4><p>Решения</p></a>
-    </div>
-  </div>
+<div class="container">
+<h2><i class="fas fa-arrow-right" style="color:#d4af37;"></i> Похожие курсы</h2>
+<div class="similar-grid">
+<a href="b2b-prodazhi.html" class="similar-card"><h4>B2B продажи</h4><p>База</p></a>
+<a href="aktivnye-b2b-prodazhi.html" class="similar-card"><h4>Активные B2B продажи</h4><p>Поиск</p></a>
+<a href="prodazhi-korporativnym-klientam.html" class="similar-card"><h4>Продажи корпоративным</h4><p>Крупные компании</p></a>
+<a href="rabota-s-lpr.html" class="similar-card"><h4>Работа с ЛПР</h4><p>Решения</p></a>
+</div>
+</div>
 </section>
 
+<div class="sticky-cta">
+<div><div class="sc-price">12 900 ₽ <small>18 900 ₽</small></div></div>
+<button><i class="fas fa-cart-plus"></i> Записаться</button>
+</div>
+
 <footer>
-  <div class="container">
-    <p>© 2026 <span>KURSYPRO</span> — система обучения продажам. 110+ курсов.</p>
-  </div>
+<div class="container">
+<p>© 2026 <span>Курсы по продажам</span> — золотой стандарт обучения продажам. 110+ программ.</p>
+<p style="margin-top:8px;font-size:13px;color:#444;"><i class="fas fa-crown" style="color:#d4af37;"></i> kursy-po-prodazham.com</p>
+</div>
 </footer>
+
+<script>
+window.addEventListener('scroll',()=>{const h=document.documentElement;const s=(h.scrollTop/(h.scrollHeight-h.clientHeight))*100;document.getElementById('reading-progress').style.width=s+'%'});
+document.querySelectorAll('.module-tab').forEach(tab=>{
+tab.addEventListener('click',()=>{
+document.querySelectorAll('.module-tab').forEach(t=>t.classList.remove('active'));
+document.querySelectorAll('.module-panel').forEach(p=>p.classList.remove('active'));
+tab.classList.add('active');
+document.getElementById(tab.dataset.module).classList.add('active');
+window.scrollTo({top:document.getElementById('modules').offsetTop-80,behavior:'smooth'});
+});
+});
+document.querySelectorAll('[data-goto]').forEach(btn=>{
+btn.addEventListener('click',()=>{
+const tab=document.querySelector('.module-tab[data-module="'+btn.dataset.goto+'"]');
+if(tab)tab.click();
+});
+});
+const totalLessons=document.querySelectorAll('.lesson').length;
+document.getElementById('prog-total').textContent=totalLessons;
+function updateProgress(){
+const done=document.querySelectorAll('.lesson.done').length;
+document.getElementById('prog-done').textContent=done;
+document.getElementById('prog-fill').style.width=(done/totalLessons*100)+'%';
+document.querySelectorAll('.module-panel').forEach(panel=>{
+const lessons=panel.querySelectorAll('.lesson');
+if(lessons.length===0)return;
+const allDone=Array.from(lessons).every(l=>l.classList.contains('done'));
+const tab=document.querySelector('.module-tab[data-module="'+panel.id+'"]');
+if(tab)tab.classList.toggle('done',allDone);
+});
+}
+document.querySelectorAll('.lesson').forEach(lesson=>{
+const key='b2b_zero_'+lesson.dataset.lesson;
+if(localStorage.getItem(key)==='1')lesson.classList.add('done');
+lesson.querySelector('.lesson-done-btn').addEventListener('click',()=>{
+lesson.classList.toggle('done');
+localStorage.setItem(key,lesson.classList.contains('done')?'1':'0');
+updateProgress();
+});
+const likeBtn=lesson.querySelector('.lesson-like');
+const likeKey='b2b_zero_like_'+lesson.dataset.lesson;
+const likeCount=likeBtn.querySelector('.like-count');
+if(localStorage.getItem(likeKey)==='1'){likeBtn.classList.add('liked');likeCount.textContent='1';}
+likeBtn.addEventListener('click',()=>{
+const liked=likeBtn.classList.toggle('liked');
+localStorage.setItem(likeKey,liked?'1':'0');
+likeCount.textContent=liked?'1':'0';
+});
+});
+updateProgress();
+document.querySelectorAll('.checklist input[type="checkbox"]').forEach((cb,i)=>{
+const key='b2b_zero_check_'+i;
+if(localStorage.getItem(key)==='1')cb.checked=true;
+cb.addEventListener('change',()=>{localStorage.setItem(key,cb.checked?'1':'0');});
+});
+</script>
 </body>
 </html>
