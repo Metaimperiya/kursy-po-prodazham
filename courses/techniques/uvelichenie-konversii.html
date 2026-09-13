@@ -1,188 +1,1231 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="google-site-verification" content="yHcsl1QapmlY3f9N_pNmjunD6yZNlDvqFqyvGR2uDWA" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-site-verification" content="yHcsl1QapmlY3f9N_pNmjunD6yZNlDvqFqyvGR2uDWA" />
+<title>Увеличение конверсии продаж — как превращать лидов в клиентов | 6 модулей | KURSYPRO</title>
+<meta name="description" content="Полный курс «Увеличение конверсии продаж»: 6 модулей — измерение, воронка, первый контакт, лиды, закрытие, аналитика. С калькулятором конверсии и картой точек падения.">
+<meta name="keywords" content="увеличение конверсии, конверсия продаж, превращение лидов, воронка продаж, повышение продаж">
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://kursy-po-prodazham.com/courses/techniques/uvelichenie-konversii.html" />
+<meta property="og:title" content="Увеличение конверсии продаж — как превращать лидов в клиентов">
+<meta property="og:description" content="Измерение, воронка, первый контакт, лиды, закрытие, аналитика. С калькулятором конверсии и картой точек падения.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://kursy-po-prodazham.com/courses/techniques/uvelichenie-konversii.html">
+<meta property="og:site_name" content="Курсы по продажам">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Course","name":"Увеличение конверсии продаж","description":"Полный курс по увеличению конверсии продаж: измерение, воронка, первый контакт, лиды, закрытие, аналитика.","provider":{"@type":"Organization","name":"Курсы по продажам","url":"https://kursy-po-prodazham.com/"},"inLanguage":"ru","hasCourseInstance":{"@type":"CourseInstance","courseMode":"online","courseWorkload":"PT10H"},"offers":{"@type":"Offer","price":"13900","priceCurrency":"RUB","availability":"https://schema.org/InStock"}}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--conv:#1abc9c;--conv-light:#48c9b0;--conv-dark:#16a085;--gold:#d4af37;--gold-light:#f0c85a;--bg:#0b0b0b;--card:#141414;--text:#e5e5e5;--green:#4caf50;--red:#e53935;--blue:#4a90e2;--purple:#9c27b0;--orange:#ff6b35}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;line-height:1.8;font-size:17px}
+::-webkit-scrollbar{width:8px}
+::-webkit-scrollbar-track{background:#1a1a1a}
+::-webkit-scrollbar-thumb{background:var(--conv);border-radius:10px}
+a{color:var(--conv);text-decoration:none}
+a:hover{text-decoration:underline}
+.container{max-width:1400px;margin:0 auto;padding:0 25px}
+header{padding:18px 0;border-bottom:1px solid #2a2a2a;background:rgba(11,11,11,0.96);backdrop-filter:blur(10px);position:sticky;top:0;z-index:999}
+.header-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:15px}
+.logo{font-size:20px;font-weight:700;color:#f5f5f5;line-height:1.1}
+.logo span{color:var(--conv)}
+.logo small{font-size:10px;color:#999;display:block;letter-spacing:1px;font-weight:400;margin-top:2px}
+nav a{color:#ccc;text-decoration:none;margin-left:22px;font-weight:500;font-size:13px;transition:0.2s}
+nav a:hover{color:var(--conv);text-decoration:none}
+nav a i{margin-right:5px}
+#reading-progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--conv),var(--conv-light));width:0%;z-index:1000;transition:width 0.1s}
+.breadcrumb{padding:18px 0 6px;color:#888;font-size:13px}
+.breadcrumb a{color:var(--conv)}
+.breadcrumb span{color:#555}
 
-  <title>Увеличение конверсии продаж | Как превращать лидов в клиентов | KURSYPRO</title>
-  <meta name="description" content="Курс «Увеличение конверсии продаж»: как превращать больше лидов в реальных клиентов. Методы повышения конверсии на каждом этапе воронки." />
-  <meta name="keywords" content="увеличение конверсии, конверсия продаж, превращение лидов, воронка продаж, повышение продаж" />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://kursy-po-prodazham.com/courses/techniques/uvelichenie-konversii.html" />
+/* HERO */
+.course-hero{padding:50px 0 55px;text-align:center;border-bottom:1px solid #1f1f1f}
+.course-hero .tags{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:18px;justify-content:center}
+.course-hero .tags span{background:#1a1a1a;border:1px solid var(--conv);color:var(--conv);padding:4px 16px;border-radius:30px;font-size:11px;text-transform:uppercase;letter-spacing:0.5px}
+.course-hero h1{font-size:52px;font-weight:800;background:linear-gradient(135deg,#f5f5f5 0%,var(--conv) 90%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1.05;max-width:900px;margin:0 auto}
+.course-hero .subtitle{font-size:19px;color:#aaa;margin-top:20px;max-width:740px;margin-left:auto;margin-right:auto}
+.course-hero .meta{display:flex;gap:26px;margin-top:24px;color:#888;font-size:14px;flex-wrap:wrap;justify-content:center}
+.course-hero .meta i{color:var(--conv);margin-right:5px}
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { background: #0b0b0b; color: #e5e5e5; font-family: 'Inter', sans-serif; line-height: 1.6; }
-    .container { max-width: 1100px; margin: 0 auto; padding: 0 25px; }
-    header { padding: 25px 0; border-bottom: 1px solid #2a2a2a; background: #0b0b0b; position: sticky; top: 0; z-index: 999; }
-    .header-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
-    .logo { font-size: 28px; font-weight: 700; color: #f5f5f5; }
-    .logo span { color: #d4af37; }
-    .logo small { font-size: 14px; color: #999; display: block; letter-spacing: 2px; }
-    nav a { color: #ccc; text-decoration: none; margin-left: 30px; font-weight: 500; font-size: 15px; transition: 0.2s; }
-    nav a:hover { color: #d4af37; }
-    nav a i { margin-right: 6px; }
-    .breadcrumb { padding: 25px 0 10px; color: #888; font-size: 14px; }
-    .breadcrumb a { color: #d4af37; text-decoration: none; }
-    .breadcrumb a:hover { text-decoration: underline; }
-    .breadcrumb span { color: #555; }
-    .course-header { padding: 30px 0 40px; border-bottom: 1px solid #1f1f1f; }
-    .course-header .tags { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 15px; }
-    .course-header .tags span { background: #1a1a1a; border: 1px solid #d4af37; color: #d4af37; padding: 4px 16px; border-radius: 30px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
-    .course-header h1 { font-size: 44px; font-weight: 800; color: #f5f5f5; }
-    .course-header .subtitle { font-size: 18px; color: #aaa; margin-top: 12px; max-width: 700px; }
-    .course-header .meta { display: flex; gap: 30px; margin-top: 20px; color: #888; font-size: 15px; }
-    .course-header .meta i { color: #d4af37; margin-right: 6px; }
-    .course-content { display: grid; grid-template-columns: 2fr 1fr; gap: 50px; padding: 40px 0 60px; }
-    .description h2 { font-size: 24px; color: #f0f0f0; margin: 30px 0 15px; border-left: 4px solid #d4af37; padding-left: 15px; }
-    .description h2:first-child { margin-top: 0; }
-    .description p { color: #c0c0c0; margin-bottom: 15px; font-size: 16px; }
-    .program-list { list-style: none; padding: 0; }
-    .program-list li { background: #141414; border: 1px solid #222; border-radius: 12px; padding: 14px 20px; margin-bottom: 10px; display: flex; align-items: center; gap: 14px; transition: 0.2s; }
-    .program-list li:hover { border-color: #d4af37; }
-    .program-list li .num { background: #d4af37; color: #0b0b0b; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px; flex-shrink: 0; }
-    .program-list li .text { color: #ddd; font-size: 15px; }
-    .program-list li .duration { margin-left: auto; color: #666; font-size: 13px; white-space: nowrap; }
-    .result-box { background: linear-gradient(135deg, #141414, #1a1a1a); border: 1px solid #2a2a2a; border-radius: 16px; padding: 25px 30px; margin: 25px 0; }
-    .result-box ul { list-style: none; padding: 0; }
-    .result-box ul li { padding: 6px 0; color: #c0c0c0; }
-    .result-box ul li i { color: #d4af37; margin-right: 12px; }
-    .sidebar { position: sticky; top: 100px; align-self: start; }
-    .price-card { background: #141414; border: 2px solid #d4af37; border-radius: 20px; padding: 30px 25px; text-align: center; }
-    .price-card .price { font-size: 42px; font-weight: 800; color: #d4af37; }
-    .price-card .price small { font-size: 18px; color: #888; font-weight: 400; }
-    .price-card .old-price { font-size: 20px; color: #666; text-decoration: line-through; margin-top: 4px; }
-    .btn-buy { display: block; width: 100%; background: #d4af37; color: #0b0b0b; font-weight: 700; padding: 16px; border: none; border-radius: 60px; font-size: 18px; cursor: pointer; margin: 20px 0 12px; transition: 0.3s; }
-    .btn-buy:hover { background: #f0c85a; transform: scale(1.02); }
-    .price-card .guarantee { color: #666; font-size: 13px; }
-    .price-card .guarantee i { color: #d4af37; }
-    .info-box { background: #141414; border: 1px solid #222; border-radius: 16px; padding: 20px 25px; margin-top: 20px; }
-    .info-box h4 { color: #f0f0f0; margin-bottom: 12px; }
-    .info-box p { color: #999; font-size: 14px; padding: 5px 0; border-bottom: 1px dashed #1a1a1a; }
-    .info-box p:last-child { border-bottom: none; }
-    .similar { padding: 40px 0 60px; border-top: 1px solid #1f1f1f; }
-    .similar h2 { font-size: 28px; color: #f0f0f0; margin-bottom: 25px; }
-    .similar-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px; }
-    .similar-card { background: #141414; border: 1px solid #222; border-radius: 14px; padding: 18px 20px; transition: 0.3s; text-decoration: none; color: #e5e5e5; }
-    .similar-card:hover { border-color: #d4af37; transform: translateY(-4px); }
-    .similar-card h4 { font-size: 16px; color: #f0f0f0; }
-    .similar-card p { font-size: 13px; color: #888; margin-top: 6px; }
-    footer { border-top: 1px solid #1f1f1f; padding: 45px 0 35px; text-align: center; color: #666; font-size: 14px; }
-    footer span { color: #d4af37; }
-    @media (max-width: 768px) { .course-content { grid-template-columns: 1fr; } .course-header h1 { font-size: 30px; } .sidebar { position: static; } .course-header .meta { flex-wrap: wrap; gap: 12px; } }
-  </style>
+/* CONV PANEL */
+.conv-section{padding:40px 0 30px;border-bottom:1px solid #1a1a1a;background:linear-gradient(180deg,#0d0d0d,#0b0b0b)}
+.conv-title{text-align:center;font-size:14px;color:var(--conv);text-transform:uppercase;letter-spacing:3px;font-weight:700;margin-bottom:8px}
+.conv-subtitle{text-align:center;font-size:15px;color:#888;margin-bottom:36px}
+.conv-board{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;max-width:1100px;margin:0 auto}
+.conv-card{background:linear-gradient(135deg,#141414,#101010);border:1px solid #222;border-radius:16px;padding:22px 24px;position:relative;overflow:hidden}
+.conv-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--blue)}
+.conv-card.conversion::before{background:var(--conv)}
+.conv-card.leads::before{background:var(--purple)}
+.conv-card.deals::before{background:var(--gold)}
+.conv-card.revenue::before{background:var(--green)}
+.conv-card .cc-label{font-size:10px;color:#888;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:10px;font-weight:700}
+.conv-card .cc-value{font-size:30px;color:var(--blue);font-weight:800;font-family:monospace;line-height:1}
+.conv-card.conversion .cc-value{color:var(--conv)}
+.conv-card.leads .cc-value{color:var(--purple)}
+.conv-card.deals .cc-value{color:var(--gold)}
+.conv-card.revenue .cc-value{color:var(--green)}
+.conv-card .cc-sub{font-size:12px;color:#666;margin-top:8px}
+.conv-card .cc-delta{font-size:11px;color:var(--green);margin-top:6px;font-weight:700}
+
+/* CONVERSION CALCULATOR */
+.conv-calc{max-width:1100px;margin:28px auto 0;background:var(--card);border:1px solid #222;border-radius:16px;padding:28px 26px}
+.conv-calc h4{color:var(--conv);font-size:11px;text-transform:uppercase;letter-spacing:2px;margin-bottom:20px;display:flex;align-items:center;gap:8px}
+.calc-row{display:flex;align-items:center;gap:16px;margin-bottom:16px;flex-wrap:wrap}
+.calc-row label{font-size:13px;color:#888;min-width:200px;font-weight:600}
+.calc-row input[type="range"]{flex:1;min-width:180px;accent-color:var(--conv);height:6px;cursor:pointer}
+.calc-row .calc-value{font-size:16px;color:var(--conv);font-weight:800;font-family:monospace;min-width:100px;text-align:right}
+.calc-result{background:linear-gradient(135deg,#0f1a18,#0d1514);border:1px solid var(--conv);border-radius:12px;padding:20px 24px;margin-top:20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:15px}
+.calc-result .cr-label{font-size:12px;color:#888;text-transform:uppercase;letter-spacing:1.5px}
+.calc-result .cr-value{font-size:32px;color:var(--conv);font-weight:800;font-family:monospace}
+
+/* FUNNEL DROPS */
+.funnel-drops{max-width:1100px;margin:28px auto 0;background:var(--card);border:1px solid #222;border-radius:16px;padding:28px 26px}
+.funnel-drops h4{color:var(--conv);font-size:11px;text-transform:uppercase;letter-spacing:2px;margin-bottom:20px;display:flex;align-items:center;gap:8px}
+.drops-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px;margin-bottom:20px}
+.drop-card{background:#1a1a1a;border:2px solid #2a2a2a;border-radius:12px;padding:16px 12px;text-align:center;cursor:pointer;transition:0.3s;position:relative}
+.drop-card:hover{border-color:#444;transform:translateY(-3px)}
+.drop-card.active{border-color:var(--conv);background:linear-gradient(135deg,rgba(26,188,156,0.12),rgba(26,188,156,0.03))}
+.drop-card .dc-num{position:absolute;top:6px;left:8px;font-size:10px;color:#555;font-family:monospace;font-weight:700}
+.drop-card.active .dc-num{color:var(--conv)}
+.drop-card .dc-emoji{font-size:28px;margin-bottom:6px;line-height:1}
+.drop-card .dc-name{font-size:12px;color:#c8c8c8;font-weight:600;line-height:1.3}
+.drop-card.active .dc-name{color:var(--conv)}
+.drop-detail{background:linear-gradient(135deg,#0f1a18,#0d1514);border-left:4px solid var(--conv);border-radius:12px;padding:22px 26px;min-height:120px}
+.drop-detail .dd-title{font-size:16px;color:var(--conv);font-weight:700;margin-bottom:10px;display:flex;align-items:center;gap:8px}
+.drop-detail .dd-text{font-size:15px;color:#c0c0c0;line-height:1.7}
+.drop-detail .dd-text b{color:var(--conv)}
+
+/* LEVERS GRID */
+.levers-section{padding:40px 0 30px}
+.levers-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:18px;max-width:1100px;margin:0 auto}
+.lever-card{background:linear-gradient(135deg,#141414,#101010);border:2px solid #222;border-radius:16px;padding:24px 22px;cursor:pointer;transition:0.3s;position:relative;overflow:hidden}
+.lever-card:hover{border-color:var(--conv);transform:translateY(-5px);box-shadow:0 15px 40px rgba(0,0,0,0.5)}
+.lever-card.active{border-color:var(--conv);background:linear-gradient(135deg,rgba(26,188,156,0.12),rgba(26,188,156,0.03));box-shadow:0 0 30px rgba(26,188,156,0.15)}
+.lever-card.done{border-color:var(--green)}
+.lever-card.done::after{content:'✓';position:absolute;top:14px;right:14px;background:var(--green);color:#0b0b0b;width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px}
+.lc-header{display:flex;align-items:center;gap:14px;margin-bottom:14px}
+.lc-icon{font-size:36px;line-height:1;flex-shrink:0}
+.lc-num{background:#1a1a1a;color:var(--conv);font-size:10px;font-weight:700;padding:4px 10px;border-radius:8px;text-transform:uppercase;letter-spacing:1.5px;font-family:monospace;align-self:flex-start}
+.lever-card.active .lc-num{background:var(--conv);color:#0b0b0b}
+.lever-card.done .lc-num{background:rgba(76,175,80,0.15);color:var(--green)}
+.lever-card h3{font-size:19px;color:#f0f0f0;font-weight:700;line-height:1.3;margin-bottom:10px}
+.lever-card.active h3{color:var(--conv)}
+.lever-card.done h3{color:var(--green)}
+.lever-card p{font-size:13.5px;color:#888;line-height:1.55;margin-bottom:14px}
+.lc-meta{display:flex;gap:12px;font-size:11px;color:#666;text-transform:uppercase;letter-spacing:1px;flex-wrap:wrap}
+.lc-meta i{color:var(--conv);margin-right:4px}
+.lc-impact{display:inline-block;font-size:11px;font-weight:700;padding:3px 10px;border-radius:8px;text-transform:uppercase;letter-spacing:0.8px;margin-bottom:10px}
+.lc-impact.high{color:var(--green);background:rgba(76,175,80,0.1);border:1px solid rgba(76,175,80,0.3)}
+.lc-impact.medium{color:var(--conv);background:rgba(26,188,156,0.1);border:1px solid rgba(26,188,156,0.3)}
+.lc-impact.low{color:var(--blue);background:rgba(74,144,226,0.1);border:1px solid rgba(74,144,226,0.3)}
+
+/* PROGRESS */
+.conv-progress{max-width:900px;margin:36px auto 0;background:var(--card);border:1px solid #222;border-radius:14px;padding:20px 26px;display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+.conv-progress .pp-label{font-size:12px;color:#888;text-transform:uppercase;letter-spacing:1.5px}
+.conv-progress .pp-label b{color:var(--conv);font-size:15px;font-family:monospace}
+.conv-progress .pp-bar{flex:1;min-width:200px;height:10px;background:#1f1f1f;border-radius:10px;overflow:hidden}
+.conv-progress .pp-fill{height:100%;background:linear-gradient(90deg,var(--conv),var(--conv-light));width:0%;transition:width 0.5s ease;border-radius:10px}
+.conv-progress .pp-count{font-size:13px;color:#999;font-family:monospace}
+.conv-progress .pp-count b{color:var(--conv)}
+
+/* LAYOUT */
+.layout{display:grid;grid-template-columns:280px 1fr 260px;gap:30px;padding:40px 0 60px;align-items:start}
+
+/* LEVERS LIST (LEFT) */
+.levers-list{position:sticky;top:90px;background:var(--card);border:1px solid #222;border-radius:18px;padding:22px 18px;max-height:calc(100vh - 120px);overflow-y:auto}
+.levers-list h3{color:var(--conv);font-size:11px;text-transform:uppercase;letter-spacing:2px;margin-bottom:16px;font-weight:700;display:flex;align-items:center;gap:8px}
+.ll-item{display:flex;gap:12px;padding:11px 12px;border-radius:10px;cursor:pointer;transition:0.2s;margin-bottom:4px;border:1px solid transparent;align-items:center}
+.ll-item:hover{background:#1a1a1a;border-color:#2a2a2a}
+.ll-item.active{background:rgba(26,188,156,0.08);border-color:var(--conv)}
+.ll-item.done{border-color:rgba(76,175,80,0.3)}
+.ll-num{background:#1a1a1a;color:var(--conv);font-size:11px;font-weight:700;padding:4px 9px;border-radius:8px;flex-shrink:0;min-width:30px;text-align:center;font-family:monospace}
+.ll-item.active .ll-num{background:var(--conv);color:#0b0b0b}
+.ll-item.done .ll-num{background:rgba(76,175,80,0.15);color:var(--green)}
+.ll-content{flex:1;min-width:0}
+.ll-name{color:#c8c8c8;font-size:13px;font-weight:600;line-height:1.3;margin-bottom:2px}
+.ll-item.active .ll-name{color:var(--conv)}
+.ll-item.done .ll-name{color:var(--green)}
+.ll-meta{color:#666;font-size:11px;font-family:monospace}
+.ll-check{color:var(--green);font-size:12px;flex-shrink:0;display:none}
+.ll-item.done .ll-check{display:block}
+
+/* MODULE (CENTER) */
+.module-area{max-width:900px}
+.module-view{display:none;animation:fadeIn 0.4s ease}
+.module-view.active{display:block}
+@keyframes fadeIn{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:translateY(0)}}
+
+.module-header{margin-bottom:34px;padding-bottom:26px;border-bottom:1px solid #1f1f1f}
+.module-badge{display:inline-block;background:rgba(26,188,156,0.12);color:var(--conv);font-size:11px;font-weight:700;letter-spacing:2px;padding:5px 14px;border-radius:14px;text-transform:uppercase;margin-bottom:14px}
+.module-header h2{font-size:34px;color:#f5f5f5;font-weight:800;line-height:1.2;margin-bottom:12px}
+.module-lead{font-size:17px;color:#999;font-style:italic;padding-left:18px;border-left:3px solid var(--conv)}
+
+.module-view h3{font-size:22px;color:#f0f0f0;font-weight:700;margin:36px 0 16px;display:flex;align-items:center;gap:12px}
+.module-view h3::before{content:'';width:4px;height:24px;background:var(--conv);border-radius:2px}
+.module-view h4{font-size:14px;color:var(--conv);font-weight:700;text-transform:uppercase;letter-spacing:1.5px;margin:28px 0 12px}
+.module-view p{margin-bottom:18px;color:#c0c0c0;font-size:16.5px}
+.module-view p strong{color:#f0f0f0}
+.module-view ul,.module-view ol{margin:14px 0 24px 26px}
+.module-view li{margin-bottom:10px;color:#b8b8b8;font-size:16px}
+.module-view ul li::marker{color:var(--conv)}
+.module-view ol li::marker{color:var(--conv);font-weight:700}
+
+/* CALLOUTS */
+.callout{border-radius:14px;padding:22px 26px;margin:24px 0;border-left:4px solid var(--conv);background:linear-gradient(135deg,#181818,#151515)}
+.callout-title{font-weight:700;color:var(--conv);font-size:13px;margin-bottom:10px;display:flex;align-items:center;gap:8px;text-transform:uppercase;letter-spacing:1.2px}
+.callout p{margin-bottom:10px;color:#c0c0c0;font-size:15.5px}
+.callout p:last-child{margin-bottom:0}
+.callout.example{border-left-color:var(--blue)}
+.callout.example .callout-title{color:var(--blue)}
+.callout.warning{border-left-color:var(--red)}
+.callout.warning .callout-title{color:var(--red)}
+.callout.tip{border-left-color:var(--green)}
+.callout.tip .callout-title{color:var(--green)}
+.callout.script{border-left-color:var(--conv);background:linear-gradient(135deg,#0f1a18,#0d1514)}
+.callout.script .callout-title{color:var(--conv)}
+
+/* TABLE */
+.table-wrap{overflow-x:auto;margin:24px 0;border-radius:12px;border:1px solid #222}
+table{width:100%;border-collapse:collapse;font-size:14.5px}
+th{background:#1a1a1a;color:var(--conv);text-align:left;padding:14px 18px;font-weight:700;border-bottom:1px solid #2a2a2a;text-transform:uppercase;font-size:11px;letter-spacing:1.5px}
+td{padding:12px 18px;border-bottom:1px solid #1a1a1a;color:#b8b8b8}
+tr:last-child td{border-bottom:none}
+
+/* CHECKLIST */
+.checklist{background:linear-gradient(135deg,#161616,#131313);border:1px solid #252525;border-radius:12px;padding:24px 28px;margin:28px 0}
+.checklist h4{color:var(--conv);margin-bottom:16px;font-size:12px;text-transform:uppercase;letter-spacing:2px;display:flex;align-items:center;gap:8px}
+.checklist ul{list-style:none;margin:0}
+.checklist ul li{padding:9px 0;color:#b8b8b8;font-size:15px;display:flex;align-items:flex-start;gap:12px;cursor:pointer;transition:0.2s}
+.checklist ul li:hover{color:#e5e5e5}
+.checklist ul li input[type="checkbox"]{appearance:none;width:19px;height:19px;border:2px solid #444;border-radius:4px;cursor:pointer;flex-shrink:0;margin-top:3px;position:relative;transition:0.2s}
+.checklist ul li input[type="checkbox"]:checked{background:var(--conv);border-color:var(--conv)}
+.checklist ul li input[type="checkbox"]:checked::after{content:'✓';position:absolute;top:-3px;left:2px;color:#0b0b0b;font-weight:700;font-size:13px}
+
+/* INTERACT */
+.interact-zone{background:linear-gradient(135deg,#131313,#171717);border:1px dashed #2a2a2a;border-radius:14px;padding:26px 30px;margin:32px 0 0;text-align:center}
+.interact-zone h4{color:#f0f0f0;font-size:15px;margin-bottom:6px}
+.interact-zone p{color:#888;font-size:13px;margin-bottom:12px}
+.interact-zone .iz-hint{color:#666;font-size:11px;font-style:italic;background:#1a1a1a;display:inline-block;padding:4px 14px;border-radius:20px;text-transform:uppercase;letter-spacing:1px}
+
+/* ACTIONS */
+.module-actions{display:flex;justify-content:space-between;align-items:center;margin-top:36px;padding-top:26px;border-top:1px solid #1f1f1f;flex-wrap:wrap;gap:15px}
+.module-actions .ma-left{display:flex;gap:12px;flex-wrap:wrap}
+.module-actions button{background:transparent;border:2px solid #333;color:#888;padding:10px 22px;border-radius:30px;cursor:pointer;font-family:inherit;font-size:13px;font-weight:600;transition:0.2s;display:flex;align-items:center;gap:8px}
+.module-actions button:hover{border-color:var(--conv);color:var(--conv)}
+.module-actions .ma-like.liked{background:rgba(26,188,156,0.1);border-color:var(--conv);color:var(--conv)}
+.module-actions .ma-done.done{background:rgba(76,175,80,0.1);border-color:var(--green);color:var(--green)}
+.module-actions .ma-next{background:var(--conv);color:#0b0b0b;border-color:var(--conv);padding:11px 26px;font-size:14px}
+.module-actions .ma-next:hover{background:var(--conv-light);border-color:var(--conv-light);color:#0b0b0b}
+.module-actions .ma-next:disabled{opacity:0.4;cursor:not-allowed}
+
+/* SIDEBAR (RIGHT) */
+.sidebar-conv{position:sticky;top:90px;background:var(--card);border:1px solid #222;border-radius:18px;padding:24px 22px}
+.sidebar-conv h3{color:var(--conv);font-size:11px;text-transform:uppercase;letter-spacing:2px;margin-bottom:20px;font-weight:700;display:flex;align-items:center;gap:8px}
+.conv-display{text-align:center;padding:22px 0;border-bottom:1px solid #1f1f1f;margin-bottom:20px}
+.conv-display .cd-emoji{font-size:52px;line-height:1;margin-bottom:12px}
+.conv-display .cd-value{font-size:36px;color:var(--conv);font-weight:800;font-family:monospace;line-height:1;margin-bottom:6px}
+.conv-display .cd-label{font-size:11px;color:#888;text-transform:uppercase;letter-spacing:1.5px}
+.conv-rows{display:flex;flex-direction:column;gap:10px;margin-bottom:20px}
+.conv-rows .cr-row{display:flex;justify-content:space-between;font-size:13px;padding:8px 0;border-bottom:1px dashed #1f1f1f}
+.conv-rows .cr-row:last-child{border-bottom:none}
+.conv-rows .cr-label{color:#888}
+.conv-rows .cr-value{color:var(--conv);font-weight:700;font-family:monospace}
+.conv-rows .cr-value.green{color:var(--green)}
+.conv-rows .cr-value.blue{color:var(--blue)}
+.conv-rows .cr-value.red{color:var(--red)}
+.conv-progress2{height:10px;background:#1f1f1f;border-radius:10px;overflow:hidden;margin-bottom:10px}
+.conv-progress2 .cp2-fill{height:100%;background:linear-gradient(90deg,var(--conv),var(--conv-light));width:0%;transition:width 0.5s ease;border-radius:10px}
+.conv-percent{font-size:11px;color:#888;text-align:center;text-transform:uppercase;letter-spacing:1px}
+.conv-percent b{color:var(--conv)}
+
+/* STICKY CTA */
+.sticky-cta{position:fixed;bottom:0;left:0;right:0;background:rgba(20,20,20,0.97);backdrop-filter:blur(10px);border-top:1px solid var(--conv);padding:12px 20px;display:none;justify-content:space-between;align-items:center;gap:15px;z-index:998}
+.sticky-cta .sc-price{color:var(--conv);font-weight:800;font-size:18px}
+.sticky-cta .sc-price small{display:block;color:#888;font-size:11px;font-weight:400;text-decoration:line-through}
+.sticky-cta button{background:var(--conv);color:#0b0b0b;font-weight:700;padding:12px 26px;border:none;border-radius:60px;font-size:14px;cursor:pointer;font-family:inherit}
+
+/* SIMILAR */
+.similar{padding:50px 0 60px;border-top:1px solid #1f1f1f;margin-top:40px}
+.similar h2{font-size:24px;color:#f0f0f0;margin-bottom:22px}
+.similar-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:18px}
+.similar-card{background:var(--card);border:1px solid #222;border-radius:14px;padding:18px 20px;transition:0.3s;text-decoration:none;display:block}
+.similar-card:hover{border-color:var(--conv);transform:translateY(-5px)}
+.similar-card h4{font-size:16px;color:#f0f0f0}
+.similar-card p{font-size:13px;color:#888;margin-top:6px}
+
+footer{border-top:1px solid #1f1f1f;padding:45px 0 35px;text-align:center;color:#666;font-size:14px;margin-top:40px}
+footer span{color:var(--conv)}
+
+@media(max-width:1200px){
+.layout{grid-template-columns:1fr}
+.levers-list,.sidebar-conv{position:static;max-height:none}
+}
+@media(max-width:768px){
+.course-hero h1{font-size:34px}
+.levers-grid{grid-template-columns:1fr;gap:12px}
+.lever-card{padding:18px}
+.lc-icon{font-size:28px}
+.lever-card h3{font-size:16px}
+.conv-board{grid-template-columns:repeat(2,1fr);gap:10px}
+.conv-card{padding:14px 16px}
+.conv-card .cc-value{font-size:20px}
+.drops-grid{grid-template-columns:repeat(2,1fr)}
+.calc-row label{min-width:100%;font-size:12px}
+.calc-row .calc-value{min-width:auto;text-align:left}
+.calc-result .cr-value{font-size:24px}
+.module-header h2{font-size:24px}
+.module-view h3{font-size:18px}
+nav a{margin-left:10px;font-size:11px}
+.logo{font-size:16px}
+body{font-size:15px}
+.sticky-cta{display:flex}
+body{padding-bottom:70px}
+.module-actions{flex-direction:column}
+.module-actions button{width:100%;justify-content:center}
+}
+</style>
 </head>
 <body>
+<div id="reading-progress"></div>
+
 <header>
-  <div class="container header-inner">
-    <div class="logo">KURSY<span>PRO</span><small>золотой стандарт продаж</small></div>
-    <nav>
-      <a href="../../index.html"><i class="fas fa-home"></i> Главная</a>
-      <a href="../../categories/techniques.html"><i class="fas fa-th-list"></i> Техника продаж</a>
-      <a href="#"><i class="fas fa-phone-alt"></i> Контакты</a>
-    </nav>
-  </div>
+<div class="container header-inner">
+<a href="../../index.html" style="text-decoration:none;"><div class="logo">КУРСЫ ПО <span>ПРОДАЖАМ</span><small>золотой стандарт продаж</small></div></a>
+<nav>
+<a href="../../index.html"><i class="fas fa-home"></i> Главная</a>
+<a href="../../categories/techniques.html"><i class="fas fa-th-list"></i> Техника продаж</a>
+<a href="#conv"><i class="fas fa-chart-line"></i> Конверсия</a>
+</nav>
+</div>
 </header>
 
 <div class="container breadcrumb">
-  <a href="../../index.html">Главная</a> / <a href="../../categories/techniques.html">Техника продаж</a> / <span>Увеличение конверсии</span>
+<a href="../../index.html">Главная</a> / <a href="../../categories/techniques.html">Техника продаж</a> / <span>Увеличение конверсии</span>
 </div>
 
-<section class="course-header">
-  <div class="container">
-    <div class="tags">
-      <span><i class="fas fa-chart-line"></i> Конверсия</span>
-      <span><i class="fas fa-users"></i> Лиды</span>
-      <span><i class="fas fa-clock"></i> 10 дней</span>
-    </div>
-    <h1>Увеличение конверсии продаж</h1>
-    <p class="subtitle">Как превращать больше лидов в реальных клиентов. Повышение конверсии на каждом этапе воронки продаж.</p>
-    <div class="meta">
-      <span><i class="fas fa-clock"></i> 10 часов (6 модулей)</span>
-      <span><i class="fas fa-users"></i> 380+ учеников</span>
-      <span><i class="fas fa-star" style="color:#d4af37;"></i><i class="fas fa-star" style="color:#d4af37;"></i><i class="fas fa-star" style="color:#d4af37;"></i><i class="fas fa-star" style="color:#d4af37;"></i><i class="fas fa-star" style="color:#555;"></i> 4.7</span>
-    </div>
-  </div>
+<section class="course-hero">
+<div class="container">
+<div class="tags">
+<span><i class="fas fa-chart-line"></i> Конверсия</span>
+<span><i class="fas fa-users"></i> Лиды</span>
+<span><i class="fas fa-layer-group"></i> 6 модулей</span>
+<span><i class="fas fa-fire" style="color:#1abc9c;"></i> Хит продаж</span>
+</div>
+<h1>Увеличение конверсии продаж</h1>
+<p class="subtitle">Шесть модулей: от измерения конверсии до постоянного улучшения. С калькулятором конверсии и картой точек падения.</p>
+<div class="meta">
+<span><i class="fas fa-clock"></i> 10 часов</span>
+<span><i class="fas fa-users"></i> 380+ учеников</span>
+<span><i class="fas fa-star" style="color:#d4af37;"></i><i class="fas fa-star" style="color:#d4af37;"></i><i class="fas fa-star" style="color:#d4af37;"></i><i class="fas fa-star" style="color:#d4af37;"></i><i class="fas fa-star" style="color:#555;"></i> 4.7</span>
+<span><i class="fas fa-certificate"></i> Сертификат</span>
+</div>
+</div>
 </section>
 
+<!-- CONV PANEL -->
+<section class="conv-section" id="conv">
 <div class="container">
-  <div class="course-content">
-    <div class="description">
-      <h2>О чём курс</h2>
-      <p>Ты привлекаешь лидов, но не все становятся клиентами? Этот курс научит тебя системно повышать конверсию на каждом этапе воронки продаж. Ты узнаешь, как превращать больше контактов в реальные сделки.</p>
-      <p>Мы разберем все точки падения конверсии: от первого контакта до закрытия сделки. Ты получишь конкретные инструменты и техники для увеличения продаж без увеличения бюджета.</p>
+<div class="conv-title">Панель конверсии</div>
+<p class="conv-subtitle">Живые показатели: конверсия, лиды, сделки, выручка</p>
 
-      <h2>Программа курса</h2>
-      <ul class="program-list">
-        <li><span class="num">1</span><span class="text">Что такое конверсия и как ее измерять</span><span class="duration">1.5 ч</span></li>
-        <li><span class="num">2</span><span class="text">Воронка продаж: точки падения и роста</span><span class="duration">2 ч</span></li>
-        <li><span class="num">3</span><span class="text">Как повышать конверсию на этапе первого контакта</span><span class="duration">2 ч</span></li>
-        <li><span class="num">4</span><span class="text">Работа с лидами: как не терять клиентов</span><span class="duration">1.5 ч</span></li>
-        <li><span class="num">5</span><span class="text">Техники повышения конверсии на закрытии</span><span class="duration">2 ч</span></li>
-        <li><span class="num">6</span><span class="text">Постоянное улучшение: аналитика и эксперименты</span><span class="duration">1 ч</span></li>
-      </ul>
+<div class="conv-board">
+<div class="conv-card conversion">
+<div class="cc-label">Конверсия</div>
+<div class="cc-value" id="conv-conversion">10%</div>
+<div class="cc-sub">лид → сделка</div>
+<div class="cc-delta" id="conv-delta">—</div>
+</div>
+<div class="conv-card leads">
+<div class="cc-label">Лидов / мес</div>
+<div class="cc-value" id="conv-leads">500</div>
+<div class="cc-sub">на входе</div>
+</div>
+<div class="conv-card deals">
+<div class="cc-label">Сделок / мес</div>
+<div class="cc-value" id="conv-deals">50</div>
+<div class="cc-sub">закрыто</div>
+</div>
+<div class="conv-card revenue">
+<div class="cc-label">Выручка / мес</div>
+<div class="cc-value" id="conv-revenue">500 000 ₽</div>
+<div class="cc-sub">с воронки</div>
+</div>
+</div>
 
-      <h2>Результат после курса</h2>
-      <div class="result-box">
-        <ul>
-          <li><i class="fas fa-check-circle"></i> Ты увеличишь конверсию на 20-40%</li>
-          <li><i class="fas fa-check-circle"></i> Научишься измерять и управлять конверсией</li>
-          <li><i class="fas fa-check-circle"></i> Узнаешь слабые места в своей воронке</li>
-          <li><i class="fas fa-check-circle"></i> Внедришь систему постоянного улучшения</li>
-          <li><i class="fas fa-check-circle"></i> Увеличишь продажи без роста бюджета</li>
-        </ul>
-      </div>
+<!-- CONVERSION CALCULATOR -->
+<div class="conv-calc">
+<h4><i class="fas fa-calculator"></i> Калькулятор конверсии — двигай ползунки</h4>
+<div class="calc-row">
+<label>Лидов в месяц</label>
+<input type="range" id="conv-calc-leads" min="100" max="5000" step="50" value="500">
+<span class="calc-value" id="conv-calc-leads-val">500</span>
+</div>
+<div class="calc-row">
+<label>Конверсия в квалификацию (%)</label>
+<input type="range" id="conv-calc-qualify" min="10" max="80" step="5" value="40">
+<span class="calc-value" id="conv-calc-qualify-val">40%</span>
+</div>
+<div class="calc-row">
+<label>Конверсия в презентацию (%)</label>
+<input type="range" id="conv-calc-present" min="10" max="80" step="5" value="50">
+<span class="calc-value" id="conv-calc-present-val">50%</span>
+</div>
+<div class="calc-row">
+<label>Конверсия в сделку (%)</label>
+<input type="range" id="conv-calc-deal" min="5" max="80" step="5" value="50">
+<span class="calc-value" id="conv-calc-deal-val">50%</span>
+</div>
+<div class="calc-row">
+<label>Средний чек (₽)</label>
+<input type="range" id="conv-calc-check" min="1000" max="200000" step="1000" value="10000">
+<span class="calc-value" id="conv-calc-check-val">10 000 ₽</span>
+</div>
+<div class="calc-result">
+<div>
+<div class="cr-label">Итоговая конверсия</div>
+<div class="cr-value" id="conv-calc-total">10%</div>
+</div>
+<div>
+<div class="cr-label">Выручка в месяц</div>
+<div class="cr-value" id="conv-calc-revenue" style="font-size:24px;">500 000 ₽</div>
+</div>
+</div>
+</div>
 
-      <h2>Для кого курс</h2>
-      <p><strong>🔹 Менеджеры</strong> — кто хочет продавать больше</p>
-      <p><strong>🔹 Предприниматели</strong> — кто управляет воронкой</p>
-      <p><strong>🔹 Маркетологи</strong> — кто отвечает за конверсию</p>
-      <p><strong>🔹 Руководители</strong> — кто управляет командой</p>
-    </div>
+<!-- FUNNEL DROPS -->
+<div class="funnel-drops">
+<h4><i class="fas fa-map"></i> Карта точек падения — кликни на этап</h4>
+<div class="drops-grid" id="drops-grid">
+<div class="drop-card active" data-drop="1">
+<div class="dc-num">01</div>
+<div class="dc-emoji">👋</div>
+<div class="dc-name">Контакт</div>
+</div>
+<div class="drop-card" data-drop="2">
+<div class="dc-num">02</div>
+<div class="dc-emoji">🔍</div>
+<div class="dc-name">Квалификация</div>
+</div>
+<div class="drop-card" data-drop="3">
+<div class="dc-num">03</div>
+<div class="dc-emoji">📊</div>
+<div class="dc-name">Презентация</div>
+</div>
+<div class="drop-card" data-drop="4">
+<div class="dc-num">04</div>
+<div class="dc-emoji">🛡️</div>
+<div class="dc-name">Возражения</div>
+</div>
+<div class="drop-card" data-drop="5">
+<div class="dc-num">05</div>
+<div class="dc-emoji">✅</div>
+<div class="dc-name">Закрытие</div>
+</div>
+</div>
+<div class="drop-detail" id="drop-detail">
+<div class="dd-title"><span>👋</span> Контакт</div>
+<div class="dd-text">На этом этапе клиент может «отвалиться», если контакт не установлен. <b>Где теряются:</b> холодные звонки без скрипта, долгий ответ, нет персонализации. <b>Как исправить:</b> подготовь скрипт, отвечай быстро, персонализируй.</div>
+</div>
+</div>
+</div>
+</section>
 
-    <div class="sidebar">
-      <div class="price-card">
-        <div class="price">13 900 ₽ <small>+ НДС</small></div>
-        <div class="old-price">19 900 ₽</div>
-        <button class="btn-buy"><i class="fas fa-cart-plus"></i> Записаться на курс</button>
-        <div class="guarantee"><i class="fas fa-shield-alt"></i> 100% гарантия возврата в течение 7 дней</div>
-      </div>
-      <div class="info-box">
-        <h4><i class="fas fa-info-circle" style="color:#d4af37;"></i> Важно</h4>
-        <p>📅 Старт потока: каждую неделю</p>
-        <p>⏳ Доступ к материалам — 6 месяцев</p>
-        <p>🎓 Сертификат после прохождения</p>
-        <p>💬 Закрытый Telegram-чат с учениками</p>
-      </div>
-      <div class="info-box" style="border-color:#2a2a2a;">
-        <h4><i class="fas fa-user-tie" style="color:#d4af37;"></i> Преподаватель</h4>
-        <p style="border-bottom:none; display:flex; align-items:center; gap:12px;">
-          <span style="width:48px; height:48px; border-radius:50%; background:#2a2a2a; border:2px solid #d4af37; display:flex; align-items:center; justify-content:center; font-size:24px;">👨‍🏫</span>
-          <span><strong style="color:#ddd;">Алексей Рожняков</strong><br><span style="color:#888; font-size:13px;">17 лет в продажах, 500+ обученных менеджеров</span></span>
-        </p>
-      </div>
-    </div>
-  </div>
+<!-- LEVERS GRID -->
+<section class="levers-section">
+<div class="container">
+<div class="levers-grid">
+
+<div class="lever-card active" data-lever="1">
+<div class="lc-header">
+<span class="lc-icon">📏</span>
+<span class="lc-num">Модуль 01</span>
+</div>
+<span class="lc-impact medium">Влияние: базовое</span>
+<h3>Что такое конверсия и как её измерять</h3>
+<p>Определение, формулы, метрики, инструменты для измерения.</p>
+<div class="lc-meta">
+<span><i class="fas fa-clock"></i> 1.5 часа</span>
+<span><i class="fas fa-book"></i> 6 разделов</span>
+</div>
+</div>
+
+<div class="lever-card" data-lever="2">
+<div class="lc-header">
+<span class="lc-icon">🔻</span>
+<span class="lc-num">Модуль 02</span>
+</div>
+<span class="lc-impact high">Влияние: высокое</span>
+<h3>Воронка продаж: точки падения и роста</h3>
+<p>Как найти слабые места в воронке и где теряются клиенты.</p>
+<div class="lc-meta">
+<span><i class="fas fa-clock"></i> 2 часа</span>
+<span><i class="fas fa-book"></i> 6 разделов</span>
+</div>
+</div>
+
+<div class="lever-card" data-lever="3">
+<div class="lc-header">
+<span class="lc-icon">👋</span>
+<span class="lc-num">Модуль 03</span>
+</div>
+<span class="lc-impact high">Влияние: высокое</span>
+<h3>Повышение конверсии на первом контакте</h3>
+<p>Как не терять клиентов на первом контакте.</p>
+<div class="lc-meta">
+<span><i class="fas fa-clock"></i> 2 часа</span>
+<span><i class="fas fa-book"></i> 6 разделов</span>
+</div>
+</div>
+
+<div class="lever-card" data-lever="4">
+<div class="lc-header">
+<span class="lc-icon">🎣</span>
+<span class="lc-num">Модуль 04</span>
+</div>
+<span class="lc-impact high">Влияние: высокое</span>
+<h3>Работа с лидами: как не терять клиентов</h3>
+<p>Квалификация, прогрев, удержание лидов.</p>
+<div class="lc-meta">
+<span><i class="fas fa-clock"></i> 1.5 часа</span>
+<span><i class="fas fa-book"></i> 6 разделов</span>
+</div>
+</div>
+
+<div class="lever-card" data-lever="5">
+<div class="lc-header">
+<span class="lc-icon">✅</span>
+<span class="lc-num">Модуль 05</span>
+</div>
+<span class="lc-impact high">Влияние: высокое</span>
+<h3>Техники повышения конверсии на закрытии</h3>
+<p>Как увеличить процент закрытых сделок.</p>
+<div class="lc-meta">
+<span><i class="fas fa-clock"></i> 2 часа</span>
+<span><i class="fas fa-book"></i> 6 разделов</span>
+</div>
+</div>
+
+<div class="lever-card" data-lever="6">
+<div class="lc-header">
+<span class="lc-icon">📈</span>
+<span class="lc-num">Модуль 06</span>
+</div>
+<span class="lc-impact medium">Влияние: среднее</span>
+<h3>Постоянное улучшение: аналитика и эксперименты</h3>
+<p>Как построить систему постоянного улучшения конверсии.</p>
+<div class="lc-meta">
+<span><i class="fas fa-clock"></i> 1 час</span>
+<span><i class="fas fa-book"></i> 6 разделов</span>
+</div>
+</div>
+
+</div>
+
+<div class="conv-progress">
+<div class="pp-label">Модулей пройдено: <b><span id="pp-count">0</span>/6</b></div>
+<div class="pp-bar"><div class="pp-fill" id="pp-fill"></div></div>
+<div class="pp-count">Конверсия: <b><span id="pp-conversion">10%</span></b></div>
+</div>
+</div>
+</section>
+
+<div class="container layout">
+
+<!-- LEVERS LIST (LEFT) -->
+<aside class="levers-list">
+<h3><i class="fas fa-list"></i> Модули курса</h3>
+<div class="ll-item active" data-lever="1"><span class="ll-num">01</span><div class="ll-content"><div class="ll-name">Измерение</div><div class="ll-meta">1.5 ч</div></div><i class="fas fa-check ll-check"></i></div>
+<div class="ll-item" data-lever="2"><span class="ll-num">02</span><div class="ll-content"><div class="ll-name">Воронка</div><div class="ll-meta">2 ч</div></div><i class="fas fa-check ll-check"></i></div>
+<div class="ll-item" data-lever="3"><span class="ll-num">03</span><div class="ll-content"><div class="ll-name">Первый контакт</div><div class="ll-meta">2 ч</div></div><i class="fas fa-check ll-check"></i></div>
+<div class="ll-item" data-lever="4"><span class="ll-num">04</span><div class="ll-content"><div class="ll-name">Лиды</div><div class="ll-meta">1.5 ч</div></div><i class="fas fa-check ll-check"></i></div>
+<div class="ll-item" data-lever="5"><span class="ll-num">05</span><div class="ll-content"><div class="ll-name">Закрытие</div><div class="ll-meta">2 ч</div></div><i class="fas fa-check ll-check"></i></div>
+<div class="ll-item" data-lever="6"><span class="ll-num">06</span><div class="ll-content"><div class="ll-name">Улучшение</div><div class="ll-meta">1 ч</div></div><i class="fas fa-check ll-check"></i></div>
+</aside>
+
+<!-- MODULES (CENTER) -->
+<div class="module-area">
+
+<!-- ============ МОДУЛЬ 1 ============ -->
+<div class="module-view active" data-module="1">
+<div class="module-header">
+<span class="module-badge">Модуль 1 · 1.5 часа</span>
+<h2>Что такое конверсия и как её измерять</h2>
+<p class="module-lead">Определение, формулы, метрики, инструменты для измерения.</p>
+</div>
+
+<h3>1.1. Что такое конверсия</h3>
+<p><strong>Конверсия</strong> — это отношение числа целевых действий к общему числу.</p>
+
+<h3>1.2. Формула конверсии</h3>
+<div class="callout script">
+<div class="callout-title"><i class="fas fa-calculator"></i> Формула</div>
+<p>Конверсия = (Целевые действия / Всего) × 100%</p>
+</div>
+
+<h3>1.3. Виды конверсии</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Вид</th><th>Что показывает</th></tr></thead>
+<tbody>
+<tr><td>Лид → квалификация</td><td>% подходящих</td></tr>
+<tr><td>Квалификация → презентация</td><td>% дошедших</td></tr>
+<tr><td>Презентация → сделка</td><td>% закрытых</td></tr>
+<tr><td>Общая</td><td>% от лида до сделки</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>1.4. Как измерять</h3>
+<ol>
+<li>Определи метрики.</li>
+<li>Настрой аналитику.</li>
+<li>Замеряй регулярно.</li>
+<li>Сравнивай с планом.</li>
+<li>Улучшай.</li>
+</ol>
+
+<h3>1.5. Инструменты</h3>
+<ul>
+<li>CRM.</li>
+<li>Google Analytics.</li>
+<li>Яндекс.Метрика.</li>
+<li>Таблицы.</li>
+<li>Дашборды.</li>
+</ul>
+
+<h3>1.6. Ошибки</h3>
+<ul>
+<li>Нет метрик.</li>
+<li>Нет аналитики.</li>
+<li>Нет сравнения.</li>
+<li>Нет гипотез.</li>
+<li>Нет улучшений.</li>
+</ul>
+
+<div class="callout tip">
+<div class="callout-title"><i class="fas fa-lightbulb"></i> Правило</div>
+<p>Что не измеряется, то не улучшается. Начни с замеров.</p>
+</div>
+
+<div class="checklist">
+<h4><i class="fas fa-check"></i> Чек-лист модуля 1</h4>
+<ul>
+<li><input type="checkbox"> Я знаю, что такое конверсия</li>
+<li><input type="checkbox"> Я знаю формулу</li>
+<li><input type="checkbox"> Я знаю виды конверсии</li>
+<li><input type="checkbox"> Я умею измерять</li>
+<li><input type="checkbox"> Я использую инструменты</li>
+</ul>
+</div>
+
+<div class="interact-zone">
+<h4><i class="fas fa-comments" style="color:#1abc9c;"></i> Комментарии к модулю 1</h4>
+<p>Задай вопрос или оставь комментарий.</p>
+<span class="iz-hint"><i class="fas fa-code"></i> Firebase подключим позже</span>
+</div>
+
+<div class="module-actions">
+<div class="ma-left">
+<button class="ma-like"><i class="fas fa-thumbs-up"></i> Полезно</button>
+<button class="ma-done"><i class="fas fa-circle-check"></i> Пройдено</button>
+</div>
+<button class="ma-next" data-next="2">Модуль 2: Воронка <i class="fas fa-arrow-right"></i></button>
+</div>
+</div>
+
+<!-- ============ МОДУЛЬ 2 ============ -->
+<div class="module-view" data-module="2">
+<div class="module-header">
+<span class="module-badge">Модуль 2 · 2 часа</span>
+<h2>Воронка продаж: точки падения и роста</h2>
+<p class="module-lead">Как найти слабые места в воронке и где теряются клиенты.</p>
+</div>
+
+<h3>2.1. Что такое воронка</h3>
+<p><strong>Воронка продаж</strong> — это путь клиента от первого контакта до покупки.</p>
+
+<h3>2.2. Этапы воронки</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Этап</th><th>Конверсия</th></tr></thead>
+<tbody>
+<tr><td>Контакт</td><td>100%</td></tr>
+<tr><td>Квалификация</td><td>40%</td></tr>
+<tr><td>Презентация</td><td>50%</td></tr>
+<tr><td>Возражения</td><td>60%</td></tr>
+<tr><td>Закрытие</td><td>50%</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>2.3. Как найти точки падения</h3>
+<ol>
+<li>Замерь конверсию на каждом этапе.</li>
+<li>Сравни с бенчмарками.</li>
+<li>Найди этап с низкой конверсией.</li>
+<li>Улучши его.</li>
+<li>Замерь результат.</li>
+</ol>
+
+<h3>2.4. Точки роста</h3>
+<ul>
+<li>Улучшение скриптов.</li>
+<li>Работа с возражениями.</li>
+<li>Персонализация.</li>
+<li>Автоматизация.</li>
+<li>Обучение команды.</li>
+</ul>
+
+<h3>2.5. Пример</h3>
+<p>Контакт 100% → Квалификация 40% → Презентация 50% → Возражения 60% → Закрытие 50%. Итоговая конверсия: 6%.</p>
+
+<h3>2.6. Ошибки</h3>
+<ul>
+<li>Не замерять.</li>
+<li>Не сравнивать.</li>
+<li>Не улучшать.</li>
+<li>Улучшать всё сразу.</li>
+<li>Не замерять результат.</li>
+</ul>
+
+<div class="checklist">
+<h4><i class="fas fa-check"></i> Чек-лист модуля 2</h4>
+<ul>
+<li><input type="checkbox"> Я знаю, что такое воронка</li>
+<li><input type="checkbox"> Я знаю этапы</li>
+<li><input type="checkbox"> Я умею находить точки падения</li>
+<li><input type="checkbox"> Я знаю точки роста</li>
+<li><input type="checkbox"> Я замеряю результат</li>
+</ul>
+</div>
+
+<div class="interact-zone">
+<h4><i class="fas fa-comments" style="color:#1abc9c;"></i> Комментарии к модулю 2</h4>
+<p>Задай вопрос или оставь комментарий.</p>
+<span class="iz-hint"><i class="fas fa-code"></i> Firebase подключим позже</span>
+</div>
+
+<div class="module-actions">
+<div class="ma-left">
+<button class="ma-like"><i class="fas fa-thumbs-up"></i> Полезно</button>
+<button class="ma-done"><i class="fas fa-circle-check"></i> Пройдено</button>
+</div>
+<button class="ma-next" data-next="3">Модуль 3: Первый контакт <i class="fas fa-arrow-right"></i></button>
+</div>
+</div>
+
+<!-- ============ МОДУЛЬ 3 ============ -->
+<div class="module-view" data-module="3">
+<div class="module-header">
+<span class="module-badge">Модуль 3 · 2 часа</span>
+<h2>Повышение конверсии на первом контакте</h2>
+<p class="module-lead">Как не терять клиентов на первом контакте.</p>
+</div>
+
+<h3>3.1. Что такое первый контакт</h3>
+<p><strong>Первый контакт</strong> — это момент, когда клиент впервые взаимодействует с тобой.</p>
+
+<h3>3.2. Где теряются клиенты</h3>
+<ul>
+<li>Долгий ответ.</li>
+<li>Нет персонализации.</li>
+<li>Слабый скрипт.</li>
+<li>Нет квалификации.</li>
+<li>Нет интереса.</li>
+</ul>
+
+<h3>3.3. Как повысить конверсию</h3>
+<ol>
+<li>Отвечай быстро.</li>
+<li>Персонализируй.</li>
+<li>Используй скрипт.</li>
+<li>Квалифицируй.</li>
+<li>Заинтересуй.</li>
+</ol>
+
+<h3>3.4. Скрипты</h3>
+<div class="callout script">
+<div class="callout-title"><i class="fas fa-comment-dots"></i> Скрипт</div>
+<p>«Здравствуйте! Меня зовут [имя], компания [название]. Мы помогаем [отрасль] решать [задачу]. Удобно ли вам сейчас говорить?»</p>
+</div>
+
+<h3>3.5. Ошибки</h3>
+<ul>
+<li>Долгий ответ.</li>
+<li>Нет персонализации.</li>
+<li>Слабый скрипт.</li>
+<li>Нет квалификации.</li>
+<li>Нет интереса.</li>
+</ul>
+
+<h3>3.6. Кейс</h3>
+<p>Менеджер сократил время ответа с 24 часов до 1 часа. Конверсия на первом контакте выросла на 30%.</p>
+
+<div class="checklist">
+<h4><i class="fas fa-check"></i> Чек-лист модуля 3</h4>
+<ul>
+<li><input type="checkbox"> Я знаю, что такое первый контакт</li>
+<li><input type="checkbox"> Я знаю, где теряются клиенты</li>
+<li><input type="checkbox"> Я умею повышать конверсию</li>
+<li><input type="checkbox"> Я знаю скрипт</li>
+<li><input type="checkbox"> Я отвечаю быстро</li>
+</ul>
+</div>
+
+<div class="interact-zone">
+<h4><i class="fas fa-comments" style="color:#1abc9c;"></i> Комментарии к модулю 3</h4>
+<p>Задай вопрос или оставь комментарий.</p>
+<span class="iz-hint"><i class="fas fa-code"></i> Firebase подключим позже</span>
+</div>
+
+<div class="module-actions">
+<div class="ma-left">
+<button class="ma-like"><i class="fas fa-thumbs-up"></i> Полезно</button>
+<button class="ma-done"><i class="fas fa-circle-check"></i> Пройдено</button>
+</div>
+<button class="ma-next" data-next="4">Модуль 4: Лиды <i class="fas fa-arrow-right"></i></button>
+</div>
+</div>
+
+<!-- ============ МОДУЛЬ 4 ============ -->
+<div class="module-view" data-module="4">
+<div class="module-header">
+<span class="module-badge">Модуль 4 · 1.5 часа</span>
+<h2>Работа с лидами: как не терять клиентов</h2>
+<p class="module-lead">Квалификация, прогрев, удержание лидов.</p>
+</div>
+
+<h3>4.1. Что такое лид</h3>
+<p><strong>Лид</strong> — это контакт, который может стать клиентом.</p>
+
+<h3>4.2. Квалификация лидов</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Критерий</th><th>Вопрос</th></tr></thead>
+<tbody>
+<tr><td>Потребность</td><td>Есть ли потребность?</td></tr>
+<tr><td>Бюджет</td><td>Есть ли бюджет?</td></tr>
+<tr><td>Сроки</td><td>Когда готов купить?</td></tr>
+<tr><td>ЛПР</td><td>Принимает ли решение?</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>4.3. Прогрев лидов</h3>
+<ul>
+<li>Полезный контент.</li>
+<li>Кейсы.</li>
+<li>Отзывы.</li>
+<li>Демонстрация.</li>
+<li>Оффер.</li>
+</ul>
+
+<h3>4.4. Как не терять лидов</h3>
+<ol>
+<li>Записывай контакты.</li>
+<li>Веди CRM.</li>
+<li>Будь на связи.</li>
+<li>Напоминай о себе.</li>
+<li>Дорабатывай.</li>
+</ol>
+
+<h3>4.5. Ошибки</h3>
+<ul>
+<li>Не квалифицировать.</li>
+<li>Не прогревать.</li>
+<li>Не быть на связи.</li>
+<li>Не напоминать.</li>
+<li>Не дорабатывать.</li>
+</ul>
+
+<h3>4.6. Кейс</h3>
+<p>Менеджер внедрил CRM и напоминания. Потери лидов сократились на 40%.</p>
+
+<div class="checklist">
+<h4><i class="fas fa-check"></i> Чек-лист модуля 4</h4>
+<ul>
+<li><input type="checkbox"> Я знаю, что такое лид</li>
+<li><input type="checkbox"> Я умею квалифицировать</li>
+<li><input type="checkbox"> Я умею прогревать</li>
+<li><input type="checkbox"> Я не теряю лидов</li>
+<li><input type="checkbox"> Я веду CRM</li>
+</ul>
+</div>
+
+<div class="interact-zone">
+<h4><i class="fas fa-comments" style="color:#1abc9c;"></i> Комментарии к модулю 4</h4>
+<p>Задай вопрос или оставь комментарий.</p>
+<span class="iz-hint"><i class="fas fa-code"></i> Firebase подключим позже</span>
+</div>
+
+<div class="module-actions">
+<div class="ma-left">
+<button class="ma-like"><i class="fas fa-thumbs-up"></i> Полезно</button>
+<button class="ma-done"><i class="fas fa-circle-check"></i> Пройдено</button>
+</div>
+<button class="ma-next" data-next="5">Модуль 5: Закрытие <i class="fas fa-arrow-right"></i></button>
+</div>
+</div>
+
+<!-- ============ МОДУЛЬ 5 ============ -->
+<div class="module-view" data-module="5">
+<div class="module-header">
+<span class="module-badge">Модуль 5 · 2 часа</span>
+<h2>Техники повышения конверсии на закрытии</h2>
+<p class="module-lead">Как увеличить процент закрытых сделок.</p>
+</div>
+
+<h3>5.1. Что такое закрытие</h3>
+<p><strong>Закрытие</strong> — это этап, где ты помогаешь клиенту принять решение и оплатить.</p>
+
+<h3>5.2. Техники закрытия</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Техника</th><th>Пример</th></tr></thead>
+<tbody>
+<tr><td>Прямое</td><td>«Оформляем?»</td></tr>
+<tr><td>Через выбор</td><td>«Вам какой вариант?»</td></tr>
+<tr><td>Через выгоду</td><td>«Если сегодня — бонус»</td></tr>
+<tr><td>Через дефицит</td><td>«Осталось 2 места»</td></tr>
+<tr><td>Через гарантию</td><td>«Если не подойдёт — вернём»</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>5.3. Как повысить конверсию на закрытии</h3>
+<ol>
+<li>Подготовься.</li>
+<li>Задай закрывающий вопрос.</li>
+<li>Дай выбор.</li>
+<li>Не дави.</li>
+<li>Поблагодари.</li>
+</ol>
+
+<h3>5.4. Скрипты</h3>
+<div class="callout script">
+<div class="callout-title"><i class="fas fa-comment-dots"></i> Прямое</div>
+<p>«Итак, мы договорились. Оформляем?»</p>
+</div>
+<div class="callout script">
+<div class="callout-title"><i class="fas fa-comment-dots"></i> Через выбор</div>
+<p>«Вам удобнее начать с [вариант 1] или [вариант 2]?»</p>
+</div>
+
+<h3>5.5. Ошибки</h3>
+<ul>
+<li>Не задавать закрывающий вопрос.</li>
+<li>Ждать, что клиент сам скажет.</li>
+<li>Давить.</li>
+<li>Бояться отказа.</li>
+<li>Не давать выбор.</li>
+</ul>
+
+<h3>5.6. Кейс</h3>
+<p>Менеджер внедрил 3 техники закрытия. Конверсия в сделку выросла с 20% до 40%.</p>
+
+<div class="checklist">
+<h4><i class="fas fa-check"></i> Чек-лист модуля 5</h4>
+<ul>
+<li><input type="checkbox"> Я знаю, что такое закрытие</li>
+<li><input type="checkbox"> Я знаю 5 техник</li>
+<li><input type="checkbox"> Я умею повышать конверсию</li>
+<li><input type="checkbox"> Я знаю скрипты</li>
+<li><input type="checkbox"> Я не боюсь отказа</li>
+</ul>
+</div>
+
+<div class="interact-zone">
+<h4><i class="fas fa-comments" style="color:#1abc9c;"></i> Комментарии к модулю 5</h4>
+<p>Задай вопрос или оставь комментарий.</p>
+<span class="iz-hint"><i class="fas fa-code"></i> Firebase подключим позже</span>
+</div>
+
+<div class="module-actions">
+<div class="ma-left">
+<button class="ma-like"><i class="fas fa-thumbs-up"></i> Полезно</button>
+<button class="ma-done"><i class="fas fa-circle-check"></i> Пройдено</button>
+</div>
+<button class="ma-next" data-next="6">Модуль 6: Улучшение <i class="fas fa-arrow-right"></i></button>
+</div>
+</div>
+
+<!-- ============ МОДУЛЬ 6 ============ -->
+<div class="module-view" data-module="6">
+<div class="module-header">
+<span class="module-badge">Модуль 6 · 1 час</span>
+<h2>Постоянное улучшение: аналитика и эксперименты</h2>
+<p class="module-lead">Как построить систему постоянного улучшения конверсии.</p>
+</div>
+
+<h3>6.1. Что такое постоянное улучшение</h3>
+<p><strong>Постоянное улучшение</strong> — это система, которая позволяет улучшать конверсию каждый месяц.</p>
+
+<h3>6.2. Компоненты системы</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Компонент</th><th>Что это</th></tr></thead>
+<tbody>
+<tr><td>Метрики</td><td>Замеры конверсии</td></tr>
+<tr><td>Аналитика</td><td>Поиск узких мест</td></tr>
+<tr><td>Гипотезы</td><td>Идеи улучшений</td></tr>
+<tr><td>Тесты</td><td>A/B-тесты</td></tr>
+<tr><td>Внедрение</td><td>Масштабирование</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>6.3. Цикл улучшения</h3>
+<ol>
+<li>Замер.</li>
+<li>Анализ.</li>
+<li>Гипотеза.</li>
+<li>Тест.</li>
+<li>Внедрение.</li>
+</ol>
+
+<h3>6.4. Как проводить A/B-тесты</h3>
+<div class="callout script">
+<div class="callout-title"><i class="fas fa-comment-dots"></i> Схема</div>
+<p>Гипотеза → 2 варианта → тест на равных группах → замер → выбор лучшего.</p>
+</div>
+
+<h3>6.5. Ошибки</h3>
+<ul>
+<li>Нет метрик.</li>
+<li>Нет аналитики.</li>
+<li>Нет гипотез.</li>
+<li>Нет тестов.</li>
+<li>Нет внедрения.</li>
+</ul>
+
+<h3>6.6. Главный вывод курса</h3>
+<div class="callout tip">
+<div class="callout-title"><i class="fas fa-flag-checkered"></i> Вывод</div>
+<p>Увеличение конверсии — это система: измерение + воронка + первый контакт + лиды + закрытие + постоянное улучшение. Через 3–6 месяцев системной работы конверсия вырастет на 20–40%.</p>
+</div>
+
+<div class="checklist">
+<h4><i class="fas fa-check"></i> Финальный чек-лист курса</h4>
+<ul>
+<li><input type="checkbox"> Я знаю, что такое конверсия</li>
+<li><input type="checkbox"> Я умею измерять</li>
+<li><input type="checkbox"> Я знаю воронку</li>
+<li><input type="checkbox"> Я умею работать с лидами</li>
+<li><input type="checkbox"> Я умею закрывать сделки</li>
+<li><input type="checkbox"> Я построил систему улучшения</li>
+</ul>
+</div>
+
+<div class="interact-zone">
+<h4><i class="fas fa-comments" style="color:#1abc9c;"></i> Комментарии к модулю 6</h4>
+<p>Задай вопрос или оставь комментарий.</p>
+<span class="iz-hint"><i class="fas fa-code"></i> Firebase подключим позже</span>
+</div>
+
+<div class="module-actions">
+<div class="ma-left">
+<button class="ma-like"><i class="fas fa-thumbs-up"></i> Полезно</button>
+<button class="ma-done"><i class="fas fa-circle-check"></i> Пройдено</button>
+</div>
+<button class="ma-next" disabled>Курс завершён <i class="fas fa-flag-checkered"></i></button>
+</div>
+</div>
+
+</div>
+
+<!-- SIDEBAR (RIGHT) -->
+<aside class="sidebar-conv">
+<h3><i class="fas fa-chart-line"></i> Результат конверсии</h3>
+<div class="conv-display">
+<div class="cd-emoji" id="conv-emoji">📏</div>
+<div class="cd-value" id="conv-value">10%</div>
+<div class="cd-label">Конверсия</div>
+</div>
+<div class="conv-rows">
+<div class="cr-row"><span class="cr-label">Лидов</span><span class="cr-value blue" id="sidebar-leads">500</span></div>
+<div class="cr-row"><span class="cr-label">Сделок</span><span class="cr-value green" id="sidebar-deals">50</span></div>
+<div class="cr-row"><span class="cr-label">Выручка</span><span class="cr-value" id="sidebar-revenue">500 000 ₽</span></div>
+<div class="cr-row"><span class="cr-label">Конверсия</span><span class="cr-value" id="sidebar-conversion">10%</span></div>
+</div>
+<div class="conv-progress2"><div class="cp2-fill" id="conv-fill"></div></div>
+<div class="conv-percent">Прогресс: <b><span id="conv-percent">0</span>%</b></div>
+</aside>
+
 </div>
 
 <section class="similar">
-  <div class="container">
-    <h2><i class="fas fa-arrow-right" style="color:#d4af37;"></i> Похожие курсы</h2>
-    <div class="similar-grid">
-      <a href="../techniques/tekhnika-prodazh.html" class="similar-card"><h4>Техника продаж</h4><p>Инструменты</p></a>
-      <a href="../techniques/etapy-prodazh.html" class="similar-card"><h4>Этапы продаж</h4><p>Структура</p></a>
-      <a href="../techniques/zakrytie-sdelki.html" class="similar-card"><h4>Закрытие сделки</h4><p>Техники закрытия</p></a>
-      <a href="../techniques/kak-prodavat-bolshe.html" class="similar-card"><h4>Как продавать больше</h4><p>Рост продаж</p></a>
-    </div>
-  </div>
+<div class="container">
+<h2><i class="fas fa-arrow-right" style="color:#1abc9c;"></i> Похожие курсы</h2>
+<div class="similar-grid">
+<a href="tekhnika-prodazh.html" class="similar-card"><h4>Техника продаж</h4><p>Инструменты</p></a>
+<a href="etapy-prodazh.html" class="similar-card"><h4>Этапы продаж</h4><p>Структура</p></a>
+<a href="zakrytie-sdelki.html" class="similar-card"><h4>Закрытие сделки</h4><p>Техники закрытия</p></a>
+<a href="kak-prodavat-bolshe.html" class="similar-card"><h4>Как продавать больше</h4><p>Рост продаж</p></a>
+</div>
+</div>
 </section>
 
+<div class="sticky-cta">
+<div><div class="sc-price">13 900 ₽ <small>19 900 ₽</small></div></div>
+<button><i class="fas fa-cart-plus"></i> Записаться</button>
+</div>
+
 <footer>
-  <div class="container">
-    <p>© 2026 <span>KURSYPRO</span> — система обучения продажам. 110+ курсов.</p>
-  </div>
+<div class="container">
+<p>© 2026 <span>Курсы по продажам</span> — золотой стандарт обучения продажам. 110+ программ.</p>
+<p style="margin-top:8px;font-size:13px;color:#444;"><i class="fas fa-crown" style="color:#d4af37;"></i> kursy-po-prodazham.com</p>
+</div>
 </footer>
+
+<script>
+window.addEventListener('scroll',()=>{const h=document.documentElement;const s=(h.scrollTop/(h.scrollHeight-h.clientHeight))*100;document.getElementById('reading-progress').style.width=s+'%'});
+
+const leverCards=document.querySelectorAll('.lever-card');
+const llItems=document.querySelectorAll('.ll-item');
+const modules=document.querySelectorAll('.module-view');
+const dropCards=document.querySelectorAll('.drop-card');
+let currentLever=1;
+const totalLevers=6;
+
+const convData=[
+{emoji:'📏',conversion:10,leads:500,deals:50,revenue:500000},
+{emoji:'🔻',conversion:12,leads:500,deals:60,revenue:600000},
+{emoji:'👋',conversion:15,leads:500,deals:75,revenue:750000},
+{emoji:'🎣',conversion:20,leads:500,deals:100,revenue:1000000},
+{emoji:'✅',conversion:25,leads:500,deals:125,revenue:1250000},
+{emoji:'📈',conversion:30,leads:500,deals:150,revenue:1500000}
+];
+
+const dropData={
+1:{emoji:'👋',name:'Контакт',text:'На этом этапе клиент может «отвалиться», если контакт не установлен. <b>Где теряются:</b> холодные звонки без скрипта, долгий ответ, нет персонализации. <b>Как исправить:</b> подготовь скрипт, отвечай быстро, персонализируй.'},
+2:{emoji:'🔍',name:'Квалификация',text:'На этом этапе отсеиваются неподходящие лиды. <b>Где теряются:</b> нет вопросов, нет понимания потребностей, нет бюджета. <b>Как исправить:</b> задавай открытые вопросы, уточняй, квалифицируй.'},
+3:{emoji:'📊',name:'Презентация',text:'На этом этапе клиент решает, интересно ли ему. <b>Где теряются:</b> нет выгоды, нет кейсов, нет доказательств. <b>Как исправить:</b> говори о выгоде, показывай кейсы, доказывай цифрами.'},
+4:{emoji:'🛡️',name:'Возражения',text:'На этом этапе клиент сомневается. <b>Где теряются:</b> спор, давление, нет ответа на возражение. <b>Как исправить:</b> выслушай, согласись, уточни, ответь, закрой.'},
+5:{emoji:'✅',name:'Закрытие',text:'На этом этапе клиент готов купить. <b>Где теряются:</b> нет закрывающего вопроса, давление, страх отказа. <b>Как исправить:</b> задай закрывающий вопрос, дай выбор, не дави.'}
+};
+
+function formatRub(num){
+return num.toLocaleString('ru-RU')+' ₽';
+}
+
+function goToLever(num){
+modules.forEach(m=>m.classList.remove('active'));
+document.querySelector('.module-view[data-module="'+num+'"]').classList.add('active');
+leverCards.forEach(l=>l.classList.remove('active'));
+document.querySelector('.lever-card[data-lever="'+num+'"]').classList.add('active');
+llItems.forEach(l=>l.classList.remove('active'));
+document.querySelector('.ll-item[data-lever="'+num+'"]').classList.add('active');
+const d=convData[num-1];
+document.getElementById('conv-conversion').textContent=d.conversion+'%';
+document.getElementById('conv-leads').textContent=d.leads;
+document.getElementById('conv-deals').textContent=d.deals;
+document.getElementById('conv-revenue').textContent=formatRub(d.revenue);
+document.getElementById('conv-delta').textContent=num>1?'+'+(d.conversion-convData[0].conversion)+'% к базе':'—';
+document.getElementById('sidebar-leads').textContent=d.leads;
+document.getElementById('sidebar-deals').textContent=d.deals;
+document.getElementById('sidebar-revenue').textContent=formatRub(d.revenue);
+document.getElementById('sidebar-conversion').textContent=d.conversion+'%';
+document.getElementById('conv-emoji').textContent=d.emoji;
+document.getElementById('conv-value').textContent=d.conversion+'%';
+currentLever=num;
+window.scrollTo({top:document.getElementById('conv').offsetTop-40,behavior:'smooth'});
+}
+
+leverCards.forEach(l=>l.addEventListener('click',()=>goToLever(+l.dataset.lever)));
+llItems.forEach(l=>l.addEventListener('click',()=>goToLever(+l.dataset.lever)));
+document.querySelectorAll('.ma-next[data-next]').forEach(btn=>{
+btn.addEventListener('click',()=>goToLever(+btn.dataset.next));
+});
+
+/* CONVERSION CALCULATOR */
+const calcLeads=document.getElementById('conv-calc-leads');
+const calcQualify=document.getElementById('conv-calc-qualify');
+const calcPresent=document.getElementById('conv-calc-present');
+const calcDeal=document.getElementById('conv-calc-deal');
+const calcCheck=document.getElementById('conv-calc-check');
+
+function updateCalc(){
+const leads=+calcLeads.value;
+const qualify=+calcQualify.value/100;
+const present=+calcPresent.value/100;
+const deal=+calcDeal.value/100;
+const check=+calcCheck.value;
+const totalConv=qualify*present*deal*100;
+const deals=Math.round(leads*qualify*present*deal);
+const revenue=deals*check;
+document.getElementById('conv-calc-leads-val').textContent=leads;
+document.getElementById('conv-calc-qualify-val').textContent=(qualify*100)+'%';
+document.getElementById('conv-calc-present-val').textContent=(present*100)+'%';
+document.getElementById('conv-calc-deal-val').textContent=(deal*100)+'%';
+document.getElementById('conv-calc-check-val').textContent=check.toLocaleString('ru-RU')+' ₽';
+document.getElementById('conv-calc-total').textContent=totalConv.toFixed(1)+'%';
+document.getElementById('conv-calc-revenue').textContent=formatRub(revenue);
+}
+calcLeads.addEventListener('input',updateCalc);
+calcQualify.addEventListener('input',updateCalc);
+calcPresent.addEventListener('input',updateCalc);
+calcDeal.addEventListener('input',updateCalc);
+calcCheck.addEventListener('input',updateCalc);
+updateCalc();
+
+/* FUNNEL DROPS */
+dropCards.forEach(card=>{
+card.addEventListener('click',()=>{
+dropCards.forEach(c=>c.classList.remove('active'));
+card.classList.add('active');
+const d=dropData[card.dataset.drop];
+document.getElementById('drop-detail').innerHTML='<div class="dd-title"><span>'+d.emoji+'</span> '+d.name+'</div><div class="dd-text">'+d.text+'</div>';
+});
+});
+
+modules.forEach(mod=>{
+const num=mod.dataset.module;
+const likeBtn=mod.querySelector('.ma-like');
+const doneBtn=mod.querySelector('.ma-done');
+const likeKey='conv_like_'+num;
+const doneKey='conv_done_'+num;
+if(localStorage.getItem(likeKey)==='1')likeBtn.classList.add('liked');
+if(localStorage.getItem(doneKey)==='1'){
+doneBtn.classList.add('done');
+document.querySelector('.lever-card[data-lever="'+num+'"]').classList.add('done');
+document.querySelector('.ll-item[data-lever="'+num+'"]').classList.add('done');
+}
+likeBtn.addEventListener('click',()=>{
+const liked=likeBtn.classList.toggle('liked');
+localStorage.setItem(likeKey,liked?'1':'0');
+});
+doneBtn.addEventListener('click',()=>{
+doneBtn.classList.toggle('done');
+const isDone=doneBtn.classList.contains('done');
+localStorage.setItem(doneKey,isDone?'1':'0');
+document.querySelector('.lever-card[data-lever="'+num+'"]').classList.toggle('done',isDone);
+document.querySelector('.ll-item[data-lever="'+num+'"]').classList.toggle('done',isDone);
+updateProgress();
+});
+});
+
+function updateProgress(){
+const done=document.querySelectorAll('.module-view .ma-done.done').length;
+document.getElementById('pp-count').textContent=done;
+const percent=Math.round(done/totalLevers*100);
+document.getElementById('pp-fill').style.width=percent+'%';
+document.getElementById('conv-fill').style.width=percent+'%';
+document.getElementById('conv-percent').textContent=percent;
+const conversion=done>0?convData[done-1].conversion:10;
+document.getElementById('pp-conversion').textContent=conversion+'%';
+}
+updateProgress();
+
+document.querySelectorAll('.checklist input[type="checkbox"]').forEach((cb,i)=>{
+const key='conv_check_'+i;
+if(localStorage.getItem(key)==='1')cb.checked=true;
+cb.addEventListener('change',()=>{localStorage.setItem(key,cb.checked?'1':'0');});
+});
+</script>
+
 </body>
 </html>
