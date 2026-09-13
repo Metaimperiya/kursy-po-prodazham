@@ -1,187 +1,1130 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="google-site-verification" content="yHcsl1QapmlY3f9N_pNmjunD6yZNlDvqFqyvGR2uDWA" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-site-verification" content="yHcsl1QapmlY3f9N_pNmjunD6yZNlDvqFqyvGR2uDWA" />
+<title>Скрипты для менеджера по продажам — полный курс | 5 модулей | KURSYPRO</title>
+<meta name="description" content="Полный курс «Скрипты для менеджера по продажам»: 5 модулей — структура, готовые скрипты, адаптация, использование. С библиотекой скриптов и тренажёром менеджера.">
+<meta name="keywords" content="скрипты для менеджера, готовые скрипты, шаблоны для менеджеров, структура скриптов">
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://kursy-po-prodazham.com/courses/scripts/skripty-dlya-menedzhera.html" />
+<meta property="og:title" content="Скрипты для менеджера по продажам — полный курс">
+<meta property="og:description" content="Структура, готовые скрипты, адаптация, использование. С библиотекой скриптов и тренажёром менеджера.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://kursy-po-prodazham.com/courses/scripts/skripty-dlya-menedzhera.html">
+<meta property="og:site_name" content="Курсы по продажам">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Course","name":"Скрипты для менеджера по продажам","description":"Полный курс по скриптам для менеджера: структура, готовые скрипты, адаптация, использование.","provider":{"@type":"Organization","name":"Курсы по продажам","url":"https://kursy-po-prodazham.com/"},"inLanguage":"ru","hasCourseInstance":{"@type":"CourseInstance","courseMode":"online","courseWorkload":"PT10H"},"offers":{"@type":"Offer","price":"11900","priceCurrency":"RUB","availability":"https://schema.org/InStock"}}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--mgr:#27ae60;--mgr-light:#52d98a;--mgr-dark:#1e8449;--gold:#d4af37;--gold-light:#f0c85a;--bg:#0b0b0b;--card:#141414;--text:#e5e5e5;--green:#4caf50;--red:#e53935;--blue:#4a90e2;--purple:#9c27b0;--orange:#ff6b35}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;line-height:1.8;font-size:17px}
+::-webkit-scrollbar{width:8px}
+::-webkit-scrollbar-track{background:#1a1a1a}
+::-webkit-scrollbar-thumb{background:var(--mgr);border-radius:10px}
+a{color:var(--mgr);text-decoration:none}
+a:hover{text-decoration:underline}
+.container{max-width:1400px;margin:0 auto;padding:0 25px}
+header{padding:18px 0;border-bottom:1px solid #2a2a2a;background:rgba(11,11,11,0.96);backdrop-filter:blur(10px);position:sticky;top:0;z-index:999}
+.header-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:15px}
+.logo{font-size:20px;font-weight:700;color:#f5f5f5;line-height:1.1}
+.logo span{color:var(--mgr)}
+.logo small{font-size:10px;color:#999;display:block;letter-spacing:1px;font-weight:400;margin-top:2px}
+nav a{color:#ccc;text-decoration:none;margin-left:22px;font-weight:500;font-size:13px;transition:0.2s}
+nav a:hover{color:var(--mgr);text-decoration:none}
+nav a i{margin-right:5px}
+#reading-progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--mgr),var(--mgr-light));width:0%;z-index:1000;transition:width 0.1s}
+.breadcrumb{padding:18px 0 6px;color:#888;font-size:13px}
+.breadcrumb a{color:var(--mgr)}
+.breadcrumb span{color:#555}
 
-  <title>Скрипты для менеджера по продажам | Готовые скрипты | KURSYPRO</title>
-  <meta name="description" content="Курс «Скрипты для менеджера по продажам»: готовые скрипты для повседневной работы менеджера. Шаблоны, структура, адаптация." />
-  <meta name="keywords" content="скрипты для менеджера, готовые скрипты, шаблоны для менеджеров, структура скриптов" />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://kursy-po-prodazham.com/courses/scripts/skripty-dlya-menedzhera.html" />
+/* HERO */
+.course-hero{padding:50px 0 55px;text-align:center;border-bottom:1px solid #1f1f1f}
+.course-hero .tags{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:18px;justify-content:center}
+.course-hero .tags span{background:#1a1a1a;border:1px solid var(--mgr);color:var(--mgr);padding:4px 16px;border-radius:30px;font-size:11px;text-transform:uppercase;letter-spacing:0.5px}
+.course-hero h1{font-size:52px;font-weight:800;background:linear-gradient(135deg,#f5f5f5 0%,var(--mgr) 90%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1.05;max-width:900px;margin:0 auto}
+.course-hero .subtitle{font-size:19px;color:#aaa;margin-top:20px;max-width:740px;margin-left:auto;margin-right:auto}
+.course-hero .meta{display:flex;gap:26px;margin-top:24px;color:#888;font-size:14px;flex-wrap:wrap;justify-content:center}
+.course-hero .meta i{color:var(--mgr);margin-right:5px}
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { background: #0b0b0b; color: #e5e5e5; font-family: 'Inter', sans-serif; line-height: 1.6; }
-    .container { max-width: 1100px; margin: 0 auto; padding: 0 25px; }
-    header { padding: 25px 0; border-bottom: 1px solid #2a2a2a; background: #0b0b0b; position: sticky; top: 0; z-index: 999; }
-    .header-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
-    .logo { font-size: 28px; font-weight: 700; color: #f5f5f5; }
-    .logo span { color: #d4af37; }
-    .logo small { font-size: 14px; color: #999; display: block; letter-spacing: 2px; }
-    nav a { color: #ccc; text-decoration: none; margin-left: 30px; font-weight: 500; font-size: 15px; transition: 0.2s; }
-    nav a:hover { color: #d4af37; }
-    nav a i { margin-right: 6px; }
-    .breadcrumb { padding: 25px 0 10px; color: #888; font-size: 14px; }
-    .breadcrumb a { color: #d4af37; text-decoration: none; }
-    .breadcrumb a:hover { text-decoration: underline; }
-    .breadcrumb span { color: #555; }
-    .course-header { padding: 30px 0 40px; border-bottom: 1px solid #1f1f1f; }
-    .course-header .tags { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 15px; }
-    .course-header .tags span { background: #1a1a1a; border: 1px solid #d4af37; color: #d4af37; padding: 4px 16px; border-radius: 30px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
-    .course-header h1 { font-size: 44px; font-weight: 800; color: #f5f5f5; }
-    .course-header .subtitle { font-size: 18px; color: #aaa; margin-top: 12px; max-width: 700px; }
-    .course-header .meta { display: flex; gap: 30px; margin-top: 20px; color: #888; font-size: 15px; }
-    .course-header .meta i { color: #d4af37; margin-right: 6px; }
-    .course-content { display: grid; grid-template-columns: 2fr 1fr; gap: 50px; padding: 40px 0 60px; }
-    .description h2 { font-size: 24px; color: #f0f0f0; margin: 30px 0 15px; border-left: 4px solid #d4af37; padding-left: 15px; }
-    .description h2:first-child { margin-top: 0; }
-    .description p { color: #c0c0c0; margin-bottom: 15px; font-size: 16px; }
-    .program-list { list-style: none; padding: 0; }
-    .program-list li { background: #141414; border: 1px solid #222; border-radius: 12px; padding: 14px 20px; margin-bottom: 10px; display: flex; align-items: center; gap: 14px; transition: 0.2s; }
-    .program-list li:hover { border-color: #d4af37; }
-    .program-list li .num { background: #d4af37; color: #0b0b0b; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px; flex-shrink: 0; }
-    .program-list li .text { color: #ddd; font-size: 15px; }
-    .program-list li .duration { margin-left: auto; color: #666; font-size: 13px; white-space: nowrap; }
-    .result-box { background: linear-gradient(135deg, #141414, #1a1a1a); border: 1px solid #2a2a2a; border-radius: 16px; padding: 25px 30px; margin: 25px 0; }
-    .result-box ul { list-style: none; padding: 0; }
-    .result-box ul li { padding: 6px 0; color: #c0c0c0; }
-    .result-box ul li i { color: #d4af37; margin-right: 12px; }
-    .sidebar { position: sticky; top: 100px; align-self: start; }
-    .price-card { background: #141414; border: 2px solid #d4af37; border-radius: 20px; padding: 30px 25px; text-align: center; }
-    .price-card .price { font-size: 42px; font-weight: 800; color: #d4af37; }
-    .price-card .price small { font-size: 18px; color: #888; font-weight: 400; }
-    .price-card .old-price { font-size: 20px; color: #666; text-decoration: line-through; margin-top: 4px; }
-    .btn-buy { display: block; width: 100%; background: #d4af37; color: #0b0b0b; font-weight: 700; padding: 16px; border: none; border-radius: 60px; font-size: 18px; cursor: pointer; margin: 20px 0 12px; transition: 0.3s; }
-    .btn-buy:hover { background: #f0c85a; transform: scale(1.02); }
-    .price-card .guarantee { color: #666; font-size: 13px; }
-    .price-card .guarantee i { color: #d4af37; }
-    .info-box { background: #141414; border: 1px solid #222; border-radius: 16px; padding: 20px 25px; margin-top: 20px; }
-    .info-box h4 { color: #f0f0f0; margin-bottom: 12px; }
-    .info-box p { color: #999; font-size: 14px; padding: 5px 0; border-bottom: 1px dashed #1a1a1a; }
-    .info-box p:last-child { border-bottom: none; }
-    .similar { padding: 40px 0 60px; border-top: 1px solid #1f1f1f; }
-    .similar h2 { font-size: 28px; color: #f0f0f0; margin-bottom: 25px; }
-    .similar-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px; }
-    .similar-card { background: #141414; border: 1px solid #222; border-radius: 14px; padding: 18px 20px; transition: 0.3s; text-decoration: none; color: #e5e5e5; }
-    .similar-card:hover { border-color: #d4af37; transform: translateY(-4px); }
-    .similar-card h4 { font-size: 16px; color: #f0f0f0; }
-    .similar-card p { font-size: 13px; color: #888; margin-top: 6px; }
-    footer { border-top: 1px solid #1f1f1f; padding: 45px 0 35px; text-align: center; color: #666; font-size: 14px; }
-    footer span { color: #d4af37; }
-    @media (max-width: 768px) { .course-content { grid-template-columns: 1fr; } .course-header h1 { font-size: 30px; } .sidebar { position: static; } .course-header .meta { flex-wrap: wrap; gap: 12px; } }
-  </style>
+/* MGR PANEL */
+.mgr-section{padding:40px 0 30px;border-bottom:1px solid #1a1a1a;background:linear-gradient(180deg,#0d0d0d,#0b0b0b)}
+.mgr-title{text-align:center;font-size:14px;color:var(--mgr);text-transform:uppercase;letter-spacing:3px;font-weight:700;margin-bottom:8px}
+.mgr-subtitle{text-align:center;font-size:15px;color:#888;margin-bottom:36px}
+.mgr-board{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;max-width:1100px;margin:0 auto}
+.mgr-card{background:linear-gradient(135deg,#141414,#101010);border:1px solid #222;border-radius:16px;padding:22px 24px;position:relative;overflow:hidden}
+.mgr-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--blue)}
+.mgr-card.structure::before{background:var(--mgr)}
+.mgr-card.scripts::before{background:var(--purple)}
+.mgr-card.adaptation::before{background:var(--gold)}
+.mgr-card.usage::before{background:var(--green)}
+.mgr-card .mc-label{font-size:10px;color:#888;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:10px;font-weight:700}
+.mgr-card .mc-value{font-size:30px;color:var(--blue);font-weight:800;font-family:monospace;line-height:1}
+.mgr-card.structure .mc-value{color:var(--mgr)}
+.mgr-card.scripts .mc-value{color:var(--purple)}
+.mgr-card.adaptation .mc-value{color:var(--gold)}
+.mgr-card.usage .mc-value{color:var(--green)}
+.mgr-card .mc-sub{font-size:12px;color:#666;margin-top:8px}
+.mgr-card .mc-delta{font-size:11px;color:var(--green);margin-top:6px;font-weight:700}
+
+/* SCRIPTS LIBRARY */
+.scripts-library{max-width:1100px;margin:28px auto 0;background:var(--card);border:1px solid #222;border-radius:16px;padding:28px 26px}
+.scripts-library h4{color:var(--mgr);font-size:11px;text-transform:uppercase;letter-spacing:2px;margin-bottom:20px;display:flex;align-items:center;gap:8px}
+.library-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px;margin-bottom:20px}
+.library-card{background:#1a1a1a;border:2px solid #2a2a2a;border-radius:12px;padding:16px 12px;text-align:center;cursor:pointer;transition:0.3s;position:relative}
+.library-card:hover{border-color:#444;transform:translateY(-3px)}
+.library-card.active{border-color:var(--mgr);background:linear-gradient(135deg,rgba(39,174,96,0.12),rgba(39,174,96,0.03))}
+.library-card .lc-emoji{font-size:28px;margin-bottom:6px;line-height:1}
+.library-card .lc-name{font-size:12px;color:#c8c8c8;font-weight:600;line-height:1.3}
+.library-card.active .lc-name{color:var(--mgr)}
+.library-detail{background:linear-gradient(135deg,#0f1a14,#0d1512);border-left:4px solid var(--mgr);border-radius:12px;padding:22px 26px;min-height:120px}
+.library-detail .ld-title{font-size:16px;color:var(--mgr);font-weight:700;margin-bottom:10px;display:flex;align-items:center;gap:8px}
+.library-detail .ld-text{font-size:15px;color:#c0c0c0;line-height:1.7;font-style:italic}
+.library-detail .ld-text b{color:var(--mgr);font-style:normal}
+
+/* MANAGER TRAINER */
+.mgr-trainer{max-width:1100px;margin:28px auto 0;background:var(--card);border:1px solid #222;border-radius:16px;padding:28px 26px}
+.mgr-trainer h4{color:var(--mgr);font-size:11px;text-transform:uppercase;letter-spacing:2px;margin-bottom:20px;display:flex;align-items:center;gap:8px}
+.trainer-nav{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+.trainer-nav button{background:#1a1a1a;border:2px solid #2a2a2a;color:#888;padding:8px 14px;border-radius:20px;font-family:inherit;font-size:12px;font-weight:600;cursor:pointer;transition:0.2s}
+.trainer-nav button:hover{border-color:#444;color:#ccc}
+.trainer-nav button.active{background:rgba(39,174,96,0.1);border-color:var(--mgr);color:var(--mgr)}
+.trainer-question{background:#1a1a1a;border-left:4px solid var(--blue);border-radius:10px;padding:16px 20px;margin-bottom:16px;font-size:15px;color:#e0e0e0;font-style:italic}
+.trainer-question::before{content:'Ситуация: ';color:var(--blue);font-weight:700;font-style:normal}
+.trainer-options{display:flex;flex-direction:column;gap:8px;margin-bottom:16px}
+.trainer-option{background:#1a1a1a;border:2px solid #2a2a2a;border-radius:10px;padding:12px 18px;cursor:pointer;transition:0.2s;font-size:14px;color:#c8c8c8;display:flex;align-items:flex-start;gap:10px}
+.trainer-option:hover{border-color:#444}
+.trainer-option .to-letter{background:#2a2a2a;color:var(--mgr);width:22px;height:22px;border-radius:5px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:11px;flex-shrink:0;font-family:monospace}
+.trainer-option.correct{border-color:var(--green);background:rgba(76,175,80,0.08);color:var(--green)}
+.trainer-option.correct .to-letter{background:var(--green);color:#0b0b0b}
+.trainer-option.wrong{border-color:var(--red);background:rgba(229,57,53,0.08);color:var(--red)}
+.trainer-option.wrong .to-letter{background:var(--red);color:#fff}
+.trainer-feedback{background:linear-gradient(135deg,#131313,#171717);border:1px dashed #2a2a2a;border-radius:10px;padding:16px 20px;font-size:14px;color:#c0c0c0;line-height:1.6;display:none}
+.trainer-feedback.show{display:block}
+.trainer-feedback b{color:var(--mgr)}
+
+/* LEVERS GRID */
+.levers-section{padding:40px 0 30px}
+.levers-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:18px;max-width:1100px;margin:0 auto}
+.lever-card{background:linear-gradient(135deg,#141414,#101010);border:2px solid #222;border-radius:16px;padding:24px 22px;cursor:pointer;transition:0.3s;position:relative;overflow:hidden}
+.lever-card:hover{border-color:var(--mgr);transform:translateY(-5px);box-shadow:0 15px 40px rgba(0,0,0,0.5)}
+.lever-card.active{border-color:var(--mgr);background:linear-gradient(135deg,rgba(39,174,96,0.12),rgba(39,174,96,0.03));box-shadow:0 0 30px rgba(39,174,96,0.15)}
+.lever-card.done{border-color:var(--green)}
+.lever-card.done::after{content:'✓';position:absolute;top:14px;right:14px;background:var(--green);color:#0b0b0b;width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px}
+.lc-header{display:flex;align-items:center;gap:14px;margin-bottom:14px}
+.lc-icon{font-size:36px;line-height:1;flex-shrink:0}
+.lc-num{background:#1a1a1a;color:var(--mgr);font-size:10px;font-weight:700;padding:4px 10px;border-radius:8px;text-transform:uppercase;letter-spacing:1.5px;font-family:monospace;align-self:flex-start}
+.lever-card.active .lc-num{background:var(--mgr);color:#0b0b0b}
+.lever-card.done .lc-num{background:rgba(76,175,80,0.15);color:var(--green)}
+.lever-card h3{font-size:19px;color:#f0f0f0;font-weight:700;line-height:1.3;margin-bottom:10px}
+.lever-card.active h3{color:var(--mgr)}
+.lever-card.done h3{color:var(--green)}
+.lever-card p{font-size:13.5px;color:#888;line-height:1.55;margin-bottom:14px}
+.lc-meta{display:flex;gap:12px;font-size:11px;color:#666;text-transform:uppercase;letter-spacing:1px;flex-wrap:wrap}
+.lc-meta i{color:var(--mgr);margin-right:4px}
+.lc-impact{display:inline-block;font-size:11px;font-weight:700;padding:3px 10px;border-radius:8px;text-transform:uppercase;letter-spacing:0.8px;margin-bottom:10px}
+.lc-impact.high{color:var(--green);background:rgba(76,175,80,0.1);border:1px solid rgba(76,175,80,0.3)}
+.lc-impact.medium{color:var(--mgr);background:rgba(39,174,96,0.1);border:1px solid rgba(39,174,96,0.3)}
+.lc-impact.low{color:var(--blue);background:rgba(74,144,226,0.1);border:1px solid rgba(74,144,226,0.3)}
+
+/* PROGRESS */
+.mgr-progress{max-width:900px;margin:36px auto 0;background:var(--card);border:1px solid #222;border-radius:14px;padding:20px 26px;display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+.mgr-progress .pp-label{font-size:12px;color:#888;text-transform:uppercase;letter-spacing:1.5px}
+.mgr-progress .pp-label b{color:var(--mgr);font-size:15px;font-family:monospace}
+.mgr-progress .pp-bar{flex:1;min-width:200px;height:10px;background:#1f1f1f;border-radius:10px;overflow:hidden}
+.mgr-progress .pp-fill{height:100%;background:linear-gradient(90deg,var(--mgr),var(--mgr-light));width:0%;transition:width 0.5s ease;border-radius:10px}
+.mgr-progress .pp-count{font-size:13px;color:#999;font-family:monospace}
+.mgr-progress .pp-count b{color:var(--mgr)}
+
+/* LAYOUT */
+.layout{display:grid;grid-template-columns:280px 1fr 260px;gap:30px;padding:40px 0 60px;align-items:start}
+
+/* LEVERS LIST (LEFT) */
+.levers-list{position:sticky;top:90px;background:var(--card);border:1px solid #222;border-radius:18px;padding:22px 18px;max-height:calc(100vh - 120px);overflow-y:auto}
+.levers-list h3{color:var(--mgr);font-size:11px;text-transform:uppercase;letter-spacing:2px;margin-bottom:16px;font-weight:700;display:flex;align-items:center;gap:8px}
+.ll-item{display:flex;gap:12px;padding:11px 12px;border-radius:10px;cursor:pointer;transition:0.2s;margin-bottom:4px;border:1px solid transparent;align-items:center}
+.ll-item:hover{background:#1a1a1a;border-color:#2a2a2a}
+.ll-item.active{background:rgba(39,174,96,0.08);border-color:var(--mgr)}
+.ll-item.done{border-color:rgba(76,175,80,0.3)}
+.ll-num{background:#1a1a1a;color:var(--mgr);font-size:11px;font-weight:700;padding:4px 9px;border-radius:8px;flex-shrink:0;min-width:30px;text-align:center;font-family:monospace}
+.ll-item.active .ll-num{background:var(--mgr);color:#0b0b0b}
+.ll-item.done .ll-num{background:rgba(76,175,80,0.15);color:var(--green)}
+.ll-content{flex:1;min-width:0}
+.ll-name{color:#c8c8c8;font-size:13px;font-weight:600;line-height:1.3;margin-bottom:2px}
+.ll-item.active .ll-name{color:var(--mgr)}
+.ll-item.done .ll-name{color:var(--green)}
+.ll-meta{color:#666;font-size:11px;font-family:monospace}
+.ll-check{color:var(--green);font-size:12px;flex-shrink:0;display:none}
+.ll-item.done .ll-check{display:block}
+
+/* MODULE (CENTER) */
+.module-area{max-width:900px}
+.module-view{display:none;animation:fadeIn 0.4s ease}
+.module-view.active{display:block}
+@keyframes fadeIn{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:translateY(0)}}
+
+.module-header{margin-bottom:34px;padding-bottom:26px;border-bottom:1px solid #1f1f1f}
+.module-badge{display:inline-block;background:rgba(39,174,96,0.12);color:var(--mgr);font-size:11px;font-weight:700;letter-spacing:2px;padding:5px 14px;border-radius:14px;text-transform:uppercase;margin-bottom:14px}
+.module-header h2{font-size:34px;color:#f5f5f5;font-weight:800;line-height:1.2;margin-bottom:12px}
+.module-lead{font-size:17px;color:#999;font-style:italic;padding-left:18px;border-left:3px solid var(--mgr)}
+
+.module-view h3{font-size:22px;color:#f0f0f0;font-weight:700;margin:36px 0 16px;display:flex;align-items:center;gap:12px}
+.module-view h3::before{content:'';width:4px;height:24px;background:var(--mgr);border-radius:2px}
+.module-view h4{font-size:14px;color:var(--mgr);font-weight:700;text-transform:uppercase;letter-spacing:1.5px;margin:28px 0 12px}
+.module-view p{margin-bottom:18px;color:#c0c0c0;font-size:16.5px}
+.module-view p strong{color:#f0f0f0}
+.module-view ul,.module-view ol{margin:14px 0 24px 26px}
+.module-view li{margin-bottom:10px;color:#b8b8b8;font-size:16px}
+.module-view ul li::marker{color:var(--mgr)}
+.module-view ol li::marker{color:var(--mgr);font-weight:700}
+
+/* CALLOUTS */
+.callout{border-radius:14px;padding:22px 26px;margin:24px 0;border-left:4px solid var(--mgr);background:linear-gradient(135deg,#181818,#151515)}
+.callout-title{font-weight:700;color:var(--mgr);font-size:13px;margin-bottom:10px;display:flex;align-items:center;gap:8px;text-transform:uppercase;letter-spacing:1.2px}
+.callout p{margin-bottom:10px;color:#c0c0c0;font-size:15.5px}
+.callout p:last-child{margin-bottom:0}
+.callout.example{border-left-color:var(--blue)}
+.callout.example .callout-title{color:var(--blue)}
+.callout.warning{border-left-color:var(--red)}
+.callout.warning .callout-title{color:var(--red)}
+.callout.tip{border-left-color:var(--green)}
+.callout.tip .callout-title{color:var(--green)}
+.callout.script{border-left-color:var(--mgr);background:linear-gradient(135deg,#0f1a14,#0d1512)}
+.callout.script .callout-title{color:var(--mgr)}
+
+/* TABLE */
+.table-wrap{overflow-x:auto;margin:24px 0;border-radius:12px;border:1px solid #222}
+table{width:100%;border-collapse:collapse;font-size:14.5px}
+th{background:#1a1a1a;color:var(--mgr);text-align:left;padding:14px 18px;font-weight:700;border-bottom:1px solid #2a2a2a;text-transform:uppercase;font-size:11px;letter-spacing:1.5px}
+td{padding:12px 18px;border-bottom:1px solid #1a1a1a;color:#b8b8b8}
+tr:last-child td{border-bottom:none}
+
+/* CHECKLIST */
+.checklist{background:linear-gradient(135deg,#161616,#131313);border:1px solid #252525;border-radius:12px;padding:24px 28px;margin:28px 0}
+.checklist h4{color:var(--mgr);margin-bottom:16px;font-size:12px;text-transform:uppercase;letter-spacing:2px;display:flex;align-items:center;gap:8px}
+.checklist ul{list-style:none;margin:0}
+.checklist ul li{padding:9px 0;color:#b8b8b8;font-size:15px;display:flex;align-items:flex-start;gap:12px;cursor:pointer;transition:0.2s}
+.checklist ul li:hover{color:#e5e5e5}
+.checklist ul li input[type="checkbox"]{appearance:none;width:19px;height:19px;border:2px solid #444;border-radius:4px;cursor:pointer;flex-shrink:0;margin-top:3px;position:relative;transition:0.2s}
+.checklist ul li input[type="checkbox"]:checked{background:var(--mgr);border-color:var(--mgr)}
+.checklist ul li input[type="checkbox"]:checked::after{content:'✓';position:absolute;top:-3px;left:2px;color:#0b0b0b;font-weight:700;font-size:13px}
+
+/* INTERACT */
+.interact-zone{background:linear-gradient(135deg,#131313,#171717);border:1px dashed #2a2a2a;border-radius:14px;padding:26px 30px;margin:32px 0 0;text-align:center}
+.interact-zone h4{color:#f0f0f0;font-size:15px;margin-bottom:6px}
+.interact-zone p{color:#888;font-size:13px;margin-bottom:12px}
+.interact-zone .iz-hint{color:#666;font-size:11px;font-style:italic;background:#1a1a1a;display:inline-block;padding:4px 14px;border-radius:20px;text-transform:uppercase;letter-spacing:1px}
+
+/* ACTIONS */
+.module-actions{display:flex;justify-content:space-between;align-items:center;margin-top:36px;padding-top:26px;border-top:1px solid #1f1f1f;flex-wrap:wrap;gap:15px}
+.module-actions .ma-left{display:flex;gap:12px;flex-wrap:wrap}
+.module-actions button{background:transparent;border:2px solid #333;color:#888;padding:10px 22px;border-radius:30px;cursor:pointer;font-family:inherit;font-size:13px;font-weight:600;transition:0.2s;display:flex;align-items:center;gap:8px}
+.module-actions button:hover{border-color:var(--mgr);color:var(--mgr)}
+.module-actions .ma-like.liked{background:rgba(39,174,96,0.1);border-color:var(--mgr);color:var(--mgr)}
+.module-actions .ma-done.done{background:rgba(76,175,80,0.1);border-color:var(--green);color:var(--green)}
+.module-actions .ma-next{background:var(--mgr);color:#0b0b0b;border-color:var(--mgr);padding:11px 26px;font-size:14px}
+.module-actions .ma-next:hover{background:var(--mgr-light);border-color:var(--mgr-light);color:#0b0b0b}
+.module-actions .ma-next:disabled{opacity:0.4;cursor:not-allowed}
+
+/* SIDEBAR (RIGHT) */
+.sidebar-mgr{position:sticky;top:90px;background:var(--card);border:1px solid #222;border-radius:18px;padding:24px 22px}
+.sidebar-mgr h3{color:var(--mgr);font-size:11px;text-transform:uppercase;letter-spacing:2px;margin-bottom:20px;font-weight:700;display:flex;align-items:center;gap:8px}
+.mgr-display{text-align:center;padding:22px 0;border-bottom:1px solid #1f1f1f;margin-bottom:20px}
+.mgr-display .md-emoji{font-size:52px;line-height:1;margin-bottom:12px}
+.mgr-display .md-value{font-size:36px;color:var(--mgr);font-weight:800;font-family:monospace;line-height:1;margin-bottom:6px}
+.mgr-display .md-label{font-size:11px;color:#888;text-transform:uppercase;letter-spacing:1.5px}
+.mgr-rows{display:flex;flex-direction:column;gap:10px;margin-bottom:20px}
+.mgr-rows .mr-row{display:flex;justify-content:space-between;font-size:13px;padding:8px 0;border-bottom:1px dashed #1f1f1f}
+.mgr-rows .mr-row:last-child{border-bottom:none}
+.mgr-rows .mr-label{color:#888}
+.mgr-rows .mr-value{color:var(--mgr);font-weight:700;font-family:monospace}
+.mgr-rows .mr-value.green{color:var(--green)}
+.mgr-rows .mr-value.blue{color:var(--blue)}
+.mgr-rows .mr-value.red{color:var(--red)}
+.mgr-progress2{height:10px;background:#1f1f1f;border-radius:10px;overflow:hidden;margin-bottom:10px}
+.mgr-progress2 .mp2-fill{height:100%;background:linear-gradient(90deg,var(--mgr),var(--mgr-light));width:0%;transition:width 0.5s ease;border-radius:10px}
+.mgr-percent{font-size:11px;color:#888;text-align:center;text-transform:uppercase;letter-spacing:1px}
+.mgr-percent b{color:var(--mgr)}
+
+/* STICKY CTA */
+.sticky-cta{position:fixed;bottom:0;left:0;right:0;background:rgba(20,20,20,0.97);backdrop-filter:blur(10px);border-top:1px solid var(--mgr);padding:12px 20px;display:none;justify-content:space-between;align-items:center;gap:15px;z-index:998}
+.sticky-cta .sc-price{color:var(--mgr);font-weight:800;font-size:18px}
+.sticky-cta .sc-price small{display:block;color:#888;font-size:11px;font-weight:400;text-decoration:line-through}
+.sticky-cta button{background:var(--mgr);color:#0b0b0b;font-weight:700;padding:12px 26px;border:none;border-radius:60px;font-size:14px;cursor:pointer;font-family:inherit}
+
+/* SIMILAR */
+.similar{padding:50px 0 60px;border-top:1px solid #1f1f1f;margin-top:40px}
+.similar h2{font-size:24px;color:#f0f0f0;margin-bottom:22px}
+.similar-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:18px}
+.similar-card{background:var(--card);border:1px solid #222;border-radius:14px;padding:18px 20px;transition:0.3s;text-decoration:none;display:block}
+.similar-card:hover{border-color:var(--mgr);transform:translateY(-5px)}
+.similar-card h4{font-size:16px;color:#f0f0f0}
+.similar-card p{font-size:13px;color:#888;margin-top:6px}
+
+footer{border-top:1px solid #1f1f1f;padding:45px 0 35px;text-align:center;color:#666;font-size:14px;margin-top:40px}
+footer span{color:var(--mgr)}
+
+@media(max-width:1200px){
+.layout{grid-template-columns:1fr}
+.levers-list,.sidebar-mgr{position:static;max-height:none}
+}
+@media(max-width:768px){
+.course-hero h1{font-size:34px}
+.levers-grid{grid-template-columns:1fr;gap:12px}
+.lever-card{padding:18px}
+.lc-icon{font-size:28px}
+.lever-card h3{font-size:16px}
+.mgr-board{grid-template-columns:repeat(2,1fr);gap:10px}
+.mgr-card{padding:14px 16px}
+.mgr-card .mc-value{font-size:20px}
+.library-grid{grid-template-columns:repeat(2,1fr)}
+.trainer-nav button{font-size:11px;padding:6px 10px}
+.module-header h2{font-size:24px}
+.module-view h3{font-size:18px}
+nav a{margin-left:10px;font-size:11px}
+.logo{font-size:16px}
+body{font-size:15px}
+.sticky-cta{display:flex}
+body{padding-bottom:70px}
+.module-actions{flex-direction:column}
+.module-actions button{width:100%;justify-content:center}
+}
+</style>
 </head>
 <body>
+<div id="reading-progress"></div>
+
 <header>
-  <div class="container header-inner">
-    <div class="logo">KURSY<span>PRO</span><small>золотой стандарт продаж</small></div>
-    <nav>
-      <a href="../../index.html"><i class="fas fa-home"></i> Главная</a>
-      <a href="../../categories/scripts.html"><i class="fas fa-th-list"></i> Скрипты</a>
-      <a href="#"><i class="fas fa-phone-alt"></i> Контакты</a>
-    </nav>
-  </div>
+<div class="container header-inner">
+<a href="../../index.html" style="text-decoration:none;"><div class="logo">КУРСЫ ПО <span>ПРОДАЖАМ</span><small>золотой стандарт продаж</small></div></a>
+<nav>
+<a href="../../index.html"><i class="fas fa-home"></i> Главная</a>
+<a href="../../categories/scripts.html"><i class="fas fa-th-list"></i> Скрипты</a>
+<a href="#mgr"><i class="fas fa-user-tie"></i> Менеджер</a>
+</nav>
+</div>
 </header>
 
 <div class="container breadcrumb">
-  <a href="../../index.html">Главная</a> / <a href="../../categories/scripts.html">Скрипты</a> / <span>Скрипты для менеджера по продажам</span>
+<a href="../../index.html">Главная</a> / <a href="../../categories/scripts.html">Скрипты</a> / <span>Скрипты для менеджера по продажам</span>
 </div>
 
-<section class="course-header">
-  <div class="container">
-    <div class="tags">
-      <span><i class="fas fa-user-tie"></i> Менеджер</span>
-      <span><i class="fas fa-file-alt"></i> Скрипты</span>
-      <span><i class="fas fa-clock"></i> 10 дней</span>
-    </div>
-    <h1>Скрипты для менеджера по продажам</h1>
-    <p class="subtitle">Готовые скрипты для повседневной работы менеджера. Шаблоны, структура, адаптация.</p>
-    <div class="meta">
-      <span><i class="fas fa-clock"></i> 10 часов (5 модулей)</span>
-      <span><i class="fas fa-users"></i> 400+ учеников</span>
-      <span><i class="fas fa-star" style="color:#d4af37;"></i><i class="fas fa-star" style="color:#d4af37;"></i><i class="fas fa-star" style="color:#d4af37;"></i><i class="fas fa-star" style="color:#d4af37;"></i><i class="fas fa-star" style="color:#555;"></i> 4.7</span>
-    </div>
-  </div>
+<section class="course-hero">
+<div class="container">
+<div class="tags">
+<span><i class="fas fa-user-tie"></i> Менеджер</span>
+<span><i class="fas fa-file-alt"></i> Скрипты</span>
+<span><i class="fas fa-layer-group"></i> 5 модулей</span>
+<span><i class="fas fa-fire" style="color:#27ae60;"></i> Хит продаж</span>
+</div>
+<h1>Скрипты для менеджера по продажам</h1>
+<p class="subtitle">Пять модулей: от структуры до разбора кейсов. С библиотекой готовых скриптов и тренажёром менеджера.</p>
+<div class="meta">
+<span><i class="fas fa-clock"></i> 10 часов</span>
+<span><i class="fas fa-users"></i> 400+ учеников</span>
+<span><i class="fas fa-star" style="color:#d4af37;"></i><i class="fas fa-star" style="color:#d4af37;"></i><i class="fas fa-star" style="color:#d4af37;"></i><i class="fas fa-star" style="color:#d4af37;"></i><i class="fas fa-star" style="color:#555;"></i> 4.7</span>
+<span><i class="fas fa-certificate"></i> Сертификат</span>
+</div>
+</div>
 </section>
 
+<!-- MGR PANEL -->
+<section class="mgr-section" id="mgr">
 <div class="container">
-  <div class="course-content">
-    <div class="description">
-      <h2>О чём курс</h2>
-      <p>Каждый менеджер нуждается в хороших скриптах. Этот курс даст тебе готовые скрипты для повседневной работы, которые можно адаптировать под любую ситуацию.</p>
-      <p>Ты узнаешь, как структурировать скрипты, как использовать их в работе и как адаптировать под разные сценарии.</p>
+<div class="mgr-title">Панель менеджера по продажам</div>
+<p class="mgr-subtitle">Живые показатели: структура, готовые скрипты, адаптация, использование</p>
 
-      <h2>Программа курса</h2>
-      <ul class="program-list">
-        <li><span class="num">1</span><span class="text">Структура скрипта для менеджера</span><span class="duration">2 ч</span></li>
-        <li><span class="num">2</span><span class="text">Готовые скрипты для разных ситуаций</span><span class="duration">2 ч</span></li>
-        <li><span class="num">3</span><span class="text">Адаптация скриптов под клиента</span><span class="duration">2 ч</span></li>
-        <li><span class="num">4</span><span class="text">Использование скриптов в работе</span><span class="duration">2 ч</span></li>
-        <li><span class="num">5</span><span class="text">Разбор реальных кейсов</span><span class="duration">2 ч</span></li>
-      </ul>
+<div class="mgr-board">
+<div class="mgr-card structure">
+<div class="mc-label">Структура</div>
+<div class="mc-value" id="mgr-structure">50</div>
+<div class="mc-sub">из 100</div>
+<div class="mc-delta" id="mgr-delta">—</div>
+</div>
+<div class="mgr-card scripts">
+<div class="mc-label">Готовые скрипты</div>
+<div class="mc-value" id="mgr-scripts">40%</div>
+<div class="mc-sub">владение</div>
+</div>
+<div class="mgr-card adaptation">
+<div class="mc-label">Адаптация</div>
+<div class="mc-value" id="mgr-adaptation">35%</div>
+<div class="mc-sub">под клиента</div>
+</div>
+<div class="mgr-card usage">
+<div class="mc-label">Использование</div>
+<div class="mc-value" id="mgr-usage">30%</div>
+<div class="mc-sub">в работе</div>
+</div>
+</div>
 
-      <h2>Результат после курса</h2>
-      <div class="result-box">
-        <ul>
-          <li><i class="fas fa-check-circle"></i> Ты получишь готовые скрипты для менеджера</li>
-          <li><i class="fas fa-check-circle"></i> Научишься их адаптировать</li>
-          <li><i class="fas fa-check-circle"></i> Увеличишь эффективность работы</li>
-          <li><i class="fas fa-check-circle"></i> Будешь использовать скрипты в работе</li>
-          <li><i class="fas fa-check-circle"></i> Закроешь больше сделок</li>
-        </ul>
-      </div>
+<!-- SCRIPTS LIBRARY -->
+<div class="scripts-library">
+<h4><i class="fas fa-book"></i> Библиотека скриптов — кликни на скрипт</h4>
+<div class="library-grid" id="library-grid">
+<div class="library-card active" data-script="cold">
+<div class="lc-emoji">📞</div>
+<div class="lc-name">Холодный звонок</div>
+</div>
+<div class="library-card" data-script="repeat">
+<div class="lc-emoji">🔄</div>
+<div class="lc-name">Повторный звонок</div>
+</div>
+<div class="library-card" data-script="meeting">
+<div class="lc-emoji">🤝</div>
+<div class="lc-name">Встреча</div>
+</div>
+<div class="library-card" data-script="email">
+<div class="lc-emoji">✉️</div>
+<div class="lc-name">Письмо</div>
+</div>
+<div class="library-card" data-script="objection">
+<div class="lc-emoji">🛡️</div>
+<div class="lc-name">Возражение</div>
+</div>
+<div class="library-card" data-script="closing">
+<div class="lc-emoji">✅</div>
+<div class="lc-name">Закрытие</div>
+</div>
+</div>
+<div class="library-detail" id="library-detail">
+<div class="ld-title"><span>📞</span> Холодный звонок</div>
+<div class="ld-text">«Здравствуйте! Меня зовут [имя], компания [название]. Мы помогаем [отрасль] решать [задачу]. Удобно ли вам сейчас говорить?» <b>Цель:</b> установить контакт и договориться о следующем шаге.</div>
+</div>
+</div>
 
-      <h2>Для кого курс</h2>
-      <p><strong>🔹 Менеджеры</strong> — кто работает с клиентами</p>
-      <p><strong>🔹 Предприниматели</strong> — кто продает сам</p>
-      <p><strong>🔹 Наставники</strong> — кто учит менеджеров</p>
-      <p><strong>🔹 Руководители</strong> — кто управляет командой</p>
-    </div>
+<!-- MANAGER TRAINER -->
+<div class="mgr-trainer">
+<h4><i class="fas fa-graduation-cap"></i> Тренажёр менеджера — выбери правильную реакцию</h4>
+<div class="trainer-nav" id="trainer-nav">
+<button class="active" data-trainer="1">Клиент молчит</button>
+<button data-trainer="2">Клиент торопится</button>
+<button data-trainer="3">Клиент сомневается</button>
+<button data-trainer="4">Клиент агрессивен</button>
+</div>
+<div class="trainer-question" id="trainer-question">Клиент молчит, не отвечает на вопросы, смотрит в сторону.</div>
+<div class="trainer-options" id="trainer-options"></div>
+<div class="trainer-feedback" id="trainer-feedback"></div>
+</div>
+</div>
+</section>
 
-    <div class="sidebar">
-      <div class="price-card">
-        <div class="price">11 900 ₽ <small>+ НДС</small></div>
-        <div class="old-price">16 900 ₽</div>
-        <button class="btn-buy"><i class="fas fa-cart-plus"></i> Записаться на курс</button>
-        <div class="guarantee"><i class="fas fa-shield-alt"></i> 100% гарантия возврата в течение 7 дней</div>
-      </div>
-      <div class="info-box">
-        <h4><i class="fas fa-info-circle" style="color:#d4af37;"></i> Важно</h4>
-        <p>📅 Старт потока: каждую неделю</p>
-        <p>⏳ Доступ к материалам — 6 месяцев</p>
-        <p>🎓 Сертификат после прохождения</p>
-        <p>💬 Закрытый Telegram-чат с учениками</p>
-      </div>
-      <div class="info-box" style="border-color:#2a2a2a;">
-        <h4><i class="fas fa-user-tie" style="color:#d4af37;"></i> Преподаватель</h4>
-        <p style="border-bottom:none; display:flex; align-items:center; gap:12px;">
-          <span style="width:48px; height:48px; border-radius:50%; background:#2a2a2a; border:2px solid #d4af37; display:flex; align-items:center; justify-content:center; font-size:24px;">👨‍🏫</span>
-          <span><strong style="color:#ddd;">Алексей Рожняков</strong><br><span style="color:#888; font-size:13px;">17 лет в продажах, 500+ обученных менеджеров</span></span>
-        </p>
-      </div>
-    </div>
-  </div>
+<!-- LEVERS GRID -->
+<section class="levers-section">
+<div class="container">
+<div class="levers-grid">
+
+<div class="lever-card active" data-lever="1">
+<div class="lc-header">
+<span class="lc-icon">🏗️</span>
+<span class="lc-num">Модуль 01</span>
+</div>
+<span class="lc-impact medium">Влияние: базовое</span>
+<h3>Структура скрипта для менеджера</h3>
+<p>5 блоков: приветствие, выявление, презентация, возражения, закрытие.</p>
+<div class="lc-meta">
+<span><i class="fas fa-clock"></i> 2 часа</span>
+<span><i class="fas fa-book"></i> 6 разделов</span>
+</div>
+</div>
+
+<div class="lever-card" data-lever="2">
+<div class="lc-header">
+<span class="lc-icon">📋</span>
+<span class="lc-num">Модуль 02</span>
+</div>
+<span class="lc-impact high">Влияние: высокое</span>
+<h3>Готовые скрипты для разных ситуаций</h3>
+<p>Шаблоны скриптов: холодный звонок, повторный, встреча, письмо, возражение, закрытие.</p>
+<div class="lc-meta">
+<span><i class="fas fa-clock"></i> 2 часа</span>
+<span><i class="fas fa-book"></i> 6 шаблонов</span>
+</div>
+</div>
+
+<div class="lever-card" data-lever="3">
+<div class="lc-header">
+<span class="lc-icon">🔧</span>
+<span class="lc-num">Модуль 03</span>
+</div>
+<span class="lc-impact high">Влияние: высокое</span>
+<h3>Адаптация скриптов под клиента</h3>
+<p>Как адаптировать скрипты: под тип клиента, под ситуацию, под канал.</p>
+<div class="lc-meta">
+<span><i class="fas fa-clock"></i> 2 часа</span>
+<span><i class="fas fa-book"></i> 6 разделов</span>
+</div>
+</div>
+
+<div class="lever-card" data-lever="4">
+<div class="lc-header">
+<span class="lc-icon">🚀</span>
+<span class="lc-num">Модуль 04</span>
+</div>
+<span class="lc-impact high">Влияние: высокое</span>
+<h3>Использование скриптов в работе</h3>
+<p>Как использовать скрипты в ежедневной работе менеджера.</p>
+<div class="lc-meta">
+<span><i class="fas fa-clock"></i> 2 часа</span>
+<span><i class="fas fa-book"></i> 6 разделов</span>
+</div>
+</div>
+
+<div class="lever-card" data-lever="5">
+<div class="lc-header">
+<span class="lc-icon">🔬</span>
+<span class="lc-num">Модуль 05</span>
+</div>
+<span class="lc-impact low">Влияние: кейсы</span>
+<h3>Разбор реальных кейсов</h3>
+<p>3 кейса: как менеджеры использовали скрипты.</p>
+<div class="lc-meta">
+<span><i class="fas fa-clock"></i> 2 часа</span>
+<span><i class="fas fa-book"></i> 3 кейса</span>
+</div>
+</div>
+
+</div>
+
+<div class="mgr-progress">
+<div class="pp-label">Модулей пройдено: <b><span id="pp-count">0</span>/5</b></div>
+<div class="pp-bar"><div class="pp-fill" id="pp-fill"></div></div>
+<div class="pp-count">Структура: <b><span id="pp-structure">50</span></b></div>
+</div>
+</div>
+</section>
+
+<div class="container layout">
+
+<!-- LEVERS LIST (LEFT) -->
+<aside class="levers-list">
+<h3><i class="fas fa-list"></i> Модули курса</h3>
+<div class="ll-item active" data-lever="1"><span class="ll-num">01</span><div class="ll-content"><div class="ll-name">Структура</div><div class="ll-meta">2 ч</div></div><i class="fas fa-check ll-check"></i></div>
+<div class="ll-item" data-lever="2"><span class="ll-num">02</span><div class="ll-content"><div class="ll-name">Готовые скрипты</div><div class="ll-meta">2 ч</div></div><i class="fas fa-check ll-check"></i></div>
+<div class="ll-item" data-lever="3"><span class="ll-num">03</span><div class="ll-content"><div class="ll-name">Адаптация</div><div class="ll-meta">2 ч</div></div><i class="fas fa-check ll-check"></i></div>
+<div class="ll-item" data-lever="4"><span class="ll-num">04</span><div class="ll-content"><div class="ll-name">Использование</div><div class="ll-meta">2 ч</div></div><i class="fas fa-check ll-check"></i></div>
+<div class="ll-item" data-lever="5"><span class="ll-num">05</span><div class="ll-content"><div class="ll-name">Разборы</div><div class="ll-meta">2 ч</div></div><i class="fas fa-check ll-check"></i></div>
+</aside>
+
+<!-- MODULES (CENTER) -->
+<div class="module-area">
+
+<!-- ============ МОДУЛЬ 1 ============ -->
+<div class="module-view active" data-module="1">
+<div class="module-header">
+<span class="module-badge">Модуль 1 · 2 часа</span>
+<h2>Структура скрипта для менеджера</h2>
+<p class="module-lead">5 блоков: приветствие, выявление, презентация, возражения, закрытие.</p>
+</div>
+
+<h3>1.1. Что такое скрипт для менеджера</h3>
+<p><strong>Скрипт для менеджера</strong> — это сценарий разговора, который помогает вести клиента к сделке.</p>
+
+<h3>1.2. 5 блоков скрипта</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Блок</th><th>Цель</th></tr></thead>
+<tbody>
+<tr><td>Приветствие</td><td>Установить контакт</td></tr>
+<tr><td>Выявление</td><td>Узнать потребности</td></tr>
+<tr><td>Презентация</td><td>Показать ценность</td></tr>
+<tr><td>Возражения</td><td>Снять сомнения</td></tr>
+<tr><td>Закрытие</td><td>Завершить сделку</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>1.3. Приветствие</h3>
+<ul>
+<li>Представься.</li>
+<li>Уточни, удобно ли говорить.</li>
+<li>Создай комфорт.</li>
+<li>Не продавай сразу.</li>
+</ul>
+
+<h3>1.4. Выявление</h3>
+<div class="callout script">
+<div class="callout-title"><i class="fas fa-comment-dots"></i> Вопросы</div>
+<p>«Что для вас важно?» «С чем сейчас работаете?» «Что хотите изменить?»</p>
+</div>
+
+<h3>1.5. Презентация и возражения</h3>
+<ul>
+<li>Презентация: решение → выгода.</li>
+<li>Возражения: выслушать, согласиться, ответить.</li>
+</ul>
+
+<h3>1.6. Закрытие</h3>
+<ul>
+<li>Задай закрывающий вопрос.</li>
+<li>Дай выбор.</li>
+<li>Не дави.</li>
+<li>Поблагодари.</li>
+</ul>
+
+<div class="callout tip">
+<div class="callout-title"><i class="fas fa-lightbulb"></i> Правило</div>
+<p>Скрипт — это не жёсткий текст, а структура. Импровизируй внутри блоков.</p>
+</div>
+
+<div class="checklist">
+<h4><i class="fas fa-check"></i> Чек-лист модуля 1</h4>
+<ul>
+<li><input type="checkbox"> Я знаю, что такое скрипт для менеджера</li>
+<li><input type="checkbox"> Я знаю 5 блоков</li>
+<li><input type="checkbox"> Я умею устанавливать контакт</li>
+<li><input type="checkbox"> Я умею выявлять потребности</li>
+<li><input type="checkbox"> Я не продаю сразу</li>
+</ul>
+</div>
+
+<div class="interact-zone">
+<h4><i class="fas fa-comments" style="color:#27ae60;"></i> Комментарии к модулю 1</h4>
+<p>Задай вопрос или оставь комментарий.</p>
+<span class="iz-hint"><i class="fas fa-code"></i> Firebase подключим позже</span>
+</div>
+
+<div class="module-actions">
+<div class="ma-left">
+<button class="ma-like"><i class="fas fa-thumbs-up"></i> Полезно</button>
+<button class="ma-done"><i class="fas fa-circle-check"></i> Пройдено</button>
+</div>
+<button class="ma-next" data-next="2">Модуль 2: Готовые скрипты <i class="fas fa-arrow-right"></i></button>
+</div>
+</div>
+
+<!-- ============ МОДУЛЬ 2 ============ -->
+<div class="module-view" data-module="2">
+<div class="module-header">
+<span class="module-badge">Модуль 2 · 2 часа</span>
+<h2>Готовые скрипты для разных ситуаций</h2>
+<p class="module-lead">Шаблоны скриптов: холодный звонок, повторный, встреча, письмо, возражение, закрытие.</p>
+</div>
+
+<h3>2.1. Холодный звонок</h3>
+<div class="callout script">
+<div class="callout-title"><i class="fas fa-comment-dots"></i> Шаблон</div>
+<p>1. Приветствие. 2. Причина звонка. 3. Ценность. 4. Вопрос. 5. Договорённость.</p>
+</div>
+
+<h3>2.2. Повторный звонок</h3>
+<ul>
+<li>Напомни о себе.</li>
+<li>Уточни, актуально ли.</li>
+<li>Дай новую информацию.</li>
+<li>Веди к решению.</li>
+</ul>
+
+<h3>2.3. Встреча</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Этап</th><th>Что делать</th></tr></thead>
+<tbody>
+<tr><td>Открытие</td><td>Установить контакт</td></tr>
+<tr><td>Выявление</td><td>Задать вопросы</td></tr>
+<tr><td>Презентация</td><td>Показать решение</td></tr>
+<tr><td>Возражения</td><td>Отработать</td></tr>
+<tr><td>Закрытие</td><td>Договориться о шаге</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>2.4. Письмо</h3>
+<div class="callout script">
+<div class="callout-title"><i class="fas fa-comment-dots"></i> Шаблон</div>
+<p>Тема: [выгода]. 1. Персонализация. 2. Проблема. 3. Решение. 4. Кейс. 5. CTA.</p>
+</div>
+
+<h3>2.5. Возражение и закрытие</h3>
+<ul>
+<li>Возражение: выслушать, согласиться, ответить.</li>
+<li>Закрытие: задать закрывающий вопрос.</li>
+</ul>
+
+<h3>2.6. Ошибки</h3>
+<ul>
+<li>Один скрипт для всех.</li>
+<li>Нет персонализации.</li>
+<li>Нет ценности.</li>
+<li>Нет CTA.</li>
+<li>Нет подготовки.</li>
+</ul>
+
+<div class="checklist">
+<h4><i class="fas fa-check"></i> Чек-лист модуля 2</h4>
+<ul>
+<li><input type="checkbox"> Я знаю шаблон холодного звонка</li>
+<li><input type="checkbox"> Я знаю шаблон повторного звонка</li>
+<li><input type="checkbox"> Я знаю шаблон встречи</li>
+<li><input type="checkbox"> Я знаю шаблон письма</li>
+<li><input type="checkbox"> Я не использую один скрипт для всех</li>
+</ul>
+</div>
+
+<div class="interact-zone">
+<h4><i class="fas fa-comments" style="color:#27ae60;"></i> Комментарии к модулю 2</h4>
+<p>Задай вопрос или оставь комментарий.</p>
+<span class="iz-hint"><i class="fas fa-code"></i> Firebase подключим позже</span>
+</div>
+
+<div class="module-actions">
+<div class="ma-left">
+<button class="ma-like"><i class="fas fa-thumbs-up"></i> Полезно</button>
+<button class="ma-done"><i class="fas fa-circle-check"></i> Пройдено</button>
+</div>
+<button class="ma-next" data-next="3">Модуль 3: Адаптация <i class="fas fa-arrow-right"></i></button>
+</div>
+</div>
+
+<!-- ============ МОДУЛЬ 3 ============ -->
+<div class="module-view" data-module="3">
+<div class="module-header">
+<span class="module-badge">Модуль 3 · 2 часа</span>
+<h2>Адаптация скриптов под клиента</h2>
+<p class="module-lead">Как адаптировать скрипты: под тип клиента, под ситуацию, под канал.</p>
+</div>
+
+<h3>3.1. Зачем адаптировать</h3>
+<p><strong>Адаптация</strong> — это подстройка скрипта под конкретного клиента.</p>
+
+<h3>3.2. Под тип клиента</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Тип</th><th>Что менять</th></tr></thead>
+<tbody>
+<tr><td>Логик</td><td>Больше цифр</td></tr>
+<tr><td>Эмоционал</td><td>Больше историй</td></tr>
+<tr><td>Скептик</td><td>Больше доказательств</td></tr>
+<tr><td>Драйвер</td><td>Кратко и по делу</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>3.3. Под ситуацию</h3>
+<ul>
+<li>Холодный клиент — больше прогрева.</li>
+<li>Тёплый — быстрее к сделке.</li>
+<li>Повторный — напомни о себе.</li>
+<li>Конфликтный — снять напряжение.</li>
+</ul>
+
+<h3>3.4. Под канал</h3>
+<ul>
+<li>Телефон — короткие фразы.</li>
+<li>Email — структура.</li>
+<li>Мессенджер — неформально.</li>
+<li>Встреча — больше диалога.</li>
+</ul>
+
+<h3>3.5. Как адаптировать</h3>
+<ol>
+<li>Определи тип клиента.</li>
+<li>Определи ситуацию.</li>
+<li>Определи канал.</li>
+<li>Внеси правки.</li>
+<li>Протестируй.</li>
+</ol>
+
+<h3>3.6. Ошибки</h3>
+<ul>
+<li>Один скрипт для всех.</li>
+<li>Игнорировать контекст.</li>
+<li>Не тестировать.</li>
+<li>Слишком сложно.</li>
+<li>Не адаптировать.</li>
+</ul>
+
+<div class="checklist">
+<h4><i class="fas fa-check"></i> Чек-лист модуля 3</h4>
+<ul>
+<li><input type="checkbox"> Я знаю, зачем адаптировать</li>
+<li><input type="checkbox"> Я адаптирую под тип клиента</li>
+<li><input type="checkbox"> Я адаптирую под ситуацию</li>
+<li><input type="checkbox"> Я адаптирую под канал</li>
+<li><input type="checkbox"> Я не использую один скрипт для всех</li>
+</ul>
+</div>
+
+<div class="interact-zone">
+<h4><i class="fas fa-comments" style="color:#27ae60;"></i> Комментарии к модулю 3</h4>
+<p>Задай вопрос или оставь комментарий.</p>
+<span class="iz-hint"><i class="fas fa-code"></i> Firebase подключим позже</span>
+</div>
+
+<div class="module-actions">
+<div class="ma-left">
+<button class="ma-like"><i class="fas fa-thumbs-up"></i> Полезно</button>
+<button class="ma-done"><i class="fas fa-circle-check"></i> Пройдено</button>
+</div>
+<button class="ma-next" data-next="4">Модуль 4: Использование <i class="fas fa-arrow-right"></i></button>
+</div>
+</div>
+
+<!-- ============ МОДУЛЬ 4 ============ -->
+<div class="module-view" data-module="4">
+<div class="module-header">
+<span class="module-badge">Модуль 4 · 2 часа</span>
+<h2>Использование скриптов в работе</h2>
+<p class="module-lead">Как использовать скрипты в ежедневной работе менеджера.</p>
+</div>
+
+<h3>4.1. Когда использовать скрипты</h3>
+<ul>
+<li>Холодные звонки.</li>
+<li>Повторные звонки.</li>
+<li>Встречи.</li>
+<li>Переписка.</li>
+<li>Работа с возражениями.</li>
+</ul>
+
+<h3>4.2. Как внедрить скрипт в работу</h3>
+<ol>
+<li>Изучи скрипт.</li>
+<li>Адаптируй под себя.</li>
+<li>Потренируйся.</li>
+<li>Применяй.</li>
+<li>Дорабатывай.</li>
+</ol>
+
+<h3>4.3. Тренировка</h3>
+<div class="callout script">
+<div class="callout-title"><i class="fas fa-comment-dots"></i> Техника</div>
+<p>Потренируйся перед зеркалом или с коллегой. Запиши на видео, посмотри, улучши.</p>
+</div>
+
+<h3>4.4. Контроль</h3>
+<ul>
+<li>Замеряй конверсию.</li>
+<li>Сравнивай результаты.</li>
+<li>Собирай обратную связь.</li>
+<li>Дорабатывай.</li>
+</ul>
+
+<h3>4.5. Ошибки</h3>
+<ul>
+<li>Заучить, но не понимать.</li>
+<li>Не адаптировать.</li>
+<li>Не тренироваться.</li>
+<li>Не дорабатывать.</li>
+<li>Не замерять.</li>
+</ul>
+
+<h3>4.6. Рефлексия</h3>
+<ol>
+<li>Что сработало?</li>
+<li>Что нет?</li>
+<li>Что изменить?</li>
+<li>Что применить в следующий раз?</li>
+</ol>
+
+<div class="checklist">
+<h4><i class="fas fa-check"></i> Чек-лист модуля 4</h4>
+<ul>
+<li><input type="checkbox"> Я знаю, когда использовать скрипты</li>
+<li><input type="checkbox"> Я умею внедрять скрипт в работу</li>
+<li><input type="checkbox"> Я тренируюсь</li>
+<li><input type="checkbox"> Я контролирую результат</li>
+<li><input type="checkbox"> Я дорабатываю скрипт</li>
+</ul>
+</div>
+
+<div class="interact-zone">
+<h4><i class="fas fa-comments" style="color:#27ae60;"></i> Комментарии к модулю 4</h4>
+<p>Задай вопрос или оставь комментарий.</p>
+<span class="iz-hint"><i class="fas fa-code"></i> Firebase подключим позже</span>
+</div>
+
+<div class="module-actions">
+<div class="ma-left">
+<button class="ma-like"><i class="fas fa-thumbs-up"></i> Полезно</button>
+<button class="ma-done"><i class="fas fa-circle-check"></i> Пройдено</button>
+</div>
+<button class="ma-next" data-next="5">Модуль 5: Разборы <i class="fas fa-arrow-right"></i></button>
+</div>
+</div>
+
+<!-- ============ МОДУЛЬ 5 ============ -->
+<div class="module-view" data-module="5">
+<div class="module-header">
+<span class="module-badge">Модуль 5 · 2 часа</span>
+<h2>Разбор реальных кейсов</h2>
+<p class="module-lead">3 кейса: как менеджеры использовали скрипты.</p>
+</div>
+
+<h3>5.1. Кейс 1: Менеджер call-центра — рост конверсии в 2 раза</h3>
+<p><strong>Ситуация.</strong> Конверсия в сделку 5%.</p>
+<h4>Что делали</h4>
+<ol>
+<li>Внедрили скрипты.</li>
+<li>Адаптировали под клиентов.</li>
+<li>Обучили команду.</li>
+<li>Замеряли результат.</li>
+</ol>
+<h4>Результат</h4>
+<p>Конверсия выросла до 10%. Выручка выросла в 2 раза.</p>
+
+<h3>5.2. Кейс 2: Менеджер по продажам — рост среднего чека на 30%</h3>
+<p><strong>Ситуация.</strong> Средний чек 50 000 ₽.</p>
+<h4>Что делали</h4>
+<ol>
+<li>Добавили блок выявления.</li>
+<li>Усилили презентацию.</li>
+<li>Добавили кейсы.</li>
+<li>Обучили команду.</li>
+</ol>
+<h4>Результат</h4>
+<p>Средний чек вырос до 65 000 ₽ (+30%).</p>
+
+<h3>5.3. Кейс 3: Менеджер B2B — сокращение цикла сделки на 25%</h3>
+<p><strong>Ситуация.</strong> Цикл сделки 4 месяца.</p>
+<h4>Что делали</h4>
+<ol>
+<li>Упростили скрипт.</li>
+<li>Добавили квалификацию.</li>
+<li>Ускорили презентацию.</li>
+<li>Усилили закрытие.</li>
+</ol>
+<h4>Результат</h4>
+<p>Цикл сократился до 3 месяцев (-25%).</p>
+
+<div class="callout tip">
+<div class="callout-title"><i class="fas fa-flag-checkered"></i> Главный вывод курса</div>
+<p>Скрипты для менеджера — это система: структура + готовые шаблоны + адаптация + использование. Через 3–6 месяцев системной работы конверсия вырастет в 2–3 раза.</p>
+</div>
+
+<div class="checklist">
+<h4><i class="fas fa-check"></i> Финальный чек-лист курса</h4>
+<ul>
+<li><input type="checkbox"> Я знаю структуру скрипта</li>
+<li><input type="checkbox"> Я знаю готовые шаблоны</li>
+<li><input type="checkbox"> Я адаптирую под клиента</li>
+<li><input type="checkbox"> Я использую скрипты в работе</li>
+<li><input type="checkbox"> Я разобрал реальные кейсы</li>
+<li><input type="checkbox"> Я готов применять</li>
+</ul>
+</div>
+
+<div class="interact-zone">
+<h4><i class="fas fa-comments" style="color:#27ae60;"></i> Комментарии к модулю 5</h4>
+<p>Задай вопрос или оставь комментарий.</p>
+<span class="iz-hint"><i class="fas fa-code"></i> Firebase подключим позже</span>
+</div>
+
+<div class="module-actions">
+<div class="ma-left">
+<button class="ma-like"><i class="fas fa-thumbs-up"></i> Полезно</button>
+<button class="ma-done"><i class="fas fa-circle-check"></i> Пройдено</button>
+</div>
+<button class="ma-next" disabled>Курс завершён <i class="fas fa-flag-checkered"></i></button>
+</div>
+</div>
+
+</div>
+
+<!-- SIDEBAR (RIGHT) -->
+<aside class="sidebar-mgr">
+<h3><i class="fas fa-user-tie"></i> Результат менеджера</h3>
+<div class="mgr-display">
+<div class="md-emoji" id="mgr-emoji">🏗️</div>
+<div class="md-value" id="mgr-value">50</div>
+<div class="md-label">Структура</div>
+</div>
+<div class="mgr-rows">
+<div class="mr-row"><span class="mr-label">Готовые скрипты</span><span class="mr-value blue" id="sidebar-scripts">40%</span></div>
+<div class="mr-row"><span class="mr-label">Адаптация</span><span class="mr-value green" id="sidebar-adaptation">35%</span></div>
+<div class="mr-row"><span class="mr-label">Использование</span><span class="mr-value" id="sidebar-usage">30%</span></div>
+<div class="mr-row"><span class="mr-label">Структура</span><span class="mr-value" id="sidebar-structure">50</span></div>
+</div>
+<div class="mgr-progress2"><div class="mp2-fill" id="mgr-fill"></div></div>
+<div class="mgr-percent">Прогресс: <b><span id="mgr-percent">0</span>%</b></div>
+</aside>
+
 </div>
 
 <section class="similar">
-  <div class="container">
-    <h2><i class="fas fa-arrow-right" style="color:#d4af37;"></i> Похожие курсы</h2>
-    <div class="similar-grid">
-      <a href="../scripts/skripty-prodazh.html" class="similar-card"><h4>Скрипты продаж</h4><p>База</p></a>
-      <a href="../scripts/kak-sozdat-skript-prodazh.html" class="similar-card"><h4>Как создать скрипт</h4><p>Создание</p></a>
-      <a href="../scripts/skripty-raboty-s-vozrazheniyami.html" class="similar-card"><h4>Скрипты работы с возражениями</h4><p>Возражения</p></a>
-      <a href="../scripts/prodavayushchiy-razgovor.html" class="similar-card"><h4>Продающий разговор</h4><p>Диалог</p></a>
-    </div>
-  </div>
+<div class="container">
+<h2><i class="fas fa-arrow-right" style="color:#27ae60;"></i> Похожие курсы</h2>
+<div class="similar-grid">
+<a href="skripty-prodazh.html" class="similar-card"><h4>Скрипты продаж</h4><p>База</p></a>
+<a href="kak-sozdat-skript-prodazh.html" class="similar-card"><h4>Как создать скрипт</h4><p>Создание</p></a>
+<a href="skripty-raboty-s-vozrazheniyami.html" class="similar-card"><h4>Скрипты работы с возражениями</h4><p>Возражения</p></a>
+<a href="prodavayushchiy-razgovor.html" class="similar-card"><h4>Продающий разговор</h4><p>Диалог</p></a>
+</div>
+</div>
 </section>
 
+<div class="sticky-cta">
+<div><div class="sc-price">11 900 ₽ <small>16 900 ₽</small></div></div>
+<button><i class="fas fa-cart-plus"></i> Записаться</button>
+</div>
+
 <footer>
-  <div class="container">
-    <p>© 2026 <span>KURSYPRO</span> — система обучения продажам. 110+ курсов.</p>
-  </div>
+<div class="container">
+<p>© 2026 <span>Курсы по продажам</span> — золотой стандарт обучения продажам. 110+ программ.</p>
+<p style="margin-top:8px;font-size:13px;color:#444;"><i class="fas fa-crown" style="color:#d4af37;"></i> kursy-po-prodazham.com</p>
+</div>
 </footer>
+
+<script>
+window.addEventListener('scroll',()=>{const h=document.documentElement;const s=(h.scrollTop/(h.scrollHeight-h.clientHeight))*100;document.getElementById('reading-progress').style.width=s+'%'});
+
+const leverCards=document.querySelectorAll('.lever-card');
+const llItems=document.querySelectorAll('.ll-item');
+const modules=document.querySelectorAll('.module-view');
+const libraryCards=document.querySelectorAll('.library-card');
+const trainerNav=document.querySelectorAll('.trainer-nav button');
+let currentLever=1;
+const totalLevers=5;
+let currentTrainer=1;
+
+const mgrData=[
+{emoji:'🏗️',structure:50,scripts:40,adaptation:35,usage:30},
+{emoji:'📋',structure:60,scripts:55,adaptation:45,usage:40},
+{emoji:'🔧',structure:70,scripts:65,adaptation:60,usage:50},
+{emoji:'🚀',structure:80,scripts:75,adaptation:75,usage:70},
+{emoji:'👑',structure:90,scripts:88,adaptation:88,usage:85}
+];
+
+const libraryData={
+cold:{emoji:'📞',name:'Холодный звонок',text:'«Здравствуйте! Меня зовут [имя], компания [название]. Мы помогаем [отрасль] решать [задачу]. Удобно ли вам сейчас говорить?» <b>Цель:</b> установить контакт и договориться о следующем шаге.'},
+repeat:{emoji:'🔄',name:'Повторный звонок',text:'«Здравствуйте, [имя]! Это [ваше имя] из [компания]. Мы с вами общались [когда]. Хотел уточнить, актуально ли ещё [задача]?» <b>Цель:</b> напомнить о себе и продвинуть сделку.'},
+meeting:{emoji:'🤝',name:'Встреча',text:'«Спасибо, что нашли время. Давайте обсудим вашу задачу. Что для вас сейчас важно?» <b>Цель:</b> выявить потребности и показать решение.'},
+email:{emoji:'✉️',name:'Письмо',text:'Тема: [выгода для компании]. 1. Персонализация. 2. Проблема. 3. Решение. 4. Кейс. 5. CTA. <b>Цель:</b> заинтересовать и договориться о звонке.'},
+objection:{emoji:'🛡️',name:'Возражение',text:'«Я понимаю. А что именно вас смущает? Давайте разберём вместе». <b>Цель:</b> снять возражение и вернуть диалог в конструктив.'},
+closing:{emoji:'✅',name:'Закрытие',text:'«Итак, мы договорились. Оформляем?» или «Что нужно, чтобы мы начали?» <b>Цель:</b> завершить сделку.'}
+};
+
+const trainerData={
+1:{question:'Клиент молчит, не отвечает на вопросы, смотрит в сторону.',options:[{text:'Продолжать задавать вопросы в том же темпе',correct:false,feedback:'Клиент закроется ещё больше.'},{text:'Сделать паузу, сменить тему, задать простой вопрос',correct:true,feedback:'Отлично! Пауза и простой вопрос помогут клиенту расслабиться.'},{text:'Сразу перейти к презентации',correct:false,feedback:'Клиент не готов, презентация не сработает.'}]},
+2:{question:'Клиент торопится, говорит быстро, смотрит на часы.',options:[{text:'Говорить медленно и подробно',correct:false,feedback:'Клиент потеряет терпение.'},{text:'Говорить кратко, показать результат, закрыть быстро',correct:true,feedback:'Отлично! Подстройся под темп клиента и дай результат.'},{text:'Предложить перенести встречу',correct:false,feedback:'Клиент может не вернуться.'}]},
+3:{question:'Клиент сомневается, задаёт много вопросов, не решается.',options:[{text:'Давить и торопить',correct:false,feedback:'Давление вызовет сопротивление.'},{text:'Уточнить, что смущает, и снять возражение',correct:true,feedback:'Отлично! Работай с сомнением, а не дави.'},{text:'Оставить клиента и ждать',correct:false,feedback:'Клиент уйдёт.'}]},
+4:{question:'Клиент агрессивен, кричит, обвиняет.',options:[{text:'Спорить и защищаться',correct:false,feedback:'Конфликт усилится.'},{text:'Выслушать, согласиться с эмоцией, предложить решение',correct:true,feedback:'Отлично! Сними напряжение и переведи в конструктив.'},{text:'Прервать разговор',correct:false,feedback:'Потеря клиента.'}]}
+};
+
+function formatRub(num){
+return num.toLocaleString('ru-RU')+' ₽';
+}
+
+function goToLever(num){
+modules.forEach(m=>m.classList.remove('active'));
+document.querySelector('.module-view[data-module="'+num+'"]').classList.add('active');
+leverCards.forEach(l=>l.classList.remove('active'));
+document.querySelector('.lever-card[data-lever="'+num+'"]').classList.add('active');
+llItems.forEach(l=>l.classList.remove('active'));
+document.querySelector('.ll-item[data-lever="'+num+'"]').classList.add('active');
+const d=mgrData[num-1];
+document.getElementById('mgr-structure').textContent=d.structure;
+document.getElementById('mgr-scripts').textContent=d.scripts+'%';
+document.getElementById('mgr-adaptation').textContent=d.adaptation+'%';
+document.getElementById('mgr-usage').textContent=d.usage+'%';
+document.getElementById('mgr-delta').textContent=num>1?'+'+(d.structure-mgrData[0].structure)+' к базе':'—';
+document.getElementById('sidebar-scripts').textContent=d.scripts+'%';
+document.getElementById('sidebar-adaptation').textContent=d.adaptation+'%';
+document.getElementById('sidebar-usage').textContent=d.usage+'%';
+document.getElementById('sidebar-structure').textContent=d.structure;
+document.getElementById('mgr-emoji').textContent=d.emoji;
+document.getElementById('mgr-value').textContent=d.structure;
+currentLever=num;
+window.scrollTo({top:document.getElementById('mgr').offsetTop-40,behavior:'smooth'});
+}
+
+leverCards.forEach(l=>l.addEventListener('click',()=>goToLever(+l.dataset.lever)));
+llItems.forEach(l=>l.addEventListener('click',()=>goToLever(+l.dataset.lever)));
+document.querySelectorAll('.ma-next[data-next]').forEach(btn=>{
+btn.addEventListener('click',()=>goToLever(+btn.dataset.next));
+});
+
+/* SCRIPTS LIBRARY */
+libraryCards.forEach(card=>{
+card.addEventListener('click',()=>{
+libraryCards.forEach(c=>c.classList.remove('active'));
+card.classList.add('active');
+const d=libraryData[card.dataset.script];
+document.getElementById('library-detail').innerHTML='<div class="ld-title"><span>'+d.emoji+'</span> '+d.name+'</div><div class="ld-text">'+d.text+'</div>';
+});
+});
+
+/* MANAGER TRAINER */
+function renderTrainer(){
+const d=trainerData[currentTrainer];
+document.getElementById('trainer-question').textContent=d.question;
+const opts=document.getElementById('trainer-options');
+opts.innerHTML='';
+d.options.forEach((o,i)=>{
+const div=document.createElement('div');
+div.className='trainer-option';
+const letter=String.fromCharCode(65+i);
+div.innerHTML='<div class="to-letter">'+letter+'</div><div>'+o.text+'</div>';
+div.addEventListener('click',()=>{
+opts.querySelectorAll('.trainer-option').forEach(x=>x.classList.remove('correct','wrong'));
+div.classList.add(o.correct?'correct':'wrong');
+const fb=document.getElementById('trainer-feedback');
+fb.classList.add('show');
+fb.innerHTML='<b>'+(o.correct?'Верно!':'Неверно.')+'</b> '+o.feedback;
+});
+opts.appendChild(div);
+});
+document.getElementById('trainer-feedback').classList.remove('show');
+}
+
+trainerNav.forEach(btn=>{
+btn.addEventListener('click',()=>{
+trainerNav.forEach(b=>b.classList.remove('active'));
+btn.classList.add('active');
+currentTrainer=+btn.dataset.trainer;
+renderTrainer();
+});
+});
+renderTrainer();
+
+modules.forEach(mod=>{
+const num=mod.dataset.module;
+const likeBtn=mod.querySelector('.ma-like');
+const doneBtn=mod.querySelector('.ma-done');
+const likeKey='mgr_like_'+num;
+const doneKey='mgr_done_'+num;
+if(localStorage.getItem(likeKey)==='1')likeBtn.classList.add('liked');
+if(localStorage.getItem(doneKey)==='1'){
+doneBtn.classList.add('done');
+document.querySelector('.lever-card[data-lever="'+num+'"]').classList.add('done');
+document.querySelector('.ll-item[data-lever="'+num+'"]').classList.add('done');
+}
+likeBtn.addEventListener('click',()=>{
+const liked=likeBtn.classList.toggle('liked');
+localStorage.setItem(likeKey,liked?'1':'0');
+});
+doneBtn.addEventListener('click',()=>{
+doneBtn.classList.toggle('done');
+const isDone=doneBtn.classList.contains('done');
+localStorage.setItem(doneKey,isDone?'1':'0');
+document.querySelector('.lever-card[data-lever="'+num+'"]').classList.toggle('done',isDone);
+document.querySelector('.ll-item[data-lever="'+num+'"]').classList.toggle('done',isDone);
+updateProgress();
+});
+});
+
+function updateProgress(){
+const done=document.querySelectorAll('.module-view .ma-done.done').length;
+document.getElementById('pp-count').textContent=done;
+const percent=Math.round(done/totalLevers*100);
+document.getElementById('pp-fill').style.width=percent+'%';
+document.getElementById('mgr-fill').style.width=percent+'%';
+document.getElementById('mgr-percent').textContent=percent;
+const structure=done>0?mgrData[done-1].structure:50;
+document.getElementById('pp-structure').textContent=structure;
+}
+updateProgress();
+
+document.querySelectorAll('.checklist input[type="checkbox"]').forEach((cb,i)=>{
+const key='mgr_check_'+i;
+if(localStorage.getItem(key)==='1')cb.checked=true;
+cb.addEventListener('change',()=>{localStorage.setItem(key,cb.checked?'1':'0');});
+});
+</script>
+
 </body>
 </html>
